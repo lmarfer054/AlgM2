@@ -10,11 +10,11 @@
 <odeResources>
   <odeResource>
     <key>odeId</key>
-    <value>20260502141044JJ5P19</value>
+    <value>20260502144600YJORWA</value>
   </odeResource>
   <odeResource>
     <key>odeVersionId</key>
-    <value>20260502141044I4MENR</value>
+    <value>20260502144600HK25VT</value>
   </odeResource>
   <odeResource>
     <key>exe_version</key>
@@ -52,7 +52,7 @@
   </odeProperty>
   <odeProperty>
     <key>pp_modified</key>
-    <value>1777723650348</value>
+    <value>1777725845793</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addExeLink</key>
@@ -85,11 +85,31 @@
 </odeProperties>
 <odeNavStructures>
 <odeNavStructure>
-  <odePageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odePageId>
+  <odePageId>page-mooc2h4z-5v4td36y1</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>Álgebra lineal</pageName>
-  <odeNavStructureOrder>1</odeNavStructureOrder>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Álgebra lineal</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
     <odeNavStructureProperty>
       <key>titlePage</key>
       <value>Álgebra lineal</value>
@@ -101,7 +121,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odePageId>
+      <odePageId>page-mooc2h4z-5v4td36y1</odePageId>
       <odeBlockId>block-1777722651584-jwvk5qcrm</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -130,7 +150,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odePageId>
+          <odePageId>page-mooc2h4z-5v4td36y1</odePageId>
           <odeBlockId>block-1777722651584-jwvk5qcrm</odeBlockId>
           <odeIdeviceId>idevice-1777722651584-p7urq3ict</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -142,6 +162,18 @@
           <jsonProperties><![CDATA[{"ideviceId":"idevice-1777722651584-p7urq3ict","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2 style=\"text-align: center;\"><span style=\"color: #007632;\"><img src=\"{{context_path}}/content/resources/20260223202609ILKWBT/MATEMTICAS__V.png\" width=\"254\" height=\"251\" alt=\"\" /></span></h2>\n<h2 style=\"text-align: center;\"><span style=\"color: #007632;\">2º de Bachillerato - </span><span style=\"color: #007632;\">Matemáticas II</span></h2>\n<h2 style=\"text-align: center;\"><span style=\"color: #007632;\">Álgebra lineal</span></h2>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
           <odeComponentsOrder>0</odeComponentsOrder>
           <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
           </odeComponentsProperties>
         </odeComponent>
       </odeComponents>
@@ -149,8 +181,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq75-f1j5sw76r</odePageId>
-  <odeParentPageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odeParentPageId>
+  <odePageId>page-mooc2h51-in3ilx8xv</odePageId>
+  <odeParentPageId>page-mooc2h4z-5v4td36y1</odeParentPageId>
   <pageName>Matrices</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -185,7 +217,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq75-f1j5sw76r</odePageId>
+      <odePageId>page-mooc2h51-in3ilx8xv</odePageId>
       <odeBlockId>20260224025920ZHEHDJ</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -214,7 +246,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq75-f1j5sw76r</odePageId>
+          <odePageId>page-mooc2h51-in3ilx8xv</odePageId>
           <odeBlockId>20260224025920ZHEHDJ</odeBlockId>
           <odeIdeviceId>20260223202609ILKWBT</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -276,8 +308,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq76-jnwvmcxkr</odePageId>
-  <odeParentPageId>page-moo7jq75-f1j5sw76r</odeParentPageId>
+  <odePageId>page-mooc2h53-4mmo0gds0</odePageId>
+  <odeParentPageId>page-mooc2h51-in3ilx8xv</odeParentPageId>
   <pageName>1. Introducción a las matrices</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -312,7 +344,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq76-jnwvmcxkr</odePageId>
+      <odePageId>page-mooc2h53-4mmo0gds0</odePageId>
       <odeBlockId>20260224025920VCFGHH</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -341,7 +373,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq76-jnwvmcxkr</odePageId>
+          <odePageId>page-mooc2h53-4mmo0gds0</odePageId>
           <odeBlockId>20260224025920VCFGHH</odeBlockId>
           <odeIdeviceId>20260223202609ATGUFD</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -394,8 +426,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
-  <odeParentPageId>page-moo7jq76-jnwvmcxkr</odeParentPageId>
+  <odePageId>page-mooc2h56-rrirciz3w</odePageId>
+  <odeParentPageId>page-mooc2h53-4mmo0gds0</odeParentPageId>
   <pageName>1.1. Concepto de matriz</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -430,7 +462,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920SFTUKA</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -459,7 +491,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920SFTUKA</odeBlockId>
           <odeIdeviceId>20260223202609RXHNFH</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -498,7 +530,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920DZFSBR</odeBlockId>
       <blockName>Matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -527,7 +559,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920DZFSBR</odeBlockId>
           <odeIdeviceId>20260223202609PWPUPH</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -564,7 +596,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920FFMKOV</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -593,7 +625,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920FFMKOV</odeBlockId>
           <odeIdeviceId>20260223222003031OGP</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -639,7 +671,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920PRFNFV</odeBlockId>
       <blockName>Elementos de una matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -668,7 +700,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920PRFNFV</odeBlockId>
           <odeIdeviceId>20260223202609CTPFXJ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -702,7 +734,7 @@
           </odeComponentsProperties>
         </odeComponent>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920PRFNFV</odeBlockId>
           <odeIdeviceId>20260223202609WFSGLL</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -739,7 +771,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920CUUFPE</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -763,12 +795,12 @@
         </odePagStructureProperty>
         <odePagStructureProperty>
           <key>cssClass</key>
-          <value>caja-morada sin-copa boton-naranja</value>
+          <value>caja-morada sin-copa boton-morado</value>
         </odePagStructureProperty>
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920CUUFPE</odeBlockId>
           <odeIdeviceId>2026022400313962453L</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -796,7 +828,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+      <odePageId>page-mooc2h56-rrirciz3w</odePageId>
       <odeBlockId>20260224025920JMYFBB</odeBlockId>
       <blockName>Curiosidad </blockName>
       <iconName></iconName>
@@ -825,7 +857,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq77-s7lq2fey5</odePageId>
+          <odePageId>page-mooc2h56-rrirciz3w</odePageId>
           <odeBlockId>20260224025920JMYFBB</odeBlockId>
           <odeIdeviceId>20260223202609FVOZEX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -867,8 +899,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
-  <odeParentPageId>page-moo7jq76-jnwvmcxkr</odeParentPageId>
+  <odePageId>page-mooc2h59-87yqhjopg</odePageId>
+  <odeParentPageId>page-mooc2h53-4mmo0gds0</odeParentPageId>
   <pageName>1.2. Tipos de matrices</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -903,7 +935,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>20260224025920KPIWMY</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -932,7 +964,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>20260224025920KPIWMY</odeBlockId>
           <odeIdeviceId>20260223202609JROLSL</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -969,7 +1001,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>block-1771966178573-xh2e695ez</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -998,7 +1030,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>block-1771966178573-xh2e695ez</odeBlockId>
           <odeIdeviceId>idevice-1771966178572-mox3lk0fa</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1047,7 +1079,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>20260224025920EYJXLP</odeBlockId>
       <blockName>Verdadero o Falso</blockName>
       <iconName>icon_v_o_f</iconName>
@@ -1076,7 +1108,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>20260224025920EYJXLP</odeBlockId>
           <odeIdeviceId>20260223202609VVVZJI</odeIdeviceId>
           <odeIdeviceTypeName>trueorfalse</odeIdeviceTypeName>
@@ -1143,7 +1175,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>block-1776857891154-fyt7dgoxg</odeBlockId>
       <blockName>Matriz transpuesta</blockName>
       <iconName>icon_definicion</iconName>
@@ -1172,7 +1204,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>block-1776857891154-fyt7dgoxg</odeBlockId>
           <odeIdeviceId>idevice-1776857891153-ljyx3vphd</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1249,7 +1281,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>20260224025920NCWZSZ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -1278,7 +1310,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>20260224025920NCWZSZ</odeBlockId>
           <odeIdeviceId>20260224013124461HXF</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1312,7 +1344,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+      <odePageId>page-mooc2h59-87yqhjopg</odePageId>
       <odeBlockId>20260224025920BHSYAJ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -1341,7 +1373,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7a-tmz9us34b</odePageId>
+          <odePageId>page-mooc2h59-87yqhjopg</odePageId>
           <odeBlockId>20260224025920BHSYAJ</odeBlockId>
           <odeIdeviceId>20260224033113033FV4</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1400,8 +1432,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7c-kioart4i8</odePageId>
-  <odeParentPageId>page-moo7jq76-jnwvmcxkr</odeParentPageId>
+  <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
+  <odeParentPageId>page-mooc2h53-4mmo0gds0</odeParentPageId>
   <pageName>1.3. Concepto de submatriz</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1436,7 +1468,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+      <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
       <odeBlockId>20260224025920URWNBQ</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -1465,7 +1497,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+          <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
           <odeBlockId>20260224025920URWNBQ</odeBlockId>
           <odeIdeviceId>20260223202609UKPEBB</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1573,7 +1605,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+      <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
       <odeBlockId>block-1771969651601-ki9qxnxut</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -1602,7 +1634,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+          <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
           <odeBlockId>block-1771969651601-ki9qxnxut</odeBlockId>
           <odeIdeviceId>idevice-1771969651600-9y557f3c4</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1638,7 +1670,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+      <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
       <odeBlockId>20260224025920WLCUPS</odeBlockId>
       <blockName>Submatriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -1667,7 +1699,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+          <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
           <odeBlockId>20260224025920WLCUPS</odeBlockId>
           <odeIdeviceId>20260223202609HGXSEK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1701,7 +1733,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+      <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
       <odeBlockId>20260224025920USHOYE</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -1730,7 +1762,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7c-kioart4i8</odePageId>
+          <odePageId>page-mooc2h5d-xih1fydwt</odePageId>
           <odeBlockId>20260224025920USHOYE</odeBlockId>
           <odeIdeviceId>20260223202609ULTXXS</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1812,8 +1844,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7e-9g4iwdlz5</odePageId>
-  <odeParentPageId>page-moo7jq75-f1j5sw76r</odeParentPageId>
+  <odePageId>page-mooc2h5e-f61xnvx4t</odePageId>
+  <odeParentPageId>page-mooc2h51-in3ilx8xv</odeParentPageId>
   <pageName>2. Operaciones con matrices</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1848,7 +1880,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7e-9g4iwdlz5</odePageId>
+      <odePageId>page-mooc2h5e-f61xnvx4t</odePageId>
       <odeBlockId>20260224025920WDTJLO</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -1877,7 +1909,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7e-9g4iwdlz5</odePageId>
+          <odePageId>page-mooc2h5e-f61xnvx4t</odePageId>
           <odeBlockId>20260224025920WDTJLO</odeBlockId>
           <odeIdeviceId>20260223202609FARHHI</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1907,8 +1939,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
-  <odeParentPageId>page-moo7jq7e-9g4iwdlz5</odeParentPageId>
+  <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
+  <odeParentPageId>page-mooc2h5e-f61xnvx4t</odeParentPageId>
   <pageName>2.1. Suma de matrices</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1943,7 +1975,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+      <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
       <odeBlockId>block-1771972143633-ie8ewq70r</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -1972,7 +2004,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+          <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
           <odeBlockId>block-1771972143633-ie8ewq70r</odeBlockId>
           <odeIdeviceId>idevice-1771972143627-dltso8wqz</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -2072,7 +2104,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+      <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
       <odeBlockId>20260224025920EIEKVK</odeBlockId>
       <blockName>Suma de matrices.</blockName>
       <iconName>icon_definicion</iconName>
@@ -2101,7 +2133,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+          <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
           <odeBlockId>20260224025920EIEKVK</odeBlockId>
           <odeIdeviceId>20260223202609MAJZFY</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2146,7 +2178,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+      <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
       <odeBlockId>block-1771973374756-j81h050kh</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -2175,7 +2207,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+          <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
           <odeBlockId>block-1771973374756-j81h050kh</odeBlockId>
           <odeIdeviceId>idevice-1771973374755-2l906d5qb</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2322,7 +2354,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+      <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
       <odeBlockId>block-1771973673998-nc2z4kmss</odeBlockId>
       <blockName>Vídeo</blockName>
       <iconName>bidio</iconName>
@@ -2351,7 +2383,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7e-s9d7tzisz</odePageId>
+          <odePageId>page-mooc2h5g-r93zp1y6y</odePageId>
           <odeBlockId>block-1771973673998-nc2z4kmss</odeBlockId>
           <odeIdeviceId>idevice-1771973673996-1p3wl8q48</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2380,8 +2412,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7f-phspwnxal</odePageId>
-  <odeParentPageId>page-moo7jq7e-9g4iwdlz5</odeParentPageId>
+  <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
+  <odeParentPageId>page-mooc2h5e-f61xnvx4t</odeParentPageId>
   <pageName>2.2. Producto de un escalar por una matriz</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2416,7 +2448,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+      <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
       <odeBlockId>block-1771975010358-xf3jpy2sh</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -2445,7 +2477,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+          <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
           <odeBlockId>block-1771975010358-xf3jpy2sh</odeBlockId>
           <odeIdeviceId>idevice-1771975010357-jq5fd8b41</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -2543,7 +2575,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+      <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
       <odeBlockId>20260224025920XKODCG</odeBlockId>
       <blockName>Producto de un escalar por una matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -2572,7 +2604,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+          <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
           <odeBlockId>20260224025920XKODCG</odeBlockId>
           <odeIdeviceId>20260223202609MGCSEK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2603,7 +2635,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+      <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
       <odeBlockId>block-1771977721036-kokwtmilp</odeBlockId>
       <blockName>GeoGebra</blockName>
       <iconName>iconogeogebra</iconName>
@@ -2632,7 +2664,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+          <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
           <odeBlockId>block-1771977721036-kokwtmilp</odeBlockId>
           <odeIdeviceId>idevice-1771977721035-tvgciifdg</odeIdeviceId>
           <odeIdeviceTypeName>geogebra-activity</odeIdeviceTypeName>
@@ -2657,7 +2689,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+      <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
       <odeBlockId>20260224025920DOURUV</odeBlockId>
       <blockName>Vídeo</blockName>
       <iconName>bidio</iconName>
@@ -2686,7 +2718,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7f-phspwnxal</odePageId>
+          <odePageId>page-mooc2h5h-99fzf4h6a</odePageId>
           <odeBlockId>20260224025920DOURUV</odeBlockId>
           <odeIdeviceId>20260223202609SAUHQN</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2715,8 +2747,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
-  <odeParentPageId>page-moo7jq7e-9g4iwdlz5</odeParentPageId>
+  <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
+  <odeParentPageId>page-mooc2h5e-f61xnvx4t</odeParentPageId>
   <pageName>2.3. Producto de matrices</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2751,7 +2783,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>block-1771979067807-sh6x539xp</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -2780,7 +2812,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>block-1771979067807-sh6x539xp</odeBlockId>
           <odeIdeviceId>idevice-1771979067806-4tazgiobn</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2839,7 +2871,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>20260224025920QLKACI</odeBlockId>
       <blockName>Producto de matrices</blockName>
       <iconName>icon_definicion</iconName>
@@ -2868,7 +2900,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>20260224025920QLKACI</odeBlockId>
           <odeIdeviceId>20260223202609AKIWUR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2921,7 +2953,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>20260224025920DHNEII</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -2950,7 +2982,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>20260224025920DHNEII</odeBlockId>
           <odeIdeviceId>20260223202609MMNWIE</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2994,7 +3026,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>block-1772009675297-5ddljqa6g</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -3023,7 +3055,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>block-1772009675297-5ddljqa6g</odeBlockId>
           <odeIdeviceId>idevice-1772009675296-4ld76fu5n</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3071,7 +3103,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>block-1771983428051-et6tovdyk</odeBlockId>
       <blockName>Verdadero o falso</blockName>
       <iconName>icon_v_o_f</iconName>
@@ -3100,7 +3132,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>block-1771983428051-et6tovdyk</odeBlockId>
           <odeIdeviceId>idevice-1772026710363-mm77q9pn0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3125,7 +3157,7 @@ function operate(type) {
           </odeComponentsProperties>
         </odeComponent>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>block-1771983428051-et6tovdyk</odeBlockId>
           <odeIdeviceId>idevice-1771983428050-4koq9o2sq</odeIdeviceId>
           <odeIdeviceTypeName>trueorfalse</odeIdeviceTypeName>
@@ -3296,7 +3328,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>20260224025920MHYCKI</odeBlockId>
       <blockName>Importante</blockName>
       <iconName></iconName>
@@ -3325,7 +3357,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>20260224025920MHYCKI</odeBlockId>
           <odeIdeviceId>20260223202609LPOUGN</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3357,7 +3389,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+      <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
       <odeBlockId>block-1772011579807-hds5a07ho</odeBlockId>
       <blockName>GeoGebra</blockName>
       <iconName>iconogeogebra</iconName>
@@ -3386,7 +3418,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7g-kcgp7cclw</odePageId>
+          <odePageId>page-mooc2h5j-jobvkr45j</odePageId>
           <odeBlockId>block-1772011579807-hds5a07ho</odeBlockId>
           <odeIdeviceId>idevice-1772011579806-lboajuzbx</odeIdeviceId>
           <odeIdeviceTypeName>geogebra-activity</odeIdeviceTypeName>
@@ -3415,8 +3447,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7i-p72zafyjg</odePageId>
-  <odeParentPageId>page-moo7jq7e-9g4iwdlz5</odeParentPageId>
+  <odePageId>page-mooc2h5n-80rjphkzq</odePageId>
+  <odeParentPageId>page-mooc2h5e-f61xnvx4t</odeParentPageId>
   <pageName>2.4 Actividades</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3451,7 +3483,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7i-p72zafyjg</odePageId>
+      <odePageId>page-mooc2h5n-80rjphkzq</odePageId>
       <odeBlockId>block-1772012411961-3ex9zz5iw</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -3480,7 +3512,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7i-p72zafyjg</odePageId>
+          <odePageId>page-mooc2h5n-80rjphkzq</odePageId>
           <odeBlockId>block-1772012411961-3ex9zz5iw</odeBlockId>
           <odeIdeviceId>idevice-1772012411961-n4e2h2f3r</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4132,7 +4164,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7i-p72zafyjg</odePageId>
+      <odePageId>page-mooc2h5n-80rjphkzq</odePageId>
       <odeBlockId>block-1772014472015-wya2a47w9</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -4161,7 +4193,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7i-p72zafyjg</odePageId>
+          <odePageId>page-mooc2h5n-80rjphkzq</odePageId>
           <odeBlockId>block-1772014472015-wya2a47w9</odeBlockId>
           <odeIdeviceId>idevice-1772014472014-0g94pqggk</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -4331,8 +4363,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
-  <odeParentPageId>page-moo7jq75-f1j5sw76r</odeParentPageId>
+  <odePageId>page-mooc2h5q-t2k12159x</odePageId>
+  <odeParentPageId>page-mooc2h51-in3ilx8xv</odeParentPageId>
   <pageName>3. Especial Selectividad.</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4367,7 +4399,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+      <odePageId>page-mooc2h5q-t2k12159x</odePageId>
       <odeBlockId>block-1772016445687-8d50h3gdn</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -4396,7 +4428,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+          <odePageId>page-mooc2h5q-t2k12159x</odePageId>
           <odeBlockId>block-1772016445687-8d50h3gdn</odeBlockId>
           <odeIdeviceId>idevice-1772016445686-7lxnvmesz</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4445,7 +4477,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+      <odePageId>page-mooc2h5q-t2k12159x</odePageId>
       <odeBlockId>block-1772016628824-7uhhuftf2</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -4474,7 +4506,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+          <odePageId>page-mooc2h5q-t2k12159x</odePageId>
           <odeBlockId>block-1772016628824-7uhhuftf2</odeBlockId>
           <odeIdeviceId>idevice-1772016628823-llfbt1knj</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4515,7 +4547,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+      <odePageId>page-mooc2h5q-t2k12159x</odePageId>
       <odeBlockId>block-1772017655794-v0kfsaowf</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -4544,7 +4576,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+          <odePageId>page-mooc2h5q-t2k12159x</odePageId>
           <odeBlockId>block-1772017655794-v0kfsaowf</odeBlockId>
           <odeIdeviceId>idevice-1772017655793-poyx3mh33</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4593,7 +4625,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+      <odePageId>page-mooc2h5q-t2k12159x</odePageId>
       <odeBlockId>block-1772018169779-ygr2aq5c3</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -4622,7 +4654,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7k-tmaie3u9b</odePageId>
+          <odePageId>page-mooc2h5q-t2k12159x</odePageId>
           <odeBlockId>block-1772018169779-ygr2aq5c3</odeBlockId>
           <odeIdeviceId>idevice-1772018169778-i2faj6qd2</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4667,8 +4699,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
-  <odeParentPageId>page-moo7jq75-f1j5sw76r</odeParentPageId>
+  <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
+  <odeParentPageId>page-mooc2h51-in3ilx8xv</odeParentPageId>
   <pageName>Resumen</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4703,7 +4735,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>20260224025920CKHYRV</odeBlockId>
       <blockName>Matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -4732,7 +4764,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>20260224025920CKHYRV</odeBlockId>
           <odeIdeviceId>20260223211931THKPAI</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4765,7 +4797,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>20260224025920NCBEBX</odeBlockId>
       <blockName>Elementos de una matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -4794,7 +4826,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>20260224025920NCBEBX</odeBlockId>
           <odeIdeviceId>20260223233039PANJRK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4825,7 +4857,7 @@ function operate(type) {
           </odeComponentsProperties>
         </odeComponent>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>20260224025920NCBEBX</odeBlockId>
           <odeIdeviceId>20260223233039BAGOZL</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4861,7 +4893,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1776859397747-qqys5gtm9</odeBlockId>
       <blockName>Matriz transpuesta</blockName>
       <iconName>icon_definicion</iconName>
@@ -4890,7 +4922,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1776859397747-qqys5gtm9</odeBlockId>
           <odeIdeviceId>idevice-1776859397747-5tpqpgqwp</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4943,7 +4975,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1771969471626-2ho50bym3</odeBlockId>
       <blockName>Submatriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -4972,7 +5004,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1771969471626-2ho50bym3</odeBlockId>
           <odeIdeviceId>idevice-1771969471627-vu5hmw11c</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5005,7 +5037,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1771974091563-e7je09up3</odeBlockId>
       <blockName>Suma de matrices.</blockName>
       <iconName>icon_definicion</iconName>
@@ -5034,7 +5066,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1771974091563-e7je09up3</odeBlockId>
           <odeIdeviceId>idevice-1771974091563-82f5xc5wd</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5074,7 +5106,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1771977408783-nq64thplo</odeBlockId>
       <blockName>Producto de un escalar por una matriz.</blockName>
       <iconName>icon_definicion</iconName>
@@ -5103,7 +5135,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1771977408783-nq64thplo</odeBlockId>
           <odeIdeviceId>idevice-1771977408783-nthkx3zdk</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5131,7 +5163,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1772010180726-w48ca1aa5</odeBlockId>
       <blockName>Producto de matrices</blockName>
       <iconName>icon_definicion</iconName>
@@ -5160,7 +5192,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1772010180726-w48ca1aa5</odeBlockId>
           <odeIdeviceId>idevice-1772010180727-nwwwgra4l</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5201,7 +5233,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+      <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
       <odeBlockId>block-1772015589881-0budv1r3a</odeBlockId>
       <blockName>Elemento neutro del producto de matrices.</blockName>
       <iconName>icon_definicion</iconName>
@@ -5230,7 +5262,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7jq7l-sukvdqzb6</odePageId>
+          <odePageId>page-mooc2h5s-vd7o570yy</odePageId>
           <odeBlockId>block-1772015589881-0budv1r3a</odeBlockId>
           <odeIdeviceId>idevice-1772015589881-lwtky3cz9</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5260,8 +5292,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hj-5rkxw1yyb</odePageId>
-  <odeParentPageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odeParentPageId>
+  <odePageId>page-mooc2h5v-p8j5ulbs4</odePageId>
+  <odeParentPageId>page-mooc2h4z-5v4td36y1</odeParentPageId>
   <pageName>Determinantes</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5296,7 +5328,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hj-5rkxw1yyb</odePageId>
+      <odePageId>page-mooc2h5v-p8j5ulbs4</odePageId>
       <odeBlockId>20260502095902ODYDSM</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -5325,7 +5357,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hj-5rkxw1yyb</odePageId>
+          <odePageId>page-mooc2h5v-p8j5ulbs4</odePageId>
           <odeBlockId>20260502095902ODYDSM</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-1e9b2hdcg</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5388,8 +5420,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hk-401jw69se</odePageId>
-  <odeParentPageId>page-moo7k2hj-5rkxw1yyb</odeParentPageId>
+  <odePageId>page-mooc2h5w-euyihpyoo</odePageId>
+  <odeParentPageId>page-mooc2h5v-p8j5ulbs4</odeParentPageId>
   <pageName>1. Introducción a los determinantes</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5424,7 +5456,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hk-401jw69se</odePageId>
+      <odePageId>page-mooc2h5w-euyihpyoo</odePageId>
       <odeBlockId>20260502095902HHANIB</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -5453,7 +5485,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hk-401jw69se</odePageId>
+          <odePageId>page-mooc2h5w-euyihpyoo</odePageId>
           <odeBlockId>20260502095902HHANIB</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-5h4tagl4v</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5491,7 +5523,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hk-401jw69se</odePageId>
+      <odePageId>page-mooc2h5w-euyihpyoo</odePageId>
       <odeBlockId>20260502095902RJQQWY</odeBlockId>
       <blockName>Curiosidad </blockName>
       <iconName>think</iconName>
@@ -5520,7 +5552,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hk-401jw69se</odePageId>
+          <odePageId>page-mooc2h5w-euyihpyoo</odePageId>
           <odeBlockId>20260502095902RJQQWY</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-pbzn97wdh</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5559,8 +5591,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hl-exea0kllw</odePageId>
-  <odeParentPageId>page-moo7k2hk-401jw69se</odeParentPageId>
+  <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
+  <odeParentPageId>page-mooc2h5w-euyihpyoo</odeParentPageId>
   <pageName>1.1. Determinante de una matriz cuadrada</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5595,7 +5627,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902LCJOQC</odeBlockId>
       <blockName>Determinante.</blockName>
       <iconName>icon_definicion</iconName>
@@ -5624,7 +5656,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902LCJOQC</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-snr36kryz</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5662,7 +5694,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902YXQTXG</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -5691,7 +5723,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902YXQTXG</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-mw0t0dapm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5730,7 +5762,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902GOCFVU</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -5759,7 +5791,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902GOCFVU</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-j1mvzhkar</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5794,7 +5826,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902BZNXLV</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -5823,7 +5855,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902BZNXLV</odeBlockId>
           <odeIdeviceId>idevice-1772299885082-f31vtr93v</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -5849,7 +5881,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902PYLOIJ</odeBlockId>
       <blockName>La Regla de Sarrus</blockName>
       <iconName>icon_definicion</iconName>
@@ -5878,7 +5910,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902PYLOIJ</odeBlockId>
           <odeIdeviceId>idevice-1772287011893-gy6yporuy</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5976,7 +6008,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902WNTQXC</odeBlockId>
       <blockName>Vídeos. Cálculo de determinantes.</blockName>
       <iconName>bidio</iconName>
@@ -6005,7 +6037,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902WNTQXC</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-7p5j5e9ij</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6035,7 +6067,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+      <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
       <odeBlockId>20260502095902SRJPEJ</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -6064,7 +6096,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hl-exea0kllw</odePageId>
+          <odePageId>page-mooc2h5x-c1i6w4mlr</odePageId>
           <odeBlockId>20260502095902SRJPEJ</odeBlockId>
           <odeIdeviceId>idevice-1772301214272-pmeau8blx</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -6091,8 +6123,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
-  <odeParentPageId>page-moo7k2hk-401jw69se</odeParentPageId>
+  <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
+  <odeParentPageId>page-mooc2h5w-euyihpyoo</odeParentPageId>
   <pageName>1.2. Propiedades de los determinantes</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -6127,7 +6159,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+      <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
       <odeBlockId>20260502095902PDGQWU</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -6156,7 +6188,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+          <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
           <odeBlockId>20260502095902PDGQWU</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpu-l2dmpvd5y</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6194,7 +6226,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+      <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
       <odeBlockId>20260502095902TAEPZM</odeBlockId>
       <blockName>Propiedades de los determinantes</blockName>
       <iconName>icon_definicion</iconName>
@@ -6223,7 +6255,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+          <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
           <odeBlockId>20260502095902TAEPZM</odeBlockId>
           <odeIdeviceId>idevice-1772302919099-qs8z88zdt</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6287,7 +6319,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+      <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
       <odeBlockId>20260502095902CHZFSB</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -6316,7 +6348,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+          <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
           <odeBlockId>20260502095902CHZFSB</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-q2ckqxnye</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6358,7 +6390,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+      <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
       <odeBlockId>20260502095902WXDBPB</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -6387,7 +6419,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+          <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
           <odeBlockId>20260502095902WXDBPB</odeBlockId>
           <odeIdeviceId>idevice-1772305495039-t62v6fxdj</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -6426,7 +6458,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+      <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
       <odeBlockId>20260502095902DTNWPS</odeBlockId>
       <blockName>Importante</blockName>
       <iconName>activity</iconName>
@@ -6455,7 +6487,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-4ujc31lec</odePageId>
+          <odePageId>page-mooc2h5z-z3ip3vp3v</odePageId>
           <odeBlockId>20260502095902DTNWPS</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-6r11m8msn</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6485,8 +6517,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
-  <odeParentPageId>page-moo7k2hk-401jw69se</odeParentPageId>
+  <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
+  <odeParentPageId>page-mooc2h5w-euyihpyoo</odeParentPageId>
   <pageName>1.3. Conceptos de menor complementario y adjunto</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -6521,7 +6553,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902LIUZDQ</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -6550,7 +6582,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902LIUZDQ</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-rtrxdde7i</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6587,7 +6619,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902EHWITJ</odeBlockId>
       <blockName>Menor complementario. Adjunto. Matriz adjunta.</blockName>
       <iconName>icon_definicion</iconName>
@@ -6616,7 +6648,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902EHWITJ</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-ikumcuyps</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6708,7 +6740,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902FCZYBW</odeBlockId>
       <blockName>Ejemplo. Adjunto y menor complementario.</blockName>
       <iconName>EducaAnd viejos/icon_udl_exp_ejercicio</iconName>
@@ -6737,7 +6769,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902FCZYBW</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-es6sp5for</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6831,7 +6863,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902GSBUDO</odeBlockId>
       <blockName>Vídeo: hallar la matriz adjunta.</blockName>
       <iconName>bidio</iconName>
@@ -6860,7 +6892,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902GSBUDO</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-b998av1e5</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6889,7 +6921,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902UCTPDG</odeBlockId>
       <blockName>Desarrollo de un determinante por los elementos de una línea.</blockName>
       <iconName>icon_definicion</iconName>
@@ -6918,7 +6950,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902UCTPDG</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-fmdqeh6mf</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6955,7 +6987,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902RDWXBT</odeBlockId>
       <blockName>Vídeo. Determinante haciendo ceros.</blockName>
       <iconName>bidio</iconName>
@@ -6984,7 +7016,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902RDWXBT</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-81of7ku6c</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7012,7 +7044,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+      <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
       <odeBlockId>20260502095902KVRSZI</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -7041,7 +7073,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hm-ifrrle12g</odePageId>
+          <odePageId>page-mooc2h61-pgo5wwt50</odePageId>
           <odeBlockId>20260502095902KVRSZI</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-09yy9u0c0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7070,8 +7102,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
-  <odeParentPageId>page-moo7k2hk-401jw69se</odeParentPageId>
+  <odePageId>page-mooc2h64-lgflntw3j</odePageId>
+  <odeParentPageId>page-mooc2h5w-euyihpyoo</odeParentPageId>
   <pageName>1.4. Desarrollo de un determinante por el método de Gauss</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -7106,7 +7138,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902PLVZSL</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -7135,7 +7167,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902PLVZSL</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-lb7nuv9x3</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7162,7 +7194,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902DNBZCH</odeBlockId>
       <blockName>Método de Gauss para determinantes.</blockName>
       <iconName>icon_definicion</iconName>
@@ -7191,7 +7223,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902DNBZCH</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-4l1utg1g4</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7242,7 +7274,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902TKKPWH</odeBlockId>
       <blockName>Ejemplo</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -7271,7 +7303,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902TKKPWH</odeBlockId>
           <odeIdeviceId>idevice-1772366525109-8txyzq2j0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7299,7 +7331,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902RKKAHW</odeBlockId>
       <blockName>Ejercicio</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -7328,7 +7360,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902RKKAHW</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-mofpwdf1t</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7355,7 +7387,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902ANTOQA</odeBlockId>
       <blockName>Ejercicio guiado</blockName>
       <iconName>icon_practica2</iconName>
@@ -7384,7 +7416,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902ANTOQA</odeBlockId>
           <odeIdeviceId>202604291703031226YD</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7822,7 +7854,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+      <odePageId>page-mooc2h64-lgflntw3j</odePageId>
       <odeBlockId>20260502095902JGMLYO</odeBlockId>
       <blockName>Gauss</blockName>
       <iconName>buho</iconName>
@@ -7851,7 +7883,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2ho-o83bayi1j</odePageId>
+          <odePageId>page-mooc2h64-lgflntw3j</odePageId>
           <odeBlockId>20260502095902JGMLYO</odeBlockId>
           <odeIdeviceId>idevice-mm6cukpv-jglju92df</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7882,8 +7914,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
-  <odeParentPageId>page-moo7k2hj-5rkxw1yyb</odeParentPageId>
+  <odePageId>page-mooc2h66-d732xwqbd</odePageId>
+  <odeParentPageId>page-mooc2h5v-p8j5ulbs4</odeParentPageId>
   <pageName>2. Especial Selectividad</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -7918,7 +7950,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+      <odePageId>page-mooc2h66-d732xwqbd</odePageId>
       <odeBlockId>20260502095902VHEAVV</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -7947,7 +7979,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+          <odePageId>page-mooc2h66-d732xwqbd</odePageId>
           <odeBlockId>20260502095902VHEAVV</odeBlockId>
           <odeIdeviceId>idevice-1772368121595-8275s3jcm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -7987,7 +8019,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+      <odePageId>page-mooc2h66-d732xwqbd</odePageId>
       <odeBlockId>20260502095902JFSHGD</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -8016,7 +8048,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+          <odePageId>page-mooc2h66-d732xwqbd</odePageId>
           <odeBlockId>20260502095902JFSHGD</odeBlockId>
           <odeIdeviceId>idevice-1772368905301-fop5lt7y8</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8078,7 +8110,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+      <odePageId>page-mooc2h66-d732xwqbd</odePageId>
       <odeBlockId>20260502095902HCRFPV</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -8107,7 +8139,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+          <odePageId>page-mooc2h66-d732xwqbd</odePageId>
           <odeBlockId>20260502095902HCRFPV</odeBlockId>
           <odeIdeviceId>idevice-1772369617256-ih5yic2ic</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8161,7 +8193,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+      <odePageId>page-mooc2h66-d732xwqbd</odePageId>
       <odeBlockId>20260502095902RJEZLQ</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -8190,7 +8222,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+          <odePageId>page-mooc2h66-d732xwqbd</odePageId>
           <odeBlockId>20260502095902RJEZLQ</odeBlockId>
           <odeIdeviceId>idevice-1772370403625-5mazjqdf0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8244,7 +8276,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+      <odePageId>page-mooc2h66-d732xwqbd</odePageId>
       <odeBlockId>20260502095902AKOVEA</odeBlockId>
       <blockName>Ejercicio resuelto.</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -8273,7 +8305,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hq-mw3t40qjl</odePageId>
+          <odePageId>page-mooc2h66-d732xwqbd</odePageId>
           <odeBlockId>20260502095902AKOVEA</odeBlockId>
           <odeIdeviceId>idevice-1772370746591-a0isdjqb0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8344,8 +8376,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7k2hs-u74f5iuzg</odePageId>
-  <odeParentPageId>page-moo7k2hj-5rkxw1yyb</odeParentPageId>
+  <odePageId>page-mooc2h68-bghk8pr29</odePageId>
+  <odeParentPageId>page-mooc2h5v-p8j5ulbs4</odeParentPageId>
   <pageName>Resumen</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -8380,7 +8412,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7k2hs-u74f5iuzg</odePageId>
+      <odePageId>page-mooc2h68-bghk8pr29</odePageId>
       <odeBlockId>20260502095902WVNERZ</odeBlockId>
       <blockName>Galería de imágenes</blockName>
       <iconName></iconName>
@@ -8409,7 +8441,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7k2hs-u74f5iuzg</odePageId>
+          <odePageId>page-mooc2h68-bghk8pr29</odePageId>
           <odeBlockId>20260502095902WVNERZ</odeBlockId>
           <odeIdeviceId>idevice-1772389444334-nl4qqzbeg</odeIdeviceId>
           <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
@@ -8440,8 +8472,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjr-e7dn5lm1f</odePageId>
-  <odeParentPageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odeParentPageId>
+  <odePageId>page-mooc2h6a-30njy2tix</odePageId>
+  <odeParentPageId>page-mooc2h4z-5v4td36y1</odeParentPageId>
   <pageName>Aplicaciones de las matrices. Ecuaciones matriciales</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -8476,7 +8508,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjr-e7dn5lm1f</odePageId>
+      <odePageId>page-mooc2h6a-30njy2tix</odePageId>
       <odeBlockId>20260502094802IJAHWG</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -8505,7 +8537,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjr-e7dn5lm1f</odePageId>
+          <odePageId>page-mooc2h6a-30njy2tix</odePageId>
           <odeBlockId>20260502094802IJAHWG</odeBlockId>
           <odeIdeviceId>idevice-mocvbkml-89s1npggd</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8568,8 +8600,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjs-2xaepi53l</odePageId>
-  <odeParentPageId>page-moo7khjr-e7dn5lm1f</odeParentPageId>
+  <odePageId>page-mooc2h6b-cuhir9t8f</odePageId>
+  <odeParentPageId>page-mooc2h6a-30njy2tix</odeParentPageId>
   <pageName>1. Rango de una matriz</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -8604,7 +8636,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjs-2xaepi53l</odePageId>
+      <odePageId>page-mooc2h6b-cuhir9t8f</odePageId>
       <odeBlockId>20260502094802XBKMLA</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -8633,7 +8665,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjs-2xaepi53l</odePageId>
+          <odePageId>page-mooc2h6b-cuhir9t8f</odePageId>
           <odeBlockId>20260502094802XBKMLA</odeBlockId>
           <odeIdeviceId>idevice-mocvbkml-88f3iquqa</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8670,8 +8702,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
-  <odeParentPageId>page-moo7khjs-2xaepi53l</odeParentPageId>
+  <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
+  <odeParentPageId>page-mooc2h6b-cuhir9t8f</odeParentPageId>
   <pageName>1.1. Definición de rango de una matriz</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -8706,7 +8738,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+      <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
       <odeBlockId>20260502094802ZWEFZS</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -8735,7 +8767,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+          <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
           <odeBlockId>20260502094802ZWEFZS</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-yp7vpvalm</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8773,7 +8805,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+      <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
       <odeBlockId>20260502094802OQOKKD</odeBlockId>
       <blockName>Rango de una matriz</blockName>
       <iconName>icon_definicion</iconName>
@@ -8802,7 +8834,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+          <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
           <odeBlockId>20260502094802OQOKKD</odeBlockId>
           <odeIdeviceId>idevice-1777051139054-ftmnrrf80</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8848,7 +8880,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+      <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
       <odeBlockId>20260502094802RZFMQX</odeBlockId>
       <blockName>Importante</blockName>
       <iconName>activity</iconName>
@@ -8877,7 +8909,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+          <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
           <odeBlockId>20260502094802RZFMQX</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-sdwylbx7y</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -8912,7 +8944,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+      <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
       <odeBlockId>20260502094802DKAGIE</odeBlockId>
       <blockName>Preguntas</blockName>
       <iconName>icon_selecciona</iconName>
@@ -8941,7 +8973,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjs-ptgm8lrtf</odePageId>
+          <odePageId>page-mooc2h6c-zvhoog6qy</odePageId>
           <odeBlockId>20260502094802DKAGIE</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-9h7c8d7aj</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -9010,8 +9042,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjt-nwhl72uty</odePageId>
-  <odeParentPageId>page-moo7khjs-2xaepi53l</odeParentPageId>
+  <odePageId>page-mooc2h6e-he7ol274n</odePageId>
+  <odeParentPageId>page-mooc2h6b-cuhir9t8f</odeParentPageId>
   <pageName>1.2. Cálculo del rango de una matriz por los menores</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -9046,7 +9078,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+      <odePageId>page-mooc2h6e-he7ol274n</odePageId>
       <odeBlockId>20260502094802UMLITJ</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -9075,7 +9107,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+          <odePageId>page-mooc2h6e-he7ol274n</odePageId>
           <odeBlockId>20260502094802UMLITJ</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-xjv4q3vad</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9105,7 +9137,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+      <odePageId>page-mooc2h6e-he7ol274n</odePageId>
       <odeBlockId>20260502094802BKZFRM</odeBlockId>
       <blockName>Procedimiento</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -9134,7 +9166,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+          <odePageId>page-mooc2h6e-he7ol274n</odePageId>
           <odeBlockId>20260502094802BKZFRM</odeBlockId>
           <odeIdeviceId>20260425133833181LG7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9181,7 +9213,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+      <odePageId>page-mooc2h6e-he7ol274n</odePageId>
       <odeBlockId>20260502094802XHSPYI</odeBlockId>
       <blockName>Ejemplo</blockName>
       <iconName>bidio</iconName>
@@ -9210,7 +9242,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+          <odePageId>page-mooc2h6e-he7ol274n</odePageId>
           <odeBlockId>20260502094802XHSPYI</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-r5rw06f0i</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9238,7 +9270,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+      <odePageId>page-mooc2h6e-he7ol274n</odePageId>
       <odeBlockId>20260502094802LKBJDU</odeBlockId>
       <blockName>Importante</blockName>
       <iconName>activity</iconName>
@@ -9267,7 +9299,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+          <odePageId>page-mooc2h6e-he7ol274n</odePageId>
           <odeBlockId>20260502094802LKBJDU</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-wxkm506p4</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9295,7 +9327,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+      <odePageId>page-mooc2h6e-he7ol274n</odePageId>
       <odeBlockId>20260502094802TVRQMZ</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -9324,7 +9356,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjt-nwhl72uty</odePageId>
+          <odePageId>page-mooc2h6e-he7ol274n</odePageId>
           <odeBlockId>20260502094802TVRQMZ</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-mtcsjfcj7</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -9392,8 +9424,8 @@ function operate(type) {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjv-rgopybps6</odePageId>
-  <odeParentPageId>page-moo7khjs-2xaepi53l</odeParentPageId>
+  <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
+  <odeParentPageId>page-mooc2h6b-cuhir9t8f</odeParentPageId>
   <pageName>1.3. Cálculo del rango de una matriz por el método de Gauss</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -9428,7 +9460,7 @@ function operate(type) {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjv-rgopybps6</odePageId>
+      <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
       <odeBlockId>20260502094802CMASML</odeBlockId>
       <blockName>Método de Gauss</blockName>
       <iconName>icon_definicion</iconName>
@@ -9457,7 +9489,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjv-rgopybps6</odePageId>
+          <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
           <odeBlockId>20260502094802CMASML</odeBlockId>
           <odeIdeviceId>20260425210033368B4D</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9517,7 +9549,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjv-rgopybps6</odePageId>
+      <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
       <odeBlockId>20260502094802YCYLDF</odeBlockId>
       <blockName>Ejercicio Resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -9546,7 +9578,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjv-rgopybps6</odePageId>
+          <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
           <odeBlockId>20260502094802YCYLDF</odeBlockId>
           <odeIdeviceId>20260425211355774EVV</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -9676,7 +9708,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjv-rgopybps6</odePageId>
+      <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
       <odeBlockId>20260502094802NEGKSG</odeBlockId>
       <blockName>Ejercicio guiado</blockName>
       <iconName>icon_practica2</iconName>
@@ -9705,7 +9737,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjv-rgopybps6</odePageId>
+          <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
           <odeBlockId>20260502094802NEGKSG</odeBlockId>
           <odeIdeviceId>202604291404004464MT</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10040,7 +10072,7 @@ function operate(type) {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjv-rgopybps6</odePageId>
+      <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
       <odeBlockId>20260502094802JCFUQU</odeBlockId>
       <blockName>Solucionador</blockName>
       <iconName>icon_casopractico</iconName>
@@ -10069,7 +10101,7 @@ function operate(type) {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjv-rgopybps6</odePageId>
+          <odePageId>page-mooc2h6f-0reurg9iz</odePageId>
           <odeBlockId>20260502094802JCFUQU</odeBlockId>
           <odeIdeviceId>20260425213814598A4B</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10390,8 +10422,8 @@ createInputs();
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjx-23oa0y1d6</odePageId>
-  <odeParentPageId>page-moo7khjr-e7dn5lm1f</odeParentPageId>
+  <odePageId>page-mooc2h6h-7u9p8rm52</odePageId>
+  <odeParentPageId>page-mooc2h6a-30njy2tix</odeParentPageId>
   <pageName>2. Inversa de una matriz</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -10426,7 +10458,7 @@ createInputs();
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjx-23oa0y1d6</odePageId>
+      <odePageId>page-mooc2h6h-7u9p8rm52</odePageId>
       <odeBlockId>20260502094802QTXOAM</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -10455,7 +10487,7 @@ createInputs();
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjx-23oa0y1d6</odePageId>
+          <odePageId>page-mooc2h6h-7u9p8rm52</odePageId>
           <odeBlockId>20260502094802QTXOAM</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmm-mq7vcs5ae</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10496,8 +10528,8 @@ createInputs();
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjx-obqa5kxsl</odePageId>
-  <odeParentPageId>page-moo7khjx-23oa0y1d6</odeParentPageId>
+  <odePageId>page-mooc2h6j-5k01xz5xr</odePageId>
+  <odeParentPageId>page-mooc2h6h-7u9p8rm52</odeParentPageId>
   <pageName>2.1. Inverso de un número</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -10532,7 +10564,7 @@ createInputs();
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjx-obqa5kxsl</odePageId>
+      <odePageId>page-mooc2h6j-5k01xz5xr</odePageId>
       <odeBlockId>20260502094802CNNVQU</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -10561,7 +10593,7 @@ createInputs();
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjx-obqa5kxsl</odePageId>
+          <odePageId>page-mooc2h6j-5k01xz5xr</odePageId>
           <odeBlockId>20260502094802CNNVQU</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-xd30mvp57</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10614,7 +10646,7 @@ createInputs();
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjx-obqa5kxsl</odePageId>
+      <odePageId>page-mooc2h6j-5k01xz5xr</odePageId>
       <odeBlockId>20260502094802AUVMGK</odeBlockId>
       <blockName>Pregunta</blockName>
       <iconName>icon_formulario</iconName>
@@ -10643,7 +10675,7 @@ createInputs();
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjx-obqa5kxsl</odePageId>
+          <odePageId>page-mooc2h6j-5k01xz5xr</odePageId>
           <odeBlockId>20260502094802AUVMGK</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-2h1pwhjh7</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -10711,8 +10743,8 @@ createInputs();
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjy-5xtumappf</odePageId>
-  <odeParentPageId>page-moo7khjx-23oa0y1d6</odeParentPageId>
+  <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
+  <odeParentPageId>page-mooc2h6h-7u9p8rm52</odeParentPageId>
   <pageName>2.2. Definición de inversa de una matriz</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -10747,7 +10779,7 @@ createInputs();
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjy-5xtumappf</odePageId>
+      <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
       <odeBlockId>20260502094802FWGZGQ</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -10776,7 +10808,7 @@ createInputs();
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjy-5xtumappf</odePageId>
+          <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
           <odeBlockId>20260502094802FWGZGQ</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-53duypt32</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10925,7 +10957,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjy-5xtumappf</odePageId>
+      <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
       <odeBlockId>20260502094802ULNKNC</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -10954,7 +10986,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjy-5xtumappf</odePageId>
+          <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
           <odeBlockId>20260502094802ULNKNC</odeBlockId>
           <odeIdeviceId>202604261430520571J0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -10984,7 +11016,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjy-5xtumappf</odePageId>
+      <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
       <odeBlockId>20260502094802YJIPRQ</odeBlockId>
       <blockName>Matriz inversa</blockName>
       <iconName>icon_definicion</iconName>
@@ -11013,7 +11045,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjy-5xtumappf</odePageId>
+          <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
           <odeBlockId>20260502094802YJIPRQ</odeBlockId>
           <odeIdeviceId>20260426143621915WRO</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11048,7 +11080,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjy-5xtumappf</odePageId>
+      <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
       <odeBlockId>20260502094802JIRKOX</odeBlockId>
       <blockName>Deducciones</blockName>
       <iconName>icon_practica</iconName>
@@ -11077,7 +11109,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjy-5xtumappf</odePageId>
+          <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
           <odeBlockId>20260502094802JIRKOX</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-pmc8hp7j6</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11109,7 +11141,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjy-5xtumappf</odePageId>
+      <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
       <odeBlockId>20260502094802WJFYMG</odeBlockId>
       <blockName>Pregunta</blockName>
       <iconName>icon_formulario</iconName>
@@ -11138,7 +11170,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjy-5xtumappf</odePageId>
+          <odePageId>page-mooc2h6l-9gb3hwdo2</odePageId>
           <odeBlockId>20260502094802WJFYMG</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-lcxhe223f</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -11206,8 +11238,8 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
-  <odeParentPageId>page-moo7khjx-23oa0y1d6</odeParentPageId>
+  <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
+  <odeParentPageId>page-mooc2h6h-7u9p8rm52</odeParentPageId>
   <pageName>2.3. Cálculo de la inversa de una matriz</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -11242,7 +11274,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802XWPAGW</odeBlockId>
       <blockName>Fórmula para la matriz inversa</blockName>
       <iconName>icon_definicion</iconName>
@@ -11271,7 +11303,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802XWPAGW</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmn-bxny8qa35</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11301,7 +11333,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802IFPGNS</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -11330,7 +11362,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802IFPGNS</odeBlockId>
           <odeIdeviceId>20260426150318779HY8</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11603,7 +11635,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802JQWGOX</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -11632,7 +11664,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802JQWGOX</odeBlockId>
           <odeIdeviceId>202604261748446618H9</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11664,7 +11696,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802RCUKEU</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -11693,7 +11725,7 @@ Si en el centro comercial las ventas de cada una de las prendas en cada uno de l
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802RCUKEU</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-c8avm3qrw</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11912,7 +11944,7 @@ function calcularInv() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802WSFRGB</odeBlockId>
       <blockName>Curiosidad </blockName>
       <iconName>think</iconName>
@@ -11941,7 +11973,7 @@ function calcularInv() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802WSFRGB</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-h5bvxewrq</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -11969,7 +12001,7 @@ function calcularInv() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802QIQVWO</odeBlockId>
       <blockName>Matriz ortogonal</blockName>
       <iconName>icon_definicion</iconName>
@@ -11998,7 +12030,7 @@ function calcularInv() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802QIQVWO</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-pghzpgrfl</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -12038,7 +12070,7 @@ function calcularInv() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+      <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
       <odeBlockId>20260502094802ULHTRW</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -12067,7 +12099,7 @@ function calcularInv() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khjz-a7sx4zeiw</odePageId>
+          <odePageId>page-mooc2h6m-kko4ypz8y</odePageId>
           <odeBlockId>20260502094802ULHTRW</odeBlockId>
           <odeIdeviceId>20260427133316638D31</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -12275,8 +12307,8 @@ function ejecutarSolucionador() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
-  <odeParentPageId>page-moo7khjx-23oa0y1d6</odeParentPageId>
+  <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
+  <odeParentPageId>page-mooc2h6h-7u9p8rm52</odeParentPageId>
   <pageName>2.4. Cálculo de la inversa de una matriz por el método de Gauss</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -12311,7 +12343,7 @@ function ejecutarSolucionador() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+      <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
       <odeBlockId>20260502094802KWACLG</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -12340,7 +12372,7 @@ function ejecutarSolucionador() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+          <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
           <odeBlockId>20260502094802KWACLG</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-duqoyrk83</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -12370,7 +12402,7 @@ function ejecutarSolucionador() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+      <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
       <odeBlockId>20260502094802QIJNCN</odeBlockId>
       <blockName>Ejemplo</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -12399,7 +12431,7 @@ function ejecutarSolucionador() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+          <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
           <odeBlockId>20260502094802QIJNCN</odeBlockId>
           <odeIdeviceId>20260427125617552E1Z</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -12499,7 +12531,7 @@ function ejecutarSolucionador() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+      <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
       <odeBlockId>20260502094802TBVBQJ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -12528,7 +12560,7 @@ function ejecutarSolucionador() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+          <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
           <odeBlockId>20260502094802TBVBQJ</odeBlockId>
           <odeIdeviceId>20260427131403704QB9</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -12575,7 +12607,7 @@ function ejecutarSolucionador() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+      <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
       <odeBlockId>20260502094802FIDAEL</odeBlockId>
       <blockName>Ejercicio guiado</blockName>
       <iconName>icon_practica2</iconName>
@@ -12604,7 +12636,7 @@ function ejecutarSolucionador() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+          <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
           <odeBlockId>20260502094802FIDAEL</odeBlockId>
           <odeIdeviceId>20260429142242834CGO</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -13092,7 +13124,7 @@ function ejecutarSolucionador() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+      <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
       <odeBlockId>20260502094802HGFIYC</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -13121,7 +13153,7 @@ function ejecutarSolucionador() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk1-hmvu3p30v</odePageId>
+          <odePageId>page-mooc2h6p-mbydvjah0</odePageId>
           <odeBlockId>20260502094802HGFIYC</odeBlockId>
           <odeIdeviceId>202604271339346094G1</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -13382,8 +13414,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khk3-h7movf2y0</odePageId>
-  <odeParentPageId>page-moo7khjr-e7dn5lm1f</odeParentPageId>
+  <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
+  <odeParentPageId>page-mooc2h6a-30njy2tix</odeParentPageId>
   <pageName>3. Ecuaciones matriciales</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -13418,7 +13450,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+      <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
       <odeBlockId>20260502094802WMPAJS</odeBlockId>
       <blockName>Ecuación matricial</blockName>
       <iconName>icon_definicion</iconName>
@@ -13447,7 +13479,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+          <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
           <odeBlockId>20260502094802WMPAJS</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-zks0s0kn7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -13485,7 +13517,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+      <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
       <odeBlockId>20260502094802HJLLCW</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -13514,7 +13546,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+          <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
           <odeBlockId>20260502094802HJLLCW</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-uu8dymgzm</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -13580,7 +13612,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+      <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
       <odeBlockId>20260502094802USOVJX</odeBlockId>
       <blockName>Ejemplos</blockName>
       <iconName>bidio</iconName>
@@ -13609,7 +13641,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+          <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
           <odeBlockId>20260502094802USOVJX</odeBlockId>
           <odeIdeviceId>idevice-mocvbkmo-igptkjqf3</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -13665,7 +13697,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+      <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
       <odeBlockId>20260502094802TPJKLO</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -13694,7 +13726,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+          <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
           <odeBlockId>20260502094802TPJKLO</odeBlockId>
           <odeIdeviceId>20260427152324429ZXU</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -13894,7 +13926,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+      <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
       <odeBlockId>20260502094802WIUUPB</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -13923,7 +13955,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk3-h7movf2y0</odePageId>
+          <odePageId>page-mooc2h6r-fzqefnxyx</odePageId>
           <odeBlockId>20260502094802WIUUPB</odeBlockId>
           <odeIdeviceId>20260427165751684S8U</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -13992,8 +14024,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khk4-63t0notvy</odePageId>
-  <odeParentPageId>page-moo7khjr-e7dn5lm1f</odeParentPageId>
+  <odePageId>page-mooc2h6t-95rukpy93</odePageId>
+  <odeParentPageId>page-mooc2h6a-30njy2tix</odeParentPageId>
   <pageName>4. Especial selectividad</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -14028,7 +14060,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802BXGERJ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -14057,7 +14089,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802BXGERJ</odeBlockId>
           <odeIdeviceId>20260427171411352E5T</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14112,7 +14144,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802KCRGWV</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -14141,7 +14173,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802KCRGWV</odeBlockId>
           <odeIdeviceId>20260427171809292KAC</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14216,7 +14248,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802JDADVT</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -14245,7 +14277,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802JDADVT</odeBlockId>
           <odeIdeviceId>20260427172443785A53</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -14310,7 +14342,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802DDYDFK</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -14339,7 +14371,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802DDYDFK</odeBlockId>
           <odeIdeviceId>20260427173806564KJT</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14408,7 +14440,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802NTYIDC</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -14437,7 +14469,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802NTYIDC</odeBlockId>
           <odeIdeviceId>20260427175914950C8P</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14520,7 +14552,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802AVYNRL</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -14549,7 +14581,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802AVYNRL</odeBlockId>
           <odeIdeviceId>20260427180652858JLU</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14631,7 +14663,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk4-63t0notvy</odePageId>
+      <odePageId>page-mooc2h6t-95rukpy93</odePageId>
       <odeBlockId>20260502094802ATZAWC</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_formulario</iconName>
@@ -14660,7 +14692,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk4-63t0notvy</odePageId>
+          <odePageId>page-mooc2h6t-95rukpy93</odePageId>
           <odeBlockId>20260502094802ATZAWC</odeBlockId>
           <odeIdeviceId>20260427181404019JLB</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -14728,8 +14760,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
-  <odeParentPageId>page-moo7khjr-e7dn5lm1f</odeParentPageId>
+  <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
+  <odeParentPageId>page-mooc2h6a-30njy2tix</odeParentPageId>
   <pageName>Resumen</pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -14764,7 +14796,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+      <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
       <odeBlockId>20260502094802QHYDTO</odeBlockId>
       <blockName>Rango de una matriz</blockName>
       <iconName>icon_definicion</iconName>
@@ -14793,7 +14825,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+          <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
           <odeBlockId>20260502094802QHYDTO</odeBlockId>
           <odeIdeviceId>20260425112219HTGEPZ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14837,7 +14869,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+      <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
       <odeBlockId>20260502094802TPUEYO</odeBlockId>
       <blockName>Método de Gauss</blockName>
       <iconName>icon_definicion</iconName>
@@ -14866,7 +14898,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+          <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
           <odeBlockId>20260502094802TPUEYO</odeBlockId>
           <odeIdeviceId>20260425201845SYPVSK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14905,7 +14937,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+      <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
       <odeBlockId>20260502094802OLRMTY</odeBlockId>
       <blockName>Matriz inversa</blockName>
       <iconName>icon_definicion</iconName>
@@ -14934,7 +14966,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+          <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
           <odeBlockId>20260502094802OLRMTY</odeBlockId>
           <odeIdeviceId>20260426125409MAWSJS</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -14969,7 +15001,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+      <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
       <odeBlockId>20260502094802IWIACB</odeBlockId>
       <blockName>Fórmula para la matriz inversa</blockName>
       <iconName>icon_definicion</iconName>
@@ -14998,7 +15030,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+          <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
           <odeBlockId>20260502094802IWIACB</odeBlockId>
           <odeIdeviceId>20260426160752PPBDMR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15028,7 +15060,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+      <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
       <odeBlockId>20260502094802ZGHIPT</odeBlockId>
       <blockName>Ecuación matricial</blockName>
       <iconName>icon_definicion</iconName>
@@ -15057,7 +15089,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7khk5-nng1rxrv2</odePageId>
+          <odePageId>page-mooc2h6v-hz2h78iom</odePageId>
           <odeBlockId>20260502094802ZGHIPT</odeBlockId>
           <odeIdeviceId>20260427123208UDSJOY</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15097,8 +15129,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcs-md9hlknkc</odePageId>
-  <odeParentPageId>54cd1d53-fa22-47ee-9536-710170fd0c97</odeParentPageId>
+  <odePageId>page-mooc2h6w-zn0v30snz</odePageId>
+  <odeParentPageId>page-mooc2h4z-5v4td36y1</odeParentPageId>
   <pageName>Sistemas de ecuaciones lineales</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -15133,7 +15165,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcs-md9hlknkc</odePageId>
+      <odePageId>page-mooc2h6w-zn0v30snz</odePageId>
       <odeBlockId>20260502085219RIXPLK</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -15162,7 +15194,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcs-md9hlknkc</odePageId>
+          <odePageId>page-mooc2h6w-zn0v30snz</odePageId>
           <odeBlockId>20260502085219RIXPLK</odeBlockId>
           <odeIdeviceId>idevice-mohji9db-dpppxh92l</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15225,8 +15257,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcs-5mc1cg0hw</odePageId>
-  <odeParentPageId>page-moo7krcs-md9hlknkc</odeParentPageId>
+  <odePageId>page-mooc2h6y-00p149azz</odePageId>
+  <odeParentPageId>page-mooc2h6w-zn0v30snz</odeParentPageId>
   <pageName>1. Introducción a las ecuaciones</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -15261,7 +15293,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcs-5mc1cg0hw</odePageId>
+      <odePageId>page-mooc2h6y-00p149azz</odePageId>
       <odeBlockId>20260502085219QPSHEH</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -15290,7 +15322,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcs-5mc1cg0hw</odePageId>
+          <odePageId>page-mooc2h6y-00p149azz</odePageId>
           <odeBlockId>20260502085219QPSHEH</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-xy6ogzkfp</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15322,8 +15354,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krct-hzwrv304y</odePageId>
-  <odeParentPageId>page-moo7krcs-5mc1cg0hw</odeParentPageId>
+  <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
+  <odeParentPageId>page-mooc2h6y-00p149azz</odeParentPageId>
   <pageName>1.1. Sistema de ecuaciones lineales</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -15358,7 +15390,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219MQLMNK</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -15387,7 +15419,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219MQLMNK</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-4o1gqrfmt</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15416,7 +15448,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219KAUCAX</odeBlockId>
       <blockName>Ecuación lineal. Solución</blockName>
       <iconName>icon_definicion</iconName>
@@ -15445,7 +15477,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219KAUCAX</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-zxqe4a8im</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15489,7 +15521,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219WZUSPL</odeBlockId>
       <blockName>Verdadero o falso</blockName>
       <iconName>icon_v_o_f</iconName>
@@ -15518,7 +15550,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219WZUSPL</odeBlockId>
           <odeIdeviceId>20260428131740701QFG</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -15584,7 +15616,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219XVKFQL</odeBlockId>
       <blockName>Sistema de ecuaciones. Solución</blockName>
       <iconName>icon_definicion</iconName>
@@ -15613,7 +15645,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219XVKFQL</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-l12srv50t</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15659,7 +15691,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219RPSJCZ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -15688,7 +15720,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219RPSJCZ</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-wvvfd6j8h</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15744,7 +15776,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219YAKCNE</odeBlockId>
       <blockName>Matrices asociadas a un sistema</blockName>
       <iconName>icon_definicion</iconName>
@@ -15773,7 +15805,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219YAKCNE</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-2lqcasct7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15806,7 +15838,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219PFACEV</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -15835,7 +15867,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219PFACEV</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-dedpmqqfa</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15871,7 +15903,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krct-hzwrv304y</odePageId>
+      <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
       <odeBlockId>20260502085219JMYHIO</odeBlockId>
       <blockName>Sistemas equivalentes</blockName>
       <iconName>icon_definicion</iconName>
@@ -15900,7 +15932,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krct-hzwrv304y</odePageId>
+          <odePageId>page-mooc2h6z-yko7ze8om</odePageId>
           <odeBlockId>20260502085219JMYHIO</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-8aqgher80</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -15937,8 +15969,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcu-vganlppqx</odePageId>
-  <odeParentPageId>page-moo7krcs-5mc1cg0hw</odeParentPageId>
+  <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
+  <odeParentPageId>page-mooc2h6y-00p149azz</odeParentPageId>
   <pageName>1.2. Clasificación de los sistemas de ecuaciones lineales.</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -15973,7 +16005,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219VXPQQP</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -16002,7 +16034,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219VXPQQP</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-6x9737q67</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16038,7 +16070,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219MGISNX</odeBlockId>
       <blockName>Sistemas compatibles e incompatibles</blockName>
       <iconName>icon_definicion</iconName>
@@ -16067,7 +16099,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219MGISNX</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-h3auxs4bg</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16104,7 +16136,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219INJHUK</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -16133,7 +16165,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219INJHUK</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-tpeusrzkj</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16164,7 +16196,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219DECLEX</odeBlockId>
       <blockName>Teorema de Rouché</blockName>
       <iconName>icon_definicion</iconName>
@@ -16193,7 +16225,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219DECLEX</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-hvrxwb0eb</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16235,7 +16267,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219LMCKRE</odeBlockId>
       <blockName>Ejemplos</blockName>
       <iconName>bidio</iconName>
@@ -16264,7 +16296,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219LMCKRE</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-u8cbjyb9n</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16292,7 +16324,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219RAIQDB</odeBlockId>
       <blockName>Test</blockName>
       <iconName>icon_formulario</iconName>
@@ -16321,7 +16353,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219RAIQDB</odeBlockId>
           <odeIdeviceId>20260430134155780QG9</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -16388,7 +16420,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcu-vganlppqx</odePageId>
+      <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
       <odeBlockId>20260502085219IDKGUG</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -16417,7 +16449,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcu-vganlppqx</odePageId>
+          <odePageId>page-mooc2h72-cd71vqx7x</odePageId>
           <odeBlockId>20260502085219IDKGUG</odeBlockId>
           <odeIdeviceId>20260430140907868WRX</odeIdeviceId>
           <odeIdeviceTypeName>complete</odeIdeviceTypeName>
@@ -16452,8 +16484,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcv-ix1xxqgg1</odePageId>
-  <odeParentPageId>page-moo7krcs-md9hlknkc</odeParentPageId>
+  <odePageId>page-mooc2h74-7irlrcrc7</odePageId>
+  <odeParentPageId>page-mooc2h6w-zn0v30snz</odeParentPageId>
   <pageName>2. Resolución de los sistemas de ecuaciones lineales</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -16488,7 +16520,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcv-ix1xxqgg1</odePageId>
+      <odePageId>page-mooc2h74-7irlrcrc7</odePageId>
       <odeBlockId>20260502085219EDIBMA</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -16517,7 +16549,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcv-ix1xxqgg1</odePageId>
+          <odePageId>page-mooc2h74-7irlrcrc7</odePageId>
           <odeBlockId>20260502085219EDIBMA</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-7jmx2m9ft</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16551,8 +16583,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
-  <odeParentPageId>page-moo7krcv-ix1xxqgg1</odeParentPageId>
+  <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
+  <odeParentPageId>page-mooc2h74-7irlrcrc7</odeParentPageId>
   <pageName>2.1. Métodos de resolución de sistemas de ecuaciones lineales</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -16587,7 +16619,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+      <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
       <odeBlockId>20260502085219XQTSDO</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -16616,7 +16648,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+          <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
           <odeBlockId>20260502085219XQTSDO</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-neeyvo5jv</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16652,7 +16684,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+      <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
       <odeBlockId>20260502085219EFVODK</odeBlockId>
       <blockName>Igualación, sustitución y reducción</blockName>
       <iconName>icon_definicion</iconName>
@@ -16681,7 +16713,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+          <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
           <odeBlockId>20260502085219EFVODK</odeBlockId>
           <odeIdeviceId>2026043016553968753Y</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16718,7 +16750,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+      <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
       <odeBlockId>20260502085219JWGULM</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -16747,7 +16779,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-zhu1qzcwo</odePageId>
+          <odePageId>page-mooc2h75-8bmxet1j9</odePageId>
           <odeBlockId>20260502085219JWGULM</odeBlockId>
           <odeIdeviceId>20260430171629770XRW</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -16823,8 +16855,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcw-72bs53gfj</odePageId>
-  <odeParentPageId>page-moo7krcv-ix1xxqgg1</odeParentPageId>
+  <odePageId>page-mooc2h76-akivntwt2</odePageId>
+  <odeParentPageId>page-mooc2h74-7irlrcrc7</odeParentPageId>
   <pageName>2.2. Método de Gauss</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -16859,7 +16891,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219SGIERO</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -16888,7 +16920,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219SGIERO</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-hkrknuizu</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16918,7 +16950,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219FQNOBP</odeBlockId>
       <blockName>&lt;br&gt;</blockName>
       <iconName>think</iconName>
@@ -16947,7 +16979,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219FQNOBP</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-obinvbj3a</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -16984,7 +17016,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219HFWRTQ</odeBlockId>
       <blockName>Método de Gauss para resolver sistemas</blockName>
       <iconName>icon_definicion</iconName>
@@ -17013,7 +17045,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219HFWRTQ</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-5rhi9fmsg</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -17067,7 +17099,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219NDUDHZ</odeBlockId>
       <blockName>Ejemplo</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -17096,7 +17128,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219NDUDHZ</odeBlockId>
           <odeIdeviceId>20260501142542841OMX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -17133,7 +17165,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219NXMLNF</odeBlockId>
       <blockName>Ejercicio guiado</blockName>
       <iconName>icon_practica2</iconName>
@@ -17162,7 +17194,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219NXMLNF</odeBlockId>
           <odeIdeviceId>20260501174721960A63</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -17670,7 +17702,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219ABYJNX</odeBlockId>
       <blockName>Solucionador</blockName>
       <iconName>icon_casopractico</iconName>
@@ -17699,7 +17731,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219ABYJNX</odeBlockId>
           <odeIdeviceId>2026050118220185828Z</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18111,7 +18143,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+      <odePageId>page-mooc2h76-akivntwt2</odePageId>
       <odeBlockId>20260502085219AUGHKX</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -18140,7 +18172,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcw-72bs53gfj</odePageId>
+          <odePageId>page-mooc2h76-akivntwt2</odePageId>
           <odeBlockId>20260502085219AUGHKX</odeBlockId>
           <odeIdeviceId>20260501184032938KXO</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18179,8 +18211,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
-  <odeParentPageId>page-moo7krcv-ix1xxqgg1</odeParentPageId>
+  <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
+  <odeParentPageId>page-mooc2h74-7irlrcrc7</odeParentPageId>
   <pageName>2.3. Regla de Cramer</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -18215,7 +18247,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219UGSFST</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -18244,7 +18276,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219UGSFST</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-s71e5j6d7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18279,7 +18311,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219UOEIZZ</odeBlockId>
       <blockName>Regla de Cramer. Sistemas 2x2.</blockName>
       <iconName>icon_definicion</iconName>
@@ -18308,7 +18340,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219UOEIZZ</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-ovv39kyrz</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18356,7 +18388,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219NNKGEW</odeBlockId>
       <blockName>Ejemplos</blockName>
       <iconName>bidio</iconName>
@@ -18385,7 +18417,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219NNKGEW</odeBlockId>
           <odeIdeviceId>idevice-mohji9dc-yfpps7hoh</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18415,7 +18447,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219THYUUS</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -18444,7 +18476,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219THYUUS</odeBlockId>
           <odeIdeviceId>20260501191013507B0N</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18476,7 +18508,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219IZOMCP</odeBlockId>
       <blockName>Regla de Cramer. Sistemas 3x3.</blockName>
       <iconName>icon_definicion</iconName>
@@ -18505,7 +18537,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219IZOMCP</odeBlockId>
           <odeIdeviceId>20260501191352055Q08</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18550,7 +18582,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219EMYYWC</odeBlockId>
       <blockName>Ejemplos</blockName>
       <iconName>bidio</iconName>
@@ -18579,7 +18611,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219EMYYWC</odeBlockId>
           <odeIdeviceId>idevice-mohji9dd-i9dcphd03</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18609,7 +18641,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+      <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
       <odeBlockId>20260502085219SMYWJY</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -18638,7 +18670,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krcz-q7elwlwkb</odePageId>
+          <odePageId>page-mooc2h79-9oi1fvzsx</odePageId>
           <odeBlockId>20260502085219SMYWJY</odeBlockId>
           <odeIdeviceId>202605011923176402GM</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18672,8 +18704,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krd0-rn75r8uu</odePageId>
-  <odeParentPageId>page-moo7krcs-md9hlknkc</odeParentPageId>
+  <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
+  <odeParentPageId>page-mooc2h6w-zn0v30snz</odeParentPageId>
   <pageName>3. Especial selectividad</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -18708,7 +18740,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219JNUHZD</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -18737,7 +18769,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219JNUHZD</odeBlockId>
           <odeIdeviceId>202605011925347082ZM</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18765,7 +18797,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219WDMQKF</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -18794,7 +18826,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219WDMQKF</odeBlockId>
           <odeIdeviceId>20260501192642326FP8</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18822,7 +18854,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219GCEMII</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -18851,7 +18883,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219GCEMII</odeBlockId>
           <odeIdeviceId>202605011928554286F1</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -18904,7 +18936,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219ZSNIMW</odeBlockId>
       <blockName>Completa</blockName>
       <iconName>icon_completa</iconName>
@@ -18933,7 +18965,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219ZSNIMW</odeBlockId>
           <odeIdeviceId>202605011935414758X0</odeIdeviceId>
           <odeIdeviceTypeName>form</odeIdeviceTypeName>
@@ -19003,7 +19035,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219ULUCGJ</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -19032,7 +19064,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219ULUCGJ</odeBlockId>
           <odeIdeviceId>20260501204044817G9C</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19113,7 +19145,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219UDFSDH</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -19142,7 +19174,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219UDFSDH</odeBlockId>
           <odeIdeviceId>20260501210739553NC7</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19216,7 +19248,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219DAERBD</odeBlockId>
       <blockName>Texto</blockName>
       <iconName></iconName>
@@ -19245,7 +19277,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219DAERBD</odeBlockId>
           <odeIdeviceId>202605012115564377TE</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19274,7 +19306,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219MSCZWS</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -19303,7 +19335,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219MSCZWS</odeBlockId>
           <odeIdeviceId>20260501212008942SEF</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19362,7 +19394,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219SWXBLU</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -19391,7 +19423,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219SWXBLU</odeBlockId>
           <odeIdeviceId>20260501213009530E4Z</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19470,7 +19502,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+      <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
       <odeBlockId>20260502085219CXVZSI</odeBlockId>
       <blockName>Ejercicio resuelto</blockName>
       <iconName>icon_ejercicioresuelto</iconName>
@@ -19499,7 +19531,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd0-rn75r8uu</odePageId>
+          <odePageId>page-mooc2h7b-5olc7ye1z</odePageId>
           <odeBlockId>20260502085219CXVZSI</odeBlockId>
           <odeIdeviceId>20260501214737527N4F</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19561,8 +19593,8 @@ function ejecutarGauss() {
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
-  <odeParentPageId>page-moo7krcs-md9hlknkc</odeParentPageId>
+  <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
+  <odeParentPageId>page-mooc2h6w-zn0v30snz</odeParentPageId>
   <pageName>Resumen</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -19597,7 +19629,7 @@ function ejecutarGauss() {
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219SOSYDF</odeBlockId>
       <blockName>Ecuación lineal. Solución</blockName>
       <iconName>icon_definicion</iconName>
@@ -19626,7 +19658,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219SOSYDF</odeBlockId>
           <odeIdeviceId>20260428111704PPIWMX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19669,7 +19701,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219YPLIKQ</odeBlockId>
       <blockName>Sistema de ecuaciones. Solución</blockName>
       <iconName>icon_definicion</iconName>
@@ -19698,7 +19730,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219YPLIKQ</odeBlockId>
           <odeIdeviceId>20260428114830VIUTSJ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19741,7 +19773,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219QFTZFR</odeBlockId>
       <blockName>Sistemas equivalentes</blockName>
       <iconName>icon_definicion</iconName>
@@ -19770,7 +19802,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219QFTZFR</odeBlockId>
           <odeIdeviceId>20260428122555BMOKCV</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19804,7 +19836,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219SKKRZL</odeBlockId>
       <blockName>Sistemas compatibles e incompatibles</blockName>
       <iconName>icon_definicion</iconName>
@@ -19833,7 +19865,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219SKKRZL</odeBlockId>
           <odeIdeviceId>20260430122727JDCXYJ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19870,7 +19902,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219KOEBJT</odeBlockId>
       <blockName>Teorema de Rouché</blockName>
       <iconName>icon_definicion</iconName>
@@ -19899,7 +19931,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219KOEBJT</odeBlockId>
           <odeIdeviceId>20260430123445TJKYNM</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -19941,7 +19973,7 @@ function ejecutarGauss() {
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+      <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
       <odeBlockId>20260502085219ABXYWU</odeBlockId>
       <blockName>Regla de Cramer. Sistemas 3x3.</blockName>
       <iconName>icon_definicion</iconName>
@@ -19970,7 +20002,7 @@ function ejecutarGauss() {
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-moo7krd2-rv0ivqotl</odePageId>
+          <odePageId>page-mooc2h7d-2nba8g5l4</odePageId>
           <odeBlockId>20260502085219ABXYWU</odeBlockId>
           <odeIdeviceId>20260501172120BSVBGX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
