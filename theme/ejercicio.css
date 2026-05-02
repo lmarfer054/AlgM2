@@ -1,0 +1,87 @@
+/* ==================================================
+   ESTILO DEFINITIVO (SIN FANTASMAS)
+   ================================================== */
+
+/* 1. LIMPIEZA DE FONDO (Matar amarillo) */
+[class*="ejercicio-custom"] .iDevice_buttons,
+[class*="ejercicio-custom"] .feedback,
+[class*="ejercicio-custom"] .iDevice_answer {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 2. EL CONTENEDOR (Nuestra caja bonita) */
+[class*="ejercicio-custom"] .feedbackbutton-wrapper {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 25px !important;
+    min-width: 240px !important;
+    height: 50px !important;
+    overflow: hidden !important; /* Vital para que nada salga fuera */
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+    margin: 15px 0 !important;
+    cursor: pointer !important; /* Manita en todo el botón */
+}
+
+/* 3. EL BOTÓN REAL DE EXE (FUERZA BRUTA) */
+/* Seleccionamos cualquier input dentro del wrapper */
+[class*="ejercicio-custom"] .feedbackbutton-wrapper input {
+    display: block !important;
+    position: absolute !important; /* Lo sacamos del flujo normal */
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important; /* Ocupa TODO el ancho del padre */
+    height: 100% !important; /* Ocupa TODO el alto del padre */
+    opacity: 0 !important;   /* Totalmente invisible */
+    z-index: 50 !important;  /* Siempre encima de todo */
+    cursor: pointer !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important; /* Evita que eXe lo mueva */
+}
+
+/* 4. NUESTRO TEXTO (Debajo del botón invisible) */
+[class*="ejercicio-custom"] .custom-text-overlay {
+    position: relative !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+    z-index: 10 !important; /* Debajo del input (z-index 50) */
+    pointer-events: none !important; /* El clic pasa a través de él hacia el input */
+    white-space: nowrap !important;
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* ICONOS */
+[class*="ejercicio-custom"] .custom-text-overlay::before {
+    content: "" !important;
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px !important;
+    background-image: url('img/abrir.png') !important; 
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+/* 5. ESTADO MORADO (SOLUCIÓN ABIERTA) */
+[class*="ejercicio-custom"].solucion-abierta .feedbackbutton-wrapper {
+    /* Tu morado corporativo (#7A297B) con un degradado sutil */
+    background: linear-gradient(135deg, #7A297B 0%, #5c1f5d 100%) !important;
+}
+
+[class*="ejercicio-custom"].solucion-abierta .custom-text-overlay::before {
+    background-image: url('img/cerrar.png') !important;
+}

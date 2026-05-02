@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq75-f1j5sw76r">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Matrices | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq75-f1j5sw76r" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/matrices.html" class="active daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq75-f1j5sw76r" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">Matrices</h1></div>
+</header><div id="page-content-page-moo7jq75-f1j5sw76r" class="page-content">
+<article id="20260224025920ZHEHDJ" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609ILKWBT" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609ILKWBT&quot;}">
+<div class="exe-text-template">
+    <table align="center" border="0" style="width: 90%; height: 260px; border-style: solid;">
+<tbody>
+<tr>
+<td rowspan="4" style="border: 0px solid #ffffff;">
+<p align="center"><img alt="Logo IEDA" src="../content/resources/20260223202609ILKWBT/MATEMTICAS__V.png" title="Logo IEDA" width="189" height="187" /></p>
+</td>
+<td style="border: 0px solid #ffffff;"></td>
+</tr>
+<tr>
+<td style="border: 0px solid #ffffff;">
+<h2 align="center"><span style="color: #336633;"><span style="color: #007632;">2º de Bachillerato</span><br /></span></h2>
+</td>
+</tr>
+<tr>
+<td style="border: 0px solid #ffffff;">
+<h2 align="center"><span style="font-size: xx-large; line-height: 100%; color: #007632;"><strong><span style="font-size: xx-large;"><strong>Matemáticas II<br /></strong></span></strong></span></h2>
+</td>
+</tr>
+<tr>
+<td style="border: 0px solid #ffffff;">
+<h2 align="center"><span style="font-size: x-large; color: #007632;"><strong>Contenidos<br /></strong></span></h2>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border: 0px solid #ffffff;"></td>
+</tr>
+<tr>
+<td colspan="2" style="border: 0px solid #ffffff;">
+<h2 align="center"><span style="color: #007632;">Álgebra lineal: </span></h2>
+<h2 align="center"><span style="color: #007632;">Matrices<br /></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/1-introduccion-a-las-matrices.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

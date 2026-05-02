@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq7a-tmz9us34b">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.2. Tipos de matrices | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq7a-tmz9us34b" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li class="active"> <a href="../html/12-tipos-de-matrices.html" class="active no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq7a-tmz9us34b" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.2. Tipos de matrices</h1></div>
+</header><div id="page-content-page-moo7jq7a-tmz9us34b" class="page-content">
+<article id="20260224025920KPIWMY" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609JROLSL" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609JROLSL&quot;}">
+<div class="exe-text-template">
+    <table align="right" border="1">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+<p>Quizás recuerdes que el curso pasado trabajamos con los vectores; en particular con los de dos elementos \(\vec{u}=(3,4)\) . Si te fijas podemos considerar que ese vector (3 4) es un caso particular de matriz en la que sólo hay una fila. En este apartado vamos a ver  distintos tipos de matrices que por alguna característica particular reciben un nombre específico.</p>
+<p> <img src="../content/resources/flecha.png" width="264" height="264" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>En la siguiente presentación puedes ver las definiciones, ilustradas con ejemplos, de diversos tipos de matrices. Si pulsas en la flecha de avance de la parte inferior izquierda podrás ver los tipos que hay.</p>
+<p><span style="font-size: xx-small;"> </span></p>
+</div>
+</div>
+</div>
+</article><article id="block-1771966178573-xh2e695ez" class="box sin-nada">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1771966178572-mox3lk0fa" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1771966178572-mox3lk0fa&quot;}">
+<div class="exe-text-template">
+    <div class="exe-fx exe-carousel">
+<h2><br /></h2>
+<p><img src="../content/resources/m01.png" width="2048" height="1140" alt="" /><br /></p>
+<h2><br /></h2>
+<p><img src="../content/resources/m02.png" width="2048" height="1107" alt="" /><br /></p>
+<h2></h2>
+<p><img src="../content/resources/m03.png" width="2048" height="1112" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m04.png" width="2048" height="1103" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m05.png" width="2048" height="1107" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m06.png" width="2048" height="1094" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m07.png" width="2048" height="1110" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m08.png" width="2048" height="1098" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m09.png" width="2048" height="1099" alt="" /></p>
+<h2></h2>
+<p><img src="../content/resources/m10.png" width="2048" height="1105" alt="" /></p>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</article><article id="20260224025920EYJXLP" class="box caja-morada">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="">
+</div>
+<h1 class="box-title">Verdadero o Falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609VVVZJI" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;20260223202609VVVZJI&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;table border=\&quot;1\&quot; align=\&quot;right\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;border: 1px solid #ffffff;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;En muchos mapas de carreteras aparece la información sobre las distancias entre las capitales de provincias o de países. A partir de esa información podemos construir una matriz de distancias como la siguiente, en la que, para no repetir datos, sólo se escribe la distancia de una ciudad a otra, no de la otra a la una, nos explicamos, si escribimos la distancia de Barcelona a Madrid, no se escribe también la de Madrid a Barcelona, sino que se escribe 0.&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;../content/resources/putabla.png\&quot; width=\&quot;312\&quot; height=\&quot;211\&quot; alt=\&quot;\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;/p&gt;\n&lt;p&gt;Aquí tienes la matriz de distancias que hemos construido con los kilómetros que hay entre las capitales de Andalucía Oriental. A partir de ellas responde si son ciertas o falsas las siguientes afirmaciones:&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Antes de guardar la puntuación comience la partida.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;1) La matriz anterior es una matriz cuadrada.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Sí porque tiene el mismo número de filas que de columnas.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;2) Los elementos de la diagonal principal son todos ceros.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Es cierto porque todos los elementos \\(a_{ii}\\) son nulos.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;3) Es una matriz triangular superior.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No, más bien es triangular inferior.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;4) Todos los términos \\(a_{ij}\\) donde \\(i&lt;j\\) son nulos.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Es cierto ya que esos términos son precisamente los que están por encima de la diagonal principal.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;5) El término \\(a_{24}\\) vale \\(129\\).&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No, quien vale \\(129\\) es el término \\(a_{42}\\)&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;20260223202609VVVZJI&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="20260223202609VVVZJI" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><table border="1" align="right">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+<p>En muchos mapas de carreteras aparece la información sobre las distancias entre las capitales de provincias o de países. A partir de esa información podemos construir una matriz de distancias como la siguiente, en la que, para no repetir datos, sólo se escribe la distancia de una ciudad a otra, no de la otra a la una, nos explicamos, si escribimos la distancia de Barcelona a Madrid, no se escribe también la de Madrid a Barcelona, sino que se escribe 0.</p>
+<p><img src="../content/resources/putabla.png" width="312" height="211" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Aquí tienes la matriz de distancias que hemos construido con los kilómetros que hay entre las capitales de Andalucía Oriental. A partir de ellas responde si son ciertas o falsas las siguientes afirmaciones:</p></div>
+        <div class="TOFP-MainContainer" data-instance="20260223202609VVVZJI" id="tofPMainContainer-20260223202609VVVZJI">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-20260223202609VVVZJI">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-20260223202609VVVZJI" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-20260223202609VVVZJI">
+                    <div class="TOFP-Message" id="tofPMessage-20260223202609VVVZJI"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-20260223202609VVVZJI">
+                    <button  id="tofPStartGame-20260223202609VVVZJI" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-20260223202609VVVZJI">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-20260223202609VVVZJI">
+                    <button id="tofPCheckTest-20260223202609VVVZJI" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-20260223202609VVVZJI" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-20260223202609VVVZJI" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-1776857891154-fyt7dgoxg" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Matriz transpuesta</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1776857891153-ljyx3vphd" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1776857891153-ljyx3vphd&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="15" style="width: 99.9673%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9673%;">
+<p style="text-align: justify;">La <span style="font-weight: bolder;">matriz transpuesta</span> (denotada generalmente como \(A^T\) o \(A^t\) ) es el resultado de intercambiar ordenadamente las filas por las columnas de una matriz original.</p>
+<p>Está dada por:</p>
+<p>\[(A^t)_{ij} = A_{ji}, \quad 1 \leq i \leq n, \quad 1 \leq j \leq m\]</p>
+<p>En donde el elemento \(a_{ji}\) de la matriz original \(A\) se convertirá en el elemento \(a_{ij}\) de la matriz traspuesta \(A^t\).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Si la matriz original tiene dimensiones \(m \times n\), la transpuesta tendrá dimensiones \(n \times m\).</p>
+<p style="text-align: justify;">Por ejemplo, la primera fila de \(A\) se convierte en la primera columna de \(A^T\). <span style="text-align: start;">La fila \( i \) de la matriz original se convierte en la columna \( i \) de la transpuesta.</span></p>
+<h3><br /></h3>
+<p>Dada la matriz \( A \):</p>
+<p>\[ A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix} \]</p>
+<p>Su transpuesta \( A^T \) es:</p>
+<p>\[ A^T = \begin{pmatrix} 1 & 3 & 5 \\ 2 & 4 & 6 \end{pmatrix} \]</p>
+<hr />
+<table border="0" cellpadding="15" style="width: 99.9673%; background-color: #c2e0f4;">
+<tbody>
+<tr>
+<td style="width: 99.9673%;">
+<p><span style="font-weight: bolder; color: #0066cc;">Propiedades Fundamentales</span></p>
+<p>Sean \( A \) y \( B \) matrices y \( k \) un escalar:</p>
+<ol>
+<li><span style="font-weight: bolder;">Involutiva:</span> \( (A^T)^T = A \)</li>
+<li><span style="font-weight: bolder;">Suma:</span> \( (A + B)^T = A^T + B^T \)</li>
+<li><span style="font-weight: bolder;">Producto por escalar:</span> \( (k \cdot A)^T = k \cdot A^T \)</li>
+<li><span style="font-weight: bolder;">Producto:</span> \( (A \cdot B)^T = B^T \cdot A^T \) (el orden se invierte).</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<table border="0" cellpadding="15" style="width: 99.9673%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9673%;">
+<p><span style="color: #007632;"><strong>Tipos de matrices según su transpuesta</strong></span></p>
+<ul>
+<li><span style="font-weight: bolder;">Matriz Simétrica:</span> Si \( A = A^T \).</li>
+<li><span style="font-weight: bolder;">Matriz Antisimétrica:</span> Si \( A^T = -A \).</li>
+<li><span style="font-weight: bolder;">Matriz Ortogonal:</span> Si \( A^T = A^{-1} \).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="20260224025920NCWZSZ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260224013124461HXF" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260224013124461HXF&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Escribe la matriz traspuesta de la que aparece en el ejercicio anterior.</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>Hallar la traspuesta consiste en cambiar filas por columnas, por lo que obtendríamos:</p>
+<div style="display: flex; justify-content: center; font-family: Arial, sans-serif;"><br /></div>
+<div style="display: flex; justify-content: center; font-family: Arial, sans-serif;">\( \left( \begin{array}{cccc} 0 & 166 & 228 & 219 \\ 0 & 0 & 99 & 129 \\ 0 & 0 & 0 & 209 \\ 0 & 0 & 0 & 0 \end{array} \right) \)</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260224025920BHSYAJ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260224033113033FV4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260224033113033FV4&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Escribe una matriz simétrica sabiendo que su primera fila está formada por los números 1, 2 y 6, su segunda columna tiene los elementos 2, 3, -5 y el término \( a_{33} \) es 8.</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div class="exe-layout-2-cols exe-clear" style="font-family: Arial, sans-serif; color: #333;">
+<div style="background-color: #f1f8e9; padding: 15px; border-left: 5px solid #1b5e20; margin-bottom: 20px; border-radius: 4px;">
+<h3 style="margin: 0; color: #1b5e20;"><span style="background-color: #e8f5e9; color: #333333; font-family: Arial, sans-serif; font-size: 16px;">El objetivo es construir una matriz \( A \) de orden 3 que cumpla la condición de simetría: </span><strong style="background-color: #e8f5e9; color: #333333; font-family: Arial, sans-serif; font-size: 16px;">\( A = A^t \)</strong><span style="background-color: #e8f5e9; color: #333333; font-family: Arial, sans-serif; font-size: 16px;"> (es decir, \( a_{ij} = a_{ji} \)).</span></h3>
+</div>
+<div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<h4 style="border-bottom: 2px solid #4caf50; padding-bottom: 10px; color: #2e7d32;">1. Colocación de los datos iniciales</h4>
+<p>Empezamos colocando la información directa que nos da el enunciado en nuestra matriz genérica:</p>
+<ul style="list-style-type: disc; margin-left: 20px;">
+<li><strong>Primera fila:</strong> \( a_{11} = 1 \), \( a_{12} = 2 \), \( a_{13} = 6 \)</li>
+<li><strong>Segunda columna:</strong> \( a_{12} = 2 \) (vemos que coincide), \( a_{22} = 3 \), \( a_{32} = -5 \)</li>
+<li><strong>Término \( a_{33} \):</strong> \( a_{33} = 8 \)</li>
+</ul>
+<p>Con estos datos, la matriz tiene esta estructura preliminar:</p>
+<p style="text-align: center; font-size: 1.1em;">\( A = \left( \begin{array}{rrr} 1 & 2 & 6 \\ \dots & 3 & \dots \\ \dots & -5 & 8 \end{array} \right) \)</p>
+<h4 style="border-bottom: 2px solid #4caf50; padding-bottom: 10px; color: #2e7d32; margin-top: 30px;">2. Aplicación de la simetría</h4>
+<p>Utilizamos la propiedad fundamental de las matrices simétricas (\( a_{ij} = a_{ji} \)) para rellenar los huecos restantes:</p>
+<ul style="list-style-type: none; padding-left: 10px;">
+<li style="margin-bottom: 8px;">🔹 El elemento \( a_{21} \) debe ser igual a \( a_{12} \), por tanto <strong>\( a_{21} = 2 \)</strong>.</li>
+<li style="margin-bottom: 8px;">🔹 El elemento \( a_{31} \) debe ser igual a \( a_{13} \), por tanto <strong>\( a_{31} = 6 \)</strong>.</li>
+<li style="margin-bottom: 8px;">🔹 El elemento \( a_{23} \) debe ser igual a \( a_{32} \), por tanto <strong>\( a_{23} = -5 \)</strong>.</li>
+</ul>
+<h4 style="border-bottom: 2px solid #4caf50; padding-bottom: 10px; color: #2e7d32; margin-top: 30px;">3. Matriz final</h4>
+<p>Sustituyendo todos los valores, obtenemos el resultado perfectamente alineado:</p>
+<p style="text-align: center; font-weight: bold; font-size: 1.3em; color: #1b5e20; margin-top: 20px; padding: 15px; border: 2px solid #a5d6a7; border-radius: 5px; background-color: #f1f8e9;">\( A = \left( \begin{array}{rrr} 1 & 2 & 6 \\ 2 & 3 & -5 \\ 6 & -5 & 8 \end{array} \right) \)</p>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/11-concepto-de-matriz.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/13-concepto-de-submatriz.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

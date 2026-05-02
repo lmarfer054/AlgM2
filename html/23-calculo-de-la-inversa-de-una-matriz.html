@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7khjz-a7sx4zeiw">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.3. Cálculo de la inversa de una matriz | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7khjz-a7sx4zeiw" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li class="active"> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="active no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7khjz-a7sx4zeiw" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.3. Cálculo de la inversa de una matriz</h1></div>
+</header><div id="page-content-page-moo7khjz-a7sx4zeiw" class="page-content">
+<article id="20260502094802XWPAGW" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Fórmula para la matriz inversa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmn-bxny8qa35" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmn-bxny8qa35&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Dada una matriz \(A\), la fórmula por la que podemos calcular la inversa de la matriz, si tiene determinante distinto de cero, es:</p>
+<h4><span style="color: #007932;">\[A^{-1}=\dfrac{1}{|A|}(Adj(A))^t\]&nbsp;</span></h4>
+<p>Es decir, la inversa de una matriz es igual a la matriz traspuesta de su adjunta multiplicada por el inverso del determinante</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802IFPGNS" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260426150318779HY8" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260426150318779HY8&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Vamos a calcular la matriz inversa de \[<br>A = \begin{pmatrix}&nbsp;<br>a_{11} & a_{12} & a_{13} \\&nbsp;<br>a_{21} & a_{22} & a_{23} \\&nbsp;<br>a_{31} & a_{32} & a_{33}&nbsp;<br>\end{pmatrix} =&nbsp;<br>\begin{pmatrix}&nbsp;<br>1 & 0 & 1 \\&nbsp;<br>2 & 4 & 1 \\&nbsp;<br>-2 & 0 & 7&nbsp;<br>\end{pmatrix}<br>\]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .matrix-display { border-collapse: collapse; margin: 5px auto; font-size: 0.9em; }
+    .matrix-display td { width: 25px; height: 25px; text-align: center; border: 1px solid #ccc; padding: 2px; }
+    .shaded { background-color: #e0e0e0; color: #888; }
+    .calc-container { display: flex; align-items: center; justify-content: center; gap: 15px; }
+    .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .main-table td { padding: 20px; border: 1px solid #eee; text-align: center; }
+</style>
+<p>Para calcular el determinante de la matriz A lo podemos hacer desarrollando por adjuntos por cualquiera de las filas o columnas.</p>
+<p>Calculamos todos los menores para calcular la matriz adjunta. Se sombrean la fila y columna eliminadas en cada caso:</p>
+<table class="main-table">
+<tbody>
+<tr>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td class="shaded">1</td>
+<td class="shaded">0</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td class="shaded">2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">-2</td>
+<td>0</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{11}=(-1)^2 \begin{vmatrix} \begin{array}{rr} 4 & 1 \\ 0 & 7 \end{array} \end{vmatrix} = 28 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td class="shaded">1</td>
+<td class="shaded">0</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="shaded">4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>-2</td>
+<td class="shaded">0</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{12}=(-1)^3 \begin{vmatrix} \begin{array}{rr} 2 & 1 \\ -2 & 7 \end{array} \end{vmatrix} = -16 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td class="shaded">1</td>
+<td class="shaded">0</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>0</td>
+<td class="shaded">7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{13}=(-1)^4 \begin{vmatrix} \begin{array}{rr} 2 & 4 \\ -2 & 0 \end{array} \end{vmatrix} = 8 \)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td class="shaded">1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">2</td>
+<td class="shaded">4</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td class="shaded">-2</td>
+<td>0</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{21}=(-1)^3 \begin{vmatrix} \begin{array}{rr} 0 & 1 \\ 0 & 7 \end{array} \end{vmatrix} = 0 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td>1</td>
+<td class="shaded">0</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">2</td>
+<td class="shaded">4</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>-2</td>
+<td class="shaded">0</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{22}=(-1)^4 \begin{vmatrix} \begin{array}{rr} 1 & 1 \\ -2 & 7 \end{array} \end{vmatrix} = 9 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td class="shaded">2</td>
+<td class="shaded">4</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>0</td>
+<td class="shaded">7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{23}=(-1)^5 \begin{vmatrix} \begin{array}{rr} 1 & 0 \\ -2 & 0 \end{array} \end{vmatrix} = 0 \)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td class="shaded">1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">-2</td>
+<td class="shaded">0</td>
+<td class="shaded">7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{31}=(-1)^4 \begin{vmatrix} \begin{array}{rr} 0 & 1 \\ 4 & 1 \end{array} \end{vmatrix} = -4 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td>1</td>
+<td class="shaded">0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="shaded">4</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="shaded">-2</td>
+<td class="shaded">0</td>
+<td class="shaded">7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{32}=(-1)^5 \begin{vmatrix} \begin{array}{rr} 1 & 1 \\ 2 & 1 \end{array} \end{vmatrix} = 1 \)</div>
+</div>
+</td>
+<td>
+<div class="calc-container">
+<table class="matrix-display">
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td class="shaded">1</td>
+</tr>
+<tr>
+<td class="shaded">-2</td>
+<td class="shaded">0</td>
+<td class="shaded">7</td>
+</tr>
+</tbody>
+</table>
+<div>\( A_{33}=(-1)^6 \begin{vmatrix} \begin{array}{rr} 1 & 0 \\ 2 & 4 \end{array} \end{vmatrix} = 4 \)</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>De esta forma tenemos que la matriz adjunta es:</p>
+<p>\[ Adj(A) = \left( \begin{array}{rrr} 28 & -16 & 8 \\ 0 & 9 & 0 \\ -4 & 1 & 4 \end{array} \right) \]</p>
+<p>Así, calculamos la inversa utilizando la traspuesta de la adjunta y el determinante \( |A|=36 \):</p>
+<p>\[ A^{-1} = \frac{1}{|A|} Adj(A)^t = \frac{1}{36} \left( \begin{array}{rrr} 28 & 0 & -4 \\ -16 & 9 & 1 \\ 8 & 0 & 4 \end{array} \right) \]</p>
+<p>Por tanto, simplificando las fracciones:</p>
+<p>\[ A^{-1} = \left( \begin{array}{rrr} \dfrac{28}{36} & 0 & \dfrac{-4}{36} \\ \dfrac{-16}{36} & \dfrac{9}{36} & \dfrac{1}{36} \\ \dfrac{8}{36} & 0 & \dfrac{4}{36} \end{array} \right) = \left( \begin{array}{rrr} \dfrac{7}{9} & 0 & -\dfrac{1}{9} \\ -\dfrac{4}{9} & \dfrac{1}{4} & \dfrac{1}{36} \\ \dfrac{2}{9} & 0 & \dfrac{1}{9} \end{array} \right) \]</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802JQWGOX" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202604261748446618H9" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202604261748446618H9&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p><span>Comprueba que en el ejercicio anterior, al multiplicar \(A\) </span><span>por \(A^{-1}\) </span><span>resulta lo mismo que multiplicar \(A^{-1}\)</span><span>&nbsp;por \(A\)</span><span>&nbsp;y el resultado es la matriz identidad.</span></p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>\begin{aligned}<br />A \cdot A^{-1} &= <br />\begin{pmatrix} <br />1 & 0 & 1 \\ <br />2 & 4 & 1 \\ <br />-2 & 0 & 7 <br />\end{pmatrix}<br />\begin{pmatrix} <br />\dfrac{7}{9} & 0 & -\dfrac{1}{9} \\ <br />-\dfrac{4}{9} & \dfrac{1}{4} & \dfrac{1}{36} \\ <br />\dfrac{2}{9} & 0 & \dfrac{1}{9} <br />\end{pmatrix} = <br />\begin{pmatrix} <br />\dfrac{7}{9} + \dfrac{2}{9} & 0 & -\dfrac{1}{9} + \dfrac{1}{9} \\ <br />\dfrac{14}{9} - \dfrac{16}{9} + \dfrac{2}{9} & \dfrac{4}{4} & -\dfrac{2}{9} + \dfrac{4}{36} + \dfrac{1}{9} \\ <br />-\dfrac{14}{9} + \dfrac{14}{9} & 0 & \dfrac{2}{9} + \dfrac{7}{9} <br />\end{pmatrix} = <br />\begin{pmatrix} <br />1 & 0 & 0 \\ <br />0 & 1 & 0 \\ <br />0 & 0 & 1 <br />\end{pmatrix} \\[20pt]<br />A^{-1} \cdot A &= <br />\begin{pmatrix} <br />\dfrac{7}{9} & 0 & -\dfrac{1}{9} \\ <br />-\dfrac{4}{9} & \dfrac{1}{4} & \dfrac{1}{36} \\ <br />\dfrac{2}{9} & 0 & \dfrac{1}{9} <br />\end{pmatrix}<br />\begin{pmatrix} <br />1 & 0 & 1 \\ <br />2 & 4 & 1 \\ <br />-2 & 0 & 7 <br />\end{pmatrix} = <br />\begin{pmatrix} <br />\dfrac{7}{9} + \dfrac{2}{9} & 0 & \dfrac{7}{9} - \dfrac{7}{9} \\ <br />-\dfrac{4}{9} + \dfrac{2}{4} - \dfrac{2}{36} & \dfrac{4}{4} & -\dfrac{4}{9} + \dfrac{1}{4} + \dfrac{7}{36} \\ <br />\dfrac{2}{9} - \dfrac{2}{9} & 0 & \dfrac{2}{9} + \dfrac{7}{9} <br />\end{pmatrix} = <br />\begin{pmatrix} <br />1 & 0 & 0 \\ <br />0 & 1 & 0 \\ <br />0 & 0 & 1 <br />\end{pmatrix}<br />\end{aligned}<br /></p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802RCUKEU" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmo-c8avm3qrw" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmo-c8avm3qrw&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><style>
+    .calc-container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; margin: 10px 0; }
+    .instrucciones { background-color: #f8f9fa; border-left: 5px solid #0056b3; padding: 15px 20px; border-radius: 4px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .instrucciones p { margin-top: 0; font-weight: bold; font-size: 1.1em; color: #0056b3; }
+    .instrucciones ol { margin-bottom: 0; padding-left: 20px; }
+    .instrucciones li { margin-bottom: 8px; line-height: 1.5; text-align: justify; }
+    
+    .matrices-wrapper { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-bottom: 30px; }
+    .matriz-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; min-width: 180px; }
+    .matriz-box h4 { margin: 0 0 15px 0; color: #444; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    .matriz-grid { display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 5px; position: relative; padding: 0 10px; }
+    .matriz-grid::before, .matriz-grid::after { content: ""; position: absolute; top: -5px; bottom: -5px; width: 10px; border: 2px solid #333; }
+    .matriz-grid::before { left: 0; border-right: none; }
+    .matriz-grid::after { right: 0; border-left: none; }
+    
+    .matriz-box input[type="text"] { width: 55px; padding: 5px; text-align: center; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+    .matriz-box input[type="text"]:focus { border-color: #0056b3; outline: none; }
+    
+    .controles-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; background: #f0f4f8; padding: 20px; border-radius: 8px; border: 1px solid #cce0ff; }
+    .control-group { display: flex; align-items: center; gap: 10px; }
+    
+    .btn-action { background-color: #008f39; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.2s; }
+    .btn-action:hover { background-color: #006629; }
+    .btn-borrar { background-color: #dc3545; margin-top: 15px; }
+    .btn-borrar:hover { background-color: #c82333; }
+    
+    .resultado-det { width: 70px !important; background-color: #e9ecef; font-weight: bold; }
+</style>
+<div class="calc-container">
+<div class="instrucciones">
+<p>Practica</p>
+<ol>
+<li>Introduce la matriz A de la que quieras calcular su matriz inversa.</li>
+<li>Recuerda que ahora debes calcular el determinante de la matriz que has introducido, ya que solamente se puede calcular la matriz inversa si el determinante es distinto de cero. Cuando lo hayas calculado, pulsa sobre el botón <b>Det(A)</b> para comprobar que lo has hecho bien.</li>
+<li>Ahora debes calcular la matriz adjunta de la matriz A. Cuando lo hayas hecho, pulsa sobre el botón <b>Adj(A)</b> y comprueba si la has calculado bien.</li>
+<li>Con los datos que tienes, puedes calcular la matriz inversa. Una vez que la hayas calculado, pulsa sobre el botón <b>Inv(A)</b> y comprueba si te ha salido correctamente.</li>
+</ol>
+</div>
+<div class="matrices-wrapper">
+<div class="matriz-box">
+<h4>Matriz <b>A</b></h4>
+<form id="formA" onsubmit="return false;">
+<div class="matriz-grid"><input name="a11" type="text"> <input name="a12" type="text"> <input name="a13" type="text"> <input name="a21" type="text"> <input name="a22" type="text"> <input name="a23" type="text"> <input name="a31" type="text"> <input name="a32" type="text"> <input name="a33" type="text"></div>
+<div><button class="btn-action btn-borrar" type="button" onclick="limpiarTodo()">Borrar Todo</button></div>
+</form></div>
+<div class="matriz-box">
+<h4>Adjunta de <b>A</b></h4>
+<form id="formB" onsubmit="return false;">
+<div class="matriz-grid"><input name="a11" type="text" readonly="readonly"> <input name="a12" type="text" readonly="readonly"> <input name="a13" type="text" readonly="readonly"> <input name="a21" type="text" readonly="readonly"> <input name="a22" type="text" readonly="readonly"> <input name="a23" type="text" readonly="readonly"> <input name="a31" type="text" readonly="readonly"> <input name="a32" type="text" readonly="readonly"> <input name="a33" type="text" readonly="readonly"></div>
+</form></div>
+<div class="matriz-box">
+<h4>Inversa de <b>A</b></h4>
+<form id="formC" onsubmit="return false;">
+<div class="matriz-grid"><input name="a11" type="text" readonly="readonly"> <input name="a12" type="text" readonly="readonly"> <input name="a13" type="text" readonly="readonly"> <input name="a21" type="text" readonly="readonly"> <input name="a22" type="text" readonly="readonly"> <input name="a23" type="text" readonly="readonly"> <input name="a31" type="text" readonly="readonly"> <input name="a32" type="text" readonly="readonly"> <input name="a33" type="text" readonly="readonly"></div>
+</form></div>
+</div>
+<div class="controles-wrapper">
+<div class="control-group"><form id="formDeta" onsubmit="return false;"><button class="btn-action" type="button" onclick="calcularDet()">Det(A)</button> <input class="resultado-det" name="output" type="text" readonly="readonly" placeholder="="></form></div>
+<div class="control-group"><button class="btn-action" type="button" onclick="calcularAdj()">Adj(A)</button></div>
+<div class="control-group"><button class="btn-action" type="button" onclick="calcularInv()">Inv(A)</button></div>
+</div>
+</div>
+<p>
+<script>
+/***************************************************************************
+* Lógica JavaScript moderna y robusta para eXeLearning (Con Fracciones)
+***************************************************************************/
+
+// Función auxiliar para leer valores de forma segura
+function getVal(formId, inputName) {
+    let input = document.querySelector('#' + formId + ' input[name="' + inputName + '"]');
+    if (!input || input.value.trim() === "") return 0;
+    let val = parseFloat(input.value);
+    return isNaN(val) ? 0 : val;
+}
+
+// Función auxiliar para escribir valores
+function setVal(formId, inputName, value) {
+    let input = document.querySelector('#' + formId + ' input[name="' + inputName + '"]');
+    if (input) input.value = value;
+}
+
+// Limpiar todas las matrices
+function limpiarTodo() {
+    document.getElementById('formA').reset();
+    document.getElementById('formB').reset();
+    document.getElementById('formC').reset();
+    document.getElementById('formDeta').reset();
+}
+
+// --- NUEVO: Funciones para manejar fracciones matemáticas ---
+
+// Calcular el Máximo Común Divisor (MCD)
+function mcd(a, b) {
+    a = Math.abs(a);
+    b = Math.abs(b);
+    while (b) {
+        let t = b;
+        b = a % b;
+        a = t;
+    }
+    return a;
+}
+
+// Formatear como fracción simplificada
+function simplificarFraccion(numerador, denominador) {
+    if (numerador === 0) return "0";
+    if (denominador === 0) return "NaN"; // No debería pasar si el det != 0
+    
+    // Ajustar el signo: que el denominador sea siempre positivo para la vista
+    if (denominador < 0) {
+        numerador = -numerador;
+        denominador = -denominador;
+    }
+    
+    let divisorComun = mcd(numerador, denominador);
+    let num = numerador / divisorComun;
+    let den = denominador / divisorComun;
+    
+    if (den === 1) {
+        return num.toString(); // Es un número entero
+    } else {
+        return num + "/" + den; // Devuelve formato texto fracción
+    }
+}
+
+// -------------------------------------------------------------
+
+// Calcular Determinante
+function calcularDet() {
+    let a11 = getVal('formA', 'a11'), a12 = getVal('formA', 'a12'), a13 = getVal('formA', 'a13');
+    let a21 = getVal('formA', 'a21'), a22 = getVal('formA', 'a22'), a23 = getVal('formA', 'a23');
+    let a31 = getVal('formA', 'a31'), a32 = getVal('formA', 'a32'), a33 = getVal('formA', 'a33');
+    
+    let det = (a11*a22*a33 + a21*a32*a13 + a12*a23*a31) - (a31*a22*a13 + a21*a12*a33 + a32*a23*a11);
+    
+    let output = document.querySelector('#formDeta input[name="output"]');
+    if(output) output.value = det;
+    
+    return det;
+}
+
+// Calcular Matriz Adjunta (Matriz de Cofactores)
+function calcularAdj() {
+    let a11 = getVal('formA', 'a11'), a12 = getVal('formA', 'a12'), a13 = getVal('formA', 'a13');
+    let a21 = getVal('formA', 'a21'), a22 = getVal('formA', 'a22'), a23 = getVal('formA', 'a23');
+    let a31 = getVal('formA', 'a31'), a32 = getVal('formA', 'a32'), a33 = getVal('formA', 'a33');
+    
+    setVal('formB', 'a11', (a22*a33 - a23*a32));
+    setVal('formB', 'a12', -1 * (a21*a33 - a23*a31));
+    setVal('formB', 'a13', (a21*a32 - a22*a31));
+    
+    setVal('formB', 'a21', -1 * (a12*a33 - a13*a32));
+    setVal('formB', 'a22', (a11*a33 - a13*a31));
+    setVal('formB', 'a23', -1 * (a11*a32 - a12*a31));
+    
+    setVal('formB', 'a31', (a12*a23 - a13*a22));
+    setVal('formB', 'a32', -1 * (a11*a23 - a21*a13));
+    setVal('formB', 'a33', (a11*a22 - a12*a21));
+}
+
+// Calcular Matriz Inversa (Traspuesta de la de cofactores / det)
+function calcularInv() {
+    let det = calcularDet(); 
+    
+    if (det === 0) {
+        alert("La matriz introducida es singular (determinante 0) y no tiene inversa.");
+        return;
+    }
+    
+    calcularAdj(); 
+    
+    let b11 = getVal('formB', 'a11'), b12 = getVal('formB', 'a12'), b13 = getVal('formB', 'a13');
+    let b21 = getVal('formB', 'a21'), b22 = getVal('formB', 'a22'), b23 = getVal('formB', 'a23');
+    let b31 = getVal('formB', 'a31'), b32 = getVal('formB', 'a32'), b33 = getVal('formB', 'a33');
+    
+    // Al colocar b21 en a12 (y viceversa) estamos haciendo la matriz traspuesta
+    // Además, se llama a la función de simplificar fracción en lugar de dividir directamente
+    setVal('formC', 'a11', simplificarFraccion(b11, det));
+    setVal('formC', 'a12', simplificarFraccion(b21, det));
+    setVal('formC', 'a13', simplificarFraccion(b31, det));
+    
+    setVal('formC', 'a21', simplificarFraccion(b12, det));
+    setVal('formC', 'a22', simplificarFraccion(b22, det));
+    setVal('formC', 'a23', simplificarFraccion(b32, det));
+    
+    setVal('formC', 'a31', simplificarFraccion(b13, det));
+    setVal('formC', 'a32', simplificarFraccion(b23, det));
+    setVal('formC', 'a33', simplificarFraccion(b33, det));
+}
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802WSFRGB" class="box nota-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/think.png" alt="">
+</div>
+<h1 class="box-title">Curiosidad </h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmo-h5bvxewrq" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmo-h5bvxewrq&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Si deseas utilizar las herramientas que te proporcionamos en el "Practica ahora" pero con una matriz de orden 2, por ejemplo<br>\[<br>A = \begin{pmatrix} 1 & 5 \\ 2 & 3 \end{pmatrix}<br>\]<br>introduce la matriz<br>\[<br>B = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 5 \\ 0 & 2 & 3 \end{pmatrix}<br>\]<br>y observa dónde aparece la inversa de \(A\)<br></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802QIQVWO" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Matriz ortogonal</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmo-pghzpgrfl" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmo-pghzpgrfl&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 100%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9432%;">
+<p>Una matriz \(A\)&nbsp;diremos que es una&nbsp;<span style="font-weight: bolder;">matriz ortogonal</span> si al multiplicarla por su traspuesta resulta la matriz identidad, es decir:</p>
+<p style="text-align: center;">\(\pmb{A·A^t=I}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>De lo que se deduce que si \(A\) es una matriz cuadrada, \(A^t\) sería la matriz inversa.</p>
+<p>Puedes comprobar que la matriz siguiente es ortogonal:\[A = \begin{pmatrix}&nbsp;<br>1 & 0 & 0 \\&nbsp;<br>0 & 0 & 1 \\&nbsp;<br>0 & -1 & 0&nbsp;<br>\end{pmatrix}\]<br></p>
+<div style="text-align: center;"><br></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802ULHTRW" class="box sin-nada">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427133316638D31" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427133316638D31&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><style>
+    div#calc-inversa-adjunta.solucionador-container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; margin: 10px auto; max-width: 900px; background-color: #fff; border: 2px solid #0056b3; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    div#calc-inversa-adjunta .solucionador-header { text-align: center; margin-bottom: 25px; }
+    div#calc-inversa-adjunta .solucionador-header h3 { color: #0056b3 !important; margin: 0 0 5px 0; font-size: 1.5em; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+    div#calc-inversa-adjunta .solucionador-header p { color: #666; font-size: 0.95em; }
+    
+    div#calc-inversa-adjunta .input-matriz-wrapper { display: flex; justify-content: center; margin-bottom: 25px; }
+    div#calc-inversa-adjunta .matriz-box-input { background: #fdfdff; padding: 25px 30px; border-radius: 8px; border: 1px solid #cce0ff; text-align: center; box-shadow: inset 0 0 10px rgba(0, 86, 179, 0.05); }
+    
+    div#calc-inversa-adjunta .matriz-css { display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 10px; position: relative; padding: 0 20px; align-items: center; vertical-align: middle; }
+    div#calc-inversa-adjunta .matriz-css::before, div#calc-inversa-adjunta .matriz-css::after { content: ""; position: absolute; top: -5px; bottom: -5px; width: 10px; border: 2px solid #333; }
+    div#calc-inversa-adjunta .matriz-css::before { left: 0; border-right: none; border-radius: 4px 0 0 4px; }
+    div#calc-inversa-adjunta .matriz-css::after { right: 0; border-left: none; border-radius: 0 4px 4px 0; }
+    div#calc-inversa-adjunta .matriz-css > div { text-align: right; min-width: 25px; font-size: 1.1em; } 
+    
+    div#calc-inversa-adjunta .matriz-box-input input[type="text"] { width: 55px; padding: 8px 5px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-size: 1.1em; transition: all 0.2s; font-family: monospace; }
+    div#calc-inversa-adjunta .matriz-box-input input[type="text"]:focus { outline: none !important; border-color: #0056b3 !important; background-color: #e6f2ff !important; box-shadow: 0 0 5px rgba(0,86,179,0.2) !important; }
+    
+    /* Contenedor de botones para centrarlos */
+    div#calc-inversa-adjunta .botones-wrapper { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; }
+    
+    /* Botón Resolver (Principal Azul) */
+    div#calc-inversa-adjunta button.btn-resolver { background-color: #0056b3 !important; background-image: none !important; color: white !important; border: 2px solid #0056b3 !important; padding: 12px 25px !important; border-radius: 6px !important; cursor: pointer !important; font-weight: bold !important; font-size: 1.1em !important; transition: all 0.2s ease-in-out !important; box-shadow: 0 3px 6px rgba(0,86,179,0.2) !important; outline: none !important; }
+    div#calc-inversa-adjunta button.btn-resolver:hover, div#calc-inversa-adjunta button.btn-resolver:focus { background-color: #004494 !important; border-color: #004494 !important; transform: scale(1.02) !important; color: white !important; }
+    
+    /* Botón Limpiar (Fantasma Invertido) */
+    div#calc-inversa-adjunta button.btn-limpiar { background-color: #ffffff !important; background-image: none !important; color: #0056b3 !important; border: 2px solid #0056b3 !important; padding: 12px 25px !important; border-radius: 6px !important; cursor: pointer !important; font-weight: bold !important; font-size: 1.1em !important; transition: all 0.2s ease-in-out !important; box-shadow: none !important; outline: none !important; }
+    div#calc-inversa-adjunta button.btn-limpiar:hover, div#calc-inversa-adjunta button.btn-limpiar:focus { background-color: #e6f2ff !important; border-color: #0056b3 !important; transform: scale(1.02) !important; color: #0056b3 !important; }
+    
+    /* Área de resultados dinámicos */
+    div#calc-inversa-adjunta #zona-resultados { margin-top: 30px; display: none; background: #fff; padding: 25px; border-left: 5px solid #0056b3 !important; border-radius: 6px; border: 1px solid #cce0ff; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    div#calc-inversa-adjunta .paso-titulo { color: #0056b3 !important; border-bottom: 2px solid #e6f2ff; padding-bottom: 8px; margin-top: 30px; font-size: 1.2em; font-weight: bold; }
+    div#calc-inversa-adjunta .calculo-detalle { background-color: #fdfdff; padding: 15px 20px; border-radius: 4px; font-family: monospace; font-size: 1.1em; line-height: 1.8; color: #0056b3; border: 1px dashed #cce0ff; margin: 15px 0; }
+    
+    /* Fracciones CSS puras para inyección dinámica */
+    div#calc-inversa-adjunta .frac-css { display: inline-block; text-align: center; vertical-align: middle; margin: 0 4px; font-size: 0.95em; }
+    div#calc-inversa-adjunta .frac-css > span { display: block; padding: 0.1em 0.3em; line-height: 1.2; }
+    div#calc-inversa-adjunta .frac-css span.fdn { border-top: 1px solid #333; }
+</style>
+<div id="calc-inversa-adjunta" class="solucionador-container">
+<div class="solucionador-header"><img src="../content/resources/202604291703031226YD/yoneco_1.png" width="60" height="60" alt="" style="margin-bottom: 10px;">
+<h3>Calculadora Paso a Paso: Matriz Inversa (3x3)</h3>
+<p>Introduce los valores de la matriz A y pulsa en "Resolver" para ver todo el desarrollo por Adjuntos.</p>
+</div>
+<div class="input-matriz-wrapper">
+<div class="matriz-box-input"><form id="formSolucionador" onsubmit="return false;">
+<div class="matriz-css"><input name="s11" type="text" value="1"> <input name="s12" type="text" value="0"> <input name="s13" type="text" value="1"> <input name="s21" type="text" value="2"> <input name="s22" type="text" value="4"> <input name="s23" type="text" value="1"> <input name="s31" type="text" value="-2"> <input name="s32" type="text" value="0"> <input name="s33" type="text" value="7"></div>
+</form></div>
+</div>
+<div class="botones-wrapper"><button class="btn-limpiar" onclick="limpiarSolucionador()">Limpiar</button> <button class="btn-resolver" onclick="ejecutarSolucionador()">Resolver paso a paso</button></div>
+<div id="zona-resultados"></div>
+</div>
+<p>
+<script>
+// --- NUEVO: Función para limpiar todo ---
+function limpiarSolucionador() {
+    // Restaura los valores por defecto del formulario (los dejará vacíos o con su value inicial)
+    document.getElementById('formSolucionador').reset();
+    
+    // Oculta y vacía la zona de resultados
+    let zona = document.getElementById("zona-resultados");
+    zona.style.display = "none";
+    zona.innerHTML = "";
+}
+
+// Funciones matemáticas básicas (MCD y Fracciones)
+function mcd(a, b) {
+    a = Math.abs(a); b = Math.abs(b);
+    while (b) { let t = b; b = a % b; a = t; }
+    return a;
+}
+
+function formatearFraccionCSS(numerador, denominador) {
+    if (numerador === 0) return "0";
+    if (denominador < 0) { numerador = -numerador; denominador = -denominador; }
+    let divisor = mcd(numerador, denominador);
+    let num = numerador / divisor;
+    let den = denominador / divisor;
+    
+    if (den === 1) return num.toString();
+    // Construimos la fracción con HTML puro
+    return `<div class="frac-css"><span>${num}</span><span class="fdn">${den}</span></div>`;
+}
+
+// Generador de matrices HTML puro
+function generarMatrizCSS(matriz2D, nombre) {
+    let filas = matriz2D.map(fila => fila.map(val => `<div>${val}</div>`).join(' ')).join('\n');
+    let prefijo = nombre ? `<b style="margin-right:20px; font-size:1.3em; color:#0056b3;">${nombre} =</b>` : '';
+    return `
+    <div style="display:flex; align-items:center; justify-content:center; margin: 25px 0; background: #fdfdff; padding: 20px; border-radius: 8px; border: 1px solid #cce0ff;">
+        ${prefijo}
+        <div class="matriz-css" style="font-family: monospace; font-size: 1.2em;">
+            ${filas}
+        </div>
+    </div>`;
+}
+
+// Lógica principal del solucionador
+function ejecutarSolucionador() {
+    let zona = document.getElementById("zona-resultados");
+    zona.style.display = "block";
+    zona.innerHTML = "<p>Calculando...</p>";
+    
+    // 1. Leer valores (Aceptando comas como decimales por si acaso)
+    const getV = (name) => {
+        let valStr = document.querySelector('#formSolucionador input[name="'+name+'"]').value.replace(',', '.');
+        let val = parseFloat(valStr);
+        return isNaN(val) ? 0 : val;
+    };
+    
+    let a11 = getV('s11'), a12 = getV('s12'), a13 = getV('s13');
+    let a21 = getV('s21'), a22 = getV('s22'), a23 = getV('s23');
+    let a31 = getV('s31'), a32 = getV('s32'), a33 = getV('s33');
+
+    let htmlSalida = "";
+
+    // 2. Paso 1: Determinante
+    htmlSalida += `<h4 class="paso-titulo">Paso 1: Cálculo del determinante |A| (Regla de Sarrus)</h4>`;
+    let diagPrinc = (a11*a22*a33) + (a12*a23*a31) + (a21*a32*a13);
+    let diagSec = (a13*a22*a31) + (a12*a21*a33) + (a23*a32*a11);
+    let det = diagPrinc - diagSec;
+    
+    htmlSalida += `
+    <div class="calculo-detalle">
+        |A| = [(${a11})·(${a22})·(${a33}) + (${a12})·(${a23})·(${a31}) + (${a21})·(${a32})·(${a13})] - <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(${a13})·(${a22})·(${a31}) + (${a12})·(${a21})·(${a33}) + (${a23})·(${a32})·(${a11})]<br><br>
+        |A| = [${diagPrinc}] - [${diagSec}] = <b style="font-size: 1.2em;">${det}</b>
+    </div>`;
+
+    if (det === 0) {
+        htmlSalida += `<div style="margin-top: 25px; padding: 20px; background: #fff5f5; border: 1px solid #ffcdd2; border-radius: 8px; text-align: center;"><p style="color: #dc3545; font-weight: bold; font-size: 1.2em; margin: 0;">¡Atención!</p><p style="color: #444; margin-top: 10px;">El determinante es 0. Como no se puede dividir entre 0 en la fórmula final, esta matriz es singular y <b>NO tiene inversa</b>.</p></div>`;
+        zona.innerHTML = htmlSalida;
+        return;
+    }
+
+    // 3. Paso 2: Matriz Adjunta
+    htmlSalida += `<h4 class="paso-titulo">Paso 2: Cálculo de los adjuntos (Cofactores)</h4>`;
+    htmlSalida += `<p>Calculamos los menores complementarios aplicando el signo correspondiente (+ ó -):</p>`;
+    
+    let c11 = (a22*a33 - a23*a32),   c12 = -1*(a21*a33 - a23*a31),  c13 = (a21*a32 - a22*a31);
+    let c21 = -1*(a12*a33 - a13*a32), c22 = (a11*a33 - a13*a31),    c23 = -1*(a11*a32 - a12*a31);
+    let c31 = (a12*a23 - a13*a22),   c32 = -1*(a11*a23 - a21*a13),  c33 = (a11*a22 - a12*a21);
+
+    htmlSalida += `
+    <div class="calculo-detalle" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:15px; text-align: center;">
+        <div>A<sub>11</sub> = +(${a22}·${a33} - ${a23}·${a32}) = <b>${c11}</b></div>
+        <div>A<sub>12</sub> = -(${a21}·${a33} - ${a23}·${a31}) = <b>${c12}</b></div>
+        <div>A<sub>13</sub> = +(${a21}·${a32} - ${a22}·${a31}) = <b>${c13}</b></div>
+        
+        <div>A<sub>21</sub> = -(${a12}·${a33} - ${a13}·${a32}) = <b>${c21}</b></div>
+        <div>A<sub>22</sub> = +(${a11}·${a33} - ${a13}·${a31}) = <b>${c22}</b></div>
+        <div>A<sub>23</sub> = -(${a11}·${a32} - ${a12}·${a31}) = <b>${c23}</b></div>
+        
+        <div>A<sub>31</sub> = +(${a12}·${a23} - ${a13}·${a22}) = <b>${c31}</b></div>
+        <div>A<sub>32</sub> = -(${a11}·${a23} - ${a21}·${a13}) = <b>${c32}</b></div>
+        <div>A<sub>33</sub> = +(${a11}·${a22} - ${a12}·${a21}) = <b>${c33}</b></div>
+    </div>`;
+
+    htmlSalida += generarMatrizCSS([[c11, c12, c13], [c21, c22, c23], [c31, c32, c33]], "Adj(A)");
+
+    // 4. Paso 3: Traspuesta
+    htmlSalida += `<h4 class="paso-titulo">Paso 3: Traspuesta de la matriz adjunta</h4>`;
+    htmlSalida += `<p>Cambiamos las filas por columnas para obtener Adj(A)<sup>t</sup>:</p>`;
+    htmlSalida += generarMatrizCSS([[c11, c21, c31], [c12, c22, c32], [c13, c23, c33]], "Adj(A)<sup>t</sup>");
+
+    // 5. Paso 4: Matriz Inversa (Fracciones)
+    htmlSalida += `<h4 class="paso-titulo">Paso 4: Matriz Inversa (División entre el determinante)</h4>`;
+    htmlSalida += `<p>Finalmente, dividimos cada elemento de la matriz traspuesta entre el determinante (|A| = ${det}) y simplificamos las fracciones:</p>`;
+    
+    let f11 = formatearFraccionCSS(c11, det), f12 = formatearFraccionCSS(c21, det), f13 = formatearFraccionCSS(c31, det);
+    let f21 = formatearFraccionCSS(c12, det), f22 = formatearFraccionCSS(c22, det), f23 = formatearFraccionCSS(c32, det);
+    let f31 = formatearFraccionCSS(c13, det), f32 = formatearFraccionCSS(c23, det), f33 = formatearFraccionCSS(c33, det);
+
+    htmlSalida += generarMatrizCSS([[f11, f12, f13], [f21, f22, f23], [f31, f32, f33]], "A<sup>-1</sup>");
+
+    zona.innerHTML = htmlSalida;
+}
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/22-definicion-de-inversa-de-una-matriz.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

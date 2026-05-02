@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq7f-phspwnxal">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.2. Producto de un escalar por una matriz | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/complete/complete.js"></script><link rel="stylesheet" href="../idevices/complete/complete.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/geogebra-activity/geogebra-activity.js"></script><link rel="stylesheet" href="../idevices/geogebra-activity/geogebra-activity.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq7f-phspwnxal" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li class="active"> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="active no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq7f-phspwnxal" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.2. Producto de un escalar por una matriz</h1></div>
+</header><div id="page-content-page-moo7jq7f-phspwnxal" class="page-content">
+<article id="block-1771975010358-xf3jpy2sh" class="box caja-morada sin-copa">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1771975010357-jq5fd8b41" class="idevice_node complete" data-idevice-path="../idevices/complete/" data-idevice-type="complete">
+<div class="completa-IDevice"><div class="game-evaluation-ids js-hidden" data-id="idevice-1771975010357-jq5fd8b41" data-evaluationb="false" data-evaluationid="c20f0a08-fa47-4697-a719-021acc2f0fba"></div><div class="completa-feedback-game"></div><div class="completa-instructions"><p><span><img src="../content/resources/panes.PNG" width="408" height="272" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span>Nos adentramos ahora en el fascinante mundo de la panadería de cada uno de los supermercados. En este caso, el supermercado 2 no tiene el servicio de panadería. Raimundo ha realizado la misma tabla de pedidos durante los 6 días de la semana que permanecen abiertos. Este pedido ha sido:</span></p>
+<table border="1" style="width: 30.8612%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 37.4739%;"><br /></td>
+<td style="width: 15%; text-align: center;">Barras</td>
+<td style="width: 15%; text-align: center;">Bollos</td>
+<td style="width: 15%; text-align: center;">Panes</td>
+</tr>
+<tr>
+<td style="width: 37.4739%; text-align: right; background-color: #dfdddb;">Supermercado 1</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">24</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">57</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">42</td>
+</tr>
+<tr>
+<td style="width: 37.4739%; text-align: right;">Supermercado 2</td>
+<td style="width: 15%; text-align: center;">0</td>
+<td style="width: 15%; text-align: center;">0</td>
+<td style="width: 15%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 37.4739%; text-align: right; background-color: #dfdddb;">Supermercado 3</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">34</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">26</td>
+<td style="width: 15%; text-align: center; background-color: #dfdddb;">32</td>
+</tr>
+<tr>
+<td style="width: 37.4739%; text-align: right;">Supermercado 4</td>
+<td style="width: 15%; text-align: center;">9</td>
+<td style="width: 15%; text-align: center;">24</td>
+<td style="width: 15%; text-align: center;">28</td>
+</tr>
+</tbody>
+</table>
+<p><span></span><br /></p></div><div class="completa-DataGame js-hidden">%E9%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%AE%E2%AC%AE%E1%E2%F3%FC%AC%AE%FB%FF%F5%B2%E1%E0%F1%AF%CE%B0%F0%FE%FD%F0%A8%F3%E2%E2%A8%BD%BD%FE%FD%F1%F3%FE%FA%FD%E1%E6%BD%A5%AA%A1%F1%A7%A6%A1%A6%BF%A0%A0%F0%F4%BF%A6%F6%A6%F3%BF%F0%A3%A4%A3%BF%F0%AB%F1%F3%F1%F7%A6%F6%A6%A1%F3%A4%CE%B0%B2%E5%FB%F6%E6%FA%AF%CE%B0%A6%A2%AA%CE%B0%B2%FA%F7%FB%F5%FA%E6%AF%CE%B0%A0%A5%A0%CE%B0%B2%F3%FE%E6%AF%CE%B0%CE%B0%B2%E1%E6%EB%FE%F7%AF%CE%B0%F6%FB%E1%E2%FE%F3%EB%A8%B2%F0%FE%FD%F1%F9%A9%B2%FF%F3%E0%F5%FB%FC%BF%FE%F7%F4%E6%A8%B2%F3%E7%E6%FD%A9%B2%FF%F3%E0%F5%FB%FC%BF%E0%FB%F5%FA%E6%A8%B2%F3%E7%E6%FD%A9%CE%B0%B2%BD%AC%AE%BD%E1%E2%F3%FC%AC%AE%BD%E2%AC%CE%FC%AE%E2%AC%AE%E1%E2%F3%FC%AC%DC%FD%E1%B2%F3%F6%F7%FC%E6%E0%F3%FF%FD%E1%B2%F3%FA%FD%E0%F3%B2%F7%FC%B2%F7%FE%B2%F4%F3%E1%F1%FB%FC%F3%FC%E6%F7%B2%FF%E7%FC%F6%FD%B2%F6%F7%B2%FE%F3%B2%E2%F3%FC%F3%F6%F7%E0%7F%F3%B2%F6%F7%B2%F1%F3%F6%F3%B2%E7%FC%FD%B2%F6%F7%B2%FE%FD%E1%B2%E1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%E1%BC%B2%D7%FC%B2%F7%E1%E6%F7%B2%F1%F3%E1%FD%BE%B2%F7%FE%B2%E1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B2%A0%B2%FC%FD%B2%E6%FB%F7%FC%F7%B2%F7%FE%B2%E1%F7%E0%E4%FB%F1%FB%FD%B2%F6%F7%B2%E2%F3%FC%F3%F6%F7%E0%7F%F3%BC%B2%C0%F3%FB%FF%E7%FC%F6%FD%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%FE%F3%B2%FF%FB%E1%FF%F3%B2%E6%F3%F0%FE%F3%B2%F6%F7%B2%E2%F7%F6%FB%F6%FD%E1%B2%F6%E7%E0%F3%FC%E6%F7%B2%FE%FD%E1%B2%A4%B2%F6%7F%F3%E1%B2%F6%F7%B2%FE%F3%B2%E1%F7%FF%F3%FC%F3%B2%E3%E7%F7%B2%E2%F7%E0%FF%F3%FC%F7%F1%F7%FC%B2%F3%F0%FB%F7%E0%E6%FD%E1%BC%B2%D7%E1%E6%F7%B2%E2%F7%F6%FB%F6%FD%B2%FA%F3%B2%E1%FB%F6%FD%A8%AE%BD%E1%E2%F3%FC%AC%AE%BD%E2%AC%CE%FC%AE%E6%F3%F0%FE%F7%B2%F0%FD%E0%F6%F7%E0%AF%CE%B0%A3%CE%B0%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A2%BC%AA%A4%A3%A0%B7%A9%B2%FF%F3%E0%F5%FB%FC%BF%FE%F7%F4%E6%A8%B2%F3%E7%E6%FD%A9%B2%FF%F3%E0%F5%FB%FC%BF%E0%FB%F5%FA%E6%A8%B2%F3%E7%E6%FD%A9%CE%B0%AC%CE%FC%AE%E6%F0%FD%F6%EB%AC%CE%FC%AE%E6%E0%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A5%BC%A6%A5%A1%AB%B7%A9%CE%B0%AC%AE%F0%E0%B2%BD%AC%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%D0%F3%E0%E0%F3%E1%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%D0%FD%FE%FE%FD%E1%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%C2%F3%FC%F7%E1%AE%BD%E6%F6%AC%CE%FC%AE%BD%E6%E0%AC%CE%FC%AE%E6%E0%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A5%BC%A6%A5%A1%AB%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%E0%FB%F5%FA%E6%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B2%A3%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A0%A6%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A7%A5%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A6%A0%AE%BD%E6%F6%AC%CE%FC%AE%BD%E6%E0%AC%CE%FC%AE%E6%E0%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A5%BC%A6%A5%A1%AB%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%E0%FB%F5%FA%E6%A9%CE%B0%AC%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B2%A0%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%A2%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%A2%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%A2%AE%BD%E6%F6%AC%CE%FC%AE%BD%E6%E0%AC%CE%FC%AE%E6%E0%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A5%BC%A6%A5%A1%AB%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%E0%FB%F5%FA%E6%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B2%A1%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A1%A6%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A0%A4%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%B2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%A8%B2%B1%F6%F4%F6%F6%F6%F0%A9%CE%B0%AC%A1%A0%AE%BD%E6%F6%AC%CE%FC%AE%BD%E6%E0%AC%CE%FC%AE%E6%E0%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A1%A5%BC%A6%A5%A1%AB%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%E0%FB%F5%FA%E6%A9%CE%B0%AC%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B2%A6%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%AB%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%A0%A6%AE%BD%E6%F6%AC%CE%FC%AE%E6%F6%B2%E1%E6%EB%FE%F7%AF%CE%B0%E5%FB%F6%E6%FA%A8%B2%A3%A7%B7%A9%B2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%A8%B2%F1%F7%FC%E6%F7%E0%A9%CE%B0%AC%A0%AA%AE%BD%E6%F6%AC%CE%FC%AE%BD%E6%E0%AC%CE%FC%AE%BD%E6%F0%FD%F6%EB%AC%CE%FC%AE%BD%E6%F3%F0%FE%F7%AC%CE%FC%AE%E2%AC%AE%E1%E2%F3%FC%AC%AE%BD%E1%E2%F3%FC%AC%AE%F0%E0%B2%BD%AC%AE%BD%E2%AC%B0%BE%B0%E6%F7%EA%E6%C6%F7%EA%E6%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%A3%BC%BF%B7%A0%A2%C2%F3%E0%F3%B7%A0%A2%F7%FE%B7%A0%A2%E1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A1%B7%A0%D1%B7%A0%A2%FA%F3%B7%A0%A2%E2%F7%F6%FB%F6%FD%B7%A0%A2%D2%D2%A3%A7%A4%D2%D2%B7%A0%A2%B7%D3%A2%B7%A0%A2%F0%FD%FE%FE%FD%E1%B7%A0%A2%F7%FC%B7%A0%A2%E6%FD%F6%F3%B7%A0%A2%FE%F3%B7%A0%A2%E1%F7%FF%F3%FC%F3%BC%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%A0%BC%BF%B7%A0%A2%C2%F3%E0%F3%B7%A0%A2%F7%FE%B7%A0%A2%E1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A6%B7%A0%A2%FA%F3%B7%A0%A2%E2%F7%F6%FB%F6%FD%B7%A0%A2%D2%D2%A0%AB%A6%D2%D2%B7%A0%A2%B7%D3%A2%F0%F3%E0%E0%F3%E1%B7%A0%A2%F7%FC%B7%A0%A2%E6%FD%F6%F3%B7%A0%A2%FE%F3%B7%A0%A2%E1%F7%FF%F3%FC%F3%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%A1%BC%BF%B7%A0%A2%DE%F3%B7%A0%A2%FF%F3%E6%E0%FB%E8%B7%A0%A2%F6%F7%B7%A0%A2%E2%F7%F6%FB%F6%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%E6%FD%F6%F3%B7%A0%A2%FE%F3%B7%A0%A2%E1%F7%FF%F3%FC%F3%B7%A0%A2%E1%F7%E0%B7%D7%A3%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F3%F0%FE%F7%B7%A0%A2%F0%FD%E0%F6%F7%E0%B7%A1%D6%B7%A0%A0%A3%B7%A0%A0%B7%A0%A2%FA%F7%FB%F5%FA%E6%B7%A1%D6%B7%A0%A0%A3%A4%AA%B7%A0%A0%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A7%A2%B7%A0%A7%B7%A1%D0%B7%A0%A2%FA%F7%FB%F5%FA%E6%B7%A1%D3%B7%A0%A2%A3%A4%AA%E2%EA%B7%A1%D0%B7%A0%A2%FF%F3%E0%F5%FB%FC%BF%FE%F7%F4%E6%B7%A1%D3%B7%A0%A2%F3%E7%E6%FD%B7%A1%D0%B7%A0%A2%FF%F3%E0%F5%FB%FC%BF%E0%FB%F5%FA%E6%B7%A1%D3%B7%A0%A2%F3%E7%E6%FD%B7%A1%D0%B7%A0%A0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F0%FD%F6%EB%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A6%A1%BC%A1%A5%A2%AA%B7%A0%A7%B7%A1%D0%B7%A0%A0%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A3%A0%BC%AB%A4%A7%AB%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D0%F3%E0%E0%F3%E1%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A1%BC%A1%A7%AB%A3%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D0%FD%FE%FE%FD%E1%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A2%BC%A6%A3%A6%A5%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%C2%F3%FC%F7%E1%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A6%A1%BC%A1%A5%A2%AA%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%E0%FB%F5%FA%E6%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A3%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A3%A0%BC%AB%A4%A7%AB%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A3%A6%A6%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A1%BC%A1%A7%AB%A3%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A1%A6%A0%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A2%BC%A6%A3%A6%A5%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A0%A7%A0%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A6%A1%BC%A1%A5%A2%AA%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%E0%FB%F5%FA%E6%B7%A1%D0%B7%A0%A0%B7%A1%D7%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A0%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A3%A0%BC%AB%A4%A7%AB%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A2%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A1%BC%A1%A7%AB%A3%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A2%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A2%BC%A6%A3%A6%A5%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A2%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A6%A1%BC%A1%A5%A2%AA%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%E0%FB%F5%FA%E6%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A1%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A3%A0%BC%AB%A4%A7%AB%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A0%A2%A6%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A1%BC%A1%A7%AB%A3%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A3%A7%A4%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A2%BC%A6%A3%A6%A5%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A2%F0%F3%F1%F9%F5%E0%FD%E7%FC%F6%BF%F1%FD%FE%FD%E0%B7%A1%D3%B7%A0%A2%B7%A0%A1%F6%F4%F6%F6%F6%F0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A3%AB%A0%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A6%A1%BC%A1%A5%A2%AA%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%E0%FB%F5%FA%E6%B7%A1%D0%B7%A0%A0%B7%A1%D7%C1%E7%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%A2%A6%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A3%A0%BC%AB%A4%A7%AB%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A0%AB%A6%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A1%BC%A1%A7%AB%A3%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A3%A6%A6%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%E6%F6%B7%A0%A2%E1%E6%EB%FE%F7%B7%A1%D6%B7%A0%A0%E5%FB%F6%E6%FA%B7%A1%D3%B7%A0%A2%A0%A2%BC%A6%A3%A6%A5%B7%A0%A7%B7%A1%D0%B7%A0%A2%E6%F7%EA%E6%BF%F3%FE%FB%F5%FC%B7%A1%D3%B7%A0%A2%F1%F7%FC%E6%F7%E0%B7%A1%D0%B7%A0%A0%B7%A1%D7%D2%D2%A3%A4%AA%D2%D2%B7%A1%D1%BD%E6%F6%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%E0%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%F0%FD%F6%EB%B7%A1%D7%B7%A2%D3%B7%A1%D1%BD%E6%F3%F0%FE%F7%B7%A1%D7%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%F1%F3%E1%F7%C1%F7%FC%E1%FB%E6%FB%E4%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%E6%E0%E7%F7%BE%B0%E5%F7%FB%F5%FA%E6%F7%F6%B0%A8%A3%A2%A2%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A3%BE%B0%F7%E1%E6%E0%FB%F1%E6%D1%FA%F7%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%C1%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E5%FD%E0%F6%E1%D7%E0%E0%FD%E0%E1%B0%A8%B0%B0%BE%B0%F3%E6%E6%F7%FF%E2%E1%DC%E7%FF%F0%F7%E0%B0%A8%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D7%E0%E0%FD%E0%B0%A8%A0%A2%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%DE%FB%FF%FB%E6%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%F1%A0%A2%F4%A2%F3%A2%AA%BF%F4%F3%A6%A5%BF%A6%A4%AB%A5%BF%F3%A5%A3%AB%BF%A2%A0%A3%F3%F1%F1%A0%F4%A2%F4%F0%F3%B0%BE%B0%FA%F3%E1%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E7%E0%FE%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%D0%F3%F1%F9%DB%FF%F3%F5%F7%B0%A8%B0%B0%BE%B0%F4%FD%FC%E6%D1%FD%FE%FD%E0%B0%A8%B0%B1%A2%A2%A2%A2%A2%A2%B0%BE%B0%FB%F6%B0%A8%B0%FB%F6%F7%E4%FB%F1%F7%BF%A3%A5%A5%A3%AB%A5%A7%A2%A3%A2%A1%A7%A5%BF%F8%E3%A7%F4%F6%AA%F0%A6%A3%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C0%F7%E2%FE%EB%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%DD%E4%F7%E0%B0%A8%B03%D4%FB%FC%B2%F6%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%B3%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C5%F7%FB%F5%FA%E6%B0%A8%B0%C2%F7%E1%FD%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%E1%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%FD%F0%E6%F7%FC%F7%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%DB%FC%E6%7B%FC%E6%F3%FE%FD%B2%F6%F7%B2%FC%E7%F7%E4%FD%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%D3%FC%E6%F7%E1%B2%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F1%FD%FF%FB%F7%FC%F1%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%D3%FC%E1%E5%F7%E0%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%C1%FD%FE%E7%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C6%E0%EB%B0%A8%B03%C2%E0%E7%F7%F0%F3%B2%FD%E6%E0%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%D1%FA%F7%F1%F9%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%F6%C1%F1%FD%E0%F7%B0%A8%B0%DA%F3%E1%B2%E6%F7%FC%FB%F6%FD%B2%B7%E1%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%F6%B2%F7%E0%E0%FD%E0%F7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%C6%FB%FF%F7%B0%A8%B0%D7%FE%B2%E6%FB%F7%FF%E2%FD%B2%FA%F3%B2%F4%FB%FC%F3%FE%FB%E8%F3%F6%FD%BC%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%D7%FC%F6%B0%A8%B0%DA%F3%E1%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B2%FE%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%EF%EF</div><div class="completa-text-game js-hidden"><p>1.- Para el supermercado 3, ha pedido @@156@@   bollos en toda la semana.</p>
+<p>2.- Para el supermercado 4 ha pedido @@294@@  barras en toda la semana</p>
+<p>3.- La matriz de pedidos de toda la semana será</p>
+<p><br /></p>
+<table border="1" height="168" style="width: 50%; height: 168px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 43.3708%;"><br /></td>
+<td style="width: 12.9659%; text-align: center;">Barras</td>
+<td style="width: 23.3591%; text-align: center;">Bollos</td>
+<td style="width: 20.4147%; text-align: center;">Panes</td>
+</tr>
+<tr>
+<td style="width: 43.3708%; text-align: right; background-color: #dfdddb;">Supermercado 1</td>
+<td style="width: 12.9659%; text-align: center; background-color: #dfdddb;">@@144@@</td>
+<td style="width: 23.3591%; text-align: center; background-color: #dfdddb;">@@342@@</td>
+<td style="width: 20.4147%; text-align: center; background-color: #dfdddb;">@@252@@</td>
+</tr>
+<tr>
+<td style="width: 43.3708%; text-align: right;">Supermercado 2</td>
+<td style="width: 12.9659%; text-align: center;">@@0@@</td>
+<td style="width: 23.3591%; text-align: center;">@@0@@</td>
+<td style="width: 20.4147%; text-align: center;">@@0@@</td>
+</tr>
+<tr>
+<td style="width: 43.3708%; text-align: right; background-color: #dfdddb;">Supermercado 3</td>
+<td style="width: 12.9659%; text-align: center; background-color: #dfdddb;">@@204@@</td>
+<td style="width: 23.3591%; text-align: center; background-color: #dfdddb;">@@156@@</td>
+<td style="width: 20.4147%; text-align: center; background-color: #dfdddb;">@@192@@</td>
+</tr>
+<tr>
+<td style="width: 43.3708%; text-align: right;">Supermercado 4</td>
+<td style="width: 12.9659%; text-align: center;">@@294@@</td>
+<td style="width: 23.3591%; text-align: center;">@@144@@</td>
+<td style="width: 20.4147%; text-align: center;">@@168@@</td>
+</tr>
+</tbody>
+</table></div><div class="cmpt-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="20260224025920XKODCG" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Producto de un escalar por una matriz.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609MGCSEK" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609MGCSEK&quot;}">
+<div class="exe-text-template">
+    <p>Ahora estamos en disposición de definir el producto de un número por una matriz.</p>
+<p>Al igual que el producto de \(3·t\) es sumar \(3\) veces el número \(t\), \(3·t = t+t+t\), el producto de un número \(n\) por una matriz \(A\) \((n\times A)\) es sumar \(n\) veces la matriz \(A\).</p>
+<p>La forma más rápida de realizar la operación es multiplicar cada uno de los términos de la matriz por el número \(n\).</p>
+<p>Si tenemos la matriz \( A = \left( \begin{array}{ccc} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43} \end{array} \right) \) obtenemos:</p>
+<p>\[<br />n \times A = n \times \left( \begin{array}{ccc} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43} \end{array} \right) = \left( \begin{array}{ccc} n \times a_{11} & n \times a_{12} & n \times a_{13} \\ n \times a_{21} & n \times a_{22} & n \times a_{23} \\ n \times a_{31} & n \times a_{32} & n \times a_{33} \\ n \times a_{41} & n \times a_{42} & n \times a_{43} \end{array} \right)<br />\]</p>
+</div>
+</div>
+</div>
+</article><article id="block-1771977721036-kokwtmilp" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/iconogeogebra.png" alt="">
+</div>
+<h1 class="box-title">GeoGebra</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1771977721035-tvgciifdg" class="idevice_node geogebra-activity" data-idevice-path="../idevices/geogebra-activity/" data-idevice-type="geogebra-activity">
+<div class="auto-geogebra auto-geogebra-hhsxkzhf auto-geogebra-width-548 auto-geogebra-height-309 ShowTitle0 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-idevice-1771977721035-tvgciifdg auto-geogebra-weight-100"><div class="auto-geogebra-instructions"><p>Aquí puedes practicar el producto de un número por una matriz</p></div><div class="game-evaluation-ids js-hidden" data-id="idevice-1771977721035-tvgciifdg" data-evaluationb="false" data-evaluationid="0"></div><p><a href="https://www.geogebra.org/m/hhsxkzhf" target="_blank">https://www.geogebra.org/m/hhsxkzhf (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//www.geogebra.org/m/hhsxkzhf,Copia%20de%20Calculadora%3A%20Producto%20de%20un%20n%FAmero%20por%20una%20matriz,0,Autor%EDa,0,T%EDtulo</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div><div class="auto-geogebra-messages-scorm">La%20puntuaci%F3n%20no%20se%20puede%20guardar%20porque%20esta%20p%E1gina%20no%20forma%20parte%20de%20un%20paquete%20SCORM,Su%20puntuaci%F3n,Puntuaci%F3n,Peso,La%20%FAltima%20puntuaci%F3n%20guardada%20es</div></div>
+</div>
+</div>
+</article><article id="20260224025920DOURUV" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Vídeo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609SAUHQN" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609SAUHQN&quot;}">
+<div class="exe-text-template">
+    <p>Un ejemplo más, en vídeo: <a href="https://www.youtube.com/watch?v=uUq-Os1M65E" target="_blank" id="link_1" rel="noopener"><img src="../content/resources/yutube.png" width="45" height="46" alt="" /></a></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/21-suma-de-matrices.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/23-producto-de-matrices.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

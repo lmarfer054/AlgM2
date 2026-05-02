@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq77-s7lq2fey5">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.1. Concepto de matriz | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/complete/complete.js"></script><link rel="stylesheet" href="../idevices/complete/complete.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq77-s7lq2fey5" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/11-concepto-de-matriz.html" class="active no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq77-s7lq2fey5" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.1. Concepto de matriz</h1></div>
+</header><div id="page-content-page-moo7jq77-s7lq2fey5" class="page-content">
+<article id="20260224025920SFTUKA" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609RXHNFH" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609RXHNFH&quot;}">
+<div class="exe-text-template">
+    <table border="1" align="right">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="../content/resources/20260223202609RXHNFH/liga0910_2.png" width="650" height="474" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>No sabemos si te gusta el fútbol, pero reconocerás la tabla adjunta como una clasificación de los equipos en un determinado momento de la liga.</p>
+<p>Puedes ver que aparecen los puntos del equipo, los partidos jugados hasta ese momento, cuántos se han ganado, empatado o perdido y, por último, los goles a favor y en contra. </p>
+<p>Esa tabla puede considerarse como un conjunto de números ordenados según la fila donde estén (equivalente al lugar del equipo en la clasificación) y la columna correspondiente (según lo que represente dicha columna).</p>
+<p>Así, por ejemplo, el número 21, que solo aparece una vez, corresponde al equipo que ocupa la posición 3 y representa los partidos que ha ganado.</p>
+<p>Este tipo de distribución definida por la fila y la columna de posición es la que vamos a definir en este apartado.</p>
+</div>
+</div>
+</div>
+</article><article id="20260224025920DZFSBR" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Matriz.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609PWPUPH" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609PWPUPH&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 99.9703%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">Se llama&nbsp;<span style="font-weight: bolder;">matriz&nbsp;</span>a un conjunto de números ordenados por filas y columnas. Diremos que el&nbsp;<span style="font-weight: bolder; color: #007932;">orden de la matriz</span> es \(\boldsymbol{\color{green}{n\times r}}\) si tiene \(n\) filas y \(r\) columnas.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Como ejemplo de matrices podemos ver las siguientes:</p>
+<p>&nbsp;\[<br>\left( \begin{array}{rrr} 3 & -2 & 1 \\ 5 & 0 & -4 \end{array} \right)<br>\quad ; \quad<br>\left( \begin{array}{r} 5 \\ 7 \\ -3 \end{array} \right)<br>\quad ; \quad<br>\left( \begin{array}{rr} 1 & 4 \\ 9 & 11 \end{array} \right)<br>\]la primera es de orden \(2\times3\), la segunda de orden \(3\times1\) y la última de orden \(2\times2\).</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260224025920FFMKOV" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223222003031OGP" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223222003031OGP&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Escribe una matriz cualquiera con los números que quieras pero que sea:</p>
+<ol>
+<li>
+<p>De orden 3x2.</p>
+</li>
+<li>
+<p>De orden 1x5.</p>
+</li>
+<li>
+<p>De orden 4x3.</p>
+</li>
+</ol>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Cambia en web">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>Los números pueden cambiar, pero la forma tiene que ser como las siguientes:</p>
+<p>\[<br />\text{Orden } 3 \times 2: \quad \left( \begin{array}{rr} 12 & -5 \\ 0 & 24 \\ -8 & 3 \end{array} \right)<br />\]</p>
+<p><br />\[<br />\text{Orden } 1 \times 5: \quad \left( \begin{array}{rrrrr} 7 & -1 & 14 & 0 & -22 \end{array} \right)<br />\]</p>
+<p><br />\[<br />\text{Orden } 4 \times 3: \quad \left( \begin{array}{rrr} 100 & 25 & -10 \\ 45 & 0 & 8 \\ -7 & 56 & 12 \\ 1 & -4 & 99 \end{array} \right)<br />\]</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260224025920PRFNFV" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Elementos de una matriz.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609CTPFXJ" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609CTPFXJ&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table cellpadding="15" style="width: 99.9703%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">Las matrices suelen representarse por letras mayúsculas y a los números que la forman se les llama&nbsp;<span style="font-weight: bolder;">elementos de la matriz</span>. Un elemento se suele representar por la letra minúscula equivalente al nombre de la matriz y por dos subíndices, el primero representa la fila y el segundo la columna.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>De esa forma, en la matriz \( A = \left( \begin{array}{rrr} 4 & -1 & -1 \\ 5 & 10 & -3 \\ 6 & 1 & 2 \\ -2 & 15 & 0 \end{array} \right) \) el término \( a_{23} \) vale \(-3\), el término \( a_{11} \) toma el valor &nbsp;\(4\) y &nbsp;\(-2\) es lo que vale el término \( a_{41} \).</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div><div id="20260223202609WFSGLL" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609WFSGLL&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="15" style="width: 99.9703%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">
+<p>Se denomina <span style="font-weight: bolder;"><span style="color: #007932;">elemento</span> </span>\(\color{green}{\pmb{a_{ij}}}\)<span style="font-weight: bolder;"> <span style="color: #007932;">de la matriz</span> </span>\(\color{green}{\boldsymbol{A}}\), al número situado en la fila \(i\) y la columna \(j\) de \(A\).</p>
+<p style="text-align: center;"> \(A=\)\(<br />\begin{array}{c}<br />\hspace{1.5em} \color{magenta}{\text{Columna 3}} \\[-1ex]<br />\hspace{1.5em} \color{magenta}{\downarrow} \\[-1.5ex]<br />\left( \begin{array}{cccc}<br />1 & 2 & 3 & 4 \\<br />5 & 6 & \color{green}{\boxed{\color{black}{7}}} & 8 \\<br />9 & 10 & 11 & 12<br />\end{array} \right)<br />\end{array}<br />\begin{array}{l}<br />\\[2ex] \color{blue}{\leftarrow \text{Fila 2}}<br />\end{array}<br />\quad \pmb{a_{\color{blue}{2}\color{magenta}{3}} = 7}<br />\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article><article id="20260224025920CUUFPE" class="box caja-morada sin-copa boton-naranja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="2026022400313962453L" class="idevice_node complete" data-idevice-path="../idevices/complete/" data-idevice-type="complete">
+<div class="completa-IDevice"><div class="game-evaluation-ids js-hidden" data-id="2026022400313962453L" data-evaluationb="false" data-evaluationid="20260223202609OJTCJM"></div><div class="completa-feedback-game"></div><div class="completa-instructions"><p>Lee el texto y completa las palabras que faltan.</p></div><div class="completa-DataGame js-hidden">%E9%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%AE%E2%AC%DE%F7%F7%B2%F7%FE%B2%E6%F7%EA%E6%FD%B2%EB%B2%F1%FD%FF%E2%FE%F7%E6%F3%B2%FE%F3%E1%B2%E2%F3%FE%F3%F0%E0%F3%E1%B2%E3%E7%F7%B2%F4%F3%FE%E6%F3%FC%BC%AE%BD%E2%AC%B0%BE%B0%E6%F7%EA%E6%C6%F7%EA%E6%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%D7%FC%B7%A0%A2%E7%FC%B7%A0%A2%F5%E0%F3%FC%B7%A0%A2%FA%FB%E2%F7%E0%FF%F7%E0%F1%F3%F6%FD%B7%A0%D1%B7%A0%A2%F1%FD%FC%B7%A0%A2%F8%FD%E0%FC%F3%F6%F3%B7%A0%A2%F1%FD%FC%E6%FB%FC%E7%F3%B7%A0%D1%B7%A0%A2%E6%FB%F7%FC%F7%FC%B7%A0%A2%E6%E0%F7%E1%B7%A0%A2%E6%E7%E0%FC%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%E6%E0%F3%F0%F3%F8%FD%BC%B7%A0%A2%D7%FC%B7%A0%A2%FE%F3%B7%A0%A2%E1%FB%F5%E7%FB%F7%FC%E6%F7%B7%A0%A2%FF%F3%E6%E0%FB%E8%B7%A0%A2%E1%F7%B7%A0%A2%FA%F3%FC%B7%A0%A2%E0%F7%F1%FD%F5%FB%F6%FD%B7%A0%A2%FE%F3%B7%A0%A2%F1%F3%FC%E6%FB%F6%F3%F6%B7%A0%A2%F6%F7%B7%A0%A2%E2%F7%E0%E1%FD%FC%F3%E1%B7%A0%A2%E3%E7%F7%B7%A0%A2%E6%E0%F3%F0%F3%F8%F3%FC%B7%A0%A2%F7%FC%B7%A0%A2%FE%FD%E1%B7%A0%A2%F1%E7%F3%E6%E0%FD%B7%A0%A2%F6%F7%E2%F3%E0%E6%F3%FF%F7%FC%E6%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%FE%F3%B7%A0%A2%F7%FF%E2%E0%F7%E1%F3%B7%A1%D3%B7%A0%A2%FE%FD%E1%B7%A0%A2%F7%FC%F1%F3%E0%F5%F3%F6%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%FE%F3%E1%B7%A0%A2%F1%F3%F8%F3%E1%B7%A0%A2%E0%F7%F5%FB%E1%E6%E0%F3%F6%FD%E0%F3%E1%B7%A0%D1%B7%A0%A2%FE%FD%E1%B7%A0%A2%E3%E7%F7%B7%A0%A2%F3%E6%FB%F7%FC%F6%F7%FC%B7%A0%A2%F3%FE%B7%A0%A2%F1%FE%FB%F7%FC%E6%F7%B7%A0%A2%EB%B7%A0%A2%FE%F3%B7%A0%A2%FB%FC%F4%FD%E0%FF%F3%F1%FB%B7%D4%A1%FC%B7%A0%D1%B7%A0%A2%FE%FD%E1%B7%A0%A2%E0%F7%E2%FD%FC%F7%F6%FD%E0%F7%E1%B7%A0%A2%F6%F7%B7%A0%A2%FF%F3%E6%F7%E0%FB%F3%FE%B7%A0%A2%EB%B7%A0%A2%E2%FD%E0%B7%A0%A2%B7%D4%D3%FE%E6%FB%FF%FD%B7%A0%A2%FE%FD%E1%B7%A0%A2%F7%FF%E2%FE%F7%F3%F6%FD%E1%B7%A0%A2%F6%F7%B7%A0%A2%FD%F4%FB%F1%FB%FC%F3%BC%B7%A0%A2%D3%B7%A0%A2%E2%F3%E0%E6%FB%E0%B7%A0%A2%F6%F7%B7%A0%A2%F7%FE%FE%F3%E1%B7%A0%A2%F1%FD%FC%E6%F7%E1%E6%F3%B7%A0%A2%F3%B7%A0%A2%FE%F3%E1%B7%A0%A2%E1%FB%F5%E7%FB%F7%FC%E6%F7%E1%B7%A0%A2%E2%E0%F7%F5%E7%FC%E6%F3%E1%BC%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A7%D1%B7%A7%D0%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A7%D1%FE%F7%F4%E6%B7%A0%AA%B7%A0%A2%B7%A7%D1%F0%F7%F5%FB%FC%B7%A5%D0%F3%E0%E0%F3%EB%B7%A5%D6%B7%A5%D0%F1%F1%F1%F1%B7%A5%D6%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%D3%A2%B7%A0%A2%A3%A7%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A7%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A5%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A6%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%D3%A2%B7%A0%A2%AA%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A1%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%AA%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A2%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%D3%A2%B7%A0%A2%A0%A2%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A4%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A6%B7%A0%A2%B7%A0%A4%F3%FF%E2%B7%A1%D0%B7%A0%A2%A3%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A7%D1%F7%FC%F6%B7%A5%D0%F3%E0%E0%F3%EB%B7%A5%D6%B7%A0%A2%B7%A7%D1%E0%FB%F5%FA%E6%B7%A0%AB%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A7%D1%B7%A7%D6%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A3%B7%A0%AB%B7%A0%A2%DE%F3%B7%A0%A2%FF%F3%E6%E0%FB%E8%B7%A0%A2%F7%E1%B7%A0%A2%F6%F7%B7%A0%A2%FD%E0%F6%F7%FC%B7%A0%A2%D2%D2%A1%D2%D2%B7%A7%D1%B7%A0%AA%B7%A7%D1%E6%FB%FF%F7%E1%B7%A7%D1%B7%A0%AB%D2%D2%A6%D2%D2%BC%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A0%B7%A0%AB%B7%A0%A2%D7%FE%B7%A0%A2%E6%B7%D7%AB%E0%FF%FB%FC%FD%B7%A0%A2%B7%A7%D1%B7%A0%AA%B7%A0%A2%F3%CD%B7%A5%D0%A1%A0%B7%A5%D6%B7%A0%A2%B7%A7%D1%B7%A0%AB%B7%A0%A2%F7%E1%B7%A0%A2%D2%D2%A4%D2%D2%BC%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A1%B7%A0%AB%B7%A0%A2%D7%FE%B7%A0%A2%E6%B7%D7%AB%E0%FF%FB%FC%FD%B7%A0%A2%B7%A7%D1%B7%A0%AA%B7%A0%A2%F3%CD%B7%A5%D0%A0%A1%B7%A5%D6%B7%A0%A2%B7%A7%D1%B7%A0%AB%B7%A0%A2%F7%E1%B7%A0%A2%D2%D2%AA%D2%D2%BC%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A6%B7%A0%AB%B7%A0%A2%B7%A7%D1%B7%A0%AA%A2%B7%A7%D1%B7%A0%AB%B7%A0%A2%FD%F1%E7%E2%F3%B7%A0%A2%F7%FE%B7%A0%A2%FE%E7%F5%F3%E0%B7%A0%A2%D2%D2%A0%D2%D2%B7%A0%A2%B7%A0%D1%B7%A0%A2%D2%D2%A6%D2%D2%BC%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%F1%F3%E1%F7%C1%F7%FC%E1%FB%E6%FB%E4%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%E6%E0%E7%F7%BE%B0%E5%F7%FB%F5%FA%E6%F7%F6%B0%A8%A3%A2%A2%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A3%BE%B0%F7%E1%E6%E0%FB%F1%E6%D1%FA%F7%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%C1%FB%E8%F7%B0%A8%E6%E0%E7%F7%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E5%FD%E0%F6%E1%D7%E0%E0%FD%E0%E1%B0%A8%B0%B0%BE%B0%F3%E6%E6%F7%FF%E2%E1%DC%E7%FF%F0%F7%E0%B0%A8%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D7%E0%E0%FD%E0%B0%A8%A0%A2%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%DE%FB%FF%FB%E6%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%A0%A2%A0%A4%A2%A0%A0%A1%A0%A2%A0%A4%A2%AB%DD%D8%C6%D1%D8%DF%B0%BE%B0%FA%F3%E1%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E7%E0%FE%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%D0%F3%F1%F9%DB%FF%F3%F5%F7%B0%A8%B0%B0%BE%B0%F4%FD%FC%E6%D1%FD%FE%FD%E0%B0%A8%B0%B1%A2%A2%A2%A2%A2%A2%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A4%A2%A0%A0%A6%A2%A2%A1%A3%A1%AB%A4%A0%A6%A7%A1%DE%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C0%F7%E2%FE%EB%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%DD%E4%F7%E0%B0%A8%B03%D4%FB%FC%B2%F6%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%B3%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C5%F7%FB%F5%FA%E6%B0%A8%B0%C2%F7%E1%FD%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%E1%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%FD%F0%E6%F7%FC%F7%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%DB%FC%E6%7B%FC%E6%F3%FE%FD%B2%F6%F7%B2%FC%E7%F7%E4%FD%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%D3%FC%E6%F7%E1%B2%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F1%FD%FF%FB%F7%FC%F1%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%D3%FC%E1%E5%F7%E0%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%C1%FD%FE%E7%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C6%E0%EB%B0%A8%B03%C2%E0%E7%F7%F0%F3%B2%FD%E6%E0%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%D1%FA%F7%F1%F9%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%F6%C1%F1%FD%E0%F7%B0%A8%B0%DA%F3%E1%B2%E6%F7%FC%FB%F6%FD%B2%B7%E1%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%F6%B2%F7%E0%E0%FD%E0%F7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%C6%FB%FF%F7%B0%A8%B0%D7%FE%B2%E6%FB%F7%FF%E2%FD%B2%FA%F3%B2%F4%FB%FC%F3%FE%FB%E8%F3%F6%FD%BC%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%D7%FC%F6%B0%A8%B0%DA%F3%E1%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B2%FE%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%EF%EF</div><div class="completa-text-game js-hidden"><p>En un gran hipermercado, con jornada continua, tienen tres turnos de trabajo. En la siguiente matriz se han recogido la cantidad de personas que trabajan en los cuatro departamentos de la empresa: los encargados de las cajas registradoras, los que atienden al cliente y la información, los reponedores de material y por último los empleados de oficina. A partir de ellas contesta a las siguientes preguntas.</p>
+<p>\[ <br />\left( \begin{array}{cccc} <br />  15 & 5 & 7 & 4 \\ <br />  8 & 3 & 8 & 0 \\ <br />  20 & 6 & 4 & 1 <br />\end{array} \right) <br />\]</p>
+<p><br />1) La matriz es de orden @@3@@\(\times\)@@4@@.<br />2) El término \( a_{32} \) es @@6@@.<br />3) El término \( a_{23} \) es @@8@@.<br />4) \(0\) ocupa el lugar @@2@@ , @@4@@.</p>
+<p> <br /></p></div><div class="cmpt-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="20260224025920JMYFBB" class="box nota-azul">
+<header class="box-head no-icon">
+<h1 class="box-title">Curiosidad </h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609FVOZEX" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609FVOZEX&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" align="right" style="width: 245px;">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"><img src="../content/resources/20260223202609FVOZEX/Magic_square_Lo_Shu.png" alt="Cuadrado mágico" height="244" width="245"></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ffffff; text-align: center;"><span style="font-size: xx-small;">Cuadro mágico recopilado por Yunlong en el S. XIII.&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Curiosidad</strong></p>
+<p>El primero que utilizó el término de matriz fue el matemático J. J. Sylvester en 1848, aunque fue su colega Cayley quien creó la notación matricial diez años más tarde. Sin embargo, las matrices se utilizaban desde siglos antes.</p>
+<p>Cuadros de números son conocidos desde muy antiguo ya que se tiene constancia de que los matemáticos chinos manejaban cuadrados mágicos 650 años antes del nacimiento de Cristo. Incluso existen textos datados entre el 300 y el 200 a. C. en los que se utilizan matrices para resolver sistemas de ecuaciones.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1-introduccion-a-las-matrices.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/12-tipos-de-matrices.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

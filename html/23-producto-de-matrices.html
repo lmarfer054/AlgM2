@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq7g-kcgp7cclw">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.3. Producto de matrices | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../idevices/geogebra-activity/geogebra-activity.js"></script><link rel="stylesheet" href="../idevices/geogebra-activity/geogebra-activity.css">
+<script src="../libs/exe_lightbox/exe_lightbox.js"> </script>
+<link rel="stylesheet" href="../libs/exe_lightbox/exe_lightbox.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq7g-kcgp7cclw" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li class="active"> <a href="../html/23-producto-de-matrices.html" class="active no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq7g-kcgp7cclw" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.3. Producto de matrices</h1></div>
+</header><div id="page-content-page-moo7jq7g-kcgp7cclw" class="page-content">
+<article id="block-1771979067807-sh6x539xp" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1771979067806-4tazgiobn" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1771979067806-4tazgiobn&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Retomamos la tabla de clasificación de los equipos en un determinado momento de la liga, en la que puedes ver que aparecen los puntos del equipo, los partidos jugados hasta ese momento, entre ellos cuántos se han ganado, empatado o perdido y, por último, los goles a favor y en contra. Pulsa en la imagen para verla en tamaño grande:</p>
+<p><a class="exe-dialog-link" rel="lightbox noopener" href="../content/resources/20260223202609RXHNFH/liga0910_2.png" id="link7d189081-9b5c-368d-0662-782d82e90018" target="_blank" title=""><img src="../content/resources/20260223202609RXHNFH/liga0910_2.png" width="187" height="866" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<p>Si solamente conociésemos los partidos ganados, perdidos y empatados, podríamos conocer el número de partidos jugados. Además, podríamos conocer el número de puntos que tiene el equipo ya que conocemos que obtiene 3 puntos por cada partido ganado, un punto por cada partido empatado y 0 puntos por cada partido perdido.</p>
+<p>De la tabla anterior podemos obtener la matriz que contiene el número de partidos ganados, el número de partidos empatados y el número de partidos perdidos de cada equipo:</p>
+<p>\[<br />A = \left( \begin{array}{rrr} <br />31 & 6 & 1 \\ <br />31 & 3 & 4 \\ <br />21 & 8 & 9 \\ <br />19 & 6 & 13 \\ <br />18 & 8 & 12 \\<br />17 & 7 & 14 \\<br />16 & 8 & 14 \\<br />15 & 9 & 14 \\<br />13 & 8 & 17 \\<br />13 & 8 & 17 \\<br />11 & 11 & 16 \\<br />11 & 10 & 17 \\<br />10 & 12 & 16 \\<br />10 & 11 & 17 \\<br />9 & 13 & 16 \\<br />9 & 12 & 17 \\<br />7 & 16 & 15 \\<br />7 & 15 & 16 \\<br />9 & 9 & 20 \\<br />8 & 10 & 20<br />\end{array} \right)<br />\]</p>
+<p>Además, la matriz que nos indica el número de puntos que se le da a un equipo por cada partido ganado, empatado o perdido es la siguiente:<br />\[<br />B = \left( \begin{array}{r} 3 \\ 1 \\ 0 \end{array} \right)<br />\]</p>
+<p>Si a partir de estas dos matrices queremos calcular el número de puntos que tiene cada equipo, deberíamos multiplicar \( A \times B \). ¿Sabes cómo hacerlo?... En la solución te lo explicamos.</p>
+<p>Si ahora consideramos la matriz \( C = \left( \begin{array}{r} 1 \\ 1 \\ 1 \end{array} \right) \). Si multiplicamos \( A \times C \), ¿sabes qué obtendríamos?</p>
+<p>Y si ahora consideramos la matriz \( D = \left( \begin{array}{rr} 1 & 3 \\ 1 & 1 \\ 1 & 0 \end{array} \right) \). Si multiplicamos \( A \times D \), ¿Sabrías hacerlo? ¿Sabes qué obtendríamos?</p>
+<p>No te preocupes, que ahora te desvelamos todos estos secretos.</p>
+<div id="t3e9128f8-14ce-f2bb-703a-5a145fdebf21" class="exe-dialog-text js-hidden">
+<table border="1" align="right">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="../content/resources/20260223202609RXHNFH/liga0910_2.png" width="650" height="474" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<div id="tfcb4d462-b667-5099-336b-866109731238" class="exe-dialog-text js-hidden">
+<p><img />../content/resources/20260223202609RXHNFH/liga0910_2.png</p>
+</div>
+<div id="t7d189081-9b5c-368d-0662-782d82e90018" class="exe-dialog-text js-hidden">
+<p>#</p>
+</div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>\( A \times B = \left( \begin{array}{rrr} <br />31 & 6 & 1 \\ 31 & 3 & 4 \\ 21 & 8 & 9 \\ 19 & 6 & 13 \\ 18 & 8 & 12 \\ 17 & 7 & 14 \\ 16 & 8 & 14 \\ 15 & 9 & 14 \\ 13 & 8 & 17 \\ 13 & 8 & 17 \\ 11 & 11 & 16 \\ 11 & 10 & 17 \\ 10 & 12 & 16 \\ 10 & 11 & 17 \\ 9 & 13 & 16 \\ 9 & 12 & 17 \\ 7 & 16 & 15 \\ 7 & 15 & 16 \\ 9 & 9 & 20 \\ 8 & 10 & 20<br />\end{array} \right) \times \left( \begin{array}{r} 3 \\ 1 \\ 0 \end{array} \right) = \left( \begin{array}{r} <br />31\cdot3 + 6\cdot1 + 1\cdot0 \\ 31\cdot3 + 3\cdot1 + 4\cdot0 \\ 21\cdot3 + 8\cdot1 + 9\cdot0 \\ 19\cdot3 + 6\cdot1 + 13\cdot0 \\ 18\cdot3 + 8\cdot1 + 12\cdot0 \\ 17\cdot3 + 7\cdot1 + 14\cdot0 \\ 16\cdot3 + 8\cdot1 + 14\cdot0 \\ 15\cdot3 + 9\cdot1 + 14\cdot0 \\ 13\cdot3 + 8\cdot1 + 17\cdot0 \\ 13\cdot3 + 8\cdot1 + 17\cdot0 \\ 11\cdot3 + 11\cdot1 + 16\cdot0 \\ 11\cdot3 + 10\cdot1 + 17\cdot0 \\ 10\cdot3 + 12\cdot1 + 16\cdot0 \\ 10\cdot3 + 11\cdot1 + 17\cdot0 \\ 9\cdot3 + 13\cdot1 + 16\cdot0 \\ 9\cdot3 + 12\cdot1 + 17\cdot0 \\ 7\cdot3 + 16\cdot1 + 15\cdot0 \\ 7\cdot3 + 15\cdot1 + 16\cdot0 \\ 9\cdot3 + 9\cdot1 + 20\cdot0 \\ 8\cdot3 + 10\cdot1 + 20\cdot0<br />\end{array} \right) = \left( \begin{array}{r} <br />99 \\ 96 \\ 71 \\ 63 \\ 62 \\ 58 \\ 56 \\ 54 \\ 47 \\ 47 \\ 44 \\ 43 \\ 42 \\ 41 \\ 40 \\ 39 \\ 37 \\ 36 \\ 36 \\ 34<br />\end{array} \right) \)</p>
+<p>obtenemos la cantidad de puntos que tiene cada equipo.</p>
+<p><br /></p>
+<p>\( A \times C = \left( \begin{array}{rrr} <br />31 & 6 & 1 \\ 31 & 3 & 4 \\ 21 & 8 & 9 \\ 19 & 6 & 13 \\ 18 & 8 & 12 \\ 17 & 7 & 14 \\ 16 & 8 & 14 \\ 15 & 9 & 14 \\ 13 & 8 & 17 \\ 13 & 8 & 17 \\ 11 & 11 & 16 \\ 11 & 10 & 17 \\ 10 & 12 & 16 \\ 10 & 11 & 17 \\ 9 & 13 & 16 \\ 9 & 12 & 17 \\ 7 & 16 & 15 \\ 7 & 15 & 16 \\ 9 & 9 & 20 \\ 8 & 10 & 20<br />\end{array} \right) \times \left( \begin{array}{r} 1 \\ 1 \\ 1 \end{array} \right) = \left( \begin{array}{c} <br />31\cdot1 + 6\cdot1 + 1\cdot1 \\ 31\cdot1 + 3\cdot1 + 4\cdot1 \\ 21\cdot1 + 8\cdot1 + 9\cdot1 \\ 19\cdot1 + 6\cdot1 + 13\cdot1 \\ 18\cdot1 + 8\cdot1 + 12\cdot1 \\ 17\cdot1 + 7\cdot1 + 14\cdot1 \\ 16\cdot1 + 8\cdot1 + 14\cdot1 \\ 15\cdot1 + 9\cdot1 + 14\cdot1 \\ 13\cdot1 + 8\cdot1 + 17\cdot1 \\ 13\cdot1 + 8\cdot1 + 17\cdot1 \\ 11\cdot1 + 11\cdot1 + 16\cdot1 \\ 11\cdot1 + 10\cdot1 + 17\cdot1 \\ 10\cdot1 + 12\cdot1 + 16\cdot1 \\ 10\cdot1 + 11\cdot1 + 17\cdot1 \\ 9\cdot1 + 13\cdot1 + 16\cdot1 \\ 9\cdot1 + 12\cdot1 + 17\cdot1 \\ 7\cdot1 + 16\cdot1 + 15\cdot1 \\ 7\cdot1 + 15\cdot1 + 16\cdot1 \\ 9\cdot1 + 9\cdot1 + 20\cdot1 \\ 8\cdot1 + 10\cdot1 + 20\cdot1<br />\end{array} \right) = \left( \begin{array}{r} <br />38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38 \\ 38<br />\end{array} \right) \)</p>
+<p>obtenemos la cantidad de partidos que ha jugado cada equipo.</p>
+<p>\( A \times D = \left( \begin{array}{rrr} <br />31 & 6 & 1 \\ 31 & 3 & 4 \\ 21 & 8 & 9 \\ 19 & 6 & 13 \\ 18 & 8 & 12 \\ 17 & 7 & 14 \\ 16 & 8 & 14 \\ 15 & 9 & 14 \\ 13 & 8 & 17 \\ 13 & 8 & 17 \\ 11 & 11 & 16 \\ 11 & 10 & 17 \\ 10 & 12 & 16 \\ 10 & 11 & 17 \\ 9 & 13 & 16 \\ 9 & 12 & 17 \\ 7 & 16 & 15 \\ 7 & 15 & 16 \\ 9 & 9 & 20 \\ 8 & 10 & 20<br />\end{array} \right) \times \left( \begin{array}{rr} 1 & 3 \\ 1 & 1 \\ 1 & 0 \end{array} \right) = \left( \begin{array}{rr} <br />31+6+1 & 31\cdot3+6\cdot1+1\cdot0 \\ 31+3+4 & 31\cdot3+3\cdot1+4\cdot0 \\ 21+8+9 & 21\cdot3+8\cdot1+9\cdot0 \\ 19+6+13 & 19\cdot3+6\cdot1+13\cdot0 \\ 18+8+12 & 18\cdot3+8\cdot1+12\cdot0 \\ 17+7+14 & 17\cdot3+7\cdot1+14\cdot0 \\ 16+8+14 & 16\cdot3+8\cdot1+14\cdot0 \\ 15+9+14 & 15\cdot3+9\cdot1+14\cdot0 \\ 13+8+17 & 13\cdot3+8\cdot1+17\cdot0 \\ 13+8+17 & 13\cdot3+8\cdot1+17\cdot0 \\ 11+11+16 & 11\cdot3+11\cdot1+16\cdot0 \\ 11+10+17 & 11\cdot3+10\cdot1+17\cdot0 \\ 10+12+16 & 10\cdot3+12\cdot1+16\cdot0 \\ 10+11+17 & 10\cdot3+11\cdot1+17\cdot0 \\ 9+13+16 & 9\cdot3+13\cdot1+16\cdot0 \\ 9+12+17 & 9\cdot3+12\cdot1+17\cdot0 \\ 7+16+15 & 7\cdot3+16\cdot1+15\cdot0 \\ 7+15+16 & 7\cdot3+15\cdot1+16\cdot0 \\ 9+9+20 & 9\cdot3+9\cdot1+20\cdot0 \\ 8+10+20 & 8\cdot3+10\cdot1+20\cdot0<br />\end{array} \right) = \left( \begin{array}{rr} <br />38 & 99 \\ 38 & 96 \\ 38 & 71 \\ 38 & 63 \\ 38 & 62 \\ 38 & 58 \\ 38 & 56 \\ 38 & 54 \\ 38 & 47 \\ 38 & 47 \\ 38 & 44 \\ 38 & 43 \\ 38 & 42 \\ 38 & 41 \\ 38 & 40 \\ 38 & 39 \\ 38 & 37 \\ 38 & 36 \\ 38 & 36 \\ 38 & 34<br />\end{array} \right) \)</p>
+<p>obtenemos una matriz cuya primera columna recoge el número de partidos jugado por cada equipo y la segunda la cantidad de puntos que tiene cada equipo.</p>
+<p><br /></p></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260224025920QLKACI" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Producto de matrices</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609AKIWUR" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609AKIWUR&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="15" style="width: 99.9846%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;"><span style="text-align: justify;">Si tenemos dos matrices \(A\) de orden \(n\times m\) y \(B\) de orden \(p\times q\), <strong>el producto \(\boldsymbol{A·B}\)</strong>  es otra matriz cuyos elementos se obtienen multiplicando de forma ordenada cada fila de la matriz \(A\) por todas las columnas de la matriz \(B\).</span></td>
+</tr>
+</tbody>
+</table>
+<p align="justify"><br /></p>
+<p align="justify">Así, el elemento que ocupa la posición \(3,7\) en la matriz resultante es el resultado de multiplicar la fila \(3\) de la matriz \(A\) por la columna 7 de la matriz \(B\), es decir, cada elemento de la fila \(3\) de la matriz \(A\) se multiplica por el elemento correspondiente de la columna \(7\) de la matriz \(B\) y se suman los resultados.</p>
+<table border="0" cellpadding="15" style="width: 99.9846%; background-color: #edfcfc;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;"><span style="text-align: justify;">Por tanto, el número de elementos que tiene la matriz \(A\) en cada fila (número de columnas de \(A\)) tiene que coincidir con el número de elementos que tenga la matriz \(B\) en cada columna (número de filas de \(B\)). En nuestro caso, <span style="color: #236fa1;"><strong>para que se puedan multiplicar \(\boldsymbol{A}\) y \(\boldsymbol{B}\) debe cumplirse que \(\boldsymbol{m=p}\)</strong>.</span></span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border="0" cellpadding="15" style="width: 100.016%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9209%;">
+<p><span style="color: #007632;"><strong>Definición formal</strong></span></p>
+<p style="text-align: justify;">Sean las matrices \(A\)  y  \(B\) de dimensiones \(m\times n\) y \(n\times q\) (es decir, el número de columnas de la matriz \(A\) es igual al número de filas de la matriz \(B\)). Se define el producto \(\boldsymbol{A·B}\), y en ese orden, como una matriz \(C\)  de dimensiones \(m\times p\) cuyos elementos son de la forma:<br />\[ \displaystyle \left. \begin{array}{l} A = (a_{ij}) \\ B = (b_{ij}) \end{array} \right\} \rightarrow C = A \cdot B = (a_{ij}) \cdot (b_{ij}) = (c_{ij}) \quad {\Large |} \quad c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}\]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="20260224025920DHNEII" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609MMNWIE" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609MMNWIE&quot;}">
+<div class="exe-text-template">
+    <p>Fijémonos en el producto \(A\times B\). Lo que hemos hecho es multiplicar cada elemento de la primera fila de la matriz \(A\)  por el elemento correspondiente de la primera columna de la matriz \(B\) . Para poder hacer lo anterior, el número de elementos que la matriz \(A\) tiene en esa fila (3 elementos en nuestro caso) es el mismo número de elementos que tiene  \(B\) en su columna, en nuestro caso 3 también.</p>
+<p>En el ejemplo anterior, la matriz \(A\) tiene 20 filas y 3 columnas y la matriz  \(B\) tiene 3 filas y 1 columna. Cuando realizamos el producto \(A\times B\) nos resulta una matriz que tiene 20 filas y 1 columna. En resumen.</p>
+<table align="center" border="1" width="41.0252%" style="width: 43.7962%; border-color: #000000; border-style: solid;">
+<tbody>
+<tr style="border-color: #000000; border-style: solid;">
+<td align="center" style="width: 25.3432%; text-align: center; border: 1px solid #000000;">\(A\)</td>
+<td align="center" style="width: 35.8949%; text-align: center; border: 1px solid #000000;">\(B\)</td>
+<td style="width: 38.7267%; text-align: center; border: 1px solid #000000;">\(A\times B\)</td>
+</tr>
+<tr style="border-color: #000000; border-style: solid;">
+<td style="width: 25.3432%; text-align: center; border: 1px solid #000000;">\(20\times 3\)</td>
+<td style="width: 35.8949%; text-align: center; border: 1px solid #000000;">\(3\times 1\)</td>
+<td style="width: 38.7267%; text-align: center; border: 1px solid #000000;">\(20\times 1\)</td>
+</tr>
+</tbody>
+</table>
+<p>Observa qué ocurre en los casos de los productos \(A\times C\) y \(A\times D\).</p>
+<p>Piensa si se podría hacer el producto \(D\times C\).</p>
+</div>
+</div>
+</div>
+</article><article id="block-1772009675297-5ddljqa6g" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772009675296-4ld76fu5n" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772009675296-4ld76fu5n&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><div style="font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; padding: 25px; border: 1px solid #e1e4e8; border-radius: 8px; line-height: 1.6;">
+<p>Si tenemos las matrices:</p>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">\( A = \left( \begin{array}{rrr} 2 & 3 & 5 \\ 7 & 2 & 4 \end{array} \right) \)    y    \( B = \left( \begin{array}{rr} 1 & 6 \\ 7 & 2 \\ 0 & -5 \end{array} \right) \)</div>
+<p>Piensa qué producto podemos hacer, \(\boldsymbol{A\times B}\) o \(\boldsymbol{B\times A}\). Cuando lo sepas, calcula el que se pueda hacer o los que se puedan hacer.</p>
+<blockquote style="background: #f1f9ff; border-left: 5px solid #3498db; padding: 10px 20px; font-style: italic;">Recuerda que en un producto de matrices, el número de columnas de la primera debe ser igual que el número de filas de la segunda.</blockquote>
+</div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; padding: 25px; border: 1px solid #e1e4e8; border-radius: 8px; line-height: 1.6;">
+<p>Primero analizamos las dimensiones de las matrices:</p>
+<ul>
+<li><strong>Matriz A</strong> es de dimensión \( 2 \times 3 \) (2 filas, 3 columnas).</li>
+<li><strong>Matriz B</strong> es de dimensión \( 3 \times 2 \) (3 filas, 2 columnas).</li>
+</ul>
+<p>Como las columnas de la primera coinciden con las filas de la segunda en ambos casos, <strong>podemos realizar ambos productos</strong>.</p>
+<hr style="border: 0; border-top: 1px dashed #ccc; margin: 25px 0;" />
+<h5 style="color: #2980b9;">1. Cálculo de \( A \times B \):</h5>
+<p>El resultado será una matriz de \( 2 \times 2 \):</p>
+<div style="background: #f8f9fa; padding: 15px; border-radius: 5px; text-align: center; overflow-x: auto;">\( A \times B = \left( \begin{array}{cc} 2\cdot1 + 3\cdot7 + 5\cdot0 & 2\cdot6 + 3\cdot2 + 5\cdot(-5) \\ 7\cdot1 + 2\cdot7 + 4\cdot0 & 7\cdot6 + 2\cdot2 + 4\cdot(-5) \end{array} \right) = \mathbf{\left( \begin{array}{rr} 23 & -7 \\ 21 & 26 \end{array} \right)} \)</div>
+<h5 style="color: #2980b9; margin-top: 20px;">2. Cálculo de \( B \times A \):</h5>
+<p>El resultado será una matriz de \( 3 \times 3 \):</p>
+<div style="background: #f8f9fa; padding: 15px; border-radius: 5px; text-align: center; overflow-x: auto;">\( B \times A = \left( \begin{array}{ccc} 1\cdot2 + 6\cdot7 & 1\cdot3 + 6\cdot2 & 1\cdot5 + 6\cdot4 \\ 7\cdot2 + 2\cdot7 & 7\cdot3 + 2\cdot2 & 7\cdot5 + 2\cdot4 \\ 0\cdot2 + (-5)\cdot7 & 0\cdot3 + (-5)\cdot2 & 0\cdot5 + (-5)\cdot4 \end{array} \right) = \mathbf{\left( \begin{array}{rrr} 44 & 15 & 29 \\ 28 & 25 & 43 \\ -35 & -10 & -20 \end{array} \right)} \)</div>
+<p style="margin-top: 20px; font-weight: bold; color: #e74c3c;">Nota: Observa que \( A \times B \neq B \times A \). ¡El producto de matrices no es conmutativo!</p>
+<p>Puedes ver la resolución de este ejercicio en este video: <a href="https://www.youtube.com/watch?v=4HgEfOukm78" id="link_0"><img src="../content/resources/yutube.png" width="45" height="46" alt="" /></a></p>
+</div></div></div>
+</div>
+</div>
+</div>
+</article><article id="block-1771983428051-et6tovdyk" class="box caja-morada">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="">
+</div>
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772026710363-mm77q9pn0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772026710363-mm77q9pn0&quot;}">
+<div class="exe-text-template">
+    <p>Ahora te proporcionamos una pantalla para que realices productos de matrices de orden \(3\times 3\) y después respondas a las cuestiones que te planteamos. Practica con matrices que inventes. Solamente debes escribir los números en las casillas de las matrices \(A\) y \(B\) y los resultados aparecerán en la matriz \(C\). Es decir, escribe dos matrices cualesquiera y halla su producto, después puedes comprobar el resultado en la matriz \(C\). Debajo tienes botones que te permiten cambiar las matrices de lugar y calcular \(A\times B\) ó \(B\times A\). </p>
+</div>
+</div><div id="idevice-1771983428050-4koq9o2sq" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1771983428050-4koq9o2sq&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;div class=\&quot;matrix-app\&quot;&gt;\n&lt;h2 class=\&quot;matrix-title\&quot;&gt;Calculadora de Producto de Matrices&lt;/h2&gt;\n&lt;div class=\&quot;matrix-flex\&quot;&gt;\n&lt;div class=\&quot;matrix-card\&quot;&gt;\n&lt;h3&gt;Matriz A&lt;/h3&gt;\n&lt;form id=\&quot;mA\&quot;&gt;\n&lt;div class=\&quot;matrix-grid\&quot;&gt;&lt;input type=\&quot;text\&quot; name=\&quot;a11\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a12\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a13\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a21\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a22\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a23\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a31\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a32\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a33\&quot; value=\&quot;0\&quot; /&gt;&lt;/div&gt;\n&lt;input type=\&quot;reset\&quot; value=\&quot;Borrar A\&quot; class=\&quot;btn btn-clear\&quot; /&gt;&lt;/form&gt;&lt;/div&gt;\n&lt;div class=\&quot;matrix-card\&quot;&gt;\n&lt;h3&gt;Matriz B&lt;/h3&gt;\n&lt;form id=\&quot;mB\&quot;&gt;\n&lt;div class=\&quot;matrix-grid\&quot;&gt;&lt;input type=\&quot;text\&quot; name=\&quot;a11\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a12\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a13\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a21\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a22\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a23\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a31\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a32\&quot; value=\&quot;0\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a33\&quot; value=\&quot;0\&quot; /&gt;&lt;/div&gt;\n&lt;input type=\&quot;reset\&quot; value=\&quot;Borrar B\&quot; class=\&quot;btn btn-clear\&quot; /&gt;&lt;/form&gt;&lt;/div&gt;\n&lt;div class=\&quot;matrix-card\&quot;&gt;\n&lt;h3&gt;Resultado C&lt;/h3&gt;\n&lt;form id=\&quot;mC\&quot;&gt;\n&lt;div class=\&quot;matrix-grid\&quot;&gt;&lt;input type=\&quot;text\&quot; name=\&quot;a11\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a12\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a13\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a21\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a22\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a23\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a31\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a32\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt; &lt;input type=\&quot;text\&quot; name=\&quot;a33\&quot; readonly=\&quot;readonly\&quot; style=\&quot;background: #f8f9fa;\&quot; /&gt;&lt;/div&gt;\n&lt;input type=\&quot;reset\&quot; value=\&quot;Borrar C\&quot; class=\&quot;btn btn-clear\&quot; /&gt;&lt;/form&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\&quot;action-panel\&quot;&gt;\n&lt;div class=\&quot;btn-group\&quot;&gt;\n&lt;h4 style=\&quot;margin: 0;\&quot;&gt;Operaciones&lt;/h4&gt;\n&lt;button class=\&quot;btn btn-op\&quot; onclick=\&quot;calculateMult('AB')\&quot;&gt;A × B = C&lt;/button&gt; &lt;button class=\&quot;btn btn-op\&quot; onclick=\&quot;calculateMult('BA')\&quot;&gt;B × A = C&lt;/button&gt;&lt;/div&gt;\n&lt;div class=\&quot;btn-group\&quot;&gt;\n&lt;h4 style=\&quot;margin: 0;\&quot;&gt;Intercambios (Copiar contenido)&lt;/h4&gt;\n&lt;div class=\&quot;btn-grid-6\&quot;&gt;&lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('A','B')\&quot;&gt;A → B&lt;/button&gt; &lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('A','C')\&quot;&gt;A → C&lt;/button&gt; &lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('B','A')\&quot;&gt;B → A&lt;/button&gt; &lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('B','C')\&quot;&gt;B → C&lt;/button&gt; &lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('C','A')\&quot;&gt;C → A&lt;/button&gt; &lt;button class=\&quot;btn btn-swap\&quot; onclick=\&quot;copyMatrix('C','B')\&quot;&gt;C → B&lt;/button&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;style&gt;\n    .matrix-app {\n        font-family: 'Segoe UI', Arial, sans-serif;\n        background-color: #f4f7f6;\n        padding: 25px;\n        border-radius: 12px;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.1);\n        max-width: 950px;\n        margin: 20px auto;\n        border: 1px solid #e0e0e0;\n    }\n    .matrix-title {\n        text-align: center;\n        color: #2c3e50;\n        margin-bottom: 25px;\n        letter-spacing: 1px;\n    }\n    .matrix-flex {\n        display: flex;\n        justify-content: space-around;\n        flex-wrap: wrap;\n        gap: 15px;\n    }\n    .matrix-card {\n        background: white;\n        padding: 15px;\n        border-radius: 10px;\n        border: 1px solid #dcdde1;\n    }\n    .matrix-card h3 {\n        text-align: center;\n        margin-top: 0;\n        color: #34495e;\n        border-bottom: 2px solid #3498db;\n    }\n    .matrix-grid {\n        display: grid;\n        grid-template-columns: repeat(3, 50px);\n        gap: 8px;\n        padding: 10px 15px;\n        border-left: 3px solid #2c3e50;\n        border-right: 3px solid #2c3e50;\n        border-radius: 20px / 50px;\n    }\n    .matrix-grid input {\n        width: 48px;\n        height: 38px;\n        text-align: center;\n        border: 1px solid #bdc3c7;\n        border-radius: 5px;\n    }\n    .action-panel {\n        display: grid;\n        grid-template-columns: 1fr 2fr;\n        gap: 20px;\n        margin-top: 30px;\n        padding-top: 20px;\n        border-top: 1px solid #eee;\n    }\n    .btn-group {\n        display: flex;\n        flex-direction: column;\n        gap: 8px;\n    }\n    .btn-grid-6 {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        gap: 8px;\n    }\n    .btn {\n        padding: 10px;\n        border: none;\n        border-radius: 6px;\n        cursor: pointer;\n        font-weight: 600;\n        font-size: 13px;\n        transition: all 0.2s;\n    }\n    .btn-op { background: #3498db; color: white; }\n    .btn-op:hover { background: #2980b9; }\n    .btn-swap { background: #ecf0f1; color: #2c3e50; border: 1px solid #bdc3c7; }\n    .btn-swap:hover { background: #dcdde1; border-color: #7f8c8d; }\n    .btn-clear { background: #e74c3c; color: white; margin-top: 10px; }\n    .footer-note { text-align: center; font-size: 11px; color: #95a5a6; margin-top: 25px; }\n&lt;/style&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Antes de guardar la puntuación comience la partida.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;&lt;span&gt;Siempre podemos hacer el producto &lt;/span&gt;\\(A\\times A\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Para que el producto \\( A \\times A \\) sea posible, el número de columnas de la primera matriz (\\( A \\)) debe ser igual al número de filas de la segunda matriz (que también es \\(  A \\)). Esto solo ocurre si la matriz es cuadrada (mismo número de filas que de columnas). Si \\(  A \\) es una matriz de \\(  2 \\times 3 \\), no se puede multiplicar por sí misma porque \\( 3\\) columnas no coinciden con \\( 2\\) filas.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Si podemos hacer \\( A \\times B \\) y \\( A \\times C \\), ¿se cumple que \\( A \\times (B + C) = A \\times B + A \\times C \\)?&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Esta es la propiedad distributiva del producto de matrices respecto a la suma. Si los productos por separado son posibles, significa que las dimensiones son compatibles. Al sumar \\( B + C \\), obtenemos una matriz de la misma dimensión que \\( B \\) (o \\( C \\)), por lo que el producto con \\( A\\) sigue siendo posible y el resultado se distribuye correctamente.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;&lt;span&gt;\\(A\\times B\\) es lo mismo que \\(B\\times A\\)&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;A diferencia de la multiplicación con números reales, el producto de matrices no es conmutativo.&lt;/p&gt;\n&lt;p&gt;Esto significa que, por lo general, \\(A \\times B \\neq B \\times A\\). Tenemos un ejemplo en el ejercicio anterior.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;c80dd9eb-42f3-4a7d-8e0d-932e3b8720c0&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1771983428050-4koq9o2sq&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1771983428050-4koq9o2sq" data-evaluationb="false" data-evaluationid="c80dd9eb-42f3-4a7d-8e0d-932e3b8720c0"></div>
+        <div class="TOFP-instructions"><div class="matrix-app">
+<h2 class="matrix-title">Calculadora de Producto de Matrices</h2>
+<div class="matrix-flex">
+<div class="matrix-card">
+<h3>Matriz A</h3>
+<form id="mA">
+<div class="matrix-grid"><input type="text" name="a11" value="0" /> <input type="text" name="a12" value="0" /> <input type="text" name="a13" value="0" /> <input type="text" name="a21" value="0" /> <input type="text" name="a22" value="0" /> <input type="text" name="a23" value="0" /> <input type="text" name="a31" value="0" /> <input type="text" name="a32" value="0" /> <input type="text" name="a33" value="0" /></div>
+<input type="reset" value="Borrar A" class="btn btn-clear" /></form></div>
+<div class="matrix-card">
+<h3>Matriz B</h3>
+<form id="mB">
+<div class="matrix-grid"><input type="text" name="a11" value="0" /> <input type="text" name="a12" value="0" /> <input type="text" name="a13" value="0" /> <input type="text" name="a21" value="0" /> <input type="text" name="a22" value="0" /> <input type="text" name="a23" value="0" /> <input type="text" name="a31" value="0" /> <input type="text" name="a32" value="0" /> <input type="text" name="a33" value="0" /></div>
+<input type="reset" value="Borrar B" class="btn btn-clear" /></form></div>
+<div class="matrix-card">
+<h3>Resultado C</h3>
+<form id="mC">
+<div class="matrix-grid"><input type="text" name="a11" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a12" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a13" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a21" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a22" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a23" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a31" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a32" readonly="readonly" style="background: #f8f9fa;" /> <input type="text" name="a33" readonly="readonly" style="background: #f8f9fa;" /></div>
+<input type="reset" value="Borrar C" class="btn btn-clear" /></form></div>
+</div>
+<div class="action-panel">
+<div class="btn-group">
+<h4 style="margin: 0;">Operaciones</h4>
+<button class="btn btn-op" onclick="calculateMult('AB')">A × B = C</button> <button class="btn btn-op" onclick="calculateMult('BA')">B × A = C</button></div>
+<div class="btn-group">
+<h4 style="margin: 0;">Intercambios (Copiar contenido)</h4>
+<div class="btn-grid-6"><button class="btn btn-swap" onclick="copyMatrix('A','B')">A → B</button> <button class="btn btn-swap" onclick="copyMatrix('A','C')">A → C</button> <button class="btn btn-swap" onclick="copyMatrix('B','A')">B → A</button> <button class="btn btn-swap" onclick="copyMatrix('B','C')">B → C</button> <button class="btn btn-swap" onclick="copyMatrix('C','A')">C → A</button> <button class="btn btn-swap" onclick="copyMatrix('C','B')">C → B</button></div>
+</div>
+</div>
+</div>
+<style>
+    .matrix-app {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f4f7f6;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        max-width: 950px;
+        margin: 20px auto;
+        border: 1px solid #e0e0e0;
+    }
+    .matrix-title {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+    .matrix-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .matrix-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #dcdde1;
+    }
+    .matrix-card h3 {
+        text-align: center;
+        margin-top: 0;
+        color: #34495e;
+        border-bottom: 2px solid #3498db;
+    }
+    .matrix-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        gap: 8px;
+        padding: 10px 15px;
+        border-left: 3px solid #2c3e50;
+        border-right: 3px solid #2c3e50;
+        border-radius: 20px / 50px;
+    }
+    .matrix-grid input {
+        width: 48px;
+        height: 38px;
+        text-align: center;
+        border: 1px solid #bdc3c7;
+        border-radius: 5px;
+    }
+    .action-panel {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .btn-grid-6 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .btn {
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13px;
+        transition: all 0.2s;
+    }
+    .btn-op { background: #3498db; color: white; }
+    .btn-op:hover { background: #2980b9; }
+    .btn-swap { background: #ecf0f1; color: #2c3e50; border: 1px solid #bdc3c7; }
+    .btn-swap:hover { background: #dcdde1; border-color: #7f8c8d; }
+    .btn-clear { background: #e74c3c; color: white; margin-top: 10px; }
+    .footer-note { text-align: center; font-size: 11px; color: #95a5a6; margin-top: 25px; }
+</style></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1771983428050-4koq9o2sq" id="tofPMainContainer-idevice-1771983428050-4koq9o2sq">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1771983428050-4koq9o2sq">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1771983428050-4koq9o2sq" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1771983428050-4koq9o2sq">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1771983428050-4koq9o2sq"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1771983428050-4koq9o2sq">
+                    <button  id="tofPStartGame-idevice-1771983428050-4koq9o2sq" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1771983428050-4koq9o2sq">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1771983428050-4koq9o2sq">
+                    <button id="tofPCheckTest-idevice-1771983428050-4koq9o2sq" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1771983428050-4koq9o2sq" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1771983428050-4koq9o2sq" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="20260224025920MHYCKI" class="box nota-azul">
+<header class="box-head no-icon">
+<h1 class="box-title">Importante</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609LPOUGN" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609LPOUGN&quot;}">
+<div class="exe-text-template">
+    <p><strong>Elemento neutro del producto</strong></p>
+<p>Igual que si multiplicas cualquier número por \(1\) obtienes el mismo número, hay una matriz que tiene el mismo efecto. La matriz identidad \(I\), que viste en el punto 1.2, cumple que si la multiplicas por cualquier otra matriz, al final nos queda esa segunda matriz.</p>
+<p>Recuerda que la matriz identidad está formada por \(1\) en la diagonal y \(0\) en el resto de elementos.</p>
+<p>Por ejemplo, la matriz identidad de orden \(2\) es:</p>
+<p>\[ Id = \left( \begin{array}{cc} 1 & 0 \\ 0 & 1 \end{array} \right) \]</p>
+<p>Compruébalo escribiendo cualquier matriz y multiplicándola por la matriz identidad del orden conveniente para poder hacer el producto. Verás que obtienes la matriz del principio.</p>
+</div>
+</div>
+</div>
+</article><article id="block-1772011579807-hds5a07ho" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/iconogeogebra.png" alt="">
+</div>
+<h1 class="box-title">GeoGebra</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772011579806-lboajuzbx" class="idevice_node geogebra-activity" data-idevice-path="../idevices/geogebra-activity/" data-idevice-type="geogebra-activity">
+<div class="auto-geogebra auto-geogebra-bkfj47um auto-geogebra-width-1098 auto-geogebra-height-438 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-idevice-1772011579806-lboajuzbx auto-geogebra-weight-100"><div class="auto-geogebra-instructions"><p>Observa en esta escena de Geogebra cómo se multiplican matrices.</p>
+<p>Mueve el deslizador verde para ver los pasos.</p>
+<p>Pulsa en "Nuevo" para matrices nuevas.</p></div><div class="game-evaluation-ids js-hidden" data-id="idevice-1772011579806-lboajuzbx" data-evaluationb="false" data-evaluationid="0"></div><p><a href="https://www.geogebra.org/m/bkfj47um" target="_blank">https://www.geogebra.org/m/bkfj47um (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,,,0,Autor%EDa</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div><div class="auto-geogebra-messages-scorm">La%20puntuaci%F3n%20no%20se%20puede%20guardar%20porque%20esta%20p%E1gina%20no%20forma%20parte%20de%20un%20paquete%20SCORM,Su%20puntuaci%F3n,Puntuaci%F3n,Peso,La%20%FAltima%20puntuaci%F3n%20guardada%20es</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/22-producto-de-un-escalar-por-una-matriz.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/24-actividades.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

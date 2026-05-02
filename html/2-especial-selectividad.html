@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7k2hq-mw3t40qjl">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2. Especial Selectividad | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7k2hq-mw3t40qjl" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/2-especial-selectividad.html" class="active no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7k2hq-mw3t40qjl" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2. Especial Selectividad</h1></div>
+</header><div id="page-content-page-moo7k2hq-mw3t40qjl" class="page-content">
+<article id="20260502095902VHEAVV" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772368121595-8275s3jcm" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772368121595-8275s3jcm&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Sean \( A \), \( B \), \( X \) y \( C \) matrices cualesquiera que verifican \( A \cdot X \cdot B = C \).</p>
+<p>Si todas las matrices son cuadradas de orden 3, y se sabe que el determinante de \( A \) es 3, el de \( B \) es -1, y el de \( C \) es 6, calcula el determinante de \( X \) y de \( 2X \).</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 95%; max-width: 1100px; margin: 0 auto; background-color: #fdfdfd; border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="padding: 25px;">
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px;">1. Cálculo del determinante de \( X \)</h4>
+</div>
+<p style="color: #444;">Aplicamos la propiedad del determinante de un producto de matrices: <em>"El determinante del producto de matrices es igual al producto de sus determinantes"</em>.</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin: 20px 0;">\( |A \cdot X \cdot B| = |C| \implies |A| \cdot |X| \cdot |B| = |C| \)</div>
+<p style="color: #444;">Sustituimos los valores numéricos conocidos (\( |A| = 3 \), \( |B| = -1 \), \( |C| = 6 \)):</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin: 20px 0;">\( 3 \cdot |X| \cdot (-1) = 6 \implies -3 \cdot |X| = 6 \implies |X| = \dfrac{6}{-3} = \mathbf{-2} \)</div>
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px;">   2. Cálculo del determinante de \( 2X \)</h4>
+<p style="color: #444;">Aplicamos la propiedad del producto de un número por un determinante: <em>"Si multiplicamos una matriz cuadrada de orden \( n \) por un número real \( k \), su determinante queda multiplicado por \( k^n \)"</em>.</p>
+<p style="color: #444;">En este caso, sabemos que las matrices son de orden 3 (\( n = 3 \)) y el número a multiplicar es \( k = 2 \):</p>
+<div style="text-align: center; font-size: 1.3em; color: #0000cc; margin: 25px 0; background-color: #ffffff; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">\( |2X| = 2^3 \cdot |X| = 8 \cdot (-2) = \mathbf{-16} \)</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902JFSHGD" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772368905301-fop5lt7y8" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772368905301-fop5lt7y8&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Sean \( F_1, F_2, F_3 \) las filas primera, segunda y tercera, respectivamente, de una matriz \( B \) de orden 3, cuyo determinante vale -2. Calcula, indicando las propiedades que utilices:</p>
+<p>a) El determinante de \( B^{-1} \).<br />b) El determinante de \( (B^t)^4 \).<br />c) El determinante de \( 2\cdot B \).<br />d) El determinante de una matriz cuadrada cuyas filas son: \( 5F_1 - F_3 \), \( 3F_3 \), \( F_2 \).</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="w" data-text-a="w" data-text-b="w"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 95%; max-width: 1150px; margin: 0 auto; background-color: #fdfdfd; border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="padding: 25px;"><br /></div>
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 0;">a) Determinante de la matriz inversa \( B^{-1} \)</h4>
+<p style="color: #444;"><strong>Propiedad:</strong> El determinante de la matriz inversa es el inverso del determinante de la matriz original. \( |B^{-1}| = \dfrac{1}{|B|} \).</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin: 15px 0;">\( |B^{-1}| = \dfrac{1}{-2} = \mathbf{-\dfrac{1}{2}} \)</div>
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">b) Determinante de \( (B^t)^4 \)</h4>
+<p style="color: #444;"><strong>Propiedades:</strong> <br />1. El determinante de una matriz traspuesta es igual al de la original: \( |B^t| = |B| \). <br />2. El determinante de una potencia es la potencia del determinante: \( |A^n| = |A|^n \).</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin: 15px 0;">\( |(B^t)^4| = |B^t|^4 = |B|^4 = (-2)^4 = \mathbf{16} \)</div>
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">c) Determinante de \( 2 \cdot B \)</h4>
+<p style="color: #444;"><strong>Propiedad:</strong> Si se multiplica una matriz de orden \( n \) por un número \( k \), su determinante queda multiplicado por \( k^n \). En este caso, la matriz es de orden 3 (\( n = 3 \)) y multiplicamos por 2 (\( k = 2 \)).</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin: 15px 0;">\( |2 \cdot B| = 2^3 \cdot |B| = 8 \cdot (-2) = \mathbf{-16} \)</div>
+<h4 style="color: #007e3a; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">d) Determinante por combinación de filas</h4>
+<p style="color: #444;">Vamos a aplicar las propiedades paso a paso sobre el nuevo determinante:</p>
+<div style="background-color: #ffffff; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; line-height: 1.8;">
+<div style="margin-bottom: 15px; border-bottom: 1px dashed #eee; padding-bottom: 15px;">
+<div style="color: #0000cc; font-size: 1.2em; margin-bottom: 5px;">\( \begin{vmatrix} 5F_1 - F_3 \\ 3F_3 \\ F_2 \end{vmatrix} = \begin{vmatrix} 5F_1 \\ 3F_3 \\ F_2 \end{vmatrix} - \begin{vmatrix} F_3 \\ 3F_3 \\ F_2 \end{vmatrix} \)</div>
+<div style="color: #555; font-size: 0.95em;"><strong>Propiedad:</strong> Si una línea es suma de varios sumandos, el determinante se descompone en la suma de dos determinantes.</div>
+</div>
+<div style="margin-bottom: 15px; border-bottom: 1px dashed #eee; padding-bottom: 15px;">
+<div style="color: #0000cc; font-size: 1.2em; margin-bottom: 5px;">\( = \begin{vmatrix} 5F_1 \\ 3F_3 \\ F_2 \end{vmatrix} - 0 \)</div>
+<div style="color: #555; font-size: 0.95em;"><strong>Propiedad:</strong> El segundo determinante es 0 porque la primera y segunda fila son proporcionales (ambas dependen de \( F_3 \)).</div>
+</div>
+<div style="margin-bottom: 15px; border-bottom: 1px dashed #eee; padding-bottom: 15px;">
+<div style="color: #0000cc; font-size: 1.2em; margin-bottom: 5px;">\( = 5 \cdot 3 \cdot \begin{vmatrix} F_1 \\ F_3 \\ F_2 \end{vmatrix} \)</div>
+<div style="color: #555; font-size: 0.95em;"><strong>Propiedad:</strong> Si una fila está multiplicada por un número, ese número puede salir fuera del determinante multiplicando. Extraemos el 5 y el 3.</div>
+</div>
+<div style="margin-bottom: 15px; border-bottom: 1px dashed #eee; padding-bottom: 15px;">
+<div style="color: #0000cc; font-size: 1.2em; margin-bottom: 5px;">\( = 15 \cdot \left( - \begin{vmatrix} F_1 \\ F_2 \\ F_3 \end{vmatrix} \right) \)</div>
+<div style="color: #555; font-size: 0.95em;"><strong>Propiedad:</strong> Al intercambiar dos líneas paralelas (la fila 2 y la 3) para recuperar el orden original de la matriz \( B \), el determinante cambia de signo.</div>
+</div>
+<div style="background-color: #f4f8f4; padding: 15px; border-radius: 6px; border-left: 4px solid #82b93c;">
+<div style="color: #0000cc; font-size: 1.3em; font-weight: bold;">\( = -15 \cdot |B| = -15 \cdot (-2) = \mathbf{30} \)</div>
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902HCRFPV" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772369617256-ih5yic2ic" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772369617256-ih5yic2ic&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Sea la matriz \(A = \left( \begin{array}{rrr} 3 & 0 & t \\ -5 & t & -5 \\ t & 0 & 3 \end{array} \right)\) e \(I\) la matriz Identidad de orden 3.</p>
+<p>Calcula los valores de \(t\) para los que el determinante \(A - 2 \cdot I\) es cero.</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 98%; max-width: 1200px; margin: 0 auto; background-color: #fdfdfd; border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="background-color: #ffffff; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; line-height: 1.8;">
+<h4 style="color: #007e3a; margin-top: 0;">1. Calculamos la matriz \(A - 2 \cdot I\)</h4>
+<p style="color: #444; margin-bottom: 15px;">La matriz identidad \(I\) de orden 3 tiene unos en la diagonal principal y ceros en el resto. Al multiplicarla por 2, restaremos 2 a los elementos de la diagonal de \(A\).</p>
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px; text-align: center; overflow-x: auto;">
+<div style="color: #0000cc; font-size: 1.2em;">\[A - 2 \cdot I = \left( \begin{array}{rrr} 3 & 0 & t \\ -5 & t & -5 \\ t & 0 & 3 \end{array} \right) - \left( \begin{array}{rrr} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{array} \right) = \left( \begin{array}{rrr} 1 & 0 & t \\ -5 & t-2 & -5 \\ t & 0 & 1 \end{array} \right)\]</div>
+</div>
+<h4 style="color: #007e3a; margin-top: 0;">2. Calculamos su determinante</h4>
+<p style="color: #444; margin-bottom: 15px;">Para hacer el cálculo más sencillo, desarrollaremos el determinante por la <strong>segunda columna</strong>, ya que tiene dos ceros y solo nos quedará un término.</p>
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px; text-align: center; overflow-x: auto;">
+<div style="color: #0000cc; font-size: 1.2em; margin-bottom: 10px;">\[|A - 2 \cdot I| = \left| \begin{array}{rrr} 1 & 0 & t \\ -5 & t-2 & -5 \\ t & 0 & 1 \end{array} \right|\]</div>
+<div style="color: #0000cc; font-size: 1.2em;">\[= (t-2) \cdot \left| \begin{array}{rr} 1 & t \\ t & 1 \end{array} \right| = (t-2) \cdot (1 - t^2)\]</div>
+</div>
+<h4 style="color: #007e3a; margin-top: 0;">3. Igualamos a cero y resolvemos</h4>
+<p style="color: #444; margin-bottom: 15px;">Como nos piden que el determinante sea cero, igualamos la expresión factorizada que hemos obtenido:</p>
+<div style="text-align: center; font-size: 1.2em; color: #0000cc; margin-bottom: 20px;">\[(t-2) \cdot (1 - t^2) = 0\]</div>
+<p style="color: #444;">Para que un producto sea cero, alguno de sus factores debe ser cero. Obtenemos así las posibles soluciones:</p>
+<ul style="color: #0000cc; font-size: 1.1em; line-height: 2;">
+<li>Primer factor: \(t - 2 = 0 \implies \mathbf{t = 2}\)</li>
+<li>Segundo factor: \(1 - t^2 = 0 \implies t^2 = 1 \implies \mathbf{t = 1} \text{ y } \mathbf{t = -1}\)</li>
+</ul>
+<div style="background-color: #f4f8f4; padding: 15px; border-radius: 6px; border-left: 4px solid #82b93c; margin-top: 20px;">
+<p style="margin: 0; color: #333;"><strong>Solución:</strong></p>
+<div style="color: #0000cc; font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 5px;">Los valores son \(t = -1\), \(t = 1\) y \(t = 2\).</div>
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902RJEZLQ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772370403625-5mazjqdf0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772370403625-5mazjqdf0&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Sin desarrollarlo, calcula el valor del determinante de la matriz \( \left( \begin{array}{ccc} k & x & 1+\alpha x \\ 2k & y & 2+\alpha y \\ 3k & z & 3+\alpha z \end{array} \right) \) y enuncia las propiedades que has utilizado.</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="w" data-text-a="w" data-text-b="w"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 98%; max-width: 1200px; margin: 0 auto; background-color: #fdfdfd; border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="padding: 25px;">
+<div style="background-color: #ffffff; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; line-height: 1.8;">
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px;">
+<h4 style="color: #007e3a; margin-top: 0;">Paso 1: Descomposición en suma de determinantes</h4>
+<p style="color: #444; margin-bottom: 15px;"><strong>Propiedad utilizada:</strong> Si todos los elementos de una línea (fila o columna) están formados por dos sumandos, el determinante se puede descomponer en la suma de dos determinantes.</p>
+<p style="color: #444;">En nuestra matriz, la tercera columna es una suma. Por tanto, separamos el determinante inicial en dos:</p>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center; overflow-x: auto; padding: 10px 0;">\( \left| \begin{array}{ccc} k & x & 1+\alpha x \\ 2k & y & 2+\alpha y \\ 3k & z & 3+\alpha z \end{array} \right| = \left| \begin{array}{ccc} k & x & 1 \\ 2k & y & 2 \\ 3k & z & 3 \end{array} \right| + \left| \begin{array}{ccc} k & x & \alpha x \\ 2k & y & \alpha y \\ 3k & z & \alpha z \end{array} \right| \)</div>
+</div>
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px;">
+<h4 style="color: #007e3a; margin-top: 0;">Paso 2: Análisis del primer determinante</h4>
+<p style="color: #444; margin-bottom: 15px;"><strong>Propiedad utilizada:</strong> Si en un determinante hay dos líneas paralelas proporcionales, el valor del determinante es cero.</p>
+<p style="color: #444;">Si observamos el primer determinante, la primera columna (\( C_1 \)) y la tercera columna (\( C_3 \)) son proporcionales, ya que \( C_1 = k \cdot C_3 \).</p>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center; margin-bottom: 10px;">\( \left| \begin{array}{ccc} k & x & 1 \\ 2k & y & 2 \\ 3k & z & 3 \end{array} \right| = 0 \)</div>
+</div>
+<div style="margin-bottom: 25px; padding-bottom: 10px;">
+<h4 style="color: #007e3a; margin-top: 0;">Paso 3: Análisis del segundo determinante</h4>
+<p style="color: #444; margin-bottom: 15px;"><strong>Propiedad utilizada:</strong> La misma que en el paso anterior (líneas proporcionales anulan el determinante).</p>
+<p style="color: #444;">En el segundo determinante, la tercera columna (\( C_3 \)) es proporcional a la segunda columna (\( C_2 \)), ya que \( C_3 = \alpha \cdot C_2 \).</p>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center; margin-bottom: 10px;">\( \left| \begin{array}{ccc} k & x & \alpha x \\ 2k & y & \alpha y \\ 3k & z & \alpha z \end{array} \right| = 0 \)</div>
+</div>
+<div style="background-color: #f4f8f4; padding: 15px; border-radius: 6px; border-left: 4px solid #82b93c; margin-top: 20px;">
+<p style="margin: 0; color: #333;"><strong>Resultado Final:</strong></p>
+<div style="color: #0000cc; font-size: 1.3em; font-weight: bold; text-align: center; margin-top: 10px;">\( 0 + 0 = \mathbf{0} \)</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902AKOVEA" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772370746591-a0isdjqb0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772370746591-a0isdjqb0&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Siendo \( A = \left| \begin{array}{ccc} a & b & c \\ d & e & f \\ g & h & i \end{array} \right| = 2 \) calcula, indicando las propiedades que utilices, los siguientes determinantes:</p>
+<p>a) \( |-3 \cdot A| \)</p>
+<p>b) \( |A^{-1}| \)</p>
+<p>c) \( \left| \begin{array}{ccc} c & b & a \\ f & e & d \\ 2i & 2h & 2g \end{array} \right| \)</p>
+<p>d) \( \left| \begin{array}{ccc} a & b & a-c \\ d & e & d-f \\ g & h & g-i \end{array} \right| \)</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 98%; max-width: 1200px; margin: 0 auto; background-color: #fdfdfd; border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="padding: 25px;">
+<div style="background-color: #f4f8f4; padding: 20px; border-radius: 6px; border-left: 5px solid #007E3A; margin-bottom: 30px;">
+<p style="margin-bottom: 0; color: #444;"> \( A = \left| \begin{array}{ccc} a & b & c \\ d & e & f \\ g & h & i \end{array} \right| = 2 \)</p>
+</div>
+<div style="background-color: #ffffff; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; line-height: 1.8;">
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px;">
+<h4 style="color: #007e3a; margin-top: 0;">a) \( |-3 \cdot A| \)</h4>
+<p style="color: #444; margin-bottom: 10px;"><strong>Propiedad utilizada:</strong> Si se multiplica una matriz cuadrada de orden \( n \) por un número real \( k \), su determinante queda multiplicado por \( k^n \).</p>
+<p style="color: #444; margin-bottom: 15px;">En este caso, la matriz \( A \) es de orden \( 3 \) (\( n=3 \)) y la multiplicamos por \( -3 \) (\( k=-3 \)):</p>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center;">\( |-3 \cdot A| = (-3)^3 \cdot |A| = -27 \cdot 2 = \mathbf{-54} \)</div>
+</div>
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px;">
+<h4 style="color: #007e3a; margin-top: 0;">b) \( |A^{-1}| \)</h4>
+<p style="color: #444; margin-bottom: 10px;"><strong>Propiedad utilizada:</strong> El determinante de la matriz inversa es el inverso multiplicativo del determinante de la matriz original.</p>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center;">\( |A^{-1}| = \dfrac{1}{|A|} = \mathbf{\dfrac{1}{2}} \)</div>
+</div>
+<div style="margin-bottom: 25px; border-bottom: 1px dashed #eee; padding-bottom: 20px;">
+<h4 style="color: #007e3a; margin-top: 0;">c) \( \left| \begin{array}{ccc} c & b & a \\ f & e & d \\ 2i & 2h & 2g \end{array} \right| \)</h4>
+<p style="color: #444; margin-bottom: 10px;">Vamos a transformar este determinante paso a paso para llegar al original:</p>
+<ul style="color: #444;">
+<li><strong>Propiedad 1:</strong> Podemos extraer factor común de una línea (en este caso, el \( 2 \) de la tercera fila).</li>
+<li><strong>Propiedad 2:</strong> Si intercambiamos dos líneas paralelas (la columna 1 y la 3), el determinante cambia de signo.</li>
+</ul>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center; overflow-x: auto; padding: 10px 0;">\( \left| \begin{array}{ccc} c & b & a \\ f & e & d \\ 2i & 2h & 2g \end{array} \right| = 2 \cdot \left| \begin{array}{ccc} c & b & a \\ f & e & d \\ i & h & g \end{array} \right| = 2 \cdot (-1) \cdot \left| \begin{array}{ccc} a & b & c \\ d & e & f \\ g & h & i \end{array} \right| = -2 \cdot |A| = -2 \cdot 2 = \mathbf{-4} \)</div>
+</div>
+<div style="margin-bottom: 15px; padding-bottom: 10px;">
+<h4 style="color: #007e3a; margin-top: 0;">d) \( \left| \begin{array}{ccc} a & b & a-c \\ d & e & d-f \\ g & h & g-i \end{array} \right| \)</h4>
+<p style="color: #444; margin-bottom: 10px;"><strong>Propiedades utilizadas:</strong></p>
+<ol style="color: #444; margin-top: 0;">
+<li>Si una línea es suma de varios sumandos, el determinante se descompone en suma de determinantes.</li>
+<li>Un determinante con dos líneas iguales o proporcionales es cero.</li>
+<li>Al intercambiar dos líneas (en este caso, multiplicar la columna 3 por -1), el determinante cambia de signo.</li>
+</ol>
+<div style="color: #0000cc; font-size: 1.2em; text-align: center; overflow-x: auto; padding: 10px 0;">\( \left| \begin{array}{ccc} a & b & a-c \\ d & e & d-f \\ g & h & g-i \end{array} \right| = \left| \begin{array}{ccc} a & b & a \\ d & e & d \\ g & h & g \end{array} \right| + \left| \begin{array}{ccc} a & b & -c \\ d & e & -f \\ g & h & -i \end{array} \right| = 0 + (-1) \cdot \left| \begin{array}{ccc} a & b & c \\ d & e & f \\ g & h & i \end{array} \right| = -1 \cdot |A| = -1 \cdot 2 = \mathbf{-2} \)</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/resumen-2.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

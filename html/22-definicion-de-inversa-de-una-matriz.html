@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7khjy-5xtumappf">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.2. Definición de inversa de una matriz | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7khjy-5xtumappf" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li class="active"> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="active no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7khjy-5xtumappf" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.2. Definición de inversa de una matriz</h1></div>
+</header><div id="page-content-page-moo7khjy-5xtumappf" class="page-content">
+<article id="20260502094802FWGZGQ" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmn-53duypt32" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmn-53duypt32&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Observa los precios de tres prendas de vestir que hemos seleccionado en unos almacenes:</p>
+<table border="0" cellpadding="10" style="width: 80%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 49.9552%;"><img src="../content/resources/idevice-mocvbkmn-53duypt32/REBAJAS.png" width="704" height="384" alt=""><br></td>
+<td style="width: 49.9552%;"><img src="../content/resources/idevice-mocvbkmn-53duypt32/sUPERREBAJAS.png" width="704" height="384" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>El precio de cada prenda varía si es el precio normal, el precio en rebajas o el precio super-rebajado. Así observamos un cuadro de precios como el que sigue:</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; padding-top: 15px; padding-right: 15px; padding-bottom: 15px;">
+<table cellpadding="10px" style="width: 70%; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="padding: 10px; width: 124.45px;"></th>
+<th style="padding: 10px; font-style: italic; width: 44.1625px; text-align: center;">Chaleco</th>
+<th style="padding: 10px; font-style: italic; width: 80.575px; text-align: center;">Camisa</th>
+<th style="padding: 10px; font-style: italic; width: 110.438px; text-align: center;">Pantalones</th>
+<th style="padding: 10px; font-style: italic; width: 132.863px;"><br></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 124.45px;">Normal</td>
+<td style="padding: 10px; width: 44.1625px; text-align: center;">12</td>
+<td style="padding: 10px; width: 80.575px; text-align: center;">22</td>
+<td style="padding: 10px; width: 110.438px; text-align: center;">35</td>
+<td style="padding: 10px; width: 132.863px;" rowspan="3">\[ \implies A = \begin{pmatrix} 12 & 22 & 35 \\ 11 & 15 & 30 \\ 8 & 14 & 25 \end{pmatrix} \]<br></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 124.45px;">Rebajas</td>
+<td style="padding: 10px; width: 44.1625px; text-align: center;">11</td>
+<td style="padding: 10px; width: 80.575px; text-align: center;">15</td>
+<td style="padding: 10px; width: 110.438px; text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 124.45px;">Super-rebajas</td>
+<td style="padding: 10px; width: 44.1625px; text-align: center;">8</td>
+<td style="padding: 10px; width: 80.575px; text-align: center;">14</td>
+<td style="padding: 10px; width: 110.438px; text-align: center;">25</td>
+</tr>
+</tbody>
+</table>
+Si en el centro comercial las ventas de cada una de las prendas en cada uno de los trimestres fueron las que se recogen en el siguiente cuadro:</div>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; padding: 15px;">
+<table cellpadding="10px" style="width: 70%; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="padding: 10px; width: 104.9px;"></th>
+<th style="padding: 10px; font-style: italic; width: 130px; text-align: center;">Trimestre 1</th>
+<th style="padding: 10px; font-style: italic; width: 130px; text-align: center;">Trimestre 2</th>
+<th style="padding: 10px; font-style: italic; width: 130px; text-align: center;">Trimestre 3</th>
+<th style="padding: 10px; font-style: italic; width: 130px; text-align: center;">Trimestre 4</th>
+<th style="padding: 10px; font-style: italic; width: 20.85px;"><br></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 104.9px;">Chalecos</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">10</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">12</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">15</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">10</td>
+<td style="padding: 10px; text-align: center; width: 20.85px;" rowspan="3">\[ \implies B = \begin{pmatrix} 10 & 12 & 15 & 10 \\ 4 & 15 & 12 & 4 \\ 9 & 10 & 0 & 4 \end{pmatrix} \]</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 104.9px;">Camisas</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">4</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">15</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">12</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">4</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic; width: 104.9px;">Pantalones</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">9</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">10</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">0</td>
+<td style="padding: 10px; text-align: center; width: 111.113px;">4</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 1.2em;"><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Para conocer la cantidad de dinero que ganaríamos en cada trimestre dependiendo de si ese trimestre los precios son los normales, es un trimestre de rebajas o es un trimestre de super-rebajas, solamente necesitaríamos multiplicar la primera matriz por la segunda:</span><span style="font-size: 12pt; text-wrap-mode: nowrap; color: #212529;">\[ A \cdot B = \begin{pmatrix} 12 & 22 & 35 \\ 11 & 15 & 30 \\ 8 & 14 & 25 \end{pmatrix} \begin{pmatrix} 10 & 12 & 15 & 10 \\ 4 & 15 & 12 & 4 \\ 9 & 10 & 0 & 4 \end{pmatrix} = \begin{pmatrix} 523 & 824 & 444 & 348 \\ 440 & 657 & 345 & 290 \\ 361 & 556 & 288 & 236 \end{pmatrix} = M \]</span></p>
+</div>
+<p>&nbsp;Según lo anterior, tendríamos que la cantidad de dinero ganada por trimestre dependiendo de si ese trimestre era normal, de rebajas o de super-rebajas es:</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; padding: 15px;">
+<table cellpadding="10px" style="width: auto; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="padding: 10px;"></th>
+<th style="padding: 10px; font-style: italic; text-align: center;">Trimestre 1</th>
+<th style="padding: 10px; font-style: italic; text-align: center;">Trimestre 2</th>
+<th style="padding: 10px; font-style: italic; text-align: center;">Trimestre 3</th>
+<th style="padding: 10px; font-style: italic; text-align: center;">Trimestre 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic;">Normal</td>
+<td style="padding: 10px; text-align: center;">523</td>
+<td style="padding: 10px; text-align: center;">824</td>
+<td style="padding: 10px; text-align: center;">444</td>
+<td style="padding: 10px; text-align: center;">348</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic;">Rebajas</td>
+<td style="padding: 10px; text-align: center;">440</td>
+<td style="padding: 10px; text-align: center;">657</td>
+<td style="padding: 10px; text-align: center;">345</td>
+<td style="padding: 10px; text-align: center;">290</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 10px; font-style: italic;">Super-rebajas</td>
+<td style="padding: 10px; text-align: center;">361</td>
+<td style="padding: 10px; text-align: center;">556</td>
+<td style="padding: 10px; text-align: center;">288</td>
+<td style="padding: 10px; text-align: center;">236</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p style="text-align: justify;">De esta forma, si el centro comercial hubiera estado de rebajas el segundo trimestre habría ganado 657€ con la venta de chalecos, camisas y pantalones.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802ULNKNC" class="box nota-azul">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202604261430520571J0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202604261430520571J0&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En este caso conocíamos la matriz de precios \(A\) y la matriz de ventas por trimestre \(B\) y hemos podido calcular con una simple operación la matriz de ganancias \(M\). Pero, ¿cómo podríamos calcular la matriz \(B\) si conociéramos la matriz \(A\) y la matriz \(M\)? Para responder a esta pregunta, imagina que tuviéramos una matriz \(F\) de forma que al multiplicar \(F\) por \(A\) resultara la matriz identidad. En ese caso tendríamos:&nbsp;</p>
+<p>&nbsp;\[A·B=M \quad \longrightarrow \quad F·A·B=F·M \quad \longrightarrow \quad I·B=F·M \quad \longrightarrow \quad B=F·M \]</p>
+<p>&nbsp;Si tuviésemos la matriz \(F\) ya lo tendríamos solucionado.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802YJIPRQ" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Matriz inversa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260426143621915WRO" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260426143621915WRO&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p></p>
+<table border="0" cellpadding="15" style="width: 100.029%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9119%;">Dada una matriz cualquiera \(A\) llamamos <strong>inversa</strong> de \(A\) a otra matriz que denotaremos \(A^{-1}\) &nbsp;que cumpla que: \[\pmb{A·A^{-1}=A^{-1}·A=I}\] donde \(I\) es la matriz identidad.</td>
+</tr>
+</tbody>
+</table><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802JIRKOX" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_practica.png" alt="">
+</div>
+<h1 class="box-title">Deducciones</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmn-pmc8hp7j6" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmn-pmc8hp7j6&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;">De la igualdad anterior podemos deducir que si la matriz \(A\) &nbsp;tiene orden \(n \times m\) &nbsp;y la matriz \(A^{-1}\) &nbsp;tiene de orden \(p \times q\):</p>
+<p style="text-align: justify;">1.- Como debemos multiplicar \(A\) por \(A^{-1}\) entonces \(m=p\).</p>
+<p style="text-align: justify;">2.- Como debemos multiplicar \(A^{-1}\) por \(A\) entonces \(q=n\).</p>
+<p style="text-align: justify;">3.- Como el resultado de ambos productos debe ser la matriz identidad que es una matriz cuadrada entonces \(m=p=n=q\), por tanto , para que una matriz tenga matriz inversa, debe ser una matriz cuadrada</p>
+<p style="text-align: justify;">4.- Como el determinante de un producto de matrices es igual que el producto de los determinantes de ambas matrices entonces, el determinante de la matriz \(A\) no puede ser cero ya que el determinante de la matriz identidad es 1.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802WJFYMG" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="">
+</div>
+<h1 class="box-title">Pregunta</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mocvbkmn-lcxhe223f" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mocvbkmn-lcxhe223f&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;idevice-mocvbkmn-lcxhe223f&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Marca las opciones que sean correctas.&lt;/p&gt;\n&lt;hr /&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777207724455-M799C&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Dada una matriz \\(A\\) sabemos que:&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;1.- Para que tenga inversa debe ser cuadrada.&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;2.- Si tiene orden 3x2, la matriz inversa tiene orden 2x3&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;3.- El determinante de la matriz debe ser distinto de cero.&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;4.- \\(A·A^{-1}=A^{-1}·A\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="idevice-mocvbkmn-lcxhe223f" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mocvbkmn-lcxhe223f" class="form-IDevice" data-id="idevice-mocvbkmn-lcxhe223f">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Marca las opciones que sean correctas.</p>
+<hr /></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mocvbkmn-lcxhe223f">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mocvbkmn-lcxhe223f" style="display:none;">
+                      <button  id="frmStartGame-idevice-mocvbkmn-lcxhe223f" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mocvbkmn-lcxhe223f" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mocvbkmn-lcxhe223f" > </div>
+                        <div id="frmCover-idevice-mocvbkmn-lcxhe223f" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mocvbkmn-lcxhe223f" class="form-results-container inline">
+                        <div id="form-score-idevice-mocvbkmn-lcxhe223f" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mocvbkmn-lcxhe223f" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mocvbkmn-lcxhe223f" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mocvbkmn-lcxhe223f" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-mocvbkmn-lcxhe223f" type="button" value="Reiniciar"
+                            data-id="idevice-mocvbkmn-lcxhe223f" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mocvbkmn-lcxhe223f" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mocvbkmn-lcxhe223f" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-idevice-mocvbkmn-lcxhe223f" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/21-inverso-de-un-numero.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

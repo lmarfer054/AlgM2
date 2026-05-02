@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krcu-vganlppqx">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.2. Clasificación de los sistemas de ecuaciones lineales. | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../idevices/complete/complete.js"></script><link rel="stylesheet" href="../idevices/complete/complete.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krcu-vganlppqx" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li class="active"> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="active no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krcu-vganlppqx" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.2. Clasificación de los sistemas de ecuaciones lineales.</h1></div>
+</header><div id="page-content-page-moo7krcu-vganlppqx" class="page-content">
+<article id="20260502085219VXPQQP" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-6x9737q67" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-6x9737q67&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="1" align="right" cellpadding="15">
+<tbody>
+<tr style="border: 1px solid #ffffff;">
+<td><img src="../content/resources/idevice-mohji9dc-6x9737q67/Cartel.jpg" alt="Información tráfico" height="200" width="384"></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Aunque hay gente que suele decir que todo tiene solución menos la muerte, lo cierto es que en la vida cotidiana hay veces que tenemos algunas restricciones en nuestros problemas que unas veces hacen que tengamos solución y otras veces no, incluso a veces tenemos varias soluciones posibles. Por ejemplo si queremos viajar de Cádiz a Madrid por carretera hay varias formas de hacerlo, ya que podemos ir en dirección a Córdoba y después recorrer la autovía de Andalucía o bien llegar a Sevilla y tomar dirección a Mérida y al llegar a ella tomar ya la dirección de Madrid.</p>
+<p>Con los sistemas va a pasar algo parecido, habrá veces que tengan una única solución o varias.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219MGISNX" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Sistemas compatibles e incompatibles</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-h3auxs4bg" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-h3auxs4bg&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 100.029%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9119%;">
+<p>Un sistema de ecuaciones lineales se dice que es <strong>Compatible</strong> si tiene solución y en caso contrario se llama&nbsp;<span style="font-weight: bolder;">Incompatible</span>.</p>
+<p>Si el sistema tiene una única solución recibe el nombre de&nbsp;<span style="color: #007932;"><span style="font-weight: bolder;">Compatible Determinado</span>.</span> Si tiene infinitas soluciones se llama&nbsp;<span style="color: #007932;"><span style="font-weight: bolder;">Compatible Indeterminado</span>.</span></p>
+</td>
+</tr>
+</tbody>
+</table><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219INJHUK" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-tpeusrzkj" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-tpeusrzkj&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>El problema se nos va a plantear para saber cuándo un sistema es de un tipo u otro. Por ejemplo, el sistema \begin{cases}&nbsp;<br>x + y + 2z = 5 \\&nbsp;<br>3x - y + z = 2 \\&nbsp;<br>2x + y - z = 3&nbsp;<br>\end{cases}tiene como única solución los valores \((1, 2, 1)\), puedes comprobar que si intentas cualquier otro trio de valores para \(x, y, z\) siempre te va a dar que no es solución.</p>
+<p>Sin embargo el sistema \begin{cases}&nbsp;<br>x - y + z = 1 \\&nbsp;<br>2x + y + z = 4&nbsp;<br>\end{cases}no solo tiene por solución\begin{cases}&nbsp;<br>x = 1 \\&nbsp;<br>y = 1 \\&nbsp;<br>z = 1&nbsp;<br>\end{cases}si no que cualquiera de las ternas \((2, 1, -1)\) ó \((-1, 2, 4)\) también son solución, y no son las únicas.</p>
+<p>&nbsp;</p>
+<p>Vamos a ver cómo todo lo que hemos aprendido hasta el momento en la unidad tiene su aplicación.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219DECLEX" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Teorema de Rouché</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-hvrxwb0eb" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-hvrxwb0eb&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>El <b>Teorema de Rouché</b> o de Rouché-Frobenius nos dice que en un sistema de ecuaciones lineales el número de soluciones depende de los rangos que tengan la matriz ampliada y la de los coeficientes mediante la siguiente regla.</p>
+<p>1) Si el rango de la matriz de los coeficientes es igual al rango de la matriz ampliada e igual al número de incógnitas, el sistema es Compatible Determinado.</p>
+<p>2) Si el rango de la matriz de los coeficientes es igual al rango de la matriz ampliada pero menor que el número de incógnitas, el sistema es Compatible Indeterminado.</p>
+<p>3) Si el rango de la matriz de los coeficientes es distinto del rango de la matriz ampliada, el sistema es incompatible.</p>
+<table border="0" cellpadding="15" style="width: 99.9716%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9716%;">
+<p style="text-align: center;">\(\text{rg}(M_c) = \text{rg}(M_a) = n^{\text{o}}\) incógnitas ⇒ SCD</p>
+<p style="text-align: center;">\(\text{rg}(M_c) = \text{rg}(M_a) < n^{\text{o}}\) incógnitas ⇒ SCI</p>
+<p style="text-align: center;">\(\text{rg}(M_c) \neq \text{rg}(M_a)\) ⇒ SI</p>
+</td>
+</tr>
+</tbody>
+</table><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219LMCKRE" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Ejemplos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-u8cbjyb9n" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-u8cbjyb9n&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En el siguiente video puedes ver ejemplos del estudio, mediante el teorema anterior, de distintos sistemas de ecuaciones. <a href="https:////www.youtube.com/embed/ueVQ70NY75I" id="link_0"><img src="../content/resources/yutube.png" width="60" height="61" alt=""></a></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219RAIQDB" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="">
+</div>
+<h1 class="box-title">Test</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260430134155780QG9" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260430134155780QG9&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260430111909MCIPWQ&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;20260430134155780QG9&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Para que puedas practicar lo que has visto, aquí tienes un test en el que te hacen preguntas sobre la utilización del Teorema de Rouché para estudiar un sistema.&lt;/p&gt;\n&lt;p&gt;Responde a las preguntas.&lt;/p&gt;\n&lt;hr /&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777549404473-IZYDI&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span&gt;Si el \\(\\text{rg}(M_c) = \\text{rg}(M_a) &lt; n^{\\text{o}}\\) incógnitas, el sistema es un:&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;SCD (Sistema Compatible Determinado)\n&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;SI (Sistema Incompatible)\n&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;SCI (Sistema Compatible Indeterminado)\n&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777550006792-MBG84&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Si el \\(\\text{rg}(M_c) \\neq \\text{rg}(M_a)\\) y \\(\\text{rg}(M_a) = n^{\\text{o}}\\) de incógnitas, el sistema es un:&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;\tSI (Sistema Incompatible)\n&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\tSCD (Sistema Compatible Determinado)\n&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\tSCI (Sistema Compatible Indeterminado)\n&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777550101169-VPR9Y&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span&gt;Un sistema es SCD si tiene infinitas soluciones:&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Cierto\n&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;No, solo tiene una\n&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;No, no tiene soluciones\n&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777550233365-NGXK1&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Si la matriz ampliada de un sistema es \\(M_a = \\left( \\begin{array}{cc|c} &lt;br /&gt;1 &amp; 1 &amp; 1 \\\\ &lt;br /&gt;1 &amp; 1 &amp; 1 &lt;br /&gt;\\end{array} \\right)\\) ¿Qué tipo de sistema es?&lt;br /&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;SCD\n&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;SCI&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;SI\n&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777550412813-5B8II&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Si la matriz ampliada de un sistema es \\(M_a = \\left( \\begin{array}{cc|c} &lt;br /&gt;1 &amp; 1 &amp; 2 \\\\ &lt;br /&gt;1 &amp; 1 &amp; 3 &lt;br /&gt;\\end{array} \\right)\\) ¿Qué tipo de sistema es?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;SCD&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;SI&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;SCI&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777550460977-RURNY&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Si la matriz ampliada de un sistema es \\(M_a = \\left( \\begin{array}{cc|c} &lt;br /&gt;1 &amp; 1 &amp; 1 \\\\ &lt;br /&gt;2 &amp; 3 &amp; 4 &lt;br /&gt;\\end{array} \\right)\\) ¿Qué tipo de sistema es?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;SCD&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;SCI&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;SI&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="20260430134155780QG9" data-evaluationb="false" data-evaluationid="20260430111909MCIPWQ"></div>
+            <div id="frmMainContainer-20260430134155780QG9" class="form-IDevice" data-id="20260430134155780QG9">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Para que puedas practicar lo que has visto, aquí tienes un test en el que te hacen preguntas sobre la utilización del Teorema de Rouché para estudiar un sistema.</p>
+<p>Responde a las preguntas.</p>
+<hr /></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-20260430134155780QG9">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-20260430134155780QG9" style="display:none;">
+                      <button  id="frmStartGame-20260430134155780QG9" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-20260430134155780QG9" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-20260430134155780QG9" > </div>
+                        <div id="frmCover-20260430134155780QG9" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-20260430134155780QG9" class="form-results-container inline">
+                        <div id="form-score-20260430134155780QG9" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-20260430134155780QG9" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-20260430134155780QG9" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="20260430134155780QG9" data-pass-rate="" />
+                        <input id="form-button-reset-20260430134155780QG9" type="button" value="Reiniciar"
+                            data-id="20260430134155780QG9" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-20260430134155780QG9" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="20260430134155780QG9" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-20260430134155780QG9" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article><article id="20260502085219IDKGUG" class="box caja-morada boton-morado sin-copa">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260430140907868WRX" class="idevice_node complete" data-idevice-path="../idevices/complete/" data-idevice-type="complete">
+<div class="completa-IDevice"><div class="game-evaluation-ids js-hidden" data-id="20260430140907868WRX" data-evaluationb="false" data-evaluationid="20260430111909MCIPWQ"></div><div class="completa-feedback-game"></div><div class="completa-instructions"><p>Lee el texto y completa las palabras que faltan.</p></div><div class="completa-DataGame js-hidden">%E9%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%AE%E2%AC%DE%F7%F7%B2%F7%FE%B2%E6%F7%EA%E6%FD%B2%EB%B2%F1%FD%FF%E2%FE%F7%E6%F3%B2%FE%F3%E1%B2%E2%F3%FE%F3%F0%E0%F3%E1%B2%E3%E7%F7%B2%F4%F3%FE%E6%F3%FC%BC%AE%BD%E2%AC%B0%BE%B0%E6%F7%EA%E6%C6%F7%EA%E6%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%E1%E2%F3%FC%B7%A1%D7%C6%F7%FC%F7%FF%FD%E1%B7%A0%A2%E6%E0%F7%E1%B7%A0%A2%E1%FB%E1%E6%F7%FF%F3%E1%B7%A0%D1%B7%A0%A2%F1%F3%F6%F3%B7%A0%A2%E7%FC%FD%B7%A0%A2%F1%FD%FC%B7%A0%A2%E7%FC%F3%B7%A0%A2%F1%F3%FC%E6%FB%F6%F3%F6%B7%A0%A2%F6%FB%E1%E6%FB%FC%E6%F3%B7%A0%A2%F6%F7%B7%A0%A2%E1%FD%FE%E7%F1%FB%FD%FC%F7%E1%BC%B7%A0%A2%C7%E6%FB%FE%FB%E8%F3%B7%A0%A2%F7%FE%B7%A0%A2%C6%F7%FD%E0%F7%FF%F3%B7%A0%A2%F6%F7%B7%A0%A2%C0%FD%F1%FA%B7%D7%AB%B7%A0%A2%E2%F3%E0%F3%B7%A0%A2%E0%F7%E1%E2%FD%FC%F6%F7%E0%B7%A0%A2%F3%B7%A0%A2%FE%F3%E1%B7%A0%A2%F1%E7%F7%E1%E6%FB%FD%FC%F7%E1%B7%A1%D3%B7%A1%D1%BD%E1%E2%F3%FC%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%E1%E2%F3%FC%B7%A1%D7%B7%A1%D1%BD%E1%E2%F3%FC%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%FA%E0%B7%A0%A2%BD%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%A3%BC%B7%A0%A2%B7%A7%D1%B7%A0%AA%B7%A7%D1%F0%F7%F5%FB%FC%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%EA%B7%A0%A2%B9%B7%A0%A2%EB%B7%A0%A2%B9%B7%A0%A2%A0%E8%B7%A0%A2%B7%A1%D6%B7%A0%A2%A1%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A0%EA%B7%A0%A2%B9%B7%A0%A2%EB%B7%A0%A2%B9%B7%A0%A2%A1%E8%B7%A0%A2%B7%A1%D6%B7%A0%A2%A5%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%EA%B7%A0%A2%B9%B7%A0%A2%A0%EB%B7%A0%A2%B9%B7%A0%A2%A1%E8%B7%A0%A2%B7%A1%D6%B7%A0%A2%A7%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A7%D1%F7%FC%F6%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%A7%D1%B7%A0%AB%B7%D3%A2%B7%A0%A2%B7%D3%A2%B7%A0%A2%B7%D3%A2%B7%A0%A2%A0%BC%B7%A0%A2%B7%A7%D1%B7%A0%AA%B7%A7%D1%F0%F7%F5%FB%FC%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A0%EA%B7%A0%A2%B9%B7%A0%A2%A1%EB%B7%A0%A2%B7%A1%D6%B7%A0%A2%A7%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%EA%B7%A0%A2%B9%B7%A0%A2%A0%EB%B7%A0%A2%B7%A1%D6%B7%A0%A2%A6%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A1%EA%B7%A0%A2%B9%B7%A0%A2%A6%EB%B7%A0%A2%B7%A1%D6%B7%A0%A2%A4%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A7%D1%F7%FC%F6%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%A7%D1%B7%A0%AB%B7%D3%A2%B7%A0%A2%B7%D3%A2%B7%A0%A2%B7%D3%A2%B7%A0%A2%A1%BC%B7%A0%A2%B7%A7%D1%B7%A0%AA%B7%A7%D1%F0%F7%F5%FB%FC%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%A0%EA%B7%A0%A2%B9%B7%A0%A2%EB%B7%A0%A2%B9%B7%A0%A2%E8%B7%A0%A2%B7%A1%D6%B7%A0%A2%A7%B7%A0%A2%B7%A7%D1%B7%A7%D1%B7%D3%A2%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%EA%B7%A0%A2%B9%B7%A0%A2%A0%EB%B7%A0%A2%B9%B7%A0%A2%E8%B7%A0%A2%B7%A1%D6%B7%A0%A2%A1%B7%D3%A2%B7%A7%D1%F7%FC%F6%B7%A5%D0%F1%F3%E1%F7%E1%B7%A5%D6%B7%A7%D1%B7%A0%AB%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%FA%E0%B7%A0%A2%BD%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%D7%FE%B7%A0%A2%E1%FB%E1%E6%F7%FF%F3%B7%A0%A2%F1%FD%FF%E2%F3%E6%FB%F0%FE%F7%B7%A0%A2%F6%F7%E6%F7%E0%FF%FB%FC%F3%F6%FD%B7%A0%A2%F7%FC%B7%A0%A2%F7%FE%B7%A0%A2%FC%B7%D4%D3%FF%F7%E0%FD%B7%A0%A2%D2%D2%A0%D2%D2%B7%A0%A2%BC%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%D7%FE%B7%A0%A2%E1%FB%E1%E6%F7%FF%F3%B7%A0%A2%F1%FD%FF%E2%F3%E6%FB%F0%FE%F7%B7%A0%A2%FB%FC%F6%F7%E6%F7%E0%FF%FB%FC%F3%F6%FD%B7%A0%A2%F7%E1%B7%A0%A2%F7%FE%B7%A0%A2%FC%B7%D4%D3%FF%F7%E0%FD%B7%A0%A2%D2%D2%A1%D2%D2%B7%A0%A2%B7%D3%A2%BC%B7%A1%D1%BD%E2%B7%A1%D7%B7%A2%D3%B7%A1%D1%E2%B7%A1%D7%D7%FE%B7%A0%A2%E1%FB%E1%E6%F7%FF%F3%B7%A0%A2%FB%FC%F1%FD%FF%E2%F3%E6%FB%F0%FE%F7%B7%A0%A2%F7%E1%B7%A0%A2%F7%FE%B7%A0%A2%FC%B7%D4%D3%FF%F7%E0%FD%B7%A0%A2%B7%D3%A2%D2%D2%A3%D2%D2%B7%A0%A2%BC%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%F1%F3%E1%F7%C1%F7%FC%E1%FB%E6%FB%E4%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%E6%E0%E7%F7%BE%B0%E5%F7%FB%F5%FA%E6%F7%F6%B0%A8%A3%A2%A2%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A3%BE%B0%F7%E1%E6%E0%FB%F1%E6%D1%FA%F7%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%C1%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E5%FD%E0%F6%E1%D7%E0%E0%FD%E0%E1%B0%A8%B0%B0%BE%B0%F3%E6%E6%F7%FF%E2%E1%DC%E7%FF%F0%F7%E0%B0%A8%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D7%E0%E0%FD%E0%B0%A8%A0%A2%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E5%FD%E0%F6%E1%DE%FB%FF%FB%E6%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%A0%A2%A0%A4%A2%A6%A1%A2%A3%A3%A3%AB%A2%AB%DF%D1%DB%C2%C5%C3%B0%BE%B0%FA%F3%E1%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E7%E0%FE%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%D0%F3%F1%F9%DB%FF%F3%F5%F7%B0%A8%B0%B0%BE%B0%F4%FD%FC%E6%D1%FD%FE%FD%E0%B0%A8%B0%B1%A2%A2%A2%A2%A2%A2%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A4%A2%A6%A1%A2%A3%A6%A2%AB%A2%A5%AA%A4%AA%C5%C0%CA%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C0%F7%E2%FE%EB%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%DD%E4%F7%E0%B0%A8%B03%D4%FB%FC%B2%F6%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%B3%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C5%F7%FB%F5%FA%E6%B0%A8%B0%C2%F7%E1%FD%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%E1%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%FD%F0%E6%F7%FC%F7%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%DB%FC%E6%7B%FC%E6%F3%FE%FD%B2%F6%F7%B2%FC%E7%F7%E4%FD%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%D3%FC%E6%F7%E1%B2%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F1%FD%FF%FB%F7%FC%F1%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%D3%FC%E1%E5%F7%E0%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%7F%F3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1%FD%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%C1%FD%FE%E7%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C6%E0%EB%B0%A8%B03%C2%E0%E7%F7%F0%F3%B2%FD%E6%E0%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%D1%FA%F7%F1%F9%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%F6%C1%F1%FD%E0%F7%B0%A8%B0%DA%F3%E1%B2%E6%F7%FC%FB%F6%FD%B2%B7%E1%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%F6%B2%F7%E0%E0%FD%E0%F7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%C6%FB%FF%F7%B0%A8%B0%D7%FE%B2%E6%FB%F7%FF%E2%FD%B2%FA%F3%B2%F4%FB%FC%F3%FE%FB%E8%F3%F6%FD%BC%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%D7%FC%F6%B0%A8%B0%DA%F3%E1%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B2%FE%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%D1%FD%FF%E2%FE%F7%E6%F3%B0%EF%EF</div><div class="completa-text-game js-hidden"><p><span>Tenemos tres sistemas, cada uno con una cantidad distinta de soluciones. Utiliza el Teorema de Roché para responder a las cuestiones:</span></p>
+<p><span></span><br /></p>
+<hr />
+<p>1. \(\begin{cases} <br />x + y + 2z = 3 \\ <br />2x + y + 3z = 7 \\ <br />x + 2y + 3z = 5 <br />\end{cases}\)      2. \(\begin{cases} <br />2x + 3y = 5 \\ <br />x + 2y = 4 \\ <br />3x + 4y = 6 <br />\end{cases}\)      3. \(\begin{cases} <br />2x + y + z = 5 \\ <br />x + 2y + z = 3 \end{cases}\)</p>
+<p><br /></p>
+<hr />
+<p>El sistema compatible determinado en el número @@2@@ .</p>
+<p>El sistema compatible indeterminado es el número @@3@@  .</p>
+<p>El sistema incompatible es el número  @@1@@ .</p></div><div class="cmpt-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/11-sistema-de-ecuaciones-lineales.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

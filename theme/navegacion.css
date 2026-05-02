@@ -1,0 +1,48 @@
+/* =========================================
+   FLECHAS DE NAVEGACIÓN (CORREGIDAS POR INSPECTOR)
+   ========================================= */
+
+/* 1. ESTILO COMÚN PARA AMBAS FLECHAS */
+.nav-buttons .nav-button-left,
+.nav-buttons .nav-button-right {
+    width: 60px !important;   /* Ajustamos a un tamaño más visible */
+    height: 60px !important;
+    display: inline-block !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    border: none !important;
+    
+    /* Matamos cualquier resto de texto o decoración */
+    text-indent: -9999px !important;
+    overflow: hidden !important;
+    font-size: 0 !important;
+}
+
+/* 2. FLECHA ANTERIOR (IZQUIERDA) */
+.nav-buttons .nav-button-left {
+    /* Usamos la ruta a tu carpeta img */
+    background-image: url('img/nav_prev.png') !important;
+}
+
+/* 3. FLECHA SIGUIENTE (DERECHA) */
+.nav-buttons .nav-button-right {
+    /* Usamos la ruta a tu carpeta img */
+    background-image: url('img/nav_next.png') !important;
+}
+
+/* 4. EFECTO HOVER */
+.nav-buttons .nav-button:hover {
+    transform: scale(1.1) !important;
+    opacity: 0.8 !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* 5. AJUSTE DE POSICIÓN (Opcional) */
+.nav-buttons {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 20px 40px !important;
+    max-width: 100% !important;
+}

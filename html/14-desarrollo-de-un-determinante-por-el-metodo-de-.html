@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7k2ho-o83bayi1j">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.4. Desarrollo de un determinante por el método de Gauss | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7k2ho-o83bayi1j" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li class="active"> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="active no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7k2ho-o83bayi1j" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.4. Desarrollo de un determinante por el método de Gauss</h1></div>
+</header><div id="page-content-page-moo7k2ho-o83bayi1j" class="page-content">
+<article id="20260502095902PLVZSL" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-lb7nuv9x3" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-lb7nuv9x3&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Lo último que has visto en el apartado anterior es cómo, haciendo varios ceros en una línea de un determinante, es más fácil desarrollar dicha estructura. En este último apartado lo que vamos a ver es una generalización del método anterior y que, debido a las operaciones que vamos a realizar, es conocido por Método de Gauss. Como podrás ver en los dos siguientes temas de la Unidad, este método se puede utilizar en muchas ocasiones para resolver distintos problemas, hasta para hallar la solución de un sistema de ecuaciones.</p>
+</div>
+</div>
+</div>
+</article><article id="20260502095902DNBZCH" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Método de Gauss para determinantes.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-4l1utg1g4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-4l1utg1g4&quot;}">
+<div class="exe-text-template">
+    <table cellpadding="15" style="width: 99.9846%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;">
+<p style="text-align: justify;">El <span style="color: #007632;"><span style="font-weight: bolder;">método de Gauss para hallar un determinante</span></span> de cualquier orden, es una generalización del método que vimos al final del apartado anterior para desarrollar un determinante por una línea en la que se han hecho previamente ceros todos los elementos de una línea menos uno, que es por el que se desarrolla.</p>
+<p style="text-align: justify;">El objetivo del método es conseguir <span style="font-weight: bolder;">triangular la matriz</span> que está dentro del determinante pues, de esa forma, es muy fácil hallar su valor, pues el determinante de una matriz cuadrada triangular (da igual que sea superior o inferior) es igual al producto de los elementos de la diagonal principal.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table cellpadding="15" style="width: 99.9846%; background-color: #edfcfc;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;">
+<p>Las <span style="color: #0066cc;"><strong>operaciones</strong></span> que podemos realizar con las líneas del determinante son:</p>
+<p>1) <strong>Cambiar entre sí dos líneas</strong>. En ese caso el determinante cambia de signo, por lo que el determinante resultante debemos multiplicarlo por -1.</p>
+<p>2) <strong>Multiplicar o dividir una línea por un número</strong>, pero en ese caso debemos hacer la operación contraria en el determinante, para que no cambie su valor.</p>
+<p>3) <strong>Sumarle a una fila o columna otra paralela multiplicada por cualquier número</strong>. En este caso el valor del determinante no varía.</p>
+<p>4) Lo usual es hacer ceros todos los elementos por debajo de la diagonal principal, utilizando, escalonadamente, los elementos de la diagonal principal, y por tanto su fila, para hacer ceros los que están debajo.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article><article id="20260502095902TKKPWH" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejemplo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1772366525109-8txyzq2j0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1772366525109-8txyzq2j0&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Vamos a resolver el siguiente determinante por el método de Gauss: \( \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 2 & 5 & 7 & -1 \\ -1 & 1 & -1 & 2 \\ 3 & 5 & 9 & 3 \end{array} \right|\)</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>\( \begin{aligned} \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 2 & 5 & 7 & -1 \\ -1 & 1 & -1 & 2 \\ 3 & 5 & 9 & 3 \end{array} \right| &= \left[ \begin{array}{l} F_2 \rightarrow F_2 - 2F_1 \\ F_3 \rightarrow F_3 + F_1 \\ F_4 \rightarrow F_4 - 3F_1 \end{array} \right] = \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 0 & 1 & -1 & -3 \\ 0 & 3 & 3 & 3 \\ 0 & -1 & -3 & 0 \end{array} \right| \\[15pt] &= \left[ \begin{array}{l} F_3 \rightarrow F_3 - 3F_2 \\ F_4 \rightarrow F_4 + F_2 \end{array} \right] = \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 0 & 1 & -1 & -3 \\ 0 & 0 & 6 & 12 \\ 0 & 0 & -4 & -3 \end{array} \right| \\[15pt] &= \left[ \text{Extraemos factor 6 de la } F_3 \right] = 6 \cdot \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 0 & 1 & -1 & -3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & -4 & -3 \end{array} \right| \\[15pt] &= \left[ F_4 \rightarrow F_4 + 4F_3 \right] = 6 \cdot \left| \begin{array}{rrrr} 1 & 2 & 4 & 1 \\ 0 & 1 & -1 & -3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 5 \end{array} \right| \\[15pt] &= 6 \cdot (1 \cdot 1 \cdot 1 \cdot 5) = \mathbf{30} \end{aligned} \)</p>
+<p><br /><span style="font-size: 10pt;"><em>Nota: Al extraer el factor común \(6\) de la tercera fila, evitamos tener que trabajar con fracciones en el último paso, lo que simplifica enormemente el cálculo final.</em></span></p></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902RKKAHW" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-mofpwdf1t" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-mofpwdf1t&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Solo queda que apliques lo aprendido. Para ello calcula el determinante \( \left| \begin{array}{rrrr} 1 & -1 & 2 & 0 \\ 1 & 1 & 3 & -1 \\ -1 & 1 & -1 & 2 \\ 2 & 0 & 5 & 3 \end{array} \right|\)</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>El valor del determinante es 8.</p></div></div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902ANTOQA" class="box caja-naranja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_practica2.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio guiado</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202604291703031226YD" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202604291703031226YD&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><style>
+    /* ARMADURA MAXIMA CON ID Y !IMPORTANT */
+    div#calc-determinante-gauss.det-tutor-container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; margin: 10px auto; max-width: 950px; background-color: #fff; border: 2px solid #d35400; border-radius: 12px; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; }
+    
+    div#calc-determinante-gauss .det-input-coef { width: 50px; padding: 5px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-weight: bold; transition: all 0.2s; }
+    div#calc-determinante-gauss .det-input-val { width: 45px; padding: 5px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-family: monospace; font-size: 1.1em; transition: all 0.2s; }
+    div#calc-determinante-gauss .det-input-val:focus, div#calc-determinante-gauss .det-input-coef:focus { outline: none !important; border-color: #d35400 !important; background-color: #fdf2e9 !important; box-shadow: 0 0 5px rgba(211, 84, 0, 0.3) !important; }
+    
+    /* Botones Secundarios (Fantasma Naranja) */
+    div#calc-determinante-gauss button.det-btn-check { background-color: #ffffff !important; background-image: none !important; color: #d35400 !important; border: 2px solid #d35400 !important; box-shadow: none !important; outline: none !important; text-shadow: none !important; padding: 6px 12px !important; border-radius: 4px !important; font-weight: bold !important; cursor: pointer !important; transition: all 0.2s ease-in-out !important; }
+    div#calc-determinante-gauss button.det-btn-check:hover, div#calc-determinante-gauss button.det-btn-check:focus { background-color: #d35400 !important; color: #ffffff !important; border-color: #d35400 !important; transform: scale(1.05) !important; }
+    div#calc-determinante-gauss button.det-btn-check:disabled { background-color: #f9f9f9 !important; color: #999 !important; border-color: #ccc !important; cursor: not-allowed !important; transform: none !important; }
+    
+    /* Botón Principal (Sólido Naranja) */
+    div#calc-determinante-gauss button.det-btn-main { background-color: #d35400 !important; background-image: none !important; color: white !important; border: 2px solid #d35400 !important; box-shadow: 0 2px 4px rgba(211, 84, 0, 0.3) !important; outline: none !important; text-shadow: none !important; padding: 8px 15px !important; cursor: pointer !important; border-radius: 4px !important; font-weight: bold !important; font-size: 1.05em !important; transition: all 0.2s ease-in-out !important; }
+    div#calc-determinante-gauss button.det-btn-main:hover, div#calc-determinante-gauss button.det-btn-main:focus { background-color: #bf4a00 !important; border-color: #bf4a00 !important; transform: scale(1.02) !important; }
+
+    div#calc-determinante-gauss .det-feedback { font-weight: bold; margin-left: 10px; font-size: 0.9em; }
+    div#calc-determinante-gauss .det-success { color: #27ae60 !important; }
+    div#calc-determinante-gauss .det-error { color: #c0392b !important; }
+    
+    div#calc-determinante-gauss .det-paso-box { width: 100%; max-width: 850px; background: #fff; border: 1px solid #cce0ff; border-left: 5px solid #2980b9; border-radius: 6px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    
+    div#calc-determinante-gauss .frac-css { display: inline-block; text-align: center; vertical-align: middle; font-size: 0.95em; margin: 0 2px; }
+    div#calc-determinante-gauss .frac-css span { display: block; padding: 0.1em 0.3em; line-height: 1.2; }
+    div#calc-determinante-gauss .frac-css span.fdn { border-top: 1px solid #333; }
+</style>
+<div id="calc-determinante-gauss" class="det-tutor-container"><!-- Cabecera -->
+<div style="background: #e67e22; color: white; padding: 15px; text-align: center;">
+<h2 style="margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);"><img src="../content/resources/202604291703031226YD/yoneco_1.png" width="60" height="60" alt="" style="vertical-align: middle;"> Tutor Interactivo: Determinante por Gauss</h2>
+</div>
+<!-- Panel de Control -->
+<div style="padding: 15px 20px; background: #fdf2e9; border-bottom: 1px solid #edbb99; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center;">
+<div style="display: flex; gap: 15px; align-items: center;"><label style="font-weight: bold; color: #444;">Dimensión:</label><select id="det-order" style="padding: 5px; border-radius: 4px; border: 1px solid #d35400; outline: none;">
+<option value="3" selected="selected">3x3</option>
+<option value="4">4x4</option>
+<option value="5">5x5</option>
+</select></div>
+<div style="display: flex; gap: 15px; align-items: center;"><label style="font-weight: bold; color: #444;">Números:</label> <label><input type="radio" name="det-tipo" value="nat" checked="checked"> Naturales</label> <label><input type="radio" name="det-tipo" value="ent"> Enteros</label></div>
+<div style="display: flex; gap: 15px; align-items: center; border-left: 2px solid #edbb99; padding-left: 15px;"><label style="font-weight: bold; color: #c0392b;">Modo:</label> <label><input type="radio" name="det-dif" value="normal" checked="checked"> Fácil (🐔)</label> <label><input type="radio" name="det-dif" value="pro"> <b>Pro (Fracciones)</b></label></div>
+<div><button onclick="detGenerar()" class="det-btn-main">Generar Nuevo</button></div>
+<div style="font-size: 0.95em; color: #666; max-width: 100%; width: 100%; border-top: 1px dashed #edbb99; padding-top: 10px;"><i><b>Nota importante:</b> Para no alterar el valor del determinante, usa estrictamente operaciones del tipo <b>F<sub>objetivo</sub> → F<sub>objetivo</sub> + k · F<sub>pivote</sub></b>. Si el pivote no es 1, necesitarás usar fracciones (ej: -1/2).</i></div>
+</div>
+<div style="padding: 20px; display: flex; flex-direction: column; align-items: center;"><!-- Determinante Principal -->
+<div style="margin-bottom: 25px; text-align: center;">
+<h3 style="color: #d35400; margin-top: 0;">Determinante Actual |A|</h3>
+<div id="det-matrix-display" style="display: inline-grid; gap: 15px 20px; position: relative; padding: 10px 25px; font-size: 1.3em; font-family: monospace; background: #fff; align-items: center; border-radius: 8px;"><!-- Decoración -->
+<div style="position: absolute; top: -5px; bottom: -5px; left: 0; width: 4px; border-left: 3px solid #333;"><br></div>
+<div style="position: absolute; top: -5px; bottom: -5px; right: 0; width: 4px; border-right: 3px solid #333;"><br></div>
+<!-- Celdas generadas dinámicamente --></div>
+</div>
+<!-- Contenedor dinámico de pasos -->
+<div id="det-steps-container" style="width: 100%; display: flex; flex-direction: column; align-items: center;"></div>
+</div>
+</div>
+<p>
+<script>
+    // --- MOTOR DE FRACCIONES EXACTAS ---
+    function gcd(a, b) {
+        a = Math.abs(a); b = Math.abs(b);
+        while (b) { let t = b; b = a % b; a = t; }
+        return a || 1;
+    }
+    function simplify(n, d) {
+        if (n === 0) return {n: 0, d: 1};
+        if (d < 0) { n = -n; d = -d; }
+        let g = gcd(n, d);
+        return {n: n / g, d: d / g};
+    }
+    function fAdd(a, b) { return simplify(a.n * b.d + b.n * a.d, a.d * b.d); }
+    function fSub(a, b) { return simplify(a.n * b.d - b.n * a.d, a.d * b.d); }
+    function fMul(a, b) { return simplify(a.n * b.n, a.d * b.d); }
+    function fDiv(a, b) { return simplify(a.n * b.d, a.d * b.n); }
+    function fEqual(a, b) { return a.n * b.d === b.n * a.d; }
+    function fIsZero(a) { return a.n === 0; }
+
+    function parseFracObj(valStr) {
+        if(!valStr || valStr.trim() === '') return null;
+        valStr = valStr.replace(/\s+/g, '').replace(',', '.');
+        if(valStr.includes('/')) {
+            let parts = valStr.split('/');
+            if(parts.length !== 2) return null;
+            let num = parseInt(parts[0]), den = parseInt(parts[1]);
+            if(isNaN(num) || isNaN(den) || den === 0) return null;
+            return simplify(num, den);
+        }
+        let val = parseFloat(valStr);
+        if(isNaN(val)) return null;
+        let str = val.toString();
+        if (!str.includes('.')) return {n: parseInt(val), d: 1};
+        let decs = str.split('.')[1].length;
+        let d = Math.pow(10, decs);
+        return simplify(Math.round(val * d), d);
+    }
+
+    function formatFracVisual(f) {
+        if (f.n === 0) return "0";
+        if (f.d === 1) return f.n.toString();
+        let sign = f.n < 0 ? "-" : "";
+        return `${sign}<div class="frac-css"><span class="fnum">${Math.abs(f.n)}</span><span class="fdn">${f.d}</span></div>`;
+    }
+
+    // --- VARIABLES GLOBALES Y ESTADO ---
+    let detN = 3;
+    let detMatrix = []; 
+    let currentPivotCol = 0;
+    let rowsCompletedInStep = 0;
+
+    // --- GENERACIÓN SEGURA DE MATRIZ ---
+    function detGenerar() {
+        detN = parseInt(document.getElementById('det-order').value);
+        let isNat = document.querySelector('input[name="det-tipo"]:checked').value === 'nat';
+        let isPro = document.querySelector('input[name="det-dif"]:checked').value === 'pro';
+        
+        let valid = false;
+        let mat = [];
+        
+        while(!valid) {
+            mat = Array(detN).fill().map(()=>Array(detN).fill({n:0, d:1}));
+            
+            if (!isPro) {
+                // MODO NORMAL: Se asegura de generar solo enteros en las operaciones
+                for(let i=0; i<detN; i++){
+                    for(let j=i; j<detN; j++){
+                        let val = isNat ? Math.floor(Math.random() * 4) + 1 : Math.floor(Math.random() * 7) - 3;
+                        if(i === j && val === 0) val = isNat ? 1 : (Math.random()>0.5 ? 1 : -1);
+                        mat[i][j] = {n: val, d: 1};
+                    }
+                }
+                for(let j=0; j<detN-1; j++) {
+                    for(let i=j+1; i<detN; i++) {
+                        let k = isNat ? Math.floor(Math.random() * 3) : Math.floor(Math.random() * 5) - 2;
+                        if(k !== 0) {
+                            for(let c=0; c<detN; c++) {
+                                mat[i][c] = fAdd(mat[i][c], fMul({n:k, d:1}, mat[j][c]));
+                            }
+                        }
+                    }
+                }
+                valid = true;
+            } else {
+                // MODO PRO: Genera matriz aleatoria (Forzará fracciones)
+                for(let i=0; i<detN; i++){
+                    for(let j=0; j<detN; j++){
+                        // Rango más corto para que las fracciones no se vuelvan gigantescas
+                        let val = isNat ? Math.floor(Math.random() * 3) + 1 : Math.floor(Math.random() * 7) - 3;
+                        if(i === j && val === 0) val = 1; 
+                        mat[i][j] = {n: val, d: 1};
+                    }
+                }
+                
+                // Comprobamos si la matriz se puede resolver por Gauss SIN intercambiar filas
+                let temp = JSON.parse(JSON.stringify(mat));
+                valid = true;
+                for(let p=0; p<detN; p++) {
+                    if(fIsZero(temp[p][p])) { valid = false; break; }
+                    for(let r=p+1; r<detN; r++) {
+                        let factor = fDiv(temp[r][p], temp[p][p]);
+                        for(let c=p; c<detN; c++) {
+                            temp[r][c] = fSub(temp[r][c], fMul(factor, temp[p][c]));
+                        }
+                    }
+                }
+            }
+        }
+
+        detMatrix = mat;
+        currentPivotCol = 0;
+        detUpdateDisplay();
+        document.getElementById('det-steps-container').innerHTML = '';
+        detRenderStep(0);
+    }
+
+    function detUpdateDisplay() {
+        let container = document.getElementById('det-matrix-display');
+        container.style.gridTemplateColumns = `repeat(${detN}, minmax(45px, auto))`;
+        
+        let html = `
+            <div style="position: absolute; top: -5px; bottom: -5px; left: 0; width: 4px; border-left: 3px solid #333;"></div>
+            <div style="position: absolute; top: -5px; bottom: -5px; right: 0; width: 4px; border-right: 3px solid #333;"></div>
+        `;
+        
+        for(let i=0; i<detN; i++) {
+            for(let j=0; j<detN; j++) {
+                html += `<div id="det-m${i}${j}" style="text-align:center;">${formatFracVisual(detMatrix[i][j])}</div>`;
+            }
+        }
+        container.innerHTML = html;
+    }
+
+    function detHighlight(pivotCol, targetRow) {
+        detUpdateDisplay();
+        let piv = document.getElementById(`det-m${pivotCol}${pivotCol}`);
+        piv.style.color = "#d35400";
+        piv.style.fontWeight = "bold";
+        
+        if(targetRow !== null) {
+            let targ = document.getElementById(`det-m${targetRow}${pivotCol}`);
+            targ.style.color = "#c0392b";
+            targ.style.fontWeight = "bold";
+        }
+    }
+
+    function detHighlightDiagonal() {
+        detUpdateDisplay();
+        for(let i=0; i<detN; i++) {
+            let cell = document.getElementById(`det-m${i}${i}`);
+            cell.style.color = "#27ae60";
+            cell.style.fontWeight = "bold";
+            cell.style.backgroundColor = "#e8f8f5";
+            cell.style.borderRadius = "4px";
+            cell.style.padding = "2px 5px";
+        }
+    }
+
+    function detRenderStep(col) {
+        rowsCompletedInStep = 0;
+        let container = document.getElementById('det-steps-container');
+        
+        let box = document.createElement('div');
+        box.className = 'det-paso-box';
+        // Hacemos el borde izquierdo del color naranja para ser consistentes
+        box.style.borderLeftColor = "#d35400";
+        
+        let title = `<div style="font-weight: bold; color: #d35400; margin-bottom: 15px; font-size: 1.2em;">Paso ${col+1}: Hacemos ceros en la columna ${col+1}</div>`;
+        let rowsHtml = '';
+
+        for(let i = col+1; i < detN; i++) {
+            rowsHtml += `
+            <div id="step-rowblock-p${col}-r${i}" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #eee;">
+                <div style="margin-bottom: 10px; font-size: 1.05em;">Pivote = a<sub>${col+1}${col+1}</sub> <span style="color:#666;">| Objetivo: Obtener 0 en a<sub>${i+1}${col+1}</sub></span></div>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+                    <div style="background: #fdfdff; padding: 12px; border-radius: 6px; border: 1px dashed #cce0ff;">
+                        F<sub>${i+1}</sub> + <input type="text" id="k-r${i}-c${col}" class="det-input-coef"> · F<sub>${col+1}</sub> &rarr; F<sub>${i+1}</sub>
+                        <button onclick="checkOp(${i}, ${col})" id="btn-op-r${i}-c${col}" class="det-btn-check" style="margin-left: 10px;">Comprobar Operación</button>
+                        <span id="fb-op-r${i}-c${col}" class="det-feedback"></span>
+                    </div>
+                    
+                    <div id="row-result-r${i}-c${col}" style="display: none; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+                        <span style="font-weight:bold; font-size: 1.1em; color: #444;">Nueva F<sub>${i+1}</sub> = (</span>
+            `;
+            
+            for(let j=0; j<detN; j++) {
+                rowsHtml += `<input type="text" id="val-p${col}-r${i}-c${j}" class="det-input-val">`;
+            }
+            
+            rowsHtml += `
+                        <span style="font-weight:bold; font-size: 1.1em; color: #444;">)</span>
+                        <button onclick="checkRow(${i}, ${col})" id="btn-row-r${i}-c${col}" class="det-btn-check" style="margin-left: 10px;">Comprobar Fila</button>
+                        <span id="fb-row-r${i}-c${col}" class="det-feedback"></span>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        box.innerHTML = title + rowsHtml;
+        container.appendChild(box);
+        
+        detHighlight(col, col+1);
+    }
+
+    function checkOp(targetRow, pivotCol) {
+        let kObj = parseFracObj(document.getElementById(`k-r${targetRow}-c${pivotCol}`).value);
+        let fb = document.getElementById(`fb-op-r${targetRow}-c${pivotCol}`);
+        
+        if(!kObj) { fb.innerHTML = '<span class="det-error">Falta dato</span>'; return; }
+
+        let valTarget = detMatrix[targetRow][pivotCol];
+        let valPivot = detMatrix[pivotCol][pivotCol];
+        
+        let res = fAdd(valTarget, fMul(kObj, valPivot));
+
+        if (fIsZero(res)) {
+            fb.innerHTML = '<span class="det-success">¡Operación válida!</span>';
+            document.getElementById(`row-result-r${targetRow}-c${pivotCol}`).style.display = 'flex';
+            document.getElementById(`k-r${targetRow}-c${pivotCol}`).disabled = true;
+            document.getElementById(`btn-op-r${targetRow}-c${pivotCol}`).style.display = 'none';
+        } else {
+            fb.innerHTML = '<span class="det-error">La suma no da cero</span>';
+        }
+    }
+
+    function checkRow(targetRow, pivotCol) {
+        let kObj = parseFracObj(document.getElementById(`k-r${targetRow}-c${pivotCol}`).value);
+        let fb = document.getElementById(`fb-row-r${targetRow}-c${pivotCol}`);
+        
+        let userRow = [];
+        for(let j=0; j<detN; j++) {
+            let uVal = parseFracObj(document.getElementById(`val-p${pivotCol}-r${targetRow}-c${j}`).value);
+            if(!uVal) { fb.innerHTML = '<span class="det-error">Faltan datos en la fila</span>'; return; }
+            userRow.push(uVal);
+        }
+
+        let isCorrect = true;
+        let realRow = [];
+        for(let j=0; j<detN; j++) {
+            realRow[j] = fAdd(detMatrix[targetRow][j], fMul(kObj, detMatrix[pivotCol][j]));
+            if(!fEqual(userRow[j], realRow[j])) isCorrect = false;
+        }
+
+        if(isCorrect) {
+            fb.innerHTML = '<span class="det-success">¡Fila perfecta!</span>';
+            detMatrix[targetRow] = realRow;
+            detUpdateDisplay();
+            
+            for(let j=0; j<detN; j++) document.getElementById(`val-p${pivotCol}-r${targetRow}-c${j}`).disabled = true;
+            document.getElementById(`btn-row-r${targetRow}-c${pivotCol}`).style.display = 'none';
+            
+            rowsCompletedInStep++;
+            let rowsNeeded = detN - 1 - pivotCol;
+            
+            if(rowsCompletedInStep === rowsNeeded) {
+                currentPivotCol++;
+                if(currentPivotCol === detN - 1) {
+                    renderFinalStep();
+                } else {
+                    detRenderStep(currentPivotCol);
+                }
+            } else {
+                detHighlight(pivotCol, targetRow + 1);
+            }
+        } else {
+            fb.innerHTML = '<span class="det-error">Revisa los cálculos</span>';
+        }
+    }
+
+    function renderFinalStep() {
+        detHighlightDiagonal();
+        let container = document.getElementById('det-steps-container');
+        
+        let box = document.createElement('div');
+        box.style = "width: 100%; max-width: 850px; background: #f8fcfb; border: 2px solid #27ae60; border-radius: 6px; padding: 20px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);";
+        
+        let html = `
+            <h3 style="color: #27ae60; margin-top: 0; font-size: 1.5em;">¡Matriz Triangulada!</h3>
+            <p style="margin-bottom: 20px; font-size: 1.1em; color: #444;">El determinante es el producto de los elementos de su diagonal principal.</p>
+            <div style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2em; flex-wrap: wrap; justify-content: center;">
+                <b style="color: #27ae60; font-size: 1.2em;">|A| = </b>
+        `;
+        
+        for(let i=0; i<detN; i++) {
+            html += `<input type="text" id="df-diag${i}" class="det-input-val" style="border-color: #27ae60;" placeholder="a${i+1}${i+1}">`;
+            if(i < detN-1) html += ` <span style="font-weight: bold;">·</span> `;
+        }
+        
+        html += `
+                <span style="font-weight: bold; margin: 0 10px;">=</span> 
+                <input type="text" id="df-final" class="det-input-val" style="width: 70px; background: #e8f8f5; border-color: #27ae60; font-weight: bold;" placeholder="Total">
+                <button onclick="checkFinal()" id="btn-final" class="det-btn-check" style="margin-left: 10px; border-color: #27ae60; color: #27ae60;">Comprobar</button>
+            </div>
+            <div id="res-final" style="margin-top: 15px; font-weight: bold; font-size: 1.2em;"></div>
+        `;
+        
+        box.innerHTML = html;
+        container.appendChild(box);
+        
+        // Modificar el estilo del botón final para que tenga "efecto fantasma verde" en el hover
+        let btnFinal = document.getElementById('btn-final');
+        btnFinal.onmouseover = function() { this.style.backgroundColor = '#27ae60'; this.style.color = '#ffffff'; };
+        btnFinal.onmouseout = function() { this.style.backgroundColor = '#ffffff'; this.style.color = '#27ae60'; };
+    }
+
+    function checkFinal() {
+        let userDiag = [];
+        let fb = document.getElementById('res-final');
+        
+        for(let i=0; i<detN; i++) {
+            let v = parseFracObj(document.getElementById(`df-diag${i}`).value);
+            if(!v) { fb.innerHTML = '<span class="det-error">Completa la diagonal</span>'; return; }
+            userDiag.push(v);
+        }
+        
+        let uFinal = parseFracObj(document.getElementById('df-final').value);
+        if(!uFinal) { fb.innerHTML = '<span class="det-error">Completa el total</span>'; return; }
+
+        let realDiag = [];
+        let realTotal = {n:1, d:1};
+        for(let i=0; i<detN; i++) {
+            realDiag.push(detMatrix[i][i]);
+            realTotal = fMul(realTotal, detMatrix[i][i]);
+        }
+
+        let diagMatched = true;
+        let used = Array(detN).fill(false);
+        for(let i=0; i<detN; i++) {
+            let found = false;
+            for(let j=0; j<detN; j++) {
+                if(!used[j] && fEqual(userDiag[i], realDiag[j])) {
+                    used[j] = true; found = true; break;
+                }
+            }
+            if(!found) diagMatched = false;
+        }
+
+        if(!diagMatched) {
+            fb.innerHTML = '<span class="det-error">Los elementos de la diagonal no coinciden.</span>';
+        } else if(!fEqual(realTotal, uFinal)) {
+            fb.innerHTML = '<span class="det-error">La multiplicación final no es correcta.</span>';
+        } else {
+            fb.innerHTML = '<span class="det-success">¡Espectacular! Has calculado el determinante perfectamente. 🎉</span>';
+            document.getElementById('btn-final').style.display = 'none';
+            for(let i=0; i<detN; i++) document.getElementById(`df-diag${i}`).disabled = true;
+            document.getElementById('df-final').disabled = true;
+        }
+    }
+
+    // Iniciar
+    detGenerar();
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502095902JGMLYO" class="box caja-postit">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/buho.png" alt="">
+</div>
+<h1 class="box-title">Gauss</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-jglju92df" class="idevice_node text caja-postit" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-jglju92df&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;"><span style="color: #e03e2d;"><strong>Gauss</strong></span> El nombre de Gauss posiblemente no sea desconocido para ti.&nbsp; Y ya que lo hemos citado en varias ocasiones, es justo que conozcamos algo de su vida. En el siguiente vídeo conocerás como, a los 10 años, ya asombró a su maestro de matemáticas y porqué recibió el título de Príncipe de los Matemáticos</p>
+<p style="text-align: center;"><a href="https://www.youtube.com/watch?v=NcdsQaAAEAk" target="_blank" id="link_4" rel="noopener"> <img src="../content/resources/yutube.png" width="50" height="51" alt=""></a></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/2-especial-selectividad.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

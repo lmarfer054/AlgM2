@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7jq7c-kioart4i8">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.3. Concepto de submatriz | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7jq7c-kioart4i8" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li class="active"> <a href="../html/13-concepto-de-submatriz.html" class="active no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7jq7c-kioart4i8" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.3. Concepto de submatriz</h1></div>
+</header><div id="page-content-page-moo7jq7c-kioart4i8" class="page-content">
+<article id="20260224025920URWNBQ" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609UKPEBB" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609UKPEBB&quot;}">
+<div class="exe-text-template">
+    <table cellpadding="15" style="width: 99.9846%;">
+<tbody>
+<tr>
+<td style="width: 25%;"><img src="../content/resources/agendakm.png" width="400" height="299" alt="" /><br /></td>
+<td style="width: 50%; vertical-align: bottom;">
+<p style="text-align: justify;">En el apartado anterior hemos hablado de la tabla de distancias en kilómetros entre capitales que poseen algunos mapas de carreteras.</p>
+<p style="text-align: justify;">De ella hemos sacado una matriz en la que se relacionan las distancias entre todas las capitales de provincia de Andalucía:</p>
+</td>
+<td style="width: 25%;"><img src="../content/resources/mapakm.png" width="400" height="315" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<div style="display: flex; justify-content: center; font-family: Arial, sans-serif; padding: 20px;">
+<table style="border-collapse: collapse; border: 0;">
+<tbody>
+<tr>
+<td style="text-align: right; border: 0;"><span style="color: white;">................................</span></td>
+<td style="border: 0;"><span style="color: white;">.....</span></td>
+<td style="height: 110px; vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Almería</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Cádiz</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Córdoba</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Granada</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Huelva</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Jaén</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Málaga</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Sevilla</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; border: 0px;"><span style="color: white;"><br /></span></td>
+<td style="border: 0px;"><span style="color: white;"><br /></span></td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle; border: 0;">
+<div style="text-align: right; font-weight: bold; font-size: 15px; line-height: 0.9;">Almería<br /><span style="font-size: 12px; color: white;">.</span><br />Cádiz<br /><span style="font-size: 12px; color: white;">.</span><br />Córdoba<br /><span style="font-size: 12px; color: white;">.</span><br />Granada<br /><span style="font-size: 12px; color: white;">.</span><br />Huelva<br /><span style="font-size: 12px; color: white;">.</span><br />Jaén<br /><span style="font-size: 12px; color: white;">.</span><br />Málaga<br /><span style="font-size: 12px; color: white;">.</span><br />Sevilla</div>
+</td>
+<td colspan="9" style="vertical-align: middle; border: 0; padding-left: 5px;"><span style="font-size: 1em; letter-spacing: 2px;"> \( \left( \begin{array}{rrrrrrrr} 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 219 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 332 & 263 & 0 & 0 & 0 & 0 & 0 & 0 \\ 166 & 335 & 166 & 0 & 0 & 0 & 0 & 0 \\ 516 & 219 & 232 & 350 & 0 & 0 & 0 & 0 \\ 228 & 367 & 104 & 99 & 336 & 0 & 0 & 0 \\ 219 & 265 & 187 & 129 & 313 & 209 & 0 & 0 \\ 422 & 125 & 138 & 256 & 94 & 242 & 219 & 0 \end{array} \right) \) </span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br /></p>
+<p>¿Qué relación existe entre esta matriz y la del ejrcicio del apartado 1.2 en la que solo se incluían las capitales de Andalucía Oriental? Seguro que no te ha costado mucho darte cuenta que la anterior es una parte de esta matriz con las capitales de Andalucía. Cuando consideramos sólo una parte de una matriz, esta parte recibe un nombre concreto: <strong>submatriz</strong>.</p>
+</div>
+</div>
+</div>
+</article><article id="block-1771969651601-ki9qxnxut" class="box caja-comic">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1771969651600-9y557f3c4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1771969651600-9y557f3c4&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 25.4875%;"><img src="../content/resources/boomer.png" width="120" height="78" alt="" /></td>
+<td style="width: 74.4359%;"><strong><span style="color: #e03e2d;">Sí, ya sé ...</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Casi nadie usa ya mapas o agendas en papel.</p>
+<p>Pero si falla la batería o la cobertura ...</p>
+</div>
+</div>
+</div>
+</article><article id="20260224025920WLCUPS" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Submatriz.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609HGXSEK" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609HGXSEK&quot;}">
+<div class="exe-text-template">
+    <table cellpadding="15" style="width: 99.9696%; background-color: #defada;">
+<tbody>
+<tr>
+<td style="width: 99.9696%;">Dada una matriz cualquiera, llamaremos <span style="font-weight: bolder;">submatriz </span>a otra que se obtiene eligiendo determinadas filas y columnas de la matriz original. La única condición es que los elementos que están en la misma fila o en la misma columna de la submatriz estuvieran también en la misma fila o columna de la matriz original.</td>
+</tr>
+</tbody>
+</table>
+<p><br />De la matriz \( \left( \begin{array}{rrr} 4 & -1 & -1 \\ 5 & 10 & -3 \\ 6 & 1 & 2 \\ -2 & 15 & 0 \end{array} \right) \) obtenemos la submatriz \( \left( \begin{array}{rr} 5 & -3 \\ 6 & 2 \\ -2 & 0 \end{array} \right) \) eligiendo las filas 2ª, 3ª y 4ª y las columnas 1ª y 3ª.</p>
+</div>
+</div>
+</div>
+</article><article id="20260224025920USHOYE" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260223202609ULTXXS" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260223202609ULTXXS&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><table border="1" align="right">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+<p>Me han encargado ir a un teatro cercano a mi casa a consultar los precios de las localidades de los próximos espectáculos. La zona de butacas está dividida en cuatro partes: Patio, balcón, terraza y paraíso. Los precios en euros son los que muestra la siguiente matriz.</p>
+<div style="display: flex; justify-content: center; font-family: Arial, sans-serif; padding: 20px;">
+<table style="border-collapse: collapse; border: 0;">
+<tbody>
+<tr>
+<td style="text-align: right; border: 0;"><span style="color: white;">............................................................</span></td>
+<td style="border: 0;"><span style="color: white;">...</span></td>
+<td style="height: 100px; vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Patio</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Balcón</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Terraza</div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;">Paraíso</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; border: 0px;"><span style="color: white;"><br /></span></td>
+<td style="border: 0px;"><span style="color: white;"><br /></span></td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+<td style="vertical-align: bottom; text-align: center; border: 0px;">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 15px;"><br /></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle; border: 0;">
+<div style="text-align: right; font-weight: bold; font-size: 15px; line-height: 1.05;">Vicente Amigo<br /><span style="font-size: 12px; color: white;">.</span><br />English Nacional Ballet<br /><span style="font-size: 12px; color: white;">.</span><br />Joan Manuel Serrat<br /><span style="font-size: 12px; color: white;">.</span><br />Jennifer Larmora & Opus Five<br /><span style="font-size: 12px; color: white;">.</span><br />Ballet Flamenco</div>
+</td>
+<td colspan="5" style="vertical-align: middle; border: 0; padding-left: 5px;"><span style="font-size: 1.1em; letter-spacing: 3px;"> \( \left( \begin{array}{rrrr} 33 & 30 & 26 & 21 \\ 45 & 42 & 38 & 26 \\ 60 & 54 & 44 & 36 \\ 31 & 28 & 23 & 19 \\ 25 & 22 & 18 & 13 \end{array} \right) \) </span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Quien me ha pedido la información tiene interés en asistir a un ballet y no le interesan las butacas de Patio, para poder tener una vista más completa del escenario. Escribe la matriz que recoge los precios de las localidades de los dos espectáculos de ballet en las modalidades de balcón, terraza y paraíso.</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>La matriz resultante de lo pedido es: \( \left( \begin{array}{rrr} 42 & 38 & 26 \\ 22 & 18 & 13 \end{array} \right) \)</p>
+<p> </p></div></div>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/12-tipos-de-matrices.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/2-operaciones-con-matrices.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krcw-zhu1qzcwo">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.1. Métodos de resolución de sistemas de ecuaciones lineales | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krcw-zhu1qzcwo" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="active no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krcw-zhu1qzcwo" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.1. Métodos de resolución de sistemas de ecuaciones lineales</h1></div>
+</header><div id="page-content-page-moo7krcw-zhu1qzcwo" class="page-content">
+<article id="20260502085219XQTSDO" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-neeyvo5jv" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-neeyvo5jv&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table align="right" border="0">
+<tbody>
+<tr style="border: 1px solid #ffffff;">
+<td></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Las matemáticas tienen una estructura que es muy similar a muchos aspectos del mundo que nos rodea. Para poder dar un paso es necesario haber dado el paso previo.&nbsp;</p>
+<p style="text-align: justify;">En este apartado vamos a repasar los métodos de resolución de sistema de ecuaciones que viste en cursos anteriores. Los métodos seguramente los viste para sistemas de dos ecuaciones con dos incógnitas, pero son aplicables a cualquier situación. Existen tres métodos: Reducción, Sustitución e Igualación.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219EFVODK" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Igualación, sustitución y reducción</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="2026043016553968753Y" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;2026043016553968753Y&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><div class="exe-fx exe-tabs">
+<h2>Método de igualación</h2>
+<p style="text-align: center;"><img src="../content/resources/2026043016553968753Y/igualacin.png" width="1082" height="604" alt=""><br></p>
+<h2>Método de sustitución</h2>
+<p><img src="../content/resources/2026043016553968753Y/sustitucion.png" width="1181" height="659" alt="" style="display: block; margin-left: auto; margin-right: auto;"><br></p>
+<p style="text-align: center;"><img src="../content/resources/2026043016553968753Y/sustit.png" width="858" height="475" alt=""></p>
+<h2 style="text-align: left;">Método de reducción</h2>
+<p><img src="../content/resources/2026043016553968753Y/reduccion.png" width="768" height="1292" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</div>
+<p><br></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219JWGULM" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260430171629770XRW" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260430171629770XRW&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260430111909MCIPWQ&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;20260430171629770XRW&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;La empresa de transportes \&quot;El Gusanito Veloz\&quot;, especializada en transporte infantil y juvenil, tiene varios grupos de clientes fijos para los que realiza excursiones a distintos lugares. El nuevo gerente quiere saber la cantidad fija de personas que componen esos grupos, pero al revisar los datos sólo tiene los resultados globales.&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;../content/resources/20260430171629770XRW/gusanito.png\&quot; width=\&quot;704\&quot; height=\&quot;384\&quot; alt=\&quot;\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;/p&gt;\n&lt;div id=\&quot;ta63_21\&quot; class=\&quot;block instructions iDevice_content\&quot;&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;En concreto, trabaja con un club que tiene un grupo de futbol y otro de baloncesto. Siempre que viaja cada grupo lleva el mismo número de personas, entre jugadores, encargados y acompañantes. Sabe que el mes pasado hizo tres viajes con el grupo de futbol y dos con el de baloncesto y en total llevó a 141 personas. Hace dos meses realizó para el primer grupo dos viajes y para el de baloncesto cuatro, desplazando en total a 142.&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\&quot;activity\&quot; id=\&quot;activity-63_22\&quot;&gt;&lt;form action=\&quot;https://edea.juntadeandalucia.es/bancorecursos/file/aba62b12-13fe-4b2c-b0fa-1278b136ee9a/1/es-an_2020062212_9100828.zip/21_mtodos_de_resolucin_de_sistemas_de_ecuaciones_lineales.html?temp.hn=true&amp;temp.hb=true#\&quot; onsubmit=\&quot;$exe.cloze.submit('63_22');return false\&quot; class=\&quot;activity-form\&quot;&gt;\n&lt;div id=\&quot;cloze63_22\&quot;&gt;\n&lt;p&gt;Si llamamos&lt;span&gt; &lt;/span&gt;&lt;span&gt;\\(x\\) &lt;/span&gt;al número de personas que viajan en el grupo de futbol e&lt;span&gt; &lt;/span&gt;\\(y\\)&lt;i&gt;&lt;/i&gt;&lt;span&gt; &lt;/span&gt;al de personas del grupo de baloncesto, completa el siguiente sistema:&lt;/p&gt;\n&lt;/div&gt;\n&lt;/form&gt;&lt;/div&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777562293789-3EZO2&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;div style=\&quot;margin: 20px auto; width: fit-content; display: flex; align-items: center; font-family: 'Times New Roman', serif; font-size: 1.5em; color: #000000;\&quot;&gt;&lt;!-- Contenedor de la llave con ajuste de altura --&gt;\n&lt;div style=\&quot;font-size: 3.5em; font-weight: 100; margin-right: -2px; margin-bottom: 0.15em; line-height: 1; transform: scaleX(0.5); transform-origin: right; color: #000000;\&quot;&gt;{&lt;/div&gt;\n&lt;!-- Contenedor de las ecuaciones --&gt;\n&lt;table style=\&quot;border-collapse: collapse; border: none; margin-left: 0;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 0px 5px; text-align: left; line-height: 1;\&quot;&gt;&lt;u&gt;3&lt;/u&gt;\\(x\\) + &lt;u&gt;2&lt;/u&gt;\\(y\\) = 141&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;&lt;!-- Espacio visual entre ecuaciones --&gt;\n&lt;td style=\&quot;padding: 0px 5px; text-align: left; line-height: 1.4;\&quot;&gt;&lt;u&gt;2&lt;/u&gt;\\(x\\) + &lt;u&gt;4&lt;/u&gt;\\(y\\) = 142&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/div&gt;\n&lt;p&gt;Resuelve el sistema por el método que quieras e indica el número de personas de cada grupo:&lt;/p&gt;\n&lt;p&gt;\\(x\\) = el grupo de futbol tiene &lt;u&gt;35&lt;/u&gt; personas&lt;/p&gt;\n&lt;p&gt;\\(y\\) = el grupo de baloncesto se compone de &lt;u&gt;18&lt;/u&gt; personas.&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:true,&quot;strict&quot;:true,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="20260430171629770XRW" data-evaluationb="false" data-evaluationid="20260430111909MCIPWQ"></div>
+            <div id="frmMainContainer-20260430171629770XRW" class="form-IDevice" data-id="20260430171629770XRW">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>La empresa de transportes "El Gusanito Veloz", especializada en transporte infantil y juvenil, tiene varios grupos de clientes fijos para los que realiza excursiones a distintos lugares. El nuevo gerente quiere saber la cantidad fija de personas que componen esos grupos, pero al revisar los datos sólo tiene los resultados globales.</p>
+<p><img src="../content/resources/20260430171629770XRW/gusanito.png" width="704" height="384" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<div id="ta63_21" class="block instructions iDevice_content">
+<p style="text-align: justify;">En concreto, trabaja con un club que tiene un grupo de futbol y otro de baloncesto. Siempre que viaja cada grupo lleva el mismo número de personas, entre jugadores, encargados y acompañantes. Sabe que el mes pasado hizo tres viajes con el grupo de futbol y dos con el de baloncesto y en total llevó a 141 personas. Hace dos meses realizó para el primer grupo dos viajes y para el de baloncesto cuatro, desplazando en total a 142.</p>
+</div>
+<div class="activity" id="activity-63_22"><form action="https://edea.juntadeandalucia.es/bancorecursos/file/aba62b12-13fe-4b2c-b0fa-1278b136ee9a/1/es-an_2020062212_9100828.zip/21_mtodos_de_resolucin_de_sistemas_de_ecuaciones_lineales.html?temp.hn=true&temp.hb=true#" onsubmit="$exe.cloze.submit('63_22');return false" class="activity-form">
+<div id="cloze63_22">
+<p>Si llamamos<span> </span><span>\(x\) </span>al número de personas que viajan en el grupo de futbol e<span> </span>\(y\)<i></i><span> </span>al de personas del grupo de baloncesto, completa el siguiente sistema:</p>
+</div>
+</form></div></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-20260430171629770XRW">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-20260430171629770XRW" style="display:none;">
+                      <button  id="frmStartGame-20260430171629770XRW" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-20260430171629770XRW" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-20260430171629770XRW" > </div>
+                        <div id="frmCover-20260430171629770XRW" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-20260430171629770XRW" class="form-results-container inline">
+                        <div id="form-score-20260430171629770XRW" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-20260430171629770XRW" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-20260430171629770XRW" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="20260430171629770XRW" data-pass-rate="" />
+                        <input id="form-button-reset-20260430171629770XRW" type="button" value="Reiniciar"
+                            data-id="20260430171629770XRW" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-20260430171629770XRW" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="20260430171629770XRW" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-20260430171629770XRW" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/22-metodo-de-gauss.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

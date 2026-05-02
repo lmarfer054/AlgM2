@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krd0-rn75r8uu">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>3. Especial selectividad | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krd0-rn75r8uu" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/3-especial-selectividad-2.html" class="active no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krd0-rn75r8uu" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">3. Especial selectividad</h1></div>
+</header><div id="page-content-page-moo7krd0-rn75r8uu" class="page-content">
+<article id="20260502085219JNUHZD" class="box sin-nada">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202605011925347082ZM" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202605011925347082ZM&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p><span>Vamos a ver, como en los temas anteriores, una serie de ejercicios que han aparecido en exámenes de Selectivdad de cursos pasados. Recuerda que este apartado es un complemento y que no es objetivo de estos contenidos el preparar para esa prueba, pero sí ayudarte si deseas presentarte a ella.</span></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219WDMQKF" class="box sin-titulo">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501192642326FP8" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501192642326FP8&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><h2><span style="color: #007932;">Sistemas con enunciado</span></h2><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219GCEMII" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202605011928554286F1" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202605011928554286F1&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En una excavación arqueológica se han encontrado sortijas, monedas y pendientes. Una sortija, una moneda y un pendiente pesan conjuntamente 30 gramos. Además, 4 sortijas, 3 monedas y 2 pendientes han dado un peso total de 90 gramos. El peso de un objeto deformado e irreconocible es de 18 gramos.<br>Determina si el mencionado objeto es una sortija, una moneda o un pendiente, sabiendo que los objetos que son del mismo tipo pesan lo mismo.</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; border: 1px solid #e1e1e1; border-radius: 8px; background-color: #f9f9f9;">
+<p>Definimos las variables según el peso de cada objeto:</p>
+<ul>
+<li><strong>x:</strong> peso de una sortija</li>
+<li><strong>y:</strong> peso de una moneda</li>
+<li><strong>z:</strong> peso de un pendiente</li>
+</ul>
+<hr style="border: 0; height: 1px; background: #ccc; margin: 20px 0;" />
+<h3 style="color: #2980b9;">1. Planteamiento del Sistema</h3>
+<p>Basándonos en los datos del enunciado:</p>
+<div style="background: white; padding: 10px; border-left: 5px solid #2980b9; margin: 10px 0;">(1)   <em>x + y + z = 30</em><br />(2)   <em>4x + 3y + 2z = 90</em></div>
+<h3 style="color: #2980b9;">2. Resolución Paso a Paso</h3>
+<p>Eliminamos la variable <strong>z</strong> multiplicando la ecuación (1) por -2 y sumándola a la (2):</p>
+<p style="text-indent: 20px;">-2x - 2y - 2z = -60</p>
+<p style="text-indent: 20px;">4x + 3y + 2z = 90</p>
+<p><strong>Resultado:</strong> <span style="color: #c0392b; font-weight: bold;">2x + y = 30</span> → <em>y = 30 - 2x</em></p>
+<p>Sustituyendo en la primera ecuación obtenemos que: <span style="color: #c0392b; font-weight: bold;">z = x</span></p>
+<h3 style="color: #2980b9;">3. Conclusión</h3>
+<p>Si el objeto de 18g fuera una sortija o pendiente (x o z = 18), el peso de la moneda (y) sería negativo. Por tanto:</p>
+<div style="background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; font-weight: bold; text-align: center; border: 1px solid #c3e6cb;">El objeto deformado de 18 gramos es una MONEDA.</div>
+<p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">Comprobación: Si la moneda pesa 18g, las sortijas y pendientes pesan 6g cada uno. (6 + 18 + 6 = 30g).</p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219ZSNIMW" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202605011935414758X0" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202605011935414758X0&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260430111909MCIPWQ&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;202605011935414758X0&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Una empresa cinematográfica dispone de tres salas: A, B y C. Los precios de entrada a estas salas son 3, 4 y 5 euros, respectivamente. Un día la recaudación conjunta de las tres salas fue de 720 euros y el número total de espectadores fue de 200. Si los espectadores de la sala A hubieran asistido a la sala B y los de la sala B a la sala A, se hubiese obtenido una recaudación de 20 euros más. Calcula el número de espectadores que acudió a cada una de las salas.&lt;/p&gt;\n&lt;p&gt;Tomamos como variables:&lt;/p&gt;\n&lt;p&gt;\\(x\\) = nº de espectadores de la sala A&lt;/p&gt;\n&lt;p&gt;\\(y\\) = nº de espectadores de la sala B&lt;/p&gt;\n&lt;p&gt;\\(z\\) = nº de espectadores de la sala C&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Completa el sistema según los datos reflejados:&lt;/span&gt;&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777656977526-O9LKS&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;div style=\&quot;margin: 20px auto; width: fit-content; display: flex; align-items: center; font-family: 'Times New Roman', serif; font-size: 1.4em; color: #000000;\&quot;&gt;&lt;!-- Llave más larga (6.2em) --&gt;\n&lt;div style=\&quot;font-size: 8em; font-weight: 100; margin-right: -5px; margin-bottom: 0.18em; line-height: 1; transform: scaleX(0.2); transform-origin: right; color: #000000;\&quot;&gt;{&lt;/div&gt;\n&lt;!-- Tabla de alineación --&gt;\n&lt;table style=\&quot;border-collapse: collapse; border: none; margin-left: 10px;\&quot;&gt;\n&lt;tbody&gt;&lt;!-- Fila 1 --&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;&lt;u&gt;3&lt;/u&gt;x&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;&lt;u&gt;4&lt;/u&gt;y&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;&lt;u&gt;5&lt;/u&gt;z&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 15px;\&quot;&gt;=&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: left;\&quot;&gt;720&lt;/td&gt;\n&lt;/tr&gt;\n&lt;!-- Fila 2 --&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;x&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;y&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;z&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 15px;\&quot;&gt;=&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: left;\&quot;&gt;&lt;u&gt;200&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;!-- Fila 3 --&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;&lt;u&gt;4&lt;/u&gt;x&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;&lt;u&gt;3&lt;/u&gt;y&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px;\&quot;&gt;+&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: right;\&quot;&gt;5z&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 15px;\&quot;&gt;=&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px; text-align: left;\&quot;&gt;&lt;u&gt;740&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/div&gt;\n&lt;p&gt;La solución de ese sistema sería:&lt;/p&gt;\n&lt;p&gt;\\(x\\) = &lt;u&gt;100&lt;/u&gt; espectadores en la sala A&lt;/p&gt;\n&lt;p&gt;\\(y\\) = &lt;u&gt;80&lt;/u&gt; espectadores en la sala B&lt;/p&gt;\n&lt;p&gt;\\(z\\) = &lt;u&gt;20&lt;/u&gt; espectadores en la sala C&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:true,&quot;strict&quot;:true,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="202605011935414758X0" data-evaluationb="false" data-evaluationid="20260430111909MCIPWQ"></div>
+            <div id="frmMainContainer-202605011935414758X0" class="form-IDevice" data-id="202605011935414758X0">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p style="text-align: justify;">Una empresa cinematográfica dispone de tres salas: A, B y C. Los precios de entrada a estas salas son 3, 4 y 5 euros, respectivamente. Un día la recaudación conjunta de las tres salas fue de 720 euros y el número total de espectadores fue de 200. Si los espectadores de la sala A hubieran asistido a la sala B y los de la sala B a la sala A, se hubiese obtenido una recaudación de 20 euros más. Calcula el número de espectadores que acudió a cada una de las salas.</p>
+<p>Tomamos como variables:</p>
+<p>\(x\) = nº de espectadores de la sala A</p>
+<p>\(y\) = nº de espectadores de la sala B</p>
+<p>\(z\) = nº de espectadores de la sala C</p>
+<p><span>Completa el sistema según los datos reflejados:</span></p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-202605011935414758X0">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-202605011935414758X0" style="display:none;">
+                      <button  id="frmStartGame-202605011935414758X0" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-202605011935414758X0" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-202605011935414758X0" > </div>
+                        <div id="frmCover-202605011935414758X0" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-202605011935414758X0" class="form-results-container inline">
+                        <div id="form-score-202605011935414758X0" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-202605011935414758X0" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-202605011935414758X0" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="202605011935414758X0" data-pass-rate="" />
+                        <input id="form-button-reset-202605011935414758X0" type="button" value="Reiniciar"
+                            data-id="202605011935414758X0" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-202605011935414758X0" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="202605011935414758X0" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-202605011935414758X0" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article><article id="20260502085219ULUCGJ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501204044817G9C" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501204044817G9C&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><div id="ta73_10" class="block iDevice_content">
+<p>Tratamos de adivinar, mediante ciertas pistas, los precios de tres productos \(A\), \(B\) y \(C\).</p>
+<p><u>Pista 1:</u><span>&nbsp;</span>Si compramos una unidad de \(A\), dos de \(B\) y una de \(C\) gastamos \(118\) euros.</p>
+<p><u>Pista 2:</u><span>&nbsp;</span>Si compramos \(n\) unidades de \(A\), \(n+3\) de \(B\) y tres de \(C\) gastamos \(390\) euros.</p>
+</div>
+<div id="taquesQuestion0b73" class="block iDevice_content">
+<p>a) ¿Hay algún valor de \(n\) para el que estas dos pistas sean incompatibles?</p>
+<p>b) Sabiendo que \(n=4\) y que el producto \(C\) cuesta el triple que el producto \(A\), calcula el precio de cada producto.</p>
+</div>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div class="solucion-problema" style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #fcfcfc;">
+<p><strong>a)</strong> Planteamos el sistema inicial con las dos pistas:</p>
+<ul style="list-style-type: none; padding-left: 0;">
+<li>1) \(A + 2B + C = 118\)</li>
+<li>2) \(nA + (n+3)B + 3C = 390\)</li>
+</ul>
+<p>Lo expresamos en forma de matriz ampliada:</p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ n & n+3 & 3 & 390 \end{array}\right)\]</div>
+<p>Aplicamos el método de Gauss para triangular la matriz. Hacemos un cero en la primera columna de la segunda fila (\(F_2 \rightarrow F_2 - nF_1\)):</p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ 0 & 3-n & 3-n & 390-118n \end{array}\right)\]</div>
+<p><strong>Condición de incompatibilidad:</strong> Para que el sistema no tenga solución (según el teorema de Rouché-Frobenius), necesitamos que los coeficientes de las incógnitas se anulen, pero el término independiente no. Esto ocurre si:</p>
+<p style="text-align: center;">\[3 - n = 0 \implies \mathbf{n = 3}\]</p>
+<p>Comprobamos el término independiente con \(n = 3\): \(390 - 118(3) = 36\). Al quedar la ecuación \(0 = 36\) (lo cual es falso), confirmamos que para <strong>n = 3</strong> el sistema es <strong>incompatible</strong>.</p>
+<hr style="border: 0; height: 1px; background: #ddd; margin: 30px 0;" /><!-- PASO 2 -->
+<p><strong>b)</strong> Sabiendo que \(n = 4\) y que el producto C cuesta el triple que el A (\(C = 3A \implies -3A + C = 0\)), construimos el sistema:</p>
+<ul style="list-style-type: none; padding-left: 0;">
+<li>1) \(A + 2B + C = 118\)</li>
+<li>2) \(4A + 7B + 3C = 390\)</li>
+<li>3) \(-3A + 0B + C = 0\)</li>
+</ul>
+<p>Construimos la matriz ampliada:</p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ 4 & 7 & 3 & 390 \\ -3 & 0 & 1 & 0 \end{array}\right)\]</div>
+<p><strong>Iteración 1:</strong> Hacemos ceros por debajo del pivote de la primera columna (\(F_2 \rightarrow F_2 - 4F_1\) y \(F_3 \rightarrow F_3 + 3F_1\)):</p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ 0 & -1 & -1 & -82 \\ 0 & 6 & 4 & 354 \end{array}\right)\]</div>
+<p><em>(Multiplicamos la Fila 2 por -1 para facilitar el cálculo):</em></p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ 0 & 1 & 1 & 82 \\ 0 & 6 & 4 & 354 \end{array}\right)\]</div>
+<p><strong>Iteración 2:</strong> Hacemos un cero en la segunda columna de la tercera fila (\(F_3 \rightarrow F_3 - 6F_2\)):</p>
+<div style="overflow-x: auto; text-align: center; margin: 15px 0;">\[\left(\begin{array}{ccc|c} 1 & 2 & 1 & 118 \\ 0 & 1 & 1 & 82 \\ 0 & 0 & -2 & -138 \end{array}\right)\]</div>
+<p><strong>Solución por sustitución regresiva:</strong></p>
+<ul style="line-height: 2;">
+<li><strong>Fila 3:</strong> \(-2C = -138 \implies C = \dfrac{-138}{-2} \implies \mathbf{C = 69}\)</li>
+<li><strong>Fila 2:</strong> \(B + C = 82 \implies B + 69 = 82 \implies \mathbf{B = 13}\)</li>
+<li><strong>Fila 1:</strong> \(A + 2B + C = 118 \implies A + 26 + 69 = 118 \implies A + 95 = 118 \implies \mathbf{A = 23}\)</li>
+</ul>
+<div style="margin-top: 25px; padding: 15px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;"><strong style="font-size: 1.1em;">Solución Final:</strong>
+<ul style="margin: 8px 0 0 0; list-style-type: disc; padding-left: 20px;">
+<li>Precio del Producto A: <strong>23 €</strong></li>
+<li>Precio del Producto B: <strong>13 €</strong></li>
+<li>Precio del Producto C: <strong>69 €</strong></li>
+</ul>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219UDFSDH" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501210739553NC7" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501210739553NC7&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Un cajero automático contiene sólo billetes de 10, 20 y 50 euros. En total hay 130 billetes con un importe de 3000 euros.</p>
+<p>a) ¿Es posible que en el cajero haya el triple número de billetes de 10 que de 50?</p>
+<p>b) Suponiendo que el número de billetes de 10 es el doble que el número de billetes de 50, calcula cuántos billetes hay de cada tipo.</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2c3e50; line-height: 1.6; max-width: 800px; margin: auto; border: 1px solid #e0e0e0; padding: 20px; border-radius: 10px; background-color: #ffffff;">
+<p>Definimos las variables según el tipo de billete:</p>
+<ul style="list-style: none; padding-left: 10px;">
+<li>🔹 <strong>x</strong>: Número de billetes de 10 €</li>
+<li>🔹 <strong>y</strong>: Número de billetes de 20 €</li>
+<li>🔹 <strong>z</strong>: Número de billetes de 50 €</li>
+</ul>
+<div style="background-color: #f4f7f6; padding: 15px; border-radius: 5px; margin-bottom: 20px;"><strong>Ecuaciones generales:</strong><br />1. <em>Total billetes:</em> x + y + z = 130<br />2. <em>Importe total:</em> 10x + 20y + 50z = 3000 → (Simplificado: x + 2y + 5z = 300)</div>
+<p><strong>a)</strong></p>
+<p><strong> </strong>Si <strong>x = 3z</strong>, sustituimos en el sistema:</p>
+<ul style="background-color: #fdf2f2; border-left: 5px solid #e74c3c; padding: 10px; list-style: none;">
+<li>De (1): 3z + y + z = 130 → <strong>y + 4z = 130</strong></li>
+<li>De (2): 3z + 2y + 5z = 300 → 2y + 8z = 300 → <strong>y + 4z = 150</strong></li>
+</ul>
+<p><strong>Conclusión:</strong> Obtenemos una contradicción (130 ≠ 150). <span style="color: #e74c3c; font-weight: bold;">No es posible.</span></p>
+<p><strong>b)</strong></p>
+<p>Sustituimos <strong>x = 2z</strong> en las ecuaciones:</p>
+<ol>
+<li>2z + y + z = 130 → <strong>y + 3z = 130</strong></li>
+<li>2z + 2y + 5z = 300 → 2y + 7z = 300</li>
+</ol>
+<p>Resolviendo el sistema por sustitución (y = 130 - 3z):</p>
+<p style="padding-left: 20px;">2(130 - 3z) + 7z = 300 <br />260 - 6z + 7z = 300 <br /><strong>z = 40</strong></p>
+<div style="margin-top: 20px; padding: 15px; background-color: #ebf5fb; border: 1px solid #2980b9; border-radius: 8px;">
+<p style="margin: 0; font-weight: bold; color: #2980b9; text-align: center; font-size: 1.1em;">Resultado Final:</p>
+<table style="width: 100%; margin-top: 10px; text-align: center; border-collapse: collapse;">
+<tbody>
+<tr>
+<td style="padding: 10px; border-right: 1px solid #bdc3c7;"><strong>Billetes de 10 €</strong></td>
+<td style="padding: 10px; border-right: 1px solid #bdc3c7;"><strong>Billetes de 20 €</strong></td>
+<td style="padding: 10px;"><strong>Billetes de 50 €</strong></td>
+</tr>
+<tr style="font-size: 1.3em; color: #2c3e50;">
+<td style="padding: 10px; border-right: 1px solid #bdc3c7;">80</td>
+<td style="padding: 10px; border-right: 1px solid #bdc3c7;">10</td>
+<td style="padding: 10px;">40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219DAERBD" class="box sin-titulo">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202605012115564377TE" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202605012115564377TE&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><h2><span style="color: #007932;">Sistemas con parámetros</span></h2>
+<p style="text-align: justify;"><span style="color: #000000;">Aunque no hemos visto este tipo de ejercicio dentro de los contenidos, suelen ser lo más corriente dentro de los exámenes de Selectividad. Consiste en estudiar cómo sería un sistema en el que uno o más de los coeficientes están sustituidos por un parámetro. Según el valor que se le dé a ese parámetro, el sistema será de distinto tipo. Ejercicios parecidos has visto en el tema anterior cuando te pedían calcular el rango o la matriz inversa dependiendo de un valor no conocido.</span></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219MSCZWS" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501212008942SEF" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501212008942SEF&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Dado el sistema de ecuaciones: \[ \begin{cases} x + y = m + 1 \\ x + my + z = 1 \\ mx + y - z = m \end{cases} \]</p>
+<p>a) Determina los valores de m para los que el sistema es compatible.</p>
+<p>b) Resuelve el sistema en el caso \(m=-1\).</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="line-height: 1.6; max-width: 900px; margin: 20px auto; border: 1px solid #dcdde1; padding: 25px; border-radius: 12px; background-color: #ffffff;">
+<h3 style="color: #d35400; margin-top: 25px;">a) Determinar valores de <em>m</em> para que sea compatible</h3>
+<p>Analizamos el determinante de la matriz de coeficientes \( A \):</p>
+<div style="padding-left: 20px; border-left: 4px solid #d35400; margin-bottom: 20px;">
+<p>\( |A| = \begin{vmatrix} 1 & 1 & 0 \\ 1 & m & 1 \\ m & 1 & -1 \end{vmatrix} = (-m + m + 0) - (0 + 1 - 1) = 0 \)</p>
+<p>Como el determinante de \( A \) es siempre <strong>0</strong> para cualquier valor de \( m \), el sistema <strong>nunca será Compatible Determinado</strong> (Rango de \( A < 3 \)).</p>
+</div>
+<p>Para que sea <strong>Compatible Indeterminado</strong>, el rango de la matriz ampliada \( A' \) debe ser igual al rango de \( A \). Calculamos el rango de \( A \):</p>
+<ul>
+<li>Tomamos un menor de orden 2: \( \begin{vmatrix} 1 & 0 \\ m & 1 \end{vmatrix} = 1 \neq 0 \). Por lo tanto, \( \text{rango}(A) = 2 \) para cualquier \( m \).</li>
+</ul>
+<p>Ahora estudiamos el rango de la matriz ampliada \( A' \) orlando con los términos independientes:</p>
+<div style="background-color: #fff4e5; padding: 10px; border-radius: 5px; margin: 10px 0; text-align: center;">\( |A'| = \begin{vmatrix} 1 & 0 & m+1 \\ 1 & 1 & 1 \\ m & -1 & m \end{vmatrix} = (m + 0 - (m+1)) - (m^2 + m - 1) = -m^2 - m \)</div>
+<p>Para que el sistema sea <strong>Compatible</strong>, necesitamos \( \text{rango}(A') = \text{rango}(A) = 2 \), por lo que el determinante anterior debe ser cero:</p>
+<p style="text-align: center;">\( -m^2 - m = 0 \implies -m(m + 1) = 0 \implies \mathbf{m = 0} \text{ o } \mathbf{m = -1} \)</p>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
+<h3 style="color: #27ae60;">b) Resuelve el sistema para \( m = -1 \)</h3>
+<p>Sustituimos \( m = -1 \) en el sistema original:</p>
+<div style="padding: 15px; text-align: center;">\( \begin{cases} x + y = 0 \\ x - y + z = 1 \\ -x + y - z = -1 \end{cases} \)</div>
+<p>Observamos que la tercera ecuación es proporcional a la segunda, por lo que trabajamos con las dos primeras. Tomamos \( x = \lambda \) como parámetro:</p>
+<div style="margin-top: 15px; padding: 20px; background-color: #e8f6ef; border: 1px solid #27ae60; border-radius: 8px;">
+<p style="margin: 0; font-weight: bold; color: #1e8449; text-align: center; font-size: 1.2em;">Solución para \( m = -1 \):</p>
+<div style="text-align: center; margin-top: 10px; font-size: 1.3em;">\( \begin{cases} x = \lambda \\ y = -\lambda \\ z = 1 - 2\lambda \end{cases} \)</div>
+<p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 10px;">(Donde \( \lambda \in \mathbb{R} \))</p>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219SWXBLU" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501213009530E4Z" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501213009530E4Z&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Consideramos el sistema de ecuaciones:</p>
+<p>\[ \begin{cases} x + y + z = 0 \\ 2x + ty + z = 2 \\ x + y + tz = t - 1 \end{cases} \]</p>
+<p>a) Determina el valor de \(t\) para que el sistema sea incompatible.</p>
+<p>b) Resuelve el sistema para \(t=1\).&nbsp;</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="line-height: 1.6; max-width: 900px; margin: 20px auto; border: 1px solid #dcdde1; padding: 25px; border-radius: 12px; background-color: #ffffff;">
+<h3 style="color: #d35400; margin-top: 25px;">a) Determinar el valor de <em>t</em> para que sea incompatible</h3>
+<p>Calculamos el determinante de la matriz de coeficientes \( A \):</p>
+<div style="padding-left: 20px; border-left: 4px solid #d35400; margin-bottom: 20px;">
+<p>\( |A| = \begin{vmatrix} 1 & 1 & 1 \\ 2 & t & 1 \\ 1 & 1 & t \end{vmatrix} = (t^2 + 1 + 2) - (t + 1 + 2t) = t^2 - 3t + 2 \)</p>
+<p>Igualamos a cero para encontrar los valores críticos:</p>
+<p style="text-align: center;">\( t^2 - 3t + 2 = 0 \implies (t - 1)(t - 2) = 0 \implies \mathbf{t = 1, t = 2} \)</p>
+</div>
+<p>Analizamos el caso <strong>t = 2</strong>:</p>
+<ul>
+<li>La matriz ampliada es \( A' = \left(\begin{array}{ccc|c} 1 & 1 & 1 & 0 \\ 2 & 2 & 1 & 2 \\ 1 & 1 & 2 & 1 \end{array}\right) \).</li>
+<li>El rango de \( A \) es 2. Estudiamos un menor de la ampliada: \( \begin{vmatrix} 1 & 1 & 0 \\ 2 & 1 & 2 \\ 1 & 2 & 1 \end{vmatrix} = (1 + 2 + 0) - (0 + 4 + 2) = -3 \neq 0 \).</li>
+<li>Como \( \text{rango}(A) = 2 \) y \( \text{rango}(A') = 3 \), el sistema es <strong>Incompatible</strong>.</li>
+</ul>
+<p><strong>Resultado a):</strong> El sistema es incompatible para \( \mathbf{t = 2} \).</p>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
+<h3 style="color: #27ae60;">b) Resuelve el sistema para \( t = 1 \)</h3>
+<p>Sustituimos \( t = 1 \) en el sistema original:</p>
+<div style="padding: 15px; text-align: center;">\( \begin{cases} x + y + z = 0 \\ 2x + y + z = 2 \\ x + y + z = 0 \end{cases} \)</div>
+<p>La primera y tercera ecuación son idénticas. Restamos la primera a la segunda:</p>
+<p style="text-align: center;">\( (2x + y + z) - (x + y + z) = 2 - 0 \implies \mathbf{x = 2} \)</p>
+<p>Sustituimos \( x = 2 \) en la primera ecuación para obtener la relación entre \( y \) y \( z \):</p>
+<p style="text-align: center;">\( 2 + y + z = 0 \implies y = -2 - z \)</p>
+<div style="margin-top: 15px; padding: 20px; background-color: #e8f6ef; border: 1px solid #27ae60; border-radius: 8px;">
+<p style="margin: 0; font-weight: bold; color: #1e8449; text-align: center; font-size: 1.2em;">Solución para \( t = 1 \):</p>
+<div style="text-align: center; margin-top: 10px; font-size: 1.3em;">\( \begin{cases} x = 2 \\ y = -2 - \lambda \\ z = \lambda \end{cases} \)</div>
+<p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 10px;">(Donde \( \lambda \in \mathbb{R} \))</p>
+</div>
+</div>
+<div style="line-height: 1.6; max-width: 900px; margin: 20px auto; border: 1px solid #dcdde1; padding: 25px; border-radius: 12px; background-color: #ffffff;">
+<h3 style="color: #d35400;">Discusión mediante transformaciones de Gauss</h3>
+<p>Partimos de la matriz ampliada y realizamos operaciones elementales:</p>
+<div style="text-align: center; margin: 15px 0;">\( \begin{pmatrix} 1 & 1 & 1 & | & 0 \\ 2 & t & 1 & | & 2 \\ 1 & 1 & t & | & t-1 \end{pmatrix} \xrightarrow[F_3 - F_1]{F_2 - 2F_1} \begin{pmatrix} 1 & 1 & 1 & | & 0 \\ 0 & t-2 & -1 & | & 2 \\ 0 & 0 & t-1 & | & t-1 \end{pmatrix} \)</div>
+<p>Analizamos el valor crítico <strong>t = 2</strong>:</p>
+<p>Si \( t = 2 \), la segunda fila queda \( (0, 0, -1 | 2) \) y la tercera fila queda \( (0, 0, 1 | 1) \). Al sumar ambas, obtenemos la fila \( (0, 0, 0 | 3) \), lo cual es una contradicción (\( 0 = 3 \)).</p>
+<p style="background-color: #fdf2f2; padding: 10px; border-radius: 5px;"><strong>Conclusión a):</strong> Para \( t = 2 \), el sistema es <strong>Incompatible</strong>.</p>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
+<p>Al sustituir \( t = 1 \) en la matriz escalonada anterior:</p>
+<div style="text-align: center; margin: 15px 0;">\( \begin{pmatrix} 1 & 1 & 1 & | & 0 \\ 0 & -1 & -1 & | & 2 \\ 0 & 0 & 0 & | & 0 \end{pmatrix} \)</div>
+<p>La última fila de ceros indica que el sistema es <strong>Compatible Indeterminado</strong> (infinitas soluciones). </p>
+<div style="margin-top: 15px; padding: 20px; background-color: #e8f6ef; border: 1px solid #27ae60; border-radius: 8px;">
+<p style="margin: 0; font-weight: bold; color: #1e8449; text-align: center; font-size: 1.2em;">Solución General Infinitas Soluciones:</p>
+<div style="text-align: center; margin-top: 10px; font-size: 1.3em;">\( \begin{cases} x = 2 \\ y = -2 - \lambda \\ z = \lambda \end{cases} \)</div>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219CXVZSI" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501214737527N4F" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501214737527N4F&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Dado el sistema de ecuaciones:</p>
+<p>\[ \begin{cases} x + y = 1 \\ ky + z = 0 \\ x + (k+1)y + kz = k+1 \end{cases} \]</p>
+<p>a) Determina el valor del parámetro \(k\) para que el sistema sea incompatible.</p>
+<p>b) Halla el valor del parámetro \(k\) para que la solución del sistema tenga \(z=2\).</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="line-height: 1.6; max-width: 900px; margin: 20px auto; border: 1px solid #dcdde1; padding: 25px; border-radius: 12px; background-color: #ffffff;">
+<h3 style="color: #d35400; margin-top: 25px;">a) Valor de <em>k</em> para que el sistema sea Incompatible</h3>
+<p>Calculamos el determinante de la matriz de coeficientes \( A \):</p>
+<div style="padding-left: 20px; border-left: 4px solid #d35400; margin-bottom: 20px;">
+<p>\( |A| = \begin{vmatrix} 1 & 1 & 0 \\ 0 & k & 1 \\ 1 & k+1 & k \end{vmatrix} = (k^2 + 1 + 0) - (0 + (k+1) + 0) = k^2 - k \)</p>
+<p>Igualamos a cero para encontrar los valores críticos:</p>
+<p style="text-align: center;">\( k^2 - k = 0 \implies k(k - 1) = 0 \implies \mathbf{k = 0, k = 1} \)</p>
+</div>
+<p>Analizamos el caso <strong>k = 1</strong>:</p>
+<ul>
+<li>La matriz ampliada es \( A' = \left(\begin{array}{ccc|c} 1 & 1 & 0 & 1 \\ 0 & 1 & 1 & 0 \\ 1 & 2 & 1 & 2 \end{array}\right) \).</li>
+<li>Calculamos el determinante orlando con la columna independiente: \( \begin{vmatrix} 1 & 1 & 1 \\ 0 & 1 & 0 \\ 1 & 2 & 2 \end{vmatrix} = (2 + 0 + 0) - (1 + 0 + 0) = 1 \neq 0 \).</li>
+<li>Como \( \text{rango}(A) = 2 \) y \( \text{rango}(A') = 3 \), el sistema es <strong>Incompatible</strong>.</li>
+</ul>
+<p> El sistema es incompatible para \( \mathbf{k = 1} \).</p>
+<p><em>(Nota: Para \( k=0 \) resulta ser compatible indeterminado).</em></p>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
+<h3 style="color: #27ae60;">b) Valor de <em>k</em> para que la solución tenga \( z = 2 \)</h3>
+<p>Utilizamos la Regla de Cramer para expresar \( z \) en función de \( k \):</p>
+<p style="text-align: center;">\( z = \dfrac{|A_z|}{|A|} = \dfrac{\begin{vmatrix} 1 & 1 & 1 \\ 0 & k & 0 \\ 1 & k+1 & k+1 \end{vmatrix}}{k^2 - k} = \dfrac{k(k+1) - k}{k^2 - k} = \dfrac{k^2 + k - k}{k^2 - k} = \dfrac{k^2}{k^2 - k} = \dfrac{k}{k - 1} \)</p>
+<p>Igualamos el valor de \( z \) a 2 y resolvemos para \( k \):</p>
+<div style="margin-top: 15px; padding: 20px; background-color: #ebf5fb; border: 1px solid #2980b9; border-radius: 8px; text-align: center;">
+<p style="font-size: 1.2em;">\( \dfrac{k}{k - 1} = 2 \implies k = 2(k - 1) \implies k = 2k - 2 \implies \mathbf{k = 2} \)</p>
+<p style="margin: 10px 0 0 0; font-weight: bold; color: #2980b9;">El valor buscado es \(\pmb{k = 2} \).</p>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/23-regla-de-cramer.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/resumen-4.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

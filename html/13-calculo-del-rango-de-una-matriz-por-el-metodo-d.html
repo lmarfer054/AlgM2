@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7khjv-rgopybps6">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.3. Cálculo del rango de una matriz por el método de Gauss | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7khjv-rgopybps6" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li class="active"> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="active no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7khjv-rgopybps6" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.3. Cálculo del rango de una matriz por el método de Gauss</h1></div>
+</header><div id="page-content-page-moo7khjv-rgopybps6" class="page-content">
+<article id="20260502094802CMASML" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Método de Gauss</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260425210033368B4D" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260425210033368B4D&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 99.9703%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%; text-align: justify;">
+<p>El&nbsp;<span style="font-weight: bolder;">método de Gauss</span> para calcular el rango de la matriz consiste en transformar, mediante determinadas operaciones, la matriz dada en otra que sea triangular superior. Así intentaremos que el elemento <span style="color: #007932;"><strong>\(\pmb{a_{11}}\) </strong></span>sea distinto de cero, pero todos los de la primera columna que están por debajo sean ceros; el elemento <span style="color: #007932;"><strong>\(\pmb{a_{22}}\)</strong></span> también tiene que ser distinto de cero y nulos todos los situados debajo en la misma columna; el elemento <strong><span style="color: #007932;">\(\pmb{a_{33}}\)</span></strong> tiene que ser distinto de cero pero todos los elementos de la tercera columna situados por debajo tiene que ser ceros; y así sucesivamente.</p>
+<p>Durante el proceso se eliminarán las filas o columnas con todos sus elementos nulos.</p>
+<p>El rango de la matriz será el número de filas con algún elemento distinto de cero.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table border="0" cellpadding="15" style="width: 99.9703%; background-color: #c2e0f4;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">
+<ul>
+<li>Las <span style="color: #0066cc;"><strong>operaciones que se pueden realizar</strong></span> en una matriz sin que varíe su rango son:</li>
+</ul>
+<p style="padding-left: 40px;">a) Permutar dos filas o dos columnas.</p>
+<p style="padding-left: 40px;">b) Multiplicar o dividir todos los elementos de una fila o columna por un número real distinto de cero.</p>
+<p style="padding-left: 40px;">c) Sumarle a una fila (o columna) otra paralela a ella.</p>
+<p style="padding-left: 40px;">d) Sumarle a una fila (o columna) otra paralela a ella multiplicada por un número.</p>
+<p style="padding-left: 40px;">e) Suprimir las filas o columnas cuyos elementos sean todos nulos.</p>
+<p style="padding-left: 40px;">f) Suprimir una fila (o columna) proporcional a otra.</p>
+<ul>
+<li>En el caso más sencillo de que la matriz sólo tenga dos filas (o dos columnas), será suficiente comprobar si dichas filas (o columnas) son proporcionales. Si son proporcionales el rango es 1 y si no lo son el rango es 2.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802YCYLDF" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio Resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260425211355774EVV" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260425211355774EVV&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p><img src="../content/resources/20260425211355774EVV/camion.jpg" alt="Descargando camión" height="230" width="307" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: justify;">Una empresa nacional de transporte de mercancías envía camiones desde Madrid a distintos puntos de la geografía española a lo largo de la semana. Nos hemos fijado en varias de esas localidades: Sevilla, Valladolid, Barcelona, Bilbao y Badajoz y hemos recogido en una tabla el número de camiones que envía a cada una de ellas durante la semana, obteniendo la siguiente tabla:</p>
+<p>&nbsp;</p>
+<table border="1" style="width: 60%; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align: center; width: 17.46%;"></th>
+<th style="width: 10.8207%; text-align: center;">Lunes</th>
+<th style="width: 12.9108%; text-align: center;">Martes</th>
+<th style="width: 17.9521%; text-align: center;">Miércoles</th>
+<th style="width: 13.0337%; text-align: center;">Jueves</th>
+<th style="width: 14.0174%; text-align: center;">Viernes</th>
+<th style="width: 13.7715%; text-align: center;">Sábado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left; width: 17.46%;">Sevilla</td>
+<td style="width: 10.8207%; text-align: center;">1</td>
+<td style="width: 12.9108%; text-align: center;">3</td>
+<td style="width: 17.9521%; text-align: center;">1</td>
+<td style="width: 13.0337%; text-align: center;">6</td>
+<td style="width: 14.0174%; text-align: center;">5</td>
+<td style="width: 13.7715%; text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 17.46%;">Valladolid</td>
+<td style="width: 10.8207%; text-align: center;">0</td>
+<td style="width: 12.9108%; text-align: center;">0</td>
+<td style="width: 17.9521%; text-align: center;">0</td>
+<td style="width: 13.0337%; text-align: center;">0</td>
+<td style="width: 14.0174%; text-align: center;">0</td>
+<td style="width: 13.7715%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 17.46%;">Barcelona</td>
+<td style="width: 10.8207%; text-align: center;">2</td>
+<td style="width: 12.9108%; text-align: center;">3</td>
+<td style="width: 17.9521%; text-align: center;">2</td>
+<td style="width: 13.0337%; text-align: center;">6</td>
+<td style="width: 14.0174%; text-align: center;">7</td>
+<td style="width: 13.7715%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 17.46%;">Bilbao</td>
+<td style="width: 10.8207%; text-align: center;">4</td>
+<td style="width: 12.9108%; text-align: center;">1</td>
+<td style="width: 17.9521%; text-align: center;">4</td>
+<td style="width: 13.0337%; text-align: center;">2</td>
+<td style="width: 14.0174%; text-align: center;">9</td>
+<td style="width: 13.7715%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 17.46%;">Badajoz</td>
+<td style="width: 10.8207%; text-align: center;">1</td>
+<td style="width: 12.9108%; text-align: center;">7</td>
+<td style="width: 17.9521%; text-align: center;">1</td>
+<td style="width: 13.0337%; text-align: center;">14</td>
+<td style="width: 14.0174%; text-align: center;">9</td>
+<td style="width: 13.7715%; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<div><br></div>
+<p>&nbsp;</p>
+<p>Como podemos observar, la matriz que nos resulta es de orden 5x6, por lo que vamos a calcular el rango de dicha matriz pero esta vez utilizando el método de Gauss:</p>
+<p>\[M=\begin{pmatrix}<br>1 & 3 & 1 & 6 & 5 & 5 \\<br>0 & 0 & 0 & 0 & 0 & 0 \\<br>2 & 3 & 2 & 6 & 7 & 3 \\<br>4 & 1 & 4 & 2 & 9 & 1 \\<br>1 & 7 & 1 & 14 & 9 & 0<br>\end{pmatrix}\]<br></p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="w">
+            </div>
+            <div class="feedback js-feedback js-hidden"><div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+<p>Para resolver este ejercicio de forma eficiente, primero simplificamos la matriz observando dependencias directas entre sus elementos:</p>
+<h3 style="color: #2980b9;">Paso 0: Simplificación inicial</h3>
+<ul>
+<li><strong>Suprimir filas nulas:</strong> La fila 2 es (0, 0, 0, 0, 0, 0). No aporta valor al rango, la eliminamos.</li>
+<li><strong>Suprimir columnas iguales:</strong> La <strong>Columna 1</strong> y la <strong>Columna 3</strong> son idénticas. Eliminamos la tercera columna por ser linealmente dependiente.</li>
+</ul>
+<p>Trabajaremos con esta matriz reducida de <strong>4 filas y 5 columnas</strong>:</p>
+<div style="text-align: center; margin: 20px 0;">\[M' = \left( \begin{array}{rrrrr} 1 & 3 & 6 & 5 & 5 \\ 2 & 3 & 6 & 7 & 3 \\ 4 & 1 & 2 & 9 & 1 \\ 1 & 7 & 14 & 9 & 0 \end{array} \right)\]</div>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;" />
+<h3 style="color: #2980b9;">Paso 1: Ceros en la primera columna</h3>
+<p>Utilizamos el elemento \(a_{11} = 1\) como pivote para anular los valores inferiores:</p>
+<ul style="list-style-type: none;">
+<li>🔹 <strong>F2' = F2 - 2·F1</strong></li>
+<li>🔹 <strong>F3' = F3 - 4·F1</strong></li>
+<li>🔹 <strong>F4' = F4 - F1</strong></li>
+</ul>
+<p><strong>Estado de la matriz tras el Paso 1:</strong></p>
+<div style="text-align: center; margin: 20px 0; background-color: #fcfcfc; padding: 15px; border: 1px dashed #ccc;">\[M_{P1} = \left( \begin{array}{rrrrr} 1 & 3 & 6 & 5 & 5 \\ 0 & -3 & -6 & -3 & -7 \\ 0 & -11 & -22 & -11 & -19 \\ 0 & 4 & 8 & 4 & -5 \end{array} \right)\]</div>
+<h3 style="color: #2980b9;">Paso 2: Ceros en la segunda columna</h3>
+<p>Tomamos el elemento \(a_{22} = -3\) como pivote. Observad que en las columnas 2, 3 y 4 los elementos son proporcionales, lo que facilitará que aparezcan más ceros de los previstos:</p>
+<ul style="list-style-type: none;">
+<li>🔹 <strong>F3'' = F3' - (11/3)·F2'</strong></li>
+<li>🔹 <strong>F4'' = F4' + (4/3)·F2'</strong></li>
+</ul>
+<p><strong>Estado de la matriz tras el Paso 2:</strong></p>
+<div style="text-align: center; margin: 20px 0; background-color: #f9f9f9; padding: 15px; border: 1px dashed #ccc;">\[M_{P2} = \left( \begin{array}{rrrrr} 1 & 3 & 6 & 5 & 5 \\ 0 & -3 & -6 & -3 & -7 \\ 0 & 0 & 0 & 0 & \frac{20}{3} \\ 0 & 0 & 0 & 0 & -\frac{43}{3} \end{array} \right)\]</div>
+<h3 style="color: #27ae60;">Paso 3 y Conclusión</h3>
+<p>Finalmente, al tener dos filas donde el único elemento no nulo está en la misma columna (la última), una de ellas se anulará al operar con la otra. El número de filas no nulas tras el escalonamiento completo es 3.</p>
+<div style="background-color: #e8f6e9; border: 2px solid #27ae60; padding: 15px; text-align: center; border-radius: 8px; margin-top: 20px;">
+<p style="font-size: 1.2em; margin: 0;"><strong>Resultado Final: Rango(M) = 3</strong></p>
+</div>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802NEGKSG" class="box caja-naranja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_practica2.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio guiado</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202604291404004464MT" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202604291404004464MT&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Una vez que has visto en el ejercicio anterior la resolución mediante Gauss, aquí tienes un ejercicio guiado.</p>
+<p>Selecciona el tipo de números con el que quieres trabajar y pulsa sobre el botón "Generar matriz". Cada vez que pulses sobre este botón aparecerá una matriz nueva de la que tendrás que calcular el rango utilizando el método de Gauss.</p>
+<p>En cada paso comprobarás si vas bien, si es así pasarás al siguiente.</p>
+<div id="gauss-tutor" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: auto; border: 2px solid #f57c00; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+<div style="background: #f57c00; color: white; padding: 15px; text-align: center;">
+<h2 style="margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">&nbsp;<img src="../content/resources/202604291703031226YD/yoneco_1.png" width="60" height="60" alt=""> Tutor Interactivo: Rango por Gauss</h2>
+</div>
+<div style="padding: 15px 20px; background: #fff3e0; border-bottom: 1px solid #ffcc80; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center;">
+<div><button onclick="gtGenerar()" class="gt-btn-main">Generar Matriz</button></div>
+<div style="display: flex; gap: 15px; align-items: center;"><label style="font-weight: bold; color: #444;">Tipo de números:</label> <label><input type="radio" name="gt-tipo" value="nat" checked="checked"> Naturales</label> <label><input type="radio" name="gt-tipo" value="ent"> Enteros</label></div>
+<div style="font-size: 0.9em; color: #666; max-width: 300px;"><i>Toma el pivote en la diagonal principal y consigue ceros debajo multiplicando las filas por los coeficientes adecuados.</i></div>
+</div>
+<div style="padding: 20px; display: flex; flex-direction: column; align-items: center;">
+<div style="margin-bottom: 25px; text-align: center;">
+<h3 style="color: #f57c00; margin-top: 0;">Matriz Actual</h3>
+<div id="gt-matrix-display" style="display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 10px 20px; position: relative; padding: 10px 20px; font-size: 1.3em; font-family: monospace; background: #fff; border-radius: 8px;">
+<div style="position: absolute; top: 0; bottom: 0; left: 0; width: 10px; border: 2px solid #333; border-right: none; border-radius: 4px 0 0 4px;"><br></div>
+<div style="position: absolute; top: 0; bottom: 0; right: 0; width: 10px; border: 2px solid #333; border-left: none; border-radius: 0 4px 4px 0;"><br></div>
+<div id="gt-m00">0</div>
+<div id="gt-m01">0</div>
+<div id="gt-m02">0</div>
+<div id="gt-m10">0</div>
+<div id="gt-m11">0</div>
+<div id="gt-m12">0</div>
+<div id="gt-m20">0</div>
+<div id="gt-m21">0</div>
+<div id="gt-m22">0</div>
+</div>
+</div>
+<div id="gt-paso1" class="gt-paso-box" style="display: none; width: 100%; max-width: 750px; background: #fff; border: 1px solid #ffe0b2; border-left: 5px solid #f57c00; border-radius: 6px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<div style="font-weight: bold; color: #f57c00; margin-bottom: 10px;">Pivote = a<sub>11</sub> <span style="color: #666; font-weight: normal;">| Objetivo: Hacer un 0 en a<sub>21</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="gt-operacion"><input type="number" id="gt-k2-p1" class="gt-input-coef"> · F<sub>2</sub> + <input type="number" id="gt-k1-p1" class="gt-input-coef"> · F<sub>1</sub> → F<sub>2</sub> <button onclick="gtCheckOp(1, 1, 0, 'gt-k2-p1', 'gt-k1-p1', 'gt-res-op-1', 'gt-row-p1')" class="gt-btn-check">¿Bien?</button> <span id="gt-res-op-1" class="gt-feedback"></span></div>
+<div id="gt-row-p1" style="display: none; align-items: center; gap: 10px;">F<sub>2</sub> resultante: ( <input type="number" id="gt-r20-p1" class="gt-input-val"> <input type="number" id="gt-r21-p1" class="gt-input-val"> <input type="number" id="gt-r22-p1" class="gt-input-val"> ) <button onclick="gtCheckRow(1, 1, 0, 'gt-k2-p1', 'gt-k1-p1', ['gt-r20-p1','gt-r21-p1','gt-r22-p1'], 'gt-res-row-1', 2)" class="gt-btn-check">¿Bien?</button> <span id="gt-res-row-1" class="gt-feedback"></span></div>
+</div>
+</div>
+<div id="gt-paso2" class="gt-paso-box" style="display: none; width: 100%; max-width: 750px; background: #fff; border: 1px solid #ffe0b2; border-left: 5px solid #f57c00; border-radius: 6px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<div style="font-weight: bold; color: #f57c00; margin-bottom: 10px;">Pivote = a<sub>11</sub> <span style="color: #666; font-weight: normal;">| Objetivo: Hacer un 0 en a<sub>31</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="gt-operacion"><input type="number" id="gt-k3-p2" class="gt-input-coef"> · F<sub>3</sub> + <input type="number" id="gt-k1-p2" class="gt-input-coef"> · F<sub>1</sub> → F<sub>3</sub> <button onclick="gtCheckOp(2, 2, 0, 'gt-k3-p2', 'gt-k1-p2', 'gt-res-op-2', 'gt-row-p2')" class="gt-btn-check">¿Bien?</button> <span id="gt-res-op-2" class="gt-feedback"></span></div>
+<div id="gt-row-p2" style="display: none; align-items: center; gap: 10px;">F<sub>3</sub> resultante: ( <input type="number" id="gt-r30-p2" class="gt-input-val"> <input type="number" id="gt-r31-p2" class="gt-input-val"> <input type="number" id="gt-r32-p2" class="gt-input-val"> ) <button onclick="gtCheckRow(2, 2, 0, 'gt-k3-p2', 'gt-k1-p2', ['gt-r30-p2','gt-r31-p2','gt-r32-p2'], 'gt-res-row-2', 3)" class="gt-btn-check">¿Bien?</button> <span id="gt-res-row-2" class="gt-feedback"></span></div>
+</div>
+</div>
+<div id="gt-paso3" class="gt-paso-box" style="display: none; width: 100%; max-width: 750px; background: #fff; border: 1px solid #ffe0b2; border-left: 5px solid #f57c00; border-radius: 6px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<div style="font-weight: bold; color: #f57c00; margin-bottom: 10px;">Nuevo Pivote = a<sub>22</sub> <span style="color: #666; font-weight: normal;">| Objetivo: Hacer un 0 en a<sub>32</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="gt-operacion"><input type="number" id="gt-k3-p3" class="gt-input-coef"> · F<sub>3</sub> + <input type="number" id="gt-k2-p3" class="gt-input-coef"> · F<sub>2</sub> → F<sub>3</sub> <button onclick="gtCheckOp(3, 2, 1, 'gt-k3-p3', 'gt-k2-p3', 'gt-res-op-3', 'gt-row-p3')" class="gt-btn-check">¿Bien?</button> <span id="gt-res-op-3" class="gt-feedback"></span></div>
+<div id="gt-row-p3" style="display: none; align-items: center; gap: 10px;">F<sub>3</sub> resultante: ( <input type="number" id="gt-r30-p3" class="gt-input-val"> <input type="number" id="gt-r31-p3" class="gt-input-val"> <input type="number" id="gt-r32-p3" class="gt-input-val"> ) <button onclick="gtCheckRow(3, 2, 1, 'gt-k3-p3', 'gt-k2-p3', ['gt-r30-p3','gt-r31-p3','gt-r32-p3'], 'gt-res-row-3', 4)" class="gt-btn-check">¿Bien?</button> <span id="gt-res-row-3" class="gt-feedback"></span></div>
+</div>
+</div>
+<div id="gt-paso4" class="gt-paso-box" style="display: none; width: 100%; max-width: 750px; background: #fff8e1; border: 2px solid #f57c00; border-radius: 6px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"><label style="font-weight: bold; font-size: 1.1em; color: #f57c00;">Observa el número de filas no nulas. ¿Cuál es su rango?</label> <input type="number" id="gt-rank-input" class="gt-input-val" style="margin: 0 10px;"> <button onclick="gtCheckRank()" class="gt-btn-main">Comprobar</button>
+<div id="gt-res-rank" style="margin-top: 15px; font-weight: bold; font-size: 1.2em;"></div>
+</div>
+</div>
+</div>
+<style>
+    div#gauss-tutor .gt-input-coef { width: 50px; padding: 6px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-weight: bold; transition: border-color 0.2s; }
+    div#gauss-tutor .gt-input-val { width: 50px; padding: 6px; text-align: center; border: 1px solid #aaa; border-radius: 4px; transition: border-color 0.2s; }
+    div#gauss-tutor .gt-input-val:focus, div#gauss-tutor .gt-input-coef:focus { outline: none !important; border-color: #f57c00 !important; background-color: #fff3e0 !important; box-shadow: 0 0 5px rgba(245, 124, 0, 0.3) !important; }
+    
+    div#gauss-tutor .gt-feedback { font-weight: bold; margin-left: 10px; }
+    div#gauss-tutor .gt-success { color: #28a745 !important; }
+    div#gauss-tutor .gt-error { color: #dc3545 !important; }
+
+    /* Botones Principales (Sólido Naranja) */
+    div#gauss-tutor button.gt-btn-main {
+        background-color: #f57c00 !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: 2px solid #f57c00 !important;
+        box-shadow: 0 2px 4px rgba(245, 124, 0, 0.3) !important;
+        outline: none !important;
+        text-shadow: none !important;
+        padding: 8px 15px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        font-size: 1.05em !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#gauss-tutor button.gt-btn-main:hover,
+    div#gauss-tutor button.gt-btn-main:focus {
+        background-color: #e65100 !important;
+        border-color: #e65100 !important;
+        color: #ffffff !important;
+        transform: scale(1.02) !important;
+    }
+
+    /* Botones Secundarios (Fantasma Naranja) */
+    div#gauss-tutor button.gt-btn-check {
+        background-color: #ffffff !important;
+        background-image: none !important;
+        color: #f57c00 !important;
+        border: 2px solid #f57c00 !important;
+        box-shadow: none !important;
+        outline: none !important;
+        text-shadow: none !important;
+        padding: 5px 12px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#gauss-tutor button.gt-btn-check:hover,
+    div#gauss-tutor button.gt-btn-check:focus {
+        background-color: #f57c00 !important;
+        color: #ffffff !important;
+        border-color: #f57c00 !important;
+        transform: scale(1.05) !important;
+    }
+    div#gauss-tutor button.gt-btn-check:disabled {
+        background-color: #f9f9f9 !important;
+        border-color: #ccc !important;
+        color: #aaa !important;
+        cursor: not-allowed !important;
+        transform: none !important;
+    }
+</style>
+<p>
+<script>
+    // Variables globales para mantener el estado de la matriz
+    let gtMatrix = [[0,0,0], [0,0,0], [0,0,0]];
+    let gtCurrentStep = 1;
+
+    // Generar matriz aleatoria
+    function gtGenerar() {
+        let isNat = document.querySelector('input[name="gt-tipo"]:checked').value === 'nat';
+        
+        // Bucle para evitar pivotes iniciales nulos o filas problemáticas
+        let valid = false;
+        while(!valid) {
+            for(let i=0; i<3; i++) {
+                for(let j=0; j<3; j++) {
+                    let val = isNat ? Math.floor(Math.random() * 9) + 1 : Math.floor(Math.random() * 19) - 9;
+                    gtMatrix[i][j] = val;
+                }
+            }
+            // Evitamos pivotes iniciales 0
+            if(gtMatrix[0][0] !== 0) valid = true;
+        }
+
+        gtUpdateDisplay();
+        gtResetUI();
+    }
+
+    // Actualizar visualización de la matriz
+    function gtUpdateDisplay() {
+        for(let i=0; i<3; i++) {
+            for(let j=0; j<3; j++) {
+                let cell = document.getElementById(`gt-m${i}${j}`);
+                cell.innerText = gtMatrix[i][j];
+                cell.style.color = "#333";
+                cell.style.fontWeight = "normal";
+            }
+        }
+    }
+
+    // Resaltar pivote y objetivo
+    function gtHighlight(pivotRow, pivotCol, targetRow, targetCol) {
+        gtUpdateDisplay(); // Reset colors
+        document.getElementById(`gt-m${pivotRow}${pivotCol}`).style.color = "#f57c00";
+        document.getElementById(`gt-m${pivotRow}${pivotCol}`).style.fontWeight = "bold";
+        
+        document.getElementById(`gt-m${targetRow}${targetCol}`).style.color = "#dc3545";
+        document.getElementById(`gt-m${targetRow}${targetCol}`).style.fontWeight = "bold";
+    }
+
+    // Reiniciar la interfaz a su estado inicial
+    function gtResetUI() {
+        document.getElementById('gt-paso1').style.display = 'block';
+        document.getElementById('gt-paso2').style.display = 'none';
+        document.getElementById('gt-paso3').style.display = 'none';
+        document.getElementById('gt-paso4').style.display = 'none';
+        
+        let inputs = document.querySelectorAll('#gauss-tutor input[type="number"]');
+        inputs.forEach(inp => { inp.value = ''; inp.disabled = false; });
+        
+        let btns = document.querySelectorAll('#gauss-tutor .gt-btn-check');
+        btns.forEach(btn => btn.disabled = false);
+
+        let feedbacks = document.querySelectorAll('#gauss-tutor .gt-feedback');
+        feedbacks.forEach(fb => fb.innerText = '');
+        document.getElementById('gt-res-rank').innerText = '';
+
+        document.getElementById('gt-row-p1').style.display = 'none';
+        document.getElementById('gt-row-p2').style.display = 'none';
+        document.getElementById('gt-row-p3').style.display = 'none';
+
+        gtHighlight(0, 0, 1, 0); // Resalta a11 y a21
+    }
+
+    // Comprobar la operación introducida (los coeficientes k)
+    function gtCheckOp(stepNum, targetRow, pivotRow, idKTarget, idKPivot, idFeedback, idRowContainer) {
+        let kTarget = parseFloat(document.getElementById(idKTarget).value);
+        let kPivot = parseFloat(document.getElementById(idKPivot).value);
+        let feedback = document.getElementById(idFeedback);
+        
+        if(isNaN(kTarget) || isNaN(kPivot)) {
+            feedback.innerHTML = '<span class="gt-error">Faltan datos</span>';
+            return;
+        }
+        
+        if(kTarget === 0) {
+            feedback.innerHTML = '<span class="gt-error">El coeficiente de la fila a cambiar no puede ser 0</span>';
+            return;
+        }
+
+        // Columna a anular: 0 para los pasos 1 y 2, columna 1 para el paso 3.
+        let colToZero = pivotRow; 
+        
+        let valTarget = gtMatrix[targetRow][colToZero];
+        let valPivot = gtMatrix[pivotRow][colToZero];
+
+        if ( (kTarget * valTarget) + (kPivot * valPivot) === 0 ) {
+            feedback.innerHTML = '<span class="gt-success">¡Correcto!</span>';
+            document.getElementById(idRowContainer).style.display = 'flex';
+            document.getElementById(idKTarget).disabled = true;
+            document.getElementById(idKPivot).disabled = true;
+        } else {
+            feedback.innerHTML = '<span class="gt-error">No da 0. Revisa.</span>';
+        }
+    }
+
+    // Comprobar la fila resultante calculada por el alumno
+    function gtCheckRow(stepNum, targetRow, pivotRow, idKTarget, idKPivot, idsResult, idFeedback, nextStep) {
+        let kTarget = parseFloat(document.getElementById(idKTarget).value);
+        let kPivot = parseFloat(document.getElementById(idKPivot).value);
+        let feedback = document.getElementById(idFeedback);
+        
+        let userRow = [
+            parseFloat(document.getElementById(idsResult[0]).value),
+            parseFloat(document.getElementById(idsResult[1]).value),
+            parseFloat(document.getElementById(idsResult[2]).value)
+        ];
+
+        if(userRow.some(isNaN)) {
+            feedback.innerHTML = '<span class="gt-error">Faltan datos</span>';
+            return;
+        }
+
+        // Calcular la fila real
+        let realRow = [0,0,0];
+        let isCorrect = true;
+        for(let j=0; j<3; j++) {
+            realRow[j] = (kTarget * gtMatrix[targetRow][j]) + (kPivot * gtMatrix[pivotRow][j]);
+            if(userRow[j] !== realRow[j]) isCorrect = false;
+        }
+
+        if(isCorrect) {
+            feedback.innerHTML = '<span class="gt-success">¡Fila perfecta!</span>';
+            // Actualizar la matriz internamente y visualmente
+            gtMatrix[targetRow] = realRow;
+            gtUpdateDisplay();
+            
+            // Bloquear inputs
+            idsResult.forEach(id => document.getElementById(id).disabled = true);
+
+            // Mostrar siguiente paso
+            if(nextStep === 2) {
+                document.getElementById('gt-paso2').style.display = 'block';
+                gtHighlight(0, 0, 2, 0); // Resalta a11 y a31
+            } else if (nextStep === 3) {
+                // Verificar si a22 es 0. Si es 0, no podemos usarlo como pivote en este ejercicio básico.
+                if(gtMatrix[1][1] === 0) {
+                    // Terminamos prematuramente indicando que ya está escalonada u ocurre algo especial
+                    document.getElementById('gt-paso4').style.display = 'block';
+                    gtUpdateDisplay(); // Quitar highlights
+                } else {
+                    document.getElementById('gt-paso3').style.display = 'block';
+                    gtHighlight(1, 1, 2, 1); // Resalta a22 y a32
+                }
+            } else if (nextStep === 4) {
+                document.getElementById('gt-paso4').style.display = 'block';
+                gtUpdateDisplay(); // Quitar highlights
+            }
+
+        } else {
+            feedback.innerHTML = '<span class="gt-error">Hay algún error de cálculo.</span>';
+        }
+    }
+
+    // Comprobar el Rango final
+    function gtCheckRank() {
+        let userRank = parseInt(document.getElementById('gt-rank-input').value);
+        let feedback = document.getElementById('gt-res-rank');
+        
+        if(isNaN(userRank)) return;
+
+        let realRank = 0;
+        for(let i=0; i<3; i++) {
+            if(gtMatrix[i][0] !== 0 || gtMatrix[i][1] !== 0 || gtMatrix[i][2] !== 0) {
+                realRank++;
+            }
+        }
+
+        if(userRank === realRank) {
+            feedback.innerHTML = '<span class="gt-success">¡Enhorabuena! Has completado el ejercicio correctamente.</span>';
+            feedback.style.color = "#28a745";
+        } else {
+            feedback.innerHTML = '<span class="gt-error">Incorrecto. Cuenta las filas que no son todo ceros.</span>';
+            feedback.style.color = "#dc3545";
+        }
+    }
+
+    // Inicializar al cargar
+    gtGenerar();
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802JCFUQU" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_casopractico.png" alt="">
+</div>
+<h1 class="box-title">Solucionador</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260425213814598A4B" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260425213814598A4B&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Si quieres calcular el rango de una matriz en concreto, usando el Método de Gauss, utiliza esta herramienta.</p>
+<div id="matrix-lab" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: auto; border: 2px solid #0056b3; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+<div style="background: #0056b3; color: white; padding: 15px; text-align: center;">
+<h2 style="margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);"><img src="../content/resources/202604291703031226YD/yoneco_1.png" width="60" height="60" alt="" style="vertical-align: middle;"> Laboratorio de Matrices: Método de Gauss</h2>
+</div>
+<div style="padding: 20px; background: #f0f7ff; border-bottom: 1px solid #cce0ff;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: center;">
+<div><label style="font-weight: bold; color: #0056b3;">Dimensiones: </label><select id="rows" onchange="createInputs()" style="padding: 5px; border-radius: 4px; border: 1px solid #0056b3; color: #0056b3; font-weight: bold; outline: none;">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4" selected="selected">4</option>
+<option value="5">5</option>
+</select><span style="color: #0056b3; font-weight: bold; margin: 0 5px;">x</span><select id="cols" onchange="createInputs()" style="padding: 5px; border-radius: 4px; border: 1px solid #0056b3; color: #0056b3; font-weight: bold; outline: none;">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5" selected="selected">5</option>
+<option value="6">6</option>
+</select></div>
+<div style="border-left: 1px solid #cce0ff; padding-left: 15px; display: flex; gap: 10px;"><button onclick="fillRandom('nat')" class="ml-btn-nat">Azar (Naturales)</button> <button onclick="fillRandom('int')" class="ml-btn-int">Azar (Enteros)</button> <button onclick="clearMatrix()" class="ml-btn-clear">Limpiar</button></div>
+</div>
+</div>
+<div style="padding: 30px; display: flex; flex-direction: column; align-items: center;">
+<p style="color: #666; margin-top: 0; font-size: 0.95em;">Introduce los valores en las celdas o genera una matriz aleatoria:</p>
+<div id="matrix-container" style="display: grid; gap: 8px; margin-bottom: 25px; position: relative; padding: 0 15px;">
+<div style="position: absolute; top: -5px; bottom: -5px; left: 0; width: 10px; border: 2px solid #333; border-right: none;"><br></div>
+<div style="position: absolute; top: -5px; bottom: -5px; right: 0; width: 10px; border: 2px solid #333; border-left: none;"><br></div>
+</div>
+<button onclick="calculateGauss()" class="ml-btn-main">Calcular Rango Paso a Paso</button></div>
+<div id="output" style="padding: 30px; display: none; background: #fff;">
+<h3 style="color: #0056b3; border-bottom: 2px solid #cce0ff; padding-bottom: 10px; margin-top: 0;">Proceso de Escalonamiento:</h3>
+<div id="steps-area"></div>
+<div id="final-rank" style="margin-top: 25px; padding: 20px; background: #d4edda; color: #155724; border-radius: 8px; text-align: center; font-size: 1.3em; border: 1px solid #c3e6cb; box-shadow: 0 2px 5px rgba(0,0,0,0.05);"></div>
+</div>
+</div>
+<style>
+    div#matrix-lab .m-input { width: 55px; padding: 8px 5px; text-align: center; border: 1px solid #ced4da; border-radius: 4px; font-size: 1em; font-family: inherit; transition: border-color 0.2s; }
+    div#matrix-lab .m-input:focus { outline: none !important; border-color: #0056b3 !important; background-color: #e6f2ff !important; box-shadow: 0 0 5px rgba(0,86,179,0.2) !important; }
+    div#matrix-lab .step-box { margin-bottom: 20px; padding: 15px; border-left: 5px solid #0056b3; background: #fdfdff; border-radius: 6px; border: 1px solid #cce0ff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    
+    /* Estilos para las fracciones visuales */
+    div#matrix-lab .matrix-view { display: inline-grid; position: relative; padding: 5px 15px; margin: 15px 0; align-items: center; justify-items: center; }
+    div#matrix-lab .matrix-view::before, div#matrix-lab .matrix-view::after { content: ""; position: absolute; top: -5px; bottom: -5px; width: 10px; border: 2px solid #333; }
+    div#matrix-lab .matrix-view::before { left: 0; border-right: none; }
+    div#matrix-lab .matrix-view::after { right: 0; border-left: none; }
+    
+    div#matrix-lab .frac-css { display: inline-block; text-align: center; vertical-align: middle; font-size: 0.95em; margin: 0; }
+    div#matrix-lab .frac-css span { display: block; padding: 0.1em 0.3em; line-height: 1.2; }
+    div#matrix-lab .frac-css span.fdn { border-top: 1px solid #333; }
+
+    /* BOTONES PROTEGIDOS */
+    
+    /* Botón Azar Naturales (Verde) */
+    div#matrix-lab button.ml-btn-nat {
+        background-color: #28a745 !important;
+        background-image: none !important;
+        color: white !important;
+        border: 2px solid #28a745 !important;
+        box-shadow: none !important;
+        outline: none !important;
+        padding: 8px 12px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#matrix-lab button.ml-btn-nat:hover, div#matrix-lab button.ml-btn-nat:focus { background-color: #218838 !important; border-color: #218838 !important; }
+
+    /* Botón Azar Enteros (Azul Claro) */
+    div#matrix-lab button.ml-btn-int {
+        background-color: #17a2b8 !important;
+        background-image: none !important;
+        color: white !important;
+        border: 2px solid #17a2b8 !important;
+        box-shadow: none !important;
+        outline: none !important;
+        padding: 8px 12px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#matrix-lab button.ml-btn-int:hover, div#matrix-lab button.ml-btn-int:focus { background-color: #138496 !important; border-color: #138496 !important; }
+
+    /* Botón Limpiar (Rojo) */
+    div#matrix-lab button.ml-btn-clear {
+        background-color: #dc3545 !important;
+        background-image: none !important;
+        color: white !important;
+        border: 2px solid #dc3545 !important;
+        box-shadow: none !important;
+        outline: none !important;
+        padding: 8px 12px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#matrix-lab button.ml-btn-clear:hover, div#matrix-lab button.ml-btn-clear:focus { background-color: #c82333 !important; border-color: #c82333 !important; }
+
+    /* Botón Calcular Rango (Azul Principal) */
+    div#matrix-lab button.ml-btn-main {
+        background-color: #0056b3 !important;
+        background-image: none !important;
+        color: white !important;
+        border: 2px solid #0056b3 !important;
+        box-shadow: 0 3px 6px rgba(0,86,179,0.2) !important;
+        outline: none !important;
+        padding: 12px 30px !important;
+        font-size: 1.1em !important;
+        cursor: pointer !important;
+        border-radius: 6px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#matrix-lab button.ml-btn-main:hover, div#matrix-lab button.ml-btn-main:focus { 
+        background-color: #004494 !important; 
+        border-color: #004494 !important;
+        transform: scale(1.02) !important;
+    }
+</style>
+<p>
+<script>
+// --- MOTOR DE FRACCIONES ---
+function gcd(a, b) {
+    a = Math.abs(a); b = Math.abs(b);
+    while (b) { let t = b; b = a % b; a = t; }
+    return a || 1;
+}
+
+function simplify(n, d) {
+    if (n === 0) return {n: 0, d: 1};
+    if (d < 0) { n = -n; d = -d; }
+    let g = gcd(n, d);
+    return {n: n / g, d: d / g};
+}
+
+function fAdd(a, b) { return simplify(a.n * b.d + b.n * a.d, a.d * b.d); }
+function fSub(a, b) { return simplify(a.n * b.d - b.n * a.d, a.d * b.d); }
+function fMul(a, b) { return simplify(a.n * b.n, a.d * b.d); }
+function fDiv(a, b) { return simplify(a.n * b.d, a.d * b.n); }
+function fIsZero(a) { return a.n === 0; }
+
+function toFrac(valStr) {
+    let val = parseFloat(valStr);
+    if (isNaN(val)) return {n: 0, d: 1};
+    let str = val.toString();
+    if (!str.includes('.')) return {n: parseInt(val), d: 1};
+    let decs = str.split('.')[1].length;
+    let d = Math.pow(10, decs);
+    return simplify(Math.round(val * d), d);
+}
+
+function formatFracCSS(f) {
+    if (f.n === 0) return "0";
+    if (f.d === 1) return f.n.toString();
+    let sign = f.n < 0 ? "-" : "";
+    return `${sign}<div class="frac-css"><span>${Math.abs(f.n)}</span><span class="fdn">${f.d}</span></div>`;
+}
+
+// --- INTERFAZ ---
+function createInputs() {
+    const r = document.getElementById('rows').value;
+    const c = document.getElementById('cols').value;
+    const container = document.getElementById('matrix-container');
+    container.style.gridTemplateColumns = `repeat(${c}, 1fr)`;
+    container.innerHTML = '';
+    for(let i=0; i<r*c; i++) {
+        container.innerHTML += `<input type="number" step="any" id="v${i}" class="m-input" value="0">`;
+    }
+    document.getElementById('output').style.display = 'none';
+}
+
+function fillRandom(type) {
+    const r = document.getElementById('rows').value;
+    const c = document.getElementById('cols').value;
+    for(let i=0; i<r*c; i++) {
+        let val = type === 'nat' ? Math.floor(Math.random() * 10) : Math.floor(Math.random() * 19) - 9;
+        document.getElementById(`v${i}`).value = val;
+    }
+    document.getElementById('output').style.display = 'none';
+}
+
+function clearMatrix() {
+    document.querySelectorAll('.m-input').forEach(input => input.value = 0);
+    document.getElementById('output').style.display = 'none';
+}
+
+function getMatrixFrac() {
+    const r = parseInt(document.getElementById('rows').value);
+    const c = parseInt(document.getElementById('cols').value);
+    let matrix = [];
+    for(let i=0; i<r; i++) {
+        matrix[i] = [];
+        for(let j=0; j<c; j++) {
+            matrix[i][j] = toFrac(document.getElementById(`v${i*c + j}`).value);
+        }
+    }
+    return matrix;
+}
+
+function printMatrixHTML(m) {
+    let r = m.length;
+    let c = m[0].length;
+    let html = `<div class="matrix-view" style="grid-template-columns: repeat(${c}, minmax(40px, auto)); gap: 8px 15px;">`;
+    
+    for (let i = 0; i < r; i++) {
+        for (let j = 0; j < c; j++) {
+            html += `<div>${formatFracCSS(m[i][j])}</div>`;
+        }
+    }
+    html += '</div>';
+    return html;
+}
+
+// --- ALGORITMO GAUSS CON FRACCIONES ---
+function calculateGauss() {
+    let m = getMatrixFrac();
+    let r = m.length;
+    let c = m[0].length;
+    let stepsArea = document.getElementById('steps-area');
+    stepsArea.innerHTML = '';
+    document.getElementById('output').style.display = 'block';
+
+    // Copia profunda para las fracciones
+    let currentStep = JSON.parse(JSON.stringify(m)); 
+    let pivotRow = 0;
+    let pivotCol = 0;
+
+    // Matriz inicial
+    stepsArea.innerHTML += `<div style="margin-bottom: 20px;"><strong>Matriz Inicial:</strong><br>${printMatrixHTML(currentStep)}</div>`;
+
+    while (pivotRow < r && pivotCol < c) {
+        // Buscar pivote no nulo
+        let selRow = pivotRow;
+        while (selRow < r && fIsZero(currentStep[selRow][pivotCol])) selRow++;
+
+        if (selRow === r) {
+            pivotCol++;
+            continue;
+        }
+
+        // Intercambio si es necesario
+        if (selRow !== pivotRow) {
+            let temp = currentStep[pivotRow];
+            currentStep[pivotRow] = currentStep[selRow];
+            currentStep[selRow] = temp;
+            stepsArea.innerHTML += `<div class="step-box"><strong style="color: #0056b3;">Intercambiamos Fila ${pivotRow+1} y Fila ${selRow+1}:</strong><br>${printMatrixHTML(currentStep)}</div>`;
+        }
+
+        // Hacer ceros debajo
+        let stepHtml = `<div class="step-box"><strong style="color: #0056b3;">Hacemos ceros en la Columna ${pivotCol+1} (por debajo de la fila ${pivotRow+1}):</strong><br>`;
+        let changed = false;
+        
+        for (let i = pivotRow + 1; i < r; i++) {
+            if (!fIsZero(currentStep[i][pivotCol])) {
+                changed = true;
+                // factor = elemento a eliminar / pivote
+                let factor = fDiv(currentStep[i][pivotCol], currentStep[pivotRow][pivotCol]);
+                
+                // F_i = F_i - factor * F_pivot
+                for (let j = pivotCol; j < c; j++) {
+                    let termToSub = fMul(factor, currentStep[pivotRow][j]);
+                    currentStep[i][j] = fSub(currentStep[i][j], termToSub);
+                }
+                // Aseguramos el cero exacto visual
+                currentStep[i][pivotCol] = {n: 0, d: 1};
+            }
+        }
+        
+        if (changed) {
+            stepHtml += printMatrixHTML(currentStep) + `</div>`;
+            stepsArea.innerHTML += stepHtml;
+        }
+
+        pivotRow++;
+        pivotCol++;
+    }
+
+    // Calcular rango final
+    let rank = 0;
+    currentStep.forEach(row => {
+        if (row.some(v => !fIsZero(v))) rank++;
+    });
+
+    document.getElementById('final-rank').innerHTML = `<strong>Rango final de la matriz = ${rank}</strong>`;
+}
+
+// Inicializar al cargar
+createInputs();
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/2-inversa-de-una-matriz.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

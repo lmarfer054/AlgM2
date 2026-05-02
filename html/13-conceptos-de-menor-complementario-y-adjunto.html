@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7k2hm-ifrrle12g">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.3. Conceptos de menor complementario y adjunto | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7k2hm-ifrrle12g" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li class="active"> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="active no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7k2hm-ifrrle12g" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.3. Conceptos de menor complementario y adjunto</h1></div>
+</header><div id="page-content-page-moo7k2hm-ifrrle12g" class="page-content">
+<article id="20260502095902LIUZDQ" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-rtrxdde7i" class="idevice_node text sin-nada" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-rtrxdde7i&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" align="right" cellpadding="15">
+<tbody>
+<tr style="border: 1px solid #ffffff;">
+<td><img src="../content/resources/idevice-mm6cukpv-rtrxdde7i/losproblemascrecen_1.png" alt="" height="272" width="202"></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">En la década de los 90 del pasado siglo, emitían en la televisión una serie americana cuyo título se traducía por "Los problemas crecen". Ese podría ser el lema de los matemáticos. En cuanto vemos la solución a un determinado problema ya queremos ir un poco más allá. Siempre pensamos qué ocurriría si tenemos más datos o más incógnitas, o si lo que hemos visto hasta el momento se puede generalizar a otros casos más. En general buscamos algoritmos y propiedades que puedan cumplirse en la mayor cantidad de casos. Eso es lo que vamos a hacer en este apartado.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">En el punto 1.1 has visto dos reglas, una para hallar el determinante de una matriz cuadrada de orden 2 y otra para la de orden 3, la muy conocida regla de Sarrus. Lamentablemente ya no existen reglas para determinantes de orden superior, por lo que si queremos encontrar el valor del determinante de una matriz cuadrada de orden mayor que 3, tenemos que simplificarla utilizando las propiedades que hemos visto en el punto anterior. Veremos cómo se hace.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502095902EHWITJ" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Menor complementario. Adjunto. Matriz adjunta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-ikumcuyps" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-ikumcuyps&quot;}">
+<div class="exe-text-template">
+    <table cellpadding="15" style="width: 99.9846%; background-color: #d3fada;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;">En una matriz cuadrada \(A\) se llama <span style="font-weight: bolder; color: #007632;">menor complementario</span> del término \(a_{ij}\) al determinante de la submatriz que queda al quitar la fila y la columna en la que se encuentra el término \( a_{ij} \).</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<p> Unas veces se representa por \( m_{ij} \) y otras por \( \alpha_{ij} \).  Observa el cálculo de alguno de estos elementos en las siguientes tres imágenes:</p>
+<div class="exe-fx exe-carousel">
+<h2><br /></h2>
+<div style="font-family: Arial, sans-serif; padding: 20px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<div style="position: relative; display: inline-block; padding: 0 10px;">
+<div style="z-index: 0; position: relative;">\( \left( \begin{array}{rrr} 2 & -1 & 3 \\ 5 & 0 & 4 \\ -3 & 6 & 1 \end{array} \right) \)</div>
+<div style="position: absolute; top: 12%; left: 59%; width: 2.5px; height: 76%; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 82%; left: 12%; width: 76%; height: 2.5px; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 72%; left: 52%; width: 22px; height: 22px; border: 2.5px solid blue; border-radius: 50%; z-index: 2;"><br /></div>
+</div>
+<span style="color: #800000; font-weight: bold; font-size: 1.1em; margin-left: 15px;">Menor complementario</span></div>
+<p style="margin-left: 20px; font-size: 1.1em;">\( m_{32} = \left| \begin{array}{rr} 2 & 3 \\ 5 & 4 \end{array} \right| = 8 - 15 = -7 \)</p>
+</div>
+<h2><br /></h2>
+<div style="font-family: Arial, sans-serif; padding: 20px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<div style="position: relative; display: inline-block; padding: 0 10px;">
+<div style="z-index: 0; position: relative;">\( \left( \begin{array}{rrr} 2 & -1 & 3 \\ 5 & 0 & 4 \\ -3 & 6 & 1 \end{array} \right) \)</div>
+<div style="position: absolute; top: 12%; left: 78%; width: 2.5px; height: 76%; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 10%; left: 12%; width: 76%; height: 2.5px; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 1%; left: 72%; width: 22px; height: 22px; border: 2.5px solid blue; border-radius: 50%; z-index: 2;"><br /></div>
+</div>
+<span style="color: #800000; font-weight: bold; font-size: 1.1em; margin-left: 15px;">Menor complementario</span></div>
+<p style="margin-left: 20px; font-size: 1.1em;">\( m_{13} = \left| \begin{array}{rr} 5 & 0 \\ -3 & 6 \end{array} \right| = 30 - 0 = 30 \)</p>
+</div>
+<h2><br /></h2>
+<div style="font-family: Arial, sans-serif; padding: 20px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<div style="position: relative; display: inline-block; padding: 0 10px;">
+<div style="z-index: 0; position: relative;">\( \left( \begin{array}{rrr} 2 & -1 & 3 \\ 5 & 0 & 4 \\ -3 & 6 & 1 \end{array} \right) \)</div>
+<div style="position: absolute; top: 12%; left: 30%; width: 2.5px; height: 76%; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 46%; left: 12%; width: 76%; height: 2.5px; background: rgba(0, 0, 255, 0.6); border-radius: 2px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 35%; left: 23%; width: 22px; height: 22px; border: 2.5px solid blue; border-radius: 50%; z-index: 2;"><br /></div>
+</div>
+<span style="color: #800000; font-weight: bold; font-size: 1.1em; margin-left: 15px;">Menor complementario</span></div>
+<p style="margin-left: 20px; font-size: 1.1em;">\( m_{21} = \left| \begin{array}{rr} -1 & 3 \\ 6 & 1 \end{array} \right| = -1 - 18 = -19 \)</p>
+</div>
+</div>
+<div>
+<div><br /></div>
+<div>
+<table cellpadding="15" style="width: 99.9846%; background-color: #edfcfc;">
+<tbody>
+<tr>
+<td style="width: 99.9538%;">
+<div>
+<div>
+<p>Se define el <span style="color: #0066cc;"><strong>adjunto</strong></span> de un elemento \( a_{ij} \), y se representa por \( A_{ij} \), al menor complementario de dicho número junto con un signo más o menos, según que la suma de los dos subíndices que representan la posición sea par o impar.</p>
+</div>
+</div>
+<p>Se calcula por la expresión: \[ A_{ij}=\left(-1\right)^{i+j}·m_{ij} \] Llamamos <span style="font-weight: bolder; color: #0066cc;">matriz adjunta</span> de \(A\) a aquella en la que se sustituye cada término por su adjunto. Se representa por \(\textrm{Adj(A)}\).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902FCZYBW" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/EducaAnd viejos/icon_udl_exp_ejercicio.png" alt="">
+</div>
+<h1 class="box-title">Ejemplo. Adjunto y menor complementario.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-es6sp5for" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-es6sp5for&quot;}">
+<div class="exe-text-template">
+    <p>A continuación puedes ver el cálculo del menor complementario y el adjunto de un término. Observa la regla de signos que corresponden a los adjuntos y podrás observar que siempre se alternan comenzado con el signo más. Cada vez que nos movemos, en horizontal o vertical, de un término a otro cambia la paridad entre + y -. </p>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; width: 90%; max-width: 1200px; margin: 0 auto; background-color: #f4f8f4; border: 1px solid #c8dcc8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div style="background-color: #007e3a; color: #ffffff; padding: 15px 25px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom: 4px solid #82b93c;">
+<h3 style="margin: 0; font-size: 1.4em; font-weight: normal;">Adjunto y menor complementario de un elemento</h3>
+</div>
+<div style="padding: 25px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: space-between;">
+<div style="flex: 1; min-width: 320px; background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+<div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;"><span style="font-size: 1.4em; color: #0000cc; font-weight: bold;">\( A = \)</span>
+<div style="position: relative; display: inline-block; padding: 10px;">
+<div style="position: absolute; top: 32%; left: 5%; width: 90%; height: 21%; background-color: rgba(204, 68, 0, 0.15); border-radius: 4px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 8%; left: 53%; width: 23%; height: 84%; background-color: rgba(204, 68, 0, 0.15); border-radius: 4px; z-index: 1;"><br /></div>
+<div style="z-index: 2; position: relative; font-size: 1.2em; color: #0000cc;">\( \left( \begin{array}{rrrr} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ a_{31} & a_{32} & a_{33} & a_{34} \\ a_{41} & a_{42} & a_{43} & a_{44} \end{array} \right) \)</div>
+</div>
+<span style="font-size: 1.4em; color: #0000cc; font-weight: bold;">\( = \)</span>
+<div style="position: relative; display: inline-block; padding: 10px;">
+<div style="position: absolute; top: 32%; left: 5%; width: 90%; height: 21%; background-color: rgba(204, 68, 0, 0.15); border-radius: 4px; z-index: 1;"><br /></div>
+<div style="position: absolute; top: 8%; left: 54%; width: 18%; height: 84%; background-color: rgba(204, 68, 0, 0.15); border-radius: 4px; z-index: 1;"><br /></div>
+<div style="z-index: 2; position: relative; font-size: 1.2em; color: #0000cc;">\( \left( \begin{array}{rrrr} 5 & -2 & 3 & 5 \\ 0 & -5 & 1 & 2 \\ 2 & 6 & -2 & 4 \\ 2 & 9 & 8 & 0 \end{array} \right) \)</div>
+</div>
+</div>
+<div style="text-align: left; margin-top: 20px; padding-left: 20px;"><span style="color: #0000cc; font-size: 1.2em; font-weight: bold;">\( a_{23} = 1 \)</span></div>
+</div>
+<div style="background: linear-gradient(to bottom, #eeeeee, #dddddd); padding: 20px; border: 2px solid #cc4400; border-radius: 4px; text-align: center; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); min-width: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<p style="margin: 0 0 15px 0; color: #cc4400; font-size: 1.3em; font-weight: bold;">\( (-1)^{4+4} \)</p>
+<table style="border-collapse: collapse; margin: 0 auto; background-color: #e0e0e0; border: 2px solid #cc4400;">
+<tbody style="color: #0000cc; font-weight: bold; font-size: 1.4em; text-align: center;">
+<tr>
+<td style="border: 1px solid #cc4400; width: 35px; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; width: 35px; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; width: 35px; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; width: 35px; height: 35px;">-</td>
+</tr>
+<tr>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; height: 35px;">+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #cc4400; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+</tr>
+<tr>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; height: 35px;">+</td>
+<td style="border: 1px solid #cc4400; height: 35px;">-</td>
+<td style="border: 1px solid #cc4400; height: 35px; background-color: #ffffff;">+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 15px 0 0 0; color: #0000cc; font-size: 0.95em;">Signos de los adjuntos</p>
+</div>
+</div>
+<div style="margin-top: 25px; background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+<div style="color: #0000cc; font-size: 1.2em; display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+<div style="text-align: right; line-height: 1.2;">\( \alpha_{23} = \) <br /><span style="font-size: 0.75em; color: #0000cc;">(menor)</span></div>
+<div>\( \left| \begin{array}{rrr} a_{11} & a_{12} & a_{14} \\ a_{31} & a_{32} & a_{34} \\ a_{41} & a_{42} & a_{44} \end{array} \right| = \left| \begin{array}{rrr} 5 & -2 & 5 \\ 2 & 6 & 4 \\ 2 & 9 & 0 \end{array} \right| = \mathbf{-166} \)</div>
+</div>
+<div style="color: #0000cc; font-size: 1.3em; display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+<div style="text-align: right; line-height: 1.2; font-weight: bold;">\( A_{23} = \) <br /><span style="font-size: 0.7em; font-weight: normal;">(adjunto)</span></div>
+<div style="font-weight: bold;">\( (-1)^{2+3} \alpha_{23} = -(-166) = 166 \)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article><article id="20260502095902GSBUDO" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Vídeo: hallar la matriz adjunta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-b998av1e5" class="idevice_node text caja-roja" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-b998av1e5&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: left;">En el siguiente video de abajo puedes ver un ejemplo de como hallar la matriz adjunta de otra: <a href="https://www.youtube.com/watch?v=R291dxMdXOI" target="_blank" id="link_2" rel="noopener"><img src="../content/resources/yutube.png" width="52" height="53" alt=""></a></p>
+<p style="text-align: left;">Observa cómo al calcular los adjuntos, los signos más y los menos, se alternan.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502095902UCTPDG" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Desarrollo de un determinante por los elementos de una línea.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-fmdqeh6mf" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-fmdqeh6mf&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Un determinante se puede desarrollar mediante la suma de los productos de cada elemento de una de sus líneas, por su adjunto correspondiente.</p>
+<p>En las imágenes siguientes, se representa por \(\alpha_{ij}\) el menor complementario, por lo que el adjunto sería \(\left(-1\right)^{i+j}·\alpha_{ij}\).</p>
+<div class="exe-fx exe-tabs">
+<h2>Desarrollo de un determinante por los elementos de una fila</h2>
+<p style="text-align: center;"><img src="../content/resources/idevice-mm6cukpv-fmdqeh6mf/desporfila.png" width="1412" height="544" alt=""></p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<h2>Desarrollo de un determinante por los elementos de una columna</h2>
+<p style="text-align: center;"><img src="../content/resources/idevice-mm6cukpv-fmdqeh6mf/desporcolumna.png" width="1446" height="547" alt=""></p>
+</div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502095902RDWXBT" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Vídeo. Determinante haciendo ceros.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-81of7ku6c" class="idevice_node text caja-roja" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-81of7ku6c&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Hay un modo de hacer este proceso más fácil. Consiste en utilizar las propiedades de los determinantes que vimos en el apartado anterior para hacer todos los elementos de una línea, menos uno, ceros. Después desarrollamos por esa línea y solo tenemos que hallar un adjunto, que siempre contendrá un determinante de orden inferior. Esto lo podemos ver explicado, paso a paso, en el siguiente video: <a href="https://www.youtube.com/watch?v=32ynZq6jPqg" target="_blank" id="link_3" rel="noopener"><img src="../content/resources/yutube.png" width="69" height="71" alt="" style="vertical-align: text-top;"></a></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502095902KVRSZI" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mm6cukpv-09yy9u0c0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mm6cukpv-09yy9u0c0&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><p>Aplica todo lo que has visto al cálculo del determinante \(<br />\left| \begin{array}{rrrr} 1 & 2 & 1 & -1 \\ 2 & -1 & 5 & -2 \\ 4 & 7 & 3 & 0 \\ 3 & 2 & 4 & -5 \end{array} \right| \)<br /><br /></p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación" data-text-a="Mostrar retroalimentación" data-text-b="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>\begin{aligned} \left| \begin{array}{rrrr} 1 & 2 & 1 & -1 \\ 2 & -1 & 5 & -2 \\ 4 & 7 & 3 & 0 \\ 3 & 2 & 4 & -5 \end{array} \right| &= \left[ \begin{array}{l} C_2 \rightarrow C_2 - 2C_1 \\ C_3 \rightarrow C_3 - C_1 \\ C_4 \rightarrow C_4 + C_1 \end{array} \right] = \left| \begin{array}{rrrr} 1 & 0 & 0 & 0 \\ 2 & -5 & 3 & 0 \\ 4 & -1 & -1 & 4 \\ 3 & -4 & 1 & -2 \end{array} \right| \\[10pt] &\text{(Desarrollo } F_1) = 1 \cdot \left| \begin{array}{rrr} -5 & 3 & 0 \\ -1 & -1 & 4 \\ -4 & 1 & -2 \end{array} \right| \\[10pt] &= (-10 - 48 + 0) - (0 - 20 + 6) \\[10pt] &= -58 - (-14) = \mathbf{-44} \end{aligned}</p></div></div>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/12-propiedades-de-los-determinantes.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

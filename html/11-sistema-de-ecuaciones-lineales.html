@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krct-hzwrv304y">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>1.1. Sistema de ecuaciones lineales | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krct-hzwrv304y" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="active no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krct-hzwrv304y" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">1.1. Sistema de ecuaciones lineales</h1></div>
+</header><div id="page-content-page-moo7krct-hzwrv304y" class="page-content">
+<article id="20260502085219MQLMNK" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-4o1gqrfmt" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-4o1gqrfmt&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;">Suponemos que el mundo del Álgebra no es desconocido para ti. Ya en cursos anteriores has tomado contacto con él y habrás hecho tus pinitos con las ecuaciones. Como recordarás, uno de los aspectos más importantes en la resolución de problemas es conseguir traducir a lenguaje algebraico el lenguaje cotidiano que estemos utilizando para después aplicar los métodos de resolución. Por ejemplo, si las personas que forman un grupo, por ejemplo una clase de Bachillerato, se quieren agrupar en equipos de futbito, cada uno de los cuales con 5 jugadores, y de futbol, formados por 11 jugadores, como no sabemos cuántos grupos podemos hacer, la expresión correspondiente sería \(5·x+11·y\), siendo \(x\) el número de equipos de futbito e \(y\) el de futbol.</p>
+<p><img src="../content/resources/idevice-mohji9dc-4o1gqrfmt/futbito.jpg" width="240" height="180" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219KAUCAX" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Ecuación lineal. Solución</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-zxqe4a8im" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-zxqe4a8im&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 99.9703%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;"><span style="text-align: justify;">Se llama&nbsp;</span><span style="font-weight: bolder; text-align: justify;">ecuación lineal</span><span style="text-align: justify;">&nbsp;con tres incógnitas a la suma de las tres incógnitas, multiplicadas por números, e igualada la suma a otro número.</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Por ejemplo, \(6·x-2·y+9·z=24\)<br></p>
+<p style="text-align: justify;">Esta definición puede ampliarse a cualquier cantidad de incógnitas. La única exigencia es que las variables vayan multiplicadas por números y sumadas. Puede darse que las variables aparezcan en distinto miembro, en ese caso basta agrupar todas las variables en un miembro y en el otro el término independiente. Por ejemplo, la ecuación \(6x+9z=24+2y\) es equivalente a la anterior.</p>
+<table border="0" cellpadding="15" style="width: 99.9703%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;"><span style="text-align: justify;">Se llama&nbsp;</span><span style="font-weight: bolder; text-align: justify;">solución de la ecuación lineal</span><span style="text-align: justify;">&nbsp;a un conjunto de valores que al sustituirlos en las incógnitas hacen que se verifique la igualdad.</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Por ejemplo, los valores \(x=2, \ y=3, \&nbsp; z=2\) son solución de la ecuación anterior ya que se verifica que \(6·2-2·3+9·2 = 12-6+18 = 24\).</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219WZUSPL" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="">
+</div>
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260428131740701QFG" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260428131740701QFG&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260427203757KAH8CW&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;20260428131740701QFG&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Indica si son verdaderas o falsas las siguientes frases.&lt;/p&gt;\n&lt;hr /&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777375228033-UUHVR&quot;,&quot;activityType&quot;:&quot;true-false&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span&gt;La expresión \\(3x-5+2y=7-6z\\) no es una ecuación lineal.&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;Es lineal ya que se puede reordenar de la forma 3x+2y+6z=12, que es lineal.&quot;,&quot;feedbackWrong&quot;:&quot;Es lineal ya que se puede reordenar de la forma 3x+2y+6z=12, que es lineal.&quot;,&quot;suggestion&quot;:&quot;Intenta reordenarla para buscar la expresión general de la ecuación.&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;0&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777375175909-C6VLP&quot;,&quot;activityType&quot;:&quot;true-false&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;La ecuación \\(3xy-2=5\\) es lineal.&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;No es lineal ya que las variables x e y están multiplicadas entre si.&quot;,&quot;feedbackWrong&quot;:&quot;No es lineal ya que las variables x e y están multiplicadas entre si.&quot;,&quot;suggestion&quot;:&quot;Repasa la definición de ecuación lineal&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;0&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777375316267-PU1CE&quot;,&quot;activityType&quot;:&quot;true-false&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span&gt;Los valores \\(x=1, \\ y=2, \\ z=-2\\) no son solución de la ecuación \\(3x+4y+5z=1\\)&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;Es verdadera ya que se verifica que 3·1+4·2+5·(-2)=3+8-10=1.&quot;,&quot;feedbackWrong&quot;:&quot;Es verdadera ya que se verifica que 3·1+4·2+5·(-2)=3+8-10=1.&quot;,&quot;suggestion&quot;:&quot;Sustituye en la fórmula y comprueba si se verifica la igualdad.&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;0&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="20260428131740701QFG" data-evaluationb="false" data-evaluationid="20260427203757KAH8CW"></div>
+            <div id="frmMainContainer-20260428131740701QFG" class="form-IDevice" data-id="20260428131740701QFG">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Indica si son verdaderas o falsas las siguientes frases.</p>
+<hr /></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-20260428131740701QFG">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-20260428131740701QFG" style="display:none;">
+                      <button  id="frmStartGame-20260428131740701QFG" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-20260428131740701QFG" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-20260428131740701QFG" > </div>
+                        <div id="frmCover-20260428131740701QFG" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-20260428131740701QFG" class="form-results-container inline">
+                        <div id="form-score-20260428131740701QFG" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-20260428131740701QFG" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-20260428131740701QFG" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="20260428131740701QFG" data-pass-rate="" />
+                        <input id="form-button-reset-20260428131740701QFG" type="button" value="Reiniciar"
+                            data-id="20260428131740701QFG" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-20260428131740701QFG" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="20260428131740701QFG" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-20260428131740701QFG" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article><article id="20260502085219XVKFQL" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Sistema de ecuaciones. Solución</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-l12srv50t" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-l12srv50t&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;"></p>
+<table border="0" cellpadding="15" style="width: 100.027%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9179%;"><span style="text-align: justify;">Se llama&nbsp;</span><span style="font-weight: bolder; text-align: justify;">sistema de ecuaciones lineales</span><span style="text-align: justify;">&nbsp;a un conjunto de ecuaciones lineales referidas todas ellas a las mismas incógnitas. En general se indica tanto el número de ecuaciones como de incógnitas.</span></td>
+</tr>
+</tbody>
+</table>
+<p align="left" style="text-align: justify;"><br>Por ejemplo, a continuación tenemos un sistema de 3 ecuaciones con tres incógnitas y otro de 2 ecuaciones con cuatro incógnitas.</p>
+<p align="left" style="text-align: justify;">\[\begin{cases} 3x - y + z = 0 \\ x + 2y - z = 1 \\ -x + 3y - z = -4 \end{cases} \quad \text{y} \quad \begin{cases} 2x + 3y - 2z + 4t = 10 \\ 3x + 2y + 5z - 7t = 21 \end{cases}\]</p>
+<table border="0" cellpadding="15" style="width: 100.027%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9179%;"><span style="text-align: justify;">La&nbsp;</span><span style="font-weight: bolder; text-align: justify;">solución de un sistema de ecuaciones lineales&nbsp;</span><span style="text-align: justify;">es el conjunto de valores que verifican todas y cada una de las ecuaciones.</span></td>
+</tr>
+</tbody>
+</table>
+<p align="left" style="text-align: justify;"><br>Por ejemplo, los valores \(x=1, \&nbsp; y=-3, \&nbsp; z=-6\) verifican el primer sistema anterior ya que se verifica:</p>
+<p align="left" style="text-align: justify;">\[ \begin{cases}&nbsp;<br>3 \cdot 1 - (-3) + (-6) = 3 + 3 - 6 = 0 \\&nbsp;<br>1 + 2 \cdot (-3) - (-6) = 1 - 6 + 6 = 1 \\&nbsp;<br>-1 + 3 \cdot (-3) - (-6) = -1 - 9 + 6 = -4&nbsp;<br>\end{cases} \]</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219RPSJCZ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-wvvfd6j8h" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-wvvfd6j8h&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><div class="exe-text-activity">
+<table border="0" align="left" cellpadding="15" height="312" style="width: 95%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="border: 1px solid #ffffff;">
+<td style="width: 25.0512%;"><img src="../content/resources/idevice-mohji9dc-wvvfd6j8h/balonmano.jpg" alt="Balonmano" height="301" width="200" style="float: right;"></td>
+<td style="width: 75.0687%;">
+<p style="text-align: justify;">En un grupo de Bachillerato formado por 35 alumnos los hemos repartido formando tres equipos de baloncesto, dos de balonmano y uno de balonvolea. En otro grupo hemos formado dos de baloncesto, uno de balonmano y dos de balonvolea, juntando en total 29 alumnos. Por último, con 30 alumnos hemos conseguido un equipo de baloncesto, otro de balonmano y tres de balonvolea.</p>
+<ol>
+<li style="text-align: justify;">
+<p>Si \(x\) representa el número de alumnos que forman un equipo de baloncesto, \(y\) los del balonmano y \(z\) los que componen un equipo de balonvolea, escribe un sistema de tres ecuaciones con esas tres incógnitas que recoja la información anterior.</p>
+</li>
+<li style="text-align: justify;">
+<p>Comprueba que \(x=5, \ y=7 \ \text{y } z=6\) es solución del sistema anterior. ¿Qué representan esos valores?</p>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="w">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>1) El sistema sería</p>
+<p>\begin{cases} <br />3x + 2y + z = 35 \\ <br />2x + y + 2z = 29 \\ <br />x + y + 3z = 30 <br />\end{cases}<br /></p>
+<p> </p>
+<p>2) Sustituimos los valores y comprobamos: </p>
+<p>\begin{cases} <br />3 \cdot 5 + 2 \cdot 7 + 6 = 15 + 14 + 6 = 35 \\ <br />2 \cdot 5 + 7 + 2 \cdot 6 = 10 + 7 + 12 = 29 \\ <br />5 + 7 + 3 \cdot 6 = 5 + 7 + 18 = 30 <br />\end{cases}<br /></p>
+<p>Esa solución nos aclara que el equipo de baloncesto tiene 5 jugadores, el de balonmano 7 y el de balovolea 6 componentes.</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219YAKCNE" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Matrices asociadas a un sistema</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-2lqcasct7" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-2lqcasct7&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Una forma muy cómoda de trabajar con un sistema es mediante su forma matricial, pues vamos a poder aplicar todo lo que hemos aprendido hasta el momento en la unidad.</p>
+<p>&nbsp;<span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Si tenemos un sistema general&nbsp;</span></p>
+<p>\begin{cases}&nbsp;<br>a_{11}x + a_{12}y + a_{13}z = c_1 \\&nbsp;<br>a_{21}x + a_{22}y + a_{23}z = c_2 \\&nbsp;<br>a_{31}x + a_{32}y + a_{33}z = c_3&nbsp;<br>\end{cases}&nbsp;<br>se agrupan en forma matricial los términos como:&nbsp;<br>\[\begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix} \cdot \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix}\]</p>
+<p>La matriz \[M_c = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix}\] recibe el nombre de <span style="color: #007932;"><strong>matriz de los coeficientes</strong></span> y está formada, por filas, por los coeficientes de cada una de las ecuaciones y por columnas por los coeficientes de cada variable.</p>
+<p>La matriz \(X = \begin{pmatrix} x \\ y \\ z \end{pmatrix}\) es la <span style="color: #007932;"><strong>matriz de las incógnitas</strong></span> y \(C = \begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix}\) la <strong><span style="color: #007932;">matriz de los términos independientes</span>.</strong></p>
+<p>Se llama <span style="color: #007932;"><strong>matriz ampliada</strong></span> a la que se obtiene añadiéndole a la matriz de los coeficientes la columna de los términos independientes. \[M_a = \begin{pmatrix}&nbsp;<br>a_{11} & a_{12} & a_{13} & c_1 \\&nbsp;<br>a_{21} & a_{22} & a_{23} & c_2 \\&nbsp;<br>a_{31} & a_{32} & a_{33} & c_3&nbsp;<br>\end{pmatrix}\]</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219PFACEV" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-dedpmqqfa" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-dedpmqqfa&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><div class="exe-text-activity">
+<p>Dado el sistema \begin{cases}&nbsp;<br>3x - y + z = 10 \\&nbsp;<br>2x + 2y - 2z = 12 \\&nbsp;<br>-x + 3y + 3z = 4&nbsp;<br>\end{cases}<br>&nbsp;escríbelo en forma matricial y comprueba que, aplicando las operaciones con matrices, esa expresión es equivalente al sistema original.</p>
+<p>¿Cuál sería la matriz ampliada en ese sistema?</p>
+</div>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>La forma matricial sería <br />\[\begin{pmatrix} 3 & -1 & 1 \\ 2 & 2 & -2 \\ -1 & 3 & 3 \end{pmatrix} \cdot \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 10 \\ 12 \\ 4 \end{pmatrix}\] <br />y si en ella multiplicamos las matrices del primer miembro, obtendríamos entonces una igualdad entre matrices que sería <br />\[\begin{pmatrix} 3x - y + z \\ 2x + 2y - 2z \\ -x + 3y + 3z \end{pmatrix} = \begin{pmatrix} 10 \\ 12 \\ 4 \end{pmatrix}\] <br />y si igualamos miembro a miembro se obtiene el sistema inicial.</p>
+<p>En nuestro caso la matriz ampliada sería <br />\[M_a = \begin{pmatrix} 3 & -1 & 1 & 10 \\ 2 & 2 & -2 & 12 \\ -1 & 3 & 3 & 4 \end{pmatrix}\]</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219JMYHIO" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Sistemas equivalentes</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-8aqgher80" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-8aqgher80&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 99.9703%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">Dos&nbsp;<span style="font-weight: bolder;">sistemas de ecuaciones lineales</span>&nbsp;son&nbsp;<span style="font-weight: bolder;">equivalentes&nbsp;</span>cuando tienen exactamente las mismas soluciones, es decir, todas las soluciones del primer sistema lo son del segundo y viceversa.</td>
+</tr>
+</tbody>
+</table>
+<p>Las propiedades que permiten convertir un sistema de ecuaciones en otro equivalente ya las has visto en cursos anteriores y son muy parecidas a las que hemos utilizado para aplicar Gauss en los temas anteriores.<a href="http://descartes.cnice.mec.es/descartes2/previas_web/materiales_didacticos/sistemas_de_ecuaciones_lineales_2bcnt/equivalencia_de_sistemas_de_ecuaciones_lineales.htm" target="_blank" rel="noopener"></a></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1-introduccion-a-las-ecuaciones.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

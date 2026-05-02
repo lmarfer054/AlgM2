@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krcz-q7elwlwkb">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.3. Regla de Cramer | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krcz-q7elwlwkb" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li class="active"> <a href="../html/23-regla-de-cramer.html" class="active no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krcz-q7elwlwkb" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.3. Regla de Cramer</h1></div>
+</header><div id="page-content-page-moo7krcz-q7elwlwkb" class="page-content">
+<article id="20260502085219UGSFST" class="box no-header nota-azul">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-s71e5j6d7" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-s71e5j6d7&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p><strong><a href="https://es.wikipedia.org/wiki/Gabriel_Cramer" target="_blank" rel="noopener">Gabriel Cramer</a></strong> nos mostró que los determinantes también nos pueden servir para resolver sistemas de ecuaciones, como vamos a ver a continuación.</p>
+<table align="center">
+<tbody>
+<tr>
+<td style="text-align: center; border: 1px solid #ffffff;"><img src="../content/resources/idevice-mohji9dc-s71e5j6d7/Gabriel_Cramer.jpg" alt="Gabriel Cramer" title="Gabriel Cramer" width="300" height="300"></td>
+</tr>
+</tbody>
+</table><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219UOEIZZ" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Regla de Cramer. Sistemas 2x2.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-ovv39kyrz" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-ovv39kyrz&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>El sistema de ecuaciones \begin{cases} a_{11}x + a_{12}y = c_1 \\ a_{21}x + a_{22}y = c_2 \end{cases} tiene como solución: \[ x = \frac{\begin{vmatrix} c_1 & a_{12} \\ c_2 & a_{22} \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}} \qquad y = \frac{\begin{vmatrix} a_{11} & c_1 \\ a_{21} & c_2 \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}} \] siempre que \(\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} \neq 0\).</p>
+<table border="0" cellpadding="15" style="width: 99.9703%; background-color: #BFEDD2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%;">A esta forma de resolver sistemas de ecuaciones se le llama&nbsp;<span style="font-weight: bolder;">Regla de Cramer</span>.</td>
+</tr>
+</tbody>
+</table>
+<p>Si usamos la notación \[ D = \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} \qquad D_x = \begin{vmatrix} c_1 & a_{12} \\ c_2 & a_{22} \end{vmatrix} \qquad D_y = \begin{vmatrix} a_{11} & c_1 \\ a_{21} & c_2 \end{vmatrix} \]<span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Siendo:</span></p>
+<ul>
+<li>
+<p><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;"> \(D \) el determinante de la matriz de coeficientes \(\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}\). </span></p>
+</li>
+<li>
+<p><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">\(D_x \) El determinante de la matriz de los coeficientes en la cual se ha sustituido la primera columna (coeficientes de \(x\)) por los términos independientes (\(c_1, c_2\)). </span></p>
+</li>
+<li>
+<p><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">\(D_y \) El determinante de la matriz de los coeficientes en la cual se ha sustituido la segunda columna (coeficientes de \(y\)) por los términos independientes (\(c_1, c_2\)).</span></p>
+</li>
+</ul>
+<p><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;"> Podemos escribir la solución del sistema como \[\pmb{ x = \frac{D_x}{D}; \quad y = \frac{D_y}{D} }\]</span></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219NNKGEW" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Ejemplos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-yfpps7hoh" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-yfpps7hoh&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En los siguientes videos puedes ver ejemplos de resolución de sistemas de dos ecuaciones lineales por la regla de Cramer.</p>
+<p><a href="https:////www.youtube.com/embed/axwHR1EphOg" id="link_0"><img src="../content/resources/yutube.png" width="60" height="61" alt=""></a><span style="color: #212529; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Regla de Cramer para un sistema 2 x 2</span></p>
+<p><a href="https:////www.youtube.com/embed/Yngm22SHQaU" id="link_1"><img src="../content/resources/yutube.png" width="60" height="61" alt=""></a>Sistemas de ecuaciones - Método de Cramer</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219THYUUS" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501191013507B0N" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501191013507B0N&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Aplica la regla de Cramer para resolver el sistema&nbsp;<br>\[\begin{cases}&nbsp;<br>2x + 3y = 11 \\&nbsp;<br>3x + 2y = 9&nbsp;<br>\end{cases}\]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>\[<br />x = \frac{\begin{vmatrix} 11 & 3 \\ 9 & 2 \end{vmatrix}}{\begin{vmatrix} 2 & 3 \\ 3 & 2 \end{vmatrix}} = \frac{-5}{-5} = 1 \quad , \quad<br />y = \frac{\begin{vmatrix} 2 & 11 \\ 3 & 9 \end{vmatrix}}{\begin{vmatrix} 2 & 3 \\ 3 & 2 \end{vmatrix}} = \frac{-15}{-5} = 3<br />\]</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219IZOMCP" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Regla de Cramer. Sistemas 3x3.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501191352055Q08" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501191352055Q08&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En el caso de sistemas de tres ecuaciones lineales la regla de Cramer se aplica de la siguiente forma. El sistema siguiente:<br>\[<br>\begin{cases}&nbsp;<br>a_{11}x + a_{12}y + a_{13}z = c_1 \\&nbsp;<br>a_{21}x + a_{22}y + a_{23}z = c_2 \\&nbsp;<br>a_{31}x + a_{32}y + a_{33}z = c_3&nbsp;<br>\end{cases}<br>\]</p>
+<p><br>tiene como solución:<br>\[<br>x = \frac{\begin{vmatrix} c_1 & a_{12} & a_{13} \\ c_2 & a_{22} & a_{23} \\ c_3 & a_{32} & a_{33} \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix}}&nbsp;<br>\quad&nbsp;<br>y = \frac{\begin{vmatrix} a_{11} & c_1 & a_{13} \\ a_{21} & c_2 & a_{23} \\ a_{31} & c_3 & a_{33} \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix}}&nbsp;<br>\quad&nbsp;<br>z = \frac{\begin{vmatrix} a_{11} & a_{12} & c_1 \\ a_{21} & a_{22} & c_2 \\ a_{31} & a_{32} & c_3 \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix}}<br>\]</p>
+<p><br>siempre que \[\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix} \neq 0\]</p>
+<p><br>Si usamos la notación<br>\[<br>D = \begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix}&nbsp;<br>\quad&nbsp;<br>D_x = \begin{vmatrix} c_1 & a_{12} & a_{13} \\ c_2 & a_{22} & a_{23} \\ c_3 & a_{32} & a_{33} \end{vmatrix}&nbsp;<br>\quad&nbsp;<br>D_y = \begin{vmatrix} a_{11} & c_1 & a_{13} \\ a_{21} & c_2 & a_{23} \\ a_{31} & c_3 & a_{33} \end{vmatrix}&nbsp;<br>\quad&nbsp;<br>D_z = \begin{vmatrix} a_{11} & a_{12} & c_1 \\ a_{21} & a_{22} & c_2 \\ a_{31} & a_{32} & c_3 \end{vmatrix}<br>\]</p>
+<p><br>Siendo:</p>
+<ul>
+<li>
+<p>\(D\) el determinante de la matriz de coeficientes.</p>
+</li>
+<li>
+<p>\(D_x \) el determinante de la matriz de los coeficientes en la cual se ha sustituido la primera columna (coeficientes de \(x\)) por los términos independientes (\(c_1, c_2, c_3\)).</p>
+</li>
+<li>
+<p>\(D_y \) el determinante de la matriz de los coeficientes en la cual se ha sustituido la segunda columna (coeficientes de \(y\)) por los términos independientes (\(c_1, c_2, c_3\)).</p>
+</li>
+<li>\(D_z \) el determinante de la matriz de los coeficientes en la cual se ha sustituido la tercera columna (coeficientes de \(z\)) por los términos independientes (\(c_1, c_2, c_3\)).<br>&nbsp;</li>
+</ul>
+<p><br>Podemos escribir la solución del sistema como<br>\[ \pmb{<br>x = \frac{D_x}{D}; \quad y = \frac{D_y}{D}; \quad z = \frac{D_z}{D}}<br>\]</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219EMYYWC" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="">
+</div>
+<h1 class="box-title">Ejemplos</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dd-i9dcphd03" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dd-i9dcphd03&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>En los siguientes videos puedes ver ejemplos de resolución de sistemas de tres ecuaciones lineales por la regla de Cramer.</p>
+<p><img src="../content/resources/yutube.png" width="60" height="61" alt="">Sistemas de ecuaciones - Método de Cramer</p>
+<p><img src="../content/resources/yutube.png" width="60" height="61" alt="">Regla de Cramer para un sistema de 3x3</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219SMYWJY" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202605011923176402GM" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202605011923176402GM&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Resuelve el siguiente sistema de ecuaciones por la regla de Cramer.<br>\[<br>\begin{cases}&nbsp;<br>2x + 3y + 4z = 16 \\&nbsp;<br>x - 4y + 5z = 3 \\&nbsp;<br>3x + y + 3z = 11&nbsp;<br>\end{cases}<br>\]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p>\[<br />x = \frac{\begin{vmatrix} 16 & 3 & 4 \\ 3 & -4 & 5 \\ 11 & 1 & 3 \end{vmatrix}}{\begin{vmatrix} 2 & 3 & 4 \\ 1 & -4 & 5 \\ 3 & 1 & 3 \end{vmatrix}} = 1, \quad <br />y = \frac{\begin{vmatrix} 2 & 16 & 4 \\ 1 & 3 & 5 \\ 3 & 11 & 3 \end{vmatrix}}{\begin{vmatrix} 2 & 3 & 4 \\ 1 & -4 & 5 \\ 3 & 1 & 3 \end{vmatrix}} = 2, \quad <br />z = \frac{\begin{vmatrix} 2 & 3 & 16 \\ 1 & -4 & 3 \\ 3 & 1 & 11 \end{vmatrix}}{\begin{vmatrix} 2 & 3 & 4 \\ 1 & -4 & 5 \\ 3 & 1 & 3 \end{vmatrix}} = 2<br />\]</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/22-metodo-de-gauss.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/3-especial-selectividad-2.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

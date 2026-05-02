@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7khk4-63t0notvy">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>4. Especial selectividad | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7khk4-63t0notvy" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li class="active"> <a href="../html/4-especial-selectividad.html" class="active no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/22-metodo-de-gauss.html" class="no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7khk4-63t0notvy" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">4. Especial selectividad</h1></div>
+</header><div id="page-content-page-moo7khk4-63t0notvy" class="page-content">
+<article id="20260502094802BXGERJ" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427171411352E5T" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427171411352E5T&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Sea \( A \) una matriz cuadrada que cumple que \( A^2 = A + I \) donde \( I \) es la matriz identidad. Demuestra que la matriz \( A \) tiene inversa.</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .solucion-box { background-color: #f8fcfb; border-left: 5px solid #20c997; padding: 20px; border-radius: 4px; font-family: 'Segoe UI', Arial, sans-serif; color: #333; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .solucion-box h3 { color: #17a2b8; margin-top: 0; margin-bottom: 20px; }
+    .ecuacion-destacada { background-color: #e9ecef; padding: 10px; border-radius: 4px; display: inline-block; font-weight: bold; margin: 10px 0; }
+    .enunciado { background-color: #fff; padding: 15px; border-left: 4px solid #6c757d; border-radius: 0 4px 4px 0; font-style: italic; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+</style>
+<div class="solucion-box">
+<p>Para demostrar que una matriz cuadrada \( A \) tiene inversa, debemos encontrar otra matriz (que llamaremos \( B \)) tal que al multiplicarla por \( A \) nos dé la matriz identidad \( I \). Es decir, debemos llegar a una expresión matemática de la forma:</p>
+<p style="text-align: center;">\[ A \cdot B = I \quad \text{y} \quad B \cdot A = I \]</p>
+<p>Partimos de la ecuación que nos proporciona el enunciado:</p>
+<p style="text-align: center;">\[ A^2 = A + I \]</p>
+<p>Nuestro objetivo es despejar la matriz identidad \( I \) a un lado de la igualdad. Para ello, restamos la matriz \( A \) en ambos miembros:</p>
+<p style="text-align: center;">\[ A^2 - A = I \]</p>
+<p>Ahora, podemos extraer factor común \( A \) en el miembro de la izquierda. Para no equivocarnos, recordemos la propiedad de que multiplicar una matriz por la identidad la deja igual (\( A = A \cdot I = I \cdot A \)), por lo que podemos reescribir la expresión mentalmente como \( A \cdot A - A \cdot I = I \).</p>
+<p>Sacando factor común \( A \) por la <b>izquierda</b>, obtenemos:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ A \cdot (A - I) = I \]</span></div>
+<p>De igual forma, si sacamos factor común \( A \) por la <b>derecha</b> (\( A \cdot A - I \cdot A = I \)), obtenemos:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ (A - I) \cdot A = I \]</span></div>
+<hr style="border: 0; border-top: 1px dashed #ccc; margin: 25px 0;" />
+<p><b>Conclusión:</b></p>
+<p>Como hemos encontrado una matriz, concretamente la matriz \( (A - I) \), que al multiplicarla por \( A \) (tanto por la izquierda como por la derecha) da como resultado la matriz identidad \( I \), queda demostrado matemáticamente que <b>la matriz \( A \) es invertible</b>.</p>
+<p>Además, al hacer esta demostración acabamos de descubrir que su matriz inversa es precisamente ese factor que hemos obtenido:</p>
+<p style="text-align: center; font-size: 1.2em; color: #17a2b8;"><b>\[ A^{-1} = A - I \]</b></p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802KCRGWV" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427171809292KAC" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427171809292KAC&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Sean las matrices \( A = \left( \begin{array}{rr} 2 & 0 \\ 0 & -1 \end{array} \right) \) y \( B = \left( \begin{array}{rr} 8 & -9 \\ 6 & -7 \end{array} \right) \).&nbsp;</p>
+<p>Calcula una matriz \( X \) de forma que \( X A X^{-1} = B \).</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .solucion-box { background-color: #f8fcfb; border-left: 5px solid #20c997; padding: 20px; border-radius: 4px; font-family: 'Segoe UI', Arial, sans-serif; color: #333; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .solucion-box h3 { color: #17a2b8; margin-top: 0; margin-bottom: 20px; }
+    .ecuacion-destacada { background-color: #e9ecef; padding: 10px; border-radius: 4px; display: inline-block; font-weight: bold; margin: 10px 0; }
+    .enunciado { background-color: #fff; padding: 15px; border-left: 4px solid #6c757d; border-radius: 0 4px 4px 0; font-style: italic; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .paso-titulo { color: #20c997; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+</style>
+<div class="solucion-box">
+<p class="paso-titulo">Paso 1: Simplificar la ecuación matricial</p>
+<p>El paso más importante de este ejercicio es evitar calcular \( X^{-1} \), ya que al tener incógnitas, el cálculo sería muy complejo. Para eliminarla, multiplicamos ambos miembros de la ecuación por la matriz \( X \) <b>por la derecha</b>:</p>
+<p style="text-align: center;">\[ X \cdot A \cdot X^{-1} \cdot \mathbf{X} = B \cdot \mathbf{X} \]</p>
+<p>Como sabemos que multiplicar una matriz por su inversa da la matriz identidad (\( X^{-1} \cdot X = I \)), y que \( A \cdot I = A \), la ecuación se simplifica enormemente a:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ X \cdot A = B \cdot X \]</span></div>
+<p class="paso-titulo">Paso 2: Definir la matriz X y multiplicar</p>
+<p>Como \( A \) y \( B \) son matrices de dimensión 2x2, \( X \) también debe serlo. Vamos a definirla con cuatro incógnitas:</p>
+<p style="text-align: center;">\[ X = \left( \begin{array}{cc} x & y \\ z & t \end{array} \right) \]</p>
+<p>Ahora calculamos cada lado de nuestra ecuación simplificada (\( XA = BX \)):</p>
+<p><b>Parte izquierda (\( X \cdot A \)):</b></p>
+<p style="text-align: center;">\[ X \cdot A = \left( \begin{array}{cc} x & y \\ z & t \end{array} \right) \cdot \left( \begin{array}{rr} 2 & 0 \\ 0 & -1 \end{array} \right) = \left( \begin{array}{cc} 2x & -y \\ 2z & -t \end{array} \right) \]</p>
+<p><b>Parte derecha (\( B \cdot X \)):</b></p>
+<p style="text-align: center;">\[ B \cdot X = \left( \begin{array}{rr} 8 & -9 \\ 6 & -7 \end{array} \right) \cdot \left( \begin{array}{cc} x & y \\ z & t \end{array} \right) = \left( \begin{array}{cc} 8x - 9z & 8y - 9t \\ 6x - 7z & 6y - 7t \end{array} \right) \]</p>
+<p class="paso-titulo">Paso 3: Igualar y resolver el sistema</p>
+<p>Igualamos elemento a elemento las dos matrices resultantes (\( XA = BX \)):</p>
+<div style="background-color: #fff; padding: 15px; border: 1px dashed #ccc; margin: 15px 0;">
+<ol>
+<li>\( 2x = 8x - 9z \implies 6x - 9z = 0 \implies 2x - 3z = 0 \implies \mathbf{2x = 3z} \)</li>
+<li>\( -y = 8y - 9t \implies 9y - 9t = 0 \implies 9y = 9t \implies \mathbf{y = t} \)</li>
+<li>\( 2z = 6x - 7z \implies 9z - 6x = 0 \implies 3z - 2x = 0 \implies \mathbf{2x = 3z} \)</li>
+<li>\( -t = 6y - 7t \implies 6t - 6y = 0 \implies 6t = 6y \implies \mathbf{y = t} \)</li>
+</ol>
+</div>
+<p>Como vemos, las ecuaciones se repiten. Tenemos un sistema compatible indeterminado (infinitas soluciones) que nos dice que para que la igualdad se cumpla, tiene que ocurrir que: <b>\( y = t \)</b> y que <b>\( 2x = 3z \)</b>.</p>
+<p class="paso-titulo">Paso 4: Dar una solución válida</p>
+<p>El problema nos pide "calcula <b>una</b> matriz X", por lo que podemos darle a nuestras incógnitas los valores que queramos siempre que cumplan las condiciones, con <b>una excepción vital:</b> la matriz \( X \) que escojamos <b>debe tener inversa</b> (es decir, su determinante no puede ser 0), ya que \( X^{-1} \) aparece en el enunciado original.</p>
+<p>Vamos a elegir valores sencillos:</p>
+<ul>
+<li>Para que \( y = t \), escogemos por ejemplo: <b>\( y = 1 \), \( t = 1 \)</b>.</li>
+<li>Para que \( 2x = 3z \), escogemos por ejemplo: <b>\( x = 3 \), \( z = 2 \)</b> (así \( 2 \cdot 3 = 3 \cdot 2 \)).</li>
+</ul>
+<p>Nuestra matriz propuesta sería:</p>
+<p style="text-align: center; font-size: 1.2em;">\[ X = \left( \begin{array}{rr} 3 & 1 \\ 2 & 1 \end{array} \right) \]</p>
+<p>Comprobamos su determinante: \( |X| = (3 \cdot 1) - (1 \cdot 2) = 3 - 2 = 1 \). Como el determinante es distinto de cero (\( |X| \neq 0 \)), la matriz tiene inversa y nuestra respuesta es completamente válida.</p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802JDADVT" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427172443785A53" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427172443785A53&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260425131306F97GLW&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;20260427172443785A53&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Dada la matriz \\(A = \\begin{pmatrix} 1 &amp; 2 \\\\ 1 &amp; 1 \\end{pmatrix}\\), calcula una matriz \\(X\\) de forma que \\(A^2·X=A\\)&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777303626345-YTG44&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;La matriz \\(A^2\\) es&lt;/p&gt;\n&lt;table border=\&quot;0\&quot; height=\&quot;92\&quot; style=\&quot;width: 46.9937%; height: 92px; float: left;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;width: 50.0264%; text-align: right;\&quot;&gt;\\(A^2\\)=&lt;/td&gt;\n&lt;td style=\&quot;width: 50.0264%;\&quot;&gt;\n&lt;table style=\&quot;border-left: 2px solid black; border-right: 2px solid black; border-radius: 10px; border-collapse: separate; padding: 0 10px; font-family: 'Times New Roman', serif; font-size: 1.2em; text-align: center;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;3&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;4&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;2&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;3&lt;br /&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:true,&quot;strict&quot;:true,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1777303936978-XG15G&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;y la matriz \\(X\\) es&lt;/p&gt;\n&lt;table border=\&quot;0\&quot; height=\&quot;92\&quot; style=\&quot;width: 46.9937%; height: 92px; float: left;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;width: 50.0264%; text-align: right;\&quot;&gt;\\(X\\)=&lt;/td&gt;\n&lt;td style=\&quot;width: 50.0264%;\&quot;&gt;\n&lt;table style=\&quot;border-left: 2px solid black; border-right: 2px solid black; border-radius: 10px; border-collapse: separate; padding: 0 10px; font-family: 'Times New Roman', serif; font-size: 1.2em; text-align: center;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;-1&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;2&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;1&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;td style=\&quot;padding: 5px 10px;\&quot;&gt;&lt;u&gt;&lt;span style=\&quot;opacity: 0.5;\&quot;&gt;-1&lt;/span&gt;&lt;/u&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:true,&quot;strict&quot;:true,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="20260427172443785A53" data-evaluationb="false" data-evaluationid="20260425131306F97GLW"></div>
+            <div id="frmMainContainer-20260427172443785A53" class="form-IDevice" data-id="20260427172443785A53">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Dada la matriz \(A = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix}\), calcula una matriz \(X\) de forma que \(A^2·X=A\)</p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-20260427172443785A53">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-20260427172443785A53" style="display:none;">
+                      <button  id="frmStartGame-20260427172443785A53" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-20260427172443785A53" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-20260427172443785A53" > </div>
+                        <div id="frmCover-20260427172443785A53" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-20260427172443785A53" class="form-results-container inline">
+                        <div id="form-score-20260427172443785A53" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-20260427172443785A53" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-20260427172443785A53" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="20260427172443785A53" data-pass-rate="" />
+                        <input id="form-button-reset-20260427172443785A53" type="button" value="Reiniciar"
+                            data-id="20260427172443785A53" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-20260427172443785A53" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="20260427172443785A53" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-20260427172443785A53" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article><article id="20260502094802DDYDFK" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427173806564KJT" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427173806564KJT&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Calcula dos números naturales \( a \) y \( b \) menores que 10 de forma que la matriz \( A \) tenga rango 2, siendo:\[ A = \left( \begin{array}{ccc} 2 & 2 & b \\ 0 & 5 & a \\ 3 & 1 & b \end{array} \right) \]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .solucion-box { background-color: #f8fcfb; border-left: 5px solid #20c997; padding: 20px; border-radius: 4px; font-family: 'Segoe UI', Arial, sans-serif; color: #333; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .solucion-box h3 { color: #17a2b8; margin-top: 0; margin-bottom: 20px; }
+    .ecuacion-destacada { background-color: #e9ecef; padding: 10px; border-radius: 4px; display: inline-block; font-weight: bold; margin: 10px 0; }
+    .enunciado { background-color: #fff; padding: 15px; border-left: 4px solid #6c757d; border-radius: 0 4px 4px 0; font-style: italic; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .paso-titulo { color: #20c997; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+</style>
+<div class="solucion-box">
+<p class="paso-titulo">Paso 1: Entender la condición del rango</p>
+<p>La matriz \( A \) es una matriz cuadrada de dimensión \( 3 \times 3 \). El rango máximo que puede tener es 3.</p>
+<ul class="lista-normal">
+<li>Para que el rango <b>sea exactamente 2</b>, el determinante de la matriz completa (\( 3 \times 3 \)) tiene que ser cero (es decir, \( |A| = 0 \)).</li>
+<li>Además, debe existir al menos un menor de orden \( 2 \times 2 \) distinto de cero. Si tomamos el menor formado por las dos primeras filas y columnas: \[ \begin{vmatrix} 2 & 2 \\ 0 & 5 \end{vmatrix} = 10 - 0 = 10 \neq 0 \] Como este menor es distinto de cero, ya tenemos garantizado que el rango será al menos 2, independientemente de lo que valgan \( a \) y \( b \).</li>
+</ul>
+<p class="paso-titulo">Paso 2: Calcular el determinante e igualar a cero</p>
+<p>Calculamos el determinante de \( A \) mediante la regla de Sarrus y lo igualamos a 0 para forzar que el rango no sea 3:</p>
+<p style="text-align: center;">\[ |A| = \begin{vmatrix} 2 & 2 & b \\ 0 & 5 & a \\ 3 & 1 & b \end{vmatrix} = (2 \cdot 5 \cdot b) + (0 \cdot 1 \cdot b) + (3 \cdot 2 \cdot a) - [ (3 \cdot 5 \cdot b) + (2 \cdot a \cdot 1) + (0 \cdot 2 \cdot b) ] \]</p>
+<div style="background-color: #fff; padding: 15px; border: 1px dashed #ccc; margin: 15px 0;"><b>Agrupamos términos:</b><br />\( |A| = 10b + 0 + 6a - [ 15b + 2a + 0 ] \)<br />\( |A| = 10b + 6a - 15b - 2a \)<br />\( |A| = 4a - 5b \)</div>
+<p>Igualamos a cero:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ 4a - 5b = 0 \implies 4a = 5b \]</span></div>
+<p class="paso-titulo">Paso 3: Aplicar las condiciones lógicas del enunciado</p>
+<p>Tenemos la ecuación \( 4a = 5b \). Despejando \( a \), obtenemos:</p>
+<p style="text-align: center;">\[ a = \frac{5b}{4} \]</p>
+<p>El enunciado nos da tres pistas fundamentales para resolver esto sin hacer magia:</p>
+<ol class="lista-normal">
+<li>Deben ser <b>números naturales</b> (\( 0, 1, 2, 3, 4, ... \)).</li>
+<li>Para que \( a \) sea un número natural (entero exacto), el numerador \( 5b \) tiene que ser divisible entre 4. Como el 5 no es divisible entre 4, <b>la incógnita \( b \) tiene que ser obligatoriamente un múltiplo de 4</b>.</li>
+<li>Deben ser <b>menores que 10</b> (\( a < 10 \) y \( b < 10 \)).</li>
+</ol>
+<p>Probamos los múltiplos de 4 para la \( b \):</p>
+<ul class="lista-normal">
+<li>Si <b>\( b = 4 \)</b>: \( \quad a = \dfrac{5 \cdot 4}{4} = 5 \).<br /><span style="color: green;">✓ Válido</span> (Ambos son naturales y menores que 10).</li>
+<li>Si <b>\( b = 8 \)</b>: \( \quad a = \dfrac{5 \cdot 8}{4} = 10 \).<br /><span style="color: red;">✗ No válido</span> (Nos piden que sean <i>estrictamente menores</i> que 10, y la \( a \) nos da 10).</li>
+<li><i>*Nota: El caso \( b = 0 \implies a = 0 \) también sería matemáticamente válido si consideramos el cero como natural, pero habitualmente se busca la solución no trivial.</i></li>
+</ul>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;" />
+<p style="text-align: center; font-size: 1.2em; color: #17a2b8;"><b>Solución final:</b> Los números buscados son <b>\( a = 5 \)</b> y <b>\( b = 4 \)</b>.</p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802NTYIDC" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427175914950C8P" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427175914950C8P&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Calcula el rango de la matriz \( A \) en función del parámetro \( \lambda \in \mathds{R} \), siendo \( A \) la siguiente matriz:\[ A = \left( \begin{array}{ccc} \lambda & 1 & 0 \\ -1 & 2\lambda & -2 \\ 1 & -1 & 2 \end{array} \right) \]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .solucion-box { background-color: #f8fcfb; border-left: 5px solid #20c997; padding: 20px; border-radius: 4px; font-family: 'Segoe UI', Arial, sans-serif; color: #333; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .solucion-box h3 { color: #17a2b8; margin-top: 0; margin-bottom: 20px; }
+    .ecuacion-destacada { background-color: #e9ecef; padding: 10px; border-radius: 4px; display: inline-block; font-weight: bold; margin: 10px 0; }
+    .enunciado { background-color: #fff; padding: 15px; border-left: 4px solid #6c757d; border-radius: 0 4px 4px 0; font-style: italic; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .paso-titulo { color: #20c997; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+    .caso-caja { background-color: #fff; padding: 15px; border: 1px solid #cce0ff; border-left: 4px solid #0056b3; margin: 15px 0; border-radius: 4px; }
+    .caso-caja h4 { margin-top: 0; color: #0056b3; }
+</style>
+<div class="solucion-box">
+<p class="paso-titulo">Paso 1: Calcular el determinante de A</p>
+<p>Como \( A \) es una matriz cuadrada de dimensión \( 3 \times 3 \), su rango máximo posible es 3. El primer paso es calcular su determinante igualarlo a cero para encontrar los "valores críticos" de \( \lambda \).</p>
+<p>Aplicamos la regla de Sarrus:</p>
+<p style="text-align: center;">\[ |A| = (\lambda \cdot 2\lambda \cdot 2) + (1 \cdot (-2) \cdot 1) + (0 \cdot (-1) \cdot (-1)) - [ (0 \cdot 2\lambda \cdot 1) + (-2 \cdot (-1) \cdot \lambda) + (2 \cdot (-1) \cdot 1) ] \]</p>
+<div style="background-color: #fff; padding: 15px; border: 1px dashed #ccc; margin: 15px 0;"><b>Simplificamos la expresión:</b><br />\( |A| = 4\lambda^2 - 2 + 0 - [ 0 + 2\lambda - 2 ] \)<br />\( |A| = 4\lambda^2 - 2 - 2\lambda + 2 \)<br />\( |A| = 4\lambda^2 - 2\lambda \)</div>
+<p class="paso-titulo">Paso 2: Encontrar los valores críticos</p>
+<p>Igualamos el determinante a cero para saber qué valores del parámetro hacen que el rango baje:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ 4\lambda^2 - 2\lambda = 0 \]</span></div>
+<p>Sacamos factor común \( 2\lambda \):</p>
+<p style="text-align: center;">\[ 2\lambda (2\lambda - 1) = 0 \]</p>
+<p>De aquí obtenemos dos soluciones (valores críticos):</p>
+<ul style="font-weight: bold; text-align: center; list-style: none; padding: 0;">
+<li>\( \lambda = 0 \)</li>
+<li>\( 2\lambda - 1 = 0 \implies \lambda = \dfrac{1}{2} \)</li>
+</ul>
+<p class="paso-titulo">Paso 3: Discusión de los casos</p>
+<p>Ahora analizamos qué ocurre con el rango dependiendo de los valores que tome el parámetro \( \lambda \).</p>
+<div class="caso-caja">
+<h4>Caso 1: Si \( \lambda \neq 0 \) y \( \lambda \neq \frac{1}{2} \)</h4>
+<p>Para cualquier valor real distinto de \( 0 \) y de \( \frac{1}{2} \), el determinante \( |A| \) es distinto de cero (\( |A| \neq 0 \)).</p>
+<p>Por lo tanto, las 3 filas/columnas son linealmente independientes y <b>el rango de la matriz \( A \) es 3</b>.</p>
+</div>
+<div class="caso-caja">
+<h4>Caso 2: Si \( \lambda = 0 \)</h4>
+<p>Sustituimos \( \lambda = 0 \) en la matriz original:</p>
+<p style="text-align: center;">\[ A = \left( \begin{array}{rrr} 0 & 1 & 0 \\ -1 & 0 & -2 \\ 1 & -1 & 2 \end{array} \right) \]</p>
+<p>Sabemos que su determinante es cero, por lo que el \( \text{rango}(A) < 3 \). Buscamos si existe algún menor de orden 2 distinto de cero. Tomamos, por ejemplo, el menor de la esquina superior izquierda:</p>
+<p style="text-align: center;">\[ \begin{vmatrix} 0 & 1 \\ -1 & 0 \end{vmatrix} = (0 \cdot 0) - (1 \cdot (-1)) = 1 \neq 0 \]</p>
+<p>Como existe un menor de orden 2 distinto de cero, <b>el rango de la matriz \( A \) es 2</b>.</p>
+</div>
+<div class="caso-caja">
+<h4>Caso 3: Si \( \lambda = \dfrac{1}{2} \)</h4>
+<p>Sustituimos \( \lambda = \dfrac{1}{2} \) en la matriz original:</p>
+<p style="text-align: center;">\[ A = \left( \begin{array}{rrr} \dfrac{1}{2} & 1 & 0 \\ -1 & 1 & -2 \\ 1 & -1 & 2 \end{array} \right) \]</p>
+<p>Sabemos que su determinante es cero, por lo que el \( \text{rango}(A) < 3 \). Buscamos un menor de orden 2 distinto de cero. Probamos de nuevo con el de la esquina superior izquierda:</p>
+<p style="text-align: center;">\[ \begin{vmatrix} \dfrac{1}{2} & 1 \\ -1 & 1 \end{vmatrix} = \left(\dfrac{1}{2} \cdot 1\right) - (1 \cdot (-1)) = \dfrac{1}{2} + 1 = \dfrac{3}{2} \neq 0 \]</p>
+<p>Como hemos encontrado un menor de orden 2 no nulo, <b>el rango de la matriz \( A \) es 2</b>.</p>
+</div>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;" />
+<p style="text-align: center; font-size: 1.1em;"><b>Conclusión final (Resumen):</b><br /><br />Si <b>\( \lambda \neq 0 \)</b> y <b>\( \lambda \neq \dfrac{1}{2} \implies \text{Rango}(A) = 3 \)</b></p>
+<p style="text-align: center; font-size: 1.1em;"><br />Si <b>\( \lambda = 0 \)</b> o <b>\( \lambda = \dfrac{1}{2} \implies \text{Rango}(A) = 2 \)</b></p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802AVYNRL" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427180652858JLU" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427180652858JLU&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Estudia el rango de la matriz \(A\) en función del parámetro \(m\), siendo:\[ A = \begin{pmatrix} m & m-1 & m(m-1) \\ m & 1 & m \\ m & 1 & m-1 \end{pmatrix} \]</p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><style>
+    .solucion-box { background-color: #f8fcfb; border-left: 5px solid #20c997; padding: 20px; border-radius: 4px; font-family: 'Segoe UI', Arial, sans-serif; color: #333; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .solucion-box h3 { color: #17a2b8; margin-top: 0; margin-bottom: 20px; }
+    .ecuacion-destacada { background-color: #e9ecef; padding: 10px; border-radius: 4px; display: inline-block; font-weight: bold; margin: 10px 0; }
+    .enunciado { background-color: #fff; padding: 15px; border-left: 4px solid #6c757d; border-radius: 0 4px 4px 0; font-style: italic; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .paso-titulo { color: #20c997; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+    .caso-caja { background-color: #fff; padding: 15px; border: 1px solid #cce0ff; border-left: 4px solid #0056b3; margin: 15px 0; border-radius: 4px; }
+    .caso-caja h4 { margin-top: 0; color: #0056b3; }
+</style>
+<div class="solucion-box">
+<p class="paso-titulo">Paso 1: Calcular el determinante de A</p>
+<p>Para matrices con parámetros y expresiones algebraicas como esta, aplicar la regla de Sarrus directamente puede resultar en un polinomio muy largo y propenso a errores de cálculo. ¡Vamos a usar un truco con las propiedades de los determinantes para simplificarlo!</p>
+<p>Si observamos la segunda y la tercera fila, son casi idénticas. Si a la fila 2 le restamos la fila 3 (\(F_2 \to F_2 - F_3\)), conseguiremos hacer dos ceros de golpe:</p>
+<p style="text-align: center;">\[ |A| = \begin{vmatrix} m & m-1 & m(m-1) \\ 0 & 0 & 1 \\ m & 1 & m-1 \end{vmatrix} \]</p>
+<p>Ahora, desarrollamos el determinante por esa segunda fila, lo que nos deja un cálculo facilísimo. Recuerda que la posición del \(1\) es impar (\(a_{23}\)), por lo que multiplicamos por \(-1\):</p>
+<div style="background-color: #fff; padding: 15px; border: 1px dashed #ccc; margin: 15px 0;">\[ |A| = -1 \cdot \begin{vmatrix} m & m-1 \\ m & 1 \end{vmatrix} = -1 \cdot [ (m \cdot 1) - (m \cdot (m-1)) ] \]<br /><br />\[ |A| = - [ m - (m^2 - m) ] = - [ 2m - m^2 ] = m^2 - 2m \]</div>
+<p class="paso-titulo">Paso 2: Encontrar los valores críticos</p>
+<p>Igualamos el determinante a cero para saber qué valores del parámetro \(m\) anulan el determinante y hacen que el rango baje:</p>
+<div style="text-align: center;"><span class="ecuacion-destacada">\[ m^2 - 2m = 0 \]</span></div>
+<p>Sacando factor común \(m\):</p>
+<p style="text-align: center;">\[ m(m - 2) = 0 \]</p>
+<p>De aquí obtenemos dos soluciones (valores críticos):</p>
+<ul style="font-weight: bold; text-align: center; list-style: none; padding: 0;">
+<li>\(m = 0\)</li>
+<li>\(m = 2\)</li>
+</ul>
+<p class="paso-titulo">Paso 3: Discusión de los casos</p>
+<div class="caso-caja">
+<h4>Caso 1: Si \(m \neq 0\) y \(m \neq 2\)</h4>
+<p>Para cualquier valor distinto de 0 y 2, el determinante de la matriz es distinto de cero (\(|A| \neq 0\)).</p>
+<p>Por lo tanto, las 3 filas/columnas son linealmente independientes y <b>el rango de la matriz \(A\) es 3</b>.</p>
+</div>
+<div class="caso-caja">
+<h4>Caso 2: Si \(m = 0\)</h4>
+<p>Sustituimos \(m = 0\) en la matriz original:</p>
+<p style="text-align: center;">\[ A = \begin{pmatrix} 0 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & -1 \end{pmatrix} \]</p>
+<p>Sabemos que su determinante es cero, por lo que el \(\text{rango}(A) < 3\). Buscamos si existe algún menor de orden 2 distinto de cero. Tomamos, por ejemplo, el formado por las filas 2 y 3, y las columnas 2 y 3:</p>
+<p style="text-align: center;">\[ \begin{vmatrix} 1 & 0 \\ 1 & -1 \end{vmatrix} = (1 \cdot -1) - (0 \cdot 1) = -1 \neq 0 \]</p>
+<p>Como existe un menor de orden 2 no nulo, <b>el rango de la matriz \(A\) es 2</b>.</p>
+</div>
+<div class="caso-caja">
+<h4>Caso 3: Si \(m = 2\)</h4>
+<p>Sustituimos \(m = 2\) en la matriz original:</p>
+<p style="text-align: center;">\[ A = \begin{pmatrix} 2 & 1 & 2 \\ 2 & 1 & 2 \\ 2 & 1 & 1 \end{pmatrix} \]</p>
+<p>De nuevo, el determinante es cero. Además, se ve a simple vista que la fila 1 y la fila 2 son exactamente iguales. Buscamos un menor de orden 2 distinto de cero utilizando la fila 3. Por ejemplo, con las filas 2 y 3, y columnas 2 y 3:</p>
+<p style="text-align: center;">\[ \begin{vmatrix} 1 & 2 \\ 1 & 1 \end{vmatrix} = (1 \cdot 1) - (2 \cdot 1) = 1 - 2 = -1 \neq 0 \]</p>
+<p>Como hemos encontrado un menor de orden 2 distinto de cero, <b>el rango de la matriz \(A\) es 2</b>.</p>
+</div>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;" />
+<p style="text-align: center; font-size: 1.1em;"><b>Conclusión final (Resumen):</b><br /><br />Si <b>\(m \neq 0\)</b> y <b>\(m \neq 2\) \(\implies \text{Rango}(A) = 3\)</b><br />Si <b>\(m = 0\)</b> o <b>\(m = 2\) \(\implies \text{Rango}(A) = 2\)</b></p>
+</div></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502094802ATZAWC" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="">
+</div>
+<h1 class="box-title">Completa</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427181404019JLB" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427181404019JLB&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;20260425131306F97GLW&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulse aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;},&quot;id&quot;:&quot;20260427181404019JLB&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Determina el rango de la matriz \\(A\\) en función de los valores del parámetro \\(b\\)\\[&lt;br /&gt;A = \\begin{pmatrix}&lt;br /&gt;-1 &amp; 2 &amp; b \\\\&lt;br /&gt;b &amp; b-3 &amp; -1 \\\\&lt;br /&gt;0 &amp; 2 &amp; 1&lt;br /&gt;\\end{pmatrix}&lt;br /&gt;\\]&lt;/p&gt;\n&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1777306668338-11XEE&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;Si \\(b=\\dfrac{1}{2}\\) el rango es &lt;u&gt;2&lt;/u&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Si \\(b=\\)&lt;u&gt;1&lt;/u&gt; el rango es &lt;u&gt;2&lt;/u&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;En caso contrario el rango es &lt;u&gt;3&lt;/u&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:true,&quot;strict&quot;:true,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container"><div class="game-evaluation-ids js-hidden" data-id="20260427181404019JLB" data-evaluationb="false" data-evaluationid="20260425131306F97GLW"></div>
+            <div id="frmMainContainer-20260427181404019JLB" class="form-IDevice" data-id="20260427181404019JLB">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Determina el rango de la matriz \(A\) en función de los valores del parámetro \(b\)\[<br />A = \begin{pmatrix}<br />-1 & 2 & b \\<br />b & b-3 & -1 \\<br />0 & 2 & 1<br />\end{pmatrix}<br />\]</p>
+<p><br /></p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-20260427181404019JLB">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-20260427181404019JLB" style="display:none;">
+                      <button  id="frmStartGame-20260427181404019JLB" type="button" class="btn btn-primary">Pulse aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-20260427181404019JLB" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-20260427181404019JLB" > </div>
+                        <div id="frmCover-20260427181404019JLB" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-20260427181404019JLB" class="form-results-container inline">
+                        <div id="form-score-20260427181404019JLB" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-20260427181404019JLB" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-20260427181404019JLB" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="20260427181404019JLB" data-pass-rate="" />
+                        <input id="form-button-reset-20260427181404019JLB" type="button" value="Reiniciar"
+                            data-id="20260427181404019JLB" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-20260427181404019JLB" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="20260427181404019JLB" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer">
+                    <div class="Games-GetScore">
+                        <input id="frmPSendScore-20260427181404019JLB" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                    </div>
+                </div>
+                <div class="form-instructions"></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            </div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/3-ecuaciones-matriciales.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/resumen-3.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

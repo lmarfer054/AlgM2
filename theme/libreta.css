@@ -1,0 +1,113 @@
+/* =========================================
+   ESTILO LIBRETA ESCOLAR (AJUSTE FINO DE RENGLÓN)
+   ========================================= */
+
+/* 1. CARGA DE LA FUENTE */
+@font-face {
+    font-family: 'MiLetraEscolar';
+    src: url('Escolar/escolar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. EL CUADERNO */
+.caja-libreta {
+    position: relative !important;
+    width: 90% !important;
+    max-width: 750px !important;
+    margin: 60px auto !important;
+
+    background-color: #fff !important;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #ff9999 80px, transparent 81px),
+        linear-gradient(#e1e1e1 1px, transparent 1px) !important;
+
+    /* Pauta de 50px */
+    background-size: 100% 100%, 100% 50px !important;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    border: 1px solid #eee !important;
+    border-radius: 2px !important;
+    
+    /* --- EL NÚMERO MÁGICO (PADDING SUPERIOR) --- */
+    /* Antes era 60px. Lo subimos a 75px para empujar el texto hacia abajo */
+    /* Si sigue alto, prueba con 78px. Si baja mucho, prueba con 72px */
+    padding: 70px 40px 40px 100px !important; 
+
+    transform: rotate(0.5deg) !important;
+}
+
+/* 3. LIMPIEZA */
+.caja-libreta .iDevice_header,
+.caja-libreta .box-head,
+.caja-libreta .iDeviceTitle {
+    display: none !important;
+}
+
+.caja-libreta .iDevice_inner {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 4. LA ESPIRAL SUPERIOR */
+.caja-libreta::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -22px !important;
+    left: 1% !important;
+    width: 98% !important;
+    height: 50px !important;
+
+    background-image:
+        repeating-linear-gradient(to right,
+            transparent 0%, transparent 40%,
+            #666 40%, #ccc 45%, #fff 50%, #ccc 55%, #666 60%,
+            transparent 60%, transparent 100%
+        ),
+        radial-gradient(circle at 50% 50%, #222 30%, #555 35%, transparent 40%) !important;
+
+    background-size: 40px 50px !important;
+    background-repeat: repeat-x !important;
+    z-index: 10 !important;
+    filter: drop-shadow(0 4px 3px rgba(0,0,0,0.3)) !important;
+}
+
+/* 5. TIPOGRAFÍA (Ajuste de precisión) */
+.caja-libreta p,
+.caja-libreta li,
+.caja-libreta div {
+    font-family: 'MiLetraEscolar', 'Comic Sans MS', cursive !important;
+    font-size: 2.3rem !important; 
+    
+    /* ALTURA EXACTA AL RENGLÓN */
+    line-height: 50px !important; 
+    
+    font-weight: bold !important; 
+    text-shadow: 0.5px 0 0 currentColor !important;
+    
+    color: #000099 !important;
+    margin-bottom: 0 !important;
+    
+    /* Quitamos el padding extra aquí para controlar todo desde el contenedor */
+    padding-top: 0 !important; 
+}
+
+/* Títulos */
+.caja-libreta h2,
+.caja-libreta h3,
+.caja-libreta strong {
+    font-family: 'MiLetraEscolar', 'Comic Sans MS', cursive !important;
+    color: #d32f2f !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    display: block !important;
+    margin-bottom: 0 !important; /* Quitamos margen para no romper la pauta */
+    padding-bottom: 0 !important;
+    line-height: 50px !important; 
+    
+    /* Si el título queda muy pegado al texto de abajo, puedes añadir una línea vacía en el editor */
+}

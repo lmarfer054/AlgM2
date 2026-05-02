@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-moo7krcw-72bs53gfj">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2.2. Método de Gauss | Álgebra lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-moo7krcw-72bs53gfj" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Álgebra lineal</a>
+<ul class="other-section">
+<li> <a href="../html/matrices.html" class="daddy">Matrices</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-matrices.html" class="daddy">1. Introducción a las matrices</a>
+<ul class="other-section">
+<li> <a href="../html/11-concepto-de-matriz.html" class="no-ch">1.1. Concepto de matriz</a>
+</li>
+<li> <a href="../html/12-tipos-de-matrices.html" class="no-ch">1.2. Tipos de matrices</a>
+</li>
+<li> <a href="../html/13-concepto-de-submatriz.html" class="no-ch">1.3. Concepto de submatriz</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-operaciones-con-matrices.html" class="daddy">2. Operaciones con matrices</a>
+<ul class="other-section">
+<li> <a href="../html/21-suma-de-matrices.html" class="no-ch">2.1. Suma de matrices</a>
+</li>
+<li> <a href="../html/22-producto-de-un-escalar-por-una-matriz.html" class="no-ch">2.2. Producto de un escalar por una matriz</a>
+</li>
+<li> <a href="../html/23-producto-de-matrices.html" class="no-ch">2.3. Producto de matrices</a>
+</li>
+<li> <a href="../html/24-actividades.html" class="no-ch">2.4 Actividades</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad.html" class="no-ch">3. Especial Selectividad.</a>
+</li>
+<li> <a href="../html/resumen.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/determinantes.html" class="daddy">Determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-los-determinantes.html" class="daddy">1. Introducción a los determinantes</a>
+<ul class="other-section">
+<li> <a href="../html/11-determinante-de-una-matriz-cuadrada.html" class="no-ch">1.1. Determinante de una matriz cuadrada</a>
+</li>
+<li> <a href="../html/12-propiedades-de-los-determinantes.html" class="no-ch">1.2. Propiedades de los determinantes</a>
+</li>
+<li> <a href="../html/13-conceptos-de-menor-complementario-y-adjunto.html" class="no-ch">1.3. Conceptos de menor complementario y adjunto</a>
+</li>
+<li> <a href="../html/14-desarrollo-de-un-determinante-por-el-metodo-de-.html" class="no-ch">1.4. Desarrollo de un determinante por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-especial-selectividad.html" class="no-ch">2. Especial Selectividad</a>
+</li>
+<li> <a href="../html/resumen-2.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/aplicaciones-de-las-matrices-ecuaciones-matriciale.html" class="daddy">Aplicaciones de las matrices. Ecuaciones matriciales</a>
+<ul class="other-section">
+<li> <a href="../html/1-rango-de-una-matriz.html" class="daddy">1. Rango de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/11-definicion-de-rango-de-una-matriz.html" class="no-ch">1.1. Definición de rango de una matriz</a>
+</li>
+<li> <a href="../html/12-calculo-del-rango-de-una-matriz-por-los-menores.html" class="no-ch">1.2. Cálculo del rango de una matriz por los menores</a>
+</li>
+<li> <a href="../html/13-calculo-del-rango-de-una-matriz-por-el-metodo-d.html" class="no-ch">1.3. Cálculo del rango de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-inversa-de-una-matriz.html" class="daddy">2. Inversa de una matriz</a>
+<ul class="other-section">
+<li> <a href="../html/21-inverso-de-un-numero.html" class="no-ch">2.1. Inverso de un número</a>
+</li>
+<li> <a href="../html/22-definicion-de-inversa-de-una-matriz.html" class="no-ch">2.2. Definición de inversa de una matriz</a>
+</li>
+<li> <a href="../html/23-calculo-de-la-inversa-de-una-matriz.html" class="no-ch">2.3. Cálculo de la inversa de una matriz</a>
+</li>
+<li> <a href="../html/24-calculo-de-la-inversa-de-una-matriz-por-el-meto.html" class="no-ch">2.4. Cálculo de la inversa de una matriz por el método de Gauss</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-ecuaciones-matriciales.html" class="no-ch">3. Ecuaciones matriciales</a>
+</li>
+<li> <a href="../html/4-especial-selectividad.html" class="no-ch">4. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-3.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/sistemas-de-ecuaciones-lineales.html" class="daddy">Sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/1-introduccion-a-las-ecuaciones.html" class="daddy">1. Introducción a las ecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-sistema-de-ecuaciones-lineales.html" class="no-ch">1.1. Sistema de ecuaciones lineales</a>
+</li>
+<li> <a href="../html/12-clasificacion-de-los-sistemas-de-ecuaciones-lin.html" class="no-ch">1.2. Clasificación de los sistemas de ecuaciones lineales.</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-resolucion-de-los-sistemas-de-ecuaciones-lineale.html" class="daddy">2. Resolución de los sistemas de ecuaciones lineales</a>
+<ul class="other-section">
+<li> <a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" class="no-ch">2.1. Métodos de resolución de sistemas de ecuaciones lineales</a>
+</li>
+<li class="active"> <a href="../html/22-metodo-de-gauss.html" class="active no-ch">2.2. Método de Gauss</a>
+</li>
+<li> <a href="../html/23-regla-de-cramer.html" class="no-ch">2.3. Regla de Cramer</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3-especial-selectividad-2.html" class="no-ch">3. Especial selectividad</a>
+</li>
+<li> <a href="../html/resumen-4.html" class="no-ch">Resumen</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-moo7krcw-72bs53gfj" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra lineal</p>
+<p class="package-subtitle">Matemáticas II  - 2º de bachillerato</p></div>
+<div class="page-header"><h1 class="page-title">2.2. Método de Gauss</h1></div>
+</header><div id="page-content-page-moo7krcw-72bs53gfj" class="page-content">
+<article id="20260502085219SGIERO" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-hkrknuizu" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-hkrknuizu&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;">¿Te acuerdas de Raimundo? Él sigue con su trabajo en la cadena de supermercados. Quizás recuerdes que su trabajo consistía en trabajar con los datos de que disponía y lo que solía hacer era elaborar tablas o matrices con ellas para tener toda la información más a la vista y más fácil de comparar. Eso ocurre muchas veces en la vida cotidiana. El entrenador de un equipo de baloncesto va recogiendo todo el proceso que se sigue a lo largo de un partido mediante tablas comparativas, muchas de las cuales puedes verlas en las páginas deportivas de los diarios. El trabajar con esas matrices de números hace que sea más fácil seguir la evolución de los jugadores en lugar de tenerlo todo escrito según cada uno de los cuartos.</p>
+<p><img src="../content/resources/idevice-mohji9dc-hkrknuizu/basket.jpg" width="1080" height="330" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: justify;">En este apartado lo que vamos a ver es como, para resolver un sistema, es posible trabajar con expresiones más simples que las que hemos visto hasta el momento. En concreto vamos a trabajar solamente con los coeficientes del sistema y no vamos a tener que arrastrar las incógnitas ni las igualdades. Quizás pienses que esto es algo nuevo pero no es así.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219FQNOBP" class="box nota-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/think.png" alt="">
+</div>
+<h1 class="box-title">&lt;br&gt;</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-obinvbj3a" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-obinvbj3a&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="1" align="right" cellpadding="15" style="width: 225px;">
+<tbody>
+<tr style="border: 1px solid #ffffff;">
+<td><img src="../content/resources/idevice-mohji9dc-obinvbj3a/Ruffini_paolo_p.jpg" alt="Foto de Paolo Ruffini" height="334" width="225"></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">El trabajar sólo con coeficientes para no tener que ir arrastrando las variables no es algo que debe resultarte desconocido. Aunque no lo recuerdes, seguro que en años anteriores viste la Regla de Ruffini para hallar el cociente y resto de la división de un polinomio entre divisores de la forma x-a, siendo a un número cualquiera. En dicha regla se distribuyen, en una caja, ordenadamente los coeficientes del polinomio y mediante sumas y multiplicaciones es posible hacer la división.</p>
+<p style="text-align: justify;">El matemático italiano Paolo Ruffini (1765, 1822) se graduó, además de en Matemáticas, en Medicina y Filosofía. Durante muchos años ocupó las cátedras de Medicina y Matemáticas en la Universidad de Modena, de la que fue Rector. Como curiosidad comentar que enfermó durante una epidemia de tifus, y que algunos años más tarde presentó un estudio de dicha enfermedad basado en su propia experiencia.</p>
+<p>Trabajó principalmente en el campo del álgebra, en concreto en la búsqueda de las soluciones de ecuaciones de grado inferior a cinco.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219HFWRTQ" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="">
+</div>
+<h1 class="box-title">Método de Gauss para resolver sistemas</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mohji9dc-5rhi9fmsg" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mohji9dc-5rhi9fmsg&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><table border="0" cellpadding="15" style="width: 99.9703%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9703%; text-align: justify;"><span style="text-align: justify;">El&nbsp;</span><span style="font-weight: bolder; text-align: justify;">Método de Gauss</span><span style="text-align: justify;">&nbsp;para resolver sistemas de ecuaciones lineales consiste en tomar la matriz ampliada del sistema y, mediante las transformaciones típicas de Gauss, conseguir una matriz triangular superior. Una vez conseguida, basta volver a recomponer el sistema que queda obteniéndose un sistema escalonado, es decir, un sistema donde cada ecuación tiene una incógnita más que la anterior.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Recordemos los procedimientos que podemos seguir en el método de Gauss.</p>
+<ol>
+<li>
+<p>Podemos cambiar dos filas entre sí.</p>
+</li>
+<li>
+<p>Podemos multiplicar o dividir una fila completa por cualquier número.</p>
+</li>
+<li>
+<p>Si hay dos filas iguales podemos eliminar una de ellas.</p>
+</li>
+<li>
+<p>Si una fila es completa de ceros, podemos eliminarla.</p>
+</li>
+<li>
+<p>A una fila le podemos sumar otra cualquiera multiplicada por un número.</p>
+</li>
+</ol>
+<p>El Método de Gauss es una generalización del Método de Reducción.</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219NDUDHZ" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejemplo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501142542841OMX" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501142542841OMX&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Vamos a resolver el sistema \[\begin{cases}&nbsp;<br>x + 2y + 3z = 9 \\&nbsp;<br>2x + 3y + z = 4 \\&nbsp;<br>-x + 5y + 4z = 5&nbsp;<br>\end{cases}\]</p>
+<p>Escribimos la matriz ampliada del sistema, separando la columna de los términos independientes.</p>
+<p><br>A la segunda fila le restamos la primera multiplicada por dos.<br>A la tercera se le suma la primera.\[\left( \begin{array}{ccc|c}&nbsp;<br>1 & 2 & 3 & 9 \\&nbsp;<br>2 & 3 & 1 & 4 \\&nbsp;<br>-1 & 5 & 4 & 5&nbsp;<br>\end{array} \right)&nbsp;<br>\xrightarrow{F_2 - 2 \cdot F_1}&nbsp;<br>\left( \begin{array}{ccc|c}&nbsp;<br>1 & 2 & 3 & 9 \\&nbsp;<br>0 & -1 & -5 & -14 \\&nbsp;<br>-1 & 5 & 4 & 5&nbsp;<br>\end{array} \right)&nbsp;<br>\xrightarrow{F_3 + F_1}&nbsp;<br>\left( \begin{array}{ccc|c}&nbsp;<br>1 & 2 & 3 & 9 \\&nbsp;<br>0 & -1 & -5 & -14 \\&nbsp;<br>0 & 7 & 7 & 14&nbsp;<br>\end{array} \right)\]Por último, le sumamos a la tercera la segunda multiplicada por 7.</p>
+<p>\[<br>\left( \begin{array}{ccc|c}&nbsp;<br>1 & 2 & 3 & 9 \\&nbsp;<br>0 & -1 & -5 & -14 \\&nbsp;<br>0 & 7 & 7 & 14&nbsp;<br>\end{array} \right)&nbsp;<br>\xrightarrow{F_3 + 7 \cdot F_2}&nbsp;<br>\left( \begin{array}{ccc|c}&nbsp;<br>1 & 2 & 3 & 9 \\&nbsp;<br>0 & -1 & -5 & -14 \\&nbsp;<br>0 & 0 & -28 & -84&nbsp;<br>\end{array} \right)<br>\]</p>
+<p>Ahora reconstruimos el sistema:\[<br>\left.<br>\begin{aligned}<br>x + 2y + 3z &= 9 \\<br>-y - 5z &= -14 \\<br>-28z &= -84<br>\end{aligned}<br>\right\}<br>\]</p>
+<p>Y comenzamos a resolverlo de abajo arriba.<br>\[ z = \frac{-84}{-28} = 3 \]</p>
+<p>\[ y = 14 - 5z = 14 - 15 = -1 \]</p>
+<p>\[ x = 9 - 2y - 3z = 9 + 2 - 9 = 2 \]</p>
+<p>Luego la solución del sistema es la terna \((2, -1, 3)\)</p>
+<p><br></p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219NXMLNF" class="box caja-naranja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_practica2.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio guiado</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501174721960A63" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501174721960A63&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Practica con este tutor la resolución de sistemas por el método de Gauss.</p>
+<div id="sys-tutor" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 950px; margin: auto; border: 2px solid #f57c00; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"><!-- Cabecera -->
+<div style="background: #f57c00; color: white; padding: 15px; text-align: center;">
+<h2 style="margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);"><img src="../content/resources/202604291703031226YD/yoneco_1.png" width="60" height="60" alt=""> Tutor Interactivo: Sistemas por Gauss</h2>
+</div>
+<!-- Panel de Control -->
+<div style="padding: 15px 20px; background: #fff3e0; border-bottom: 1px solid #ffcc80; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center;">
+<div style="display: flex; gap: 15px; align-items: center;"><label style="font-weight: bold; color: #444;">Soluciones:</label> <label><input type="radio" name="sys-dif" value="normal" checked="checked"> Fácil (Enteros) (🐔)</label> <label><input type="radio" name="sys-dif" value="pro"> <b>Pro (Fracciones) (💪)</b></label></div>
+<div><button onclick="sysGenerar()" style="background-color: #f57c00 !important; background-image: none !important; color: white !important; border: 2px solid #f57c00 !important; box-shadow: 0 2px 4px rgba(245, 124, 0, 0.3) !important; outline: none !important; text-shadow: none !important; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-weight: bold; font-size: 1.05em; transition: all 0.2s;">Generar Sistema</button></div>
+<div style="font-size: 0.9em; color: #666; max-width: 100%; width: 100%; border-top: 1px dashed #ffb74d; padding-top: 10px;"><i><b>Instrucciones: </b></i></div>
+<ul>
+<li style="font-size: 0.9em; color: #666666; max-width: 100%; width: 100%; border-top: 1px dashed #ffb74d;"><i style="font-size: 0.9em;">Escalona la matriz ampliada haciendo ceros por debajo de la diagonal principal. </i></li>
+<li style="font-size: 0.9em; color: #666666; max-width: 100%; width: 100%; border-top: 1px dashed #ffb74d;"><i style="font-size: 0.9em;">Utiliza operaciones del tipo <b>k<sub>1</sub>·F<sub>objetivo</sub> + k<sub>2</sub>·F<sub>pivote</sub> → F<sub>objetivo</sub></b>. </i></li>
+<li style="font-size: 0.9em; color: #666666; max-width: 100%; width: 100%; border-top: 1px dashed #ffb74d;"><i style="font-size: 0.9em;">Acepta fracciones (ej: -1/2).</i></li>
+</ul>
+</div>
+<div style="padding: 20px; display: flex; flex-direction: column; align-items: center;"><!-- Sistema y Matriz Principal -->
+<div style="margin-bottom: 25px; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 20px;">
+<div style="text-align: center; background: #fff8e1; padding: 15px 25px; border-radius: 8px; border: 1px solid #ffe0b2;">
+<h4 style="color: #f57c00; margin-top: 0; margin-bottom: 15px;">Sistema Original</h4>
+<div style="display: flex; align-items: center; justify-content: center;"><!-- Llave mejorada -->
+<div style="font-size: 4.5em; color: #000; font-family: 'Times New Roman', serif; font-weight: 300; line-height: 1; transform: scale(0.6, 1.4) translateY(-4%); margin-right: 5px;">{</div>
+<div id="sys-equations-display" style="text-align: left; font-size: 1.1em; font-family: monospace; line-height: 1.6; color: #333;"><!-- Ecuaciones inyectadas por JS --></div>
+</div>
+</div>
+<div style="text-align: center;">
+<h4 style="color: #f57c00; margin-top: 0; margin-bottom: 15px;">Matriz Ampliada (A | b)</h4>
+<div id="sys-matrix-display" style="display: inline-grid; grid-template-columns: repeat(4, minmax(40px, auto)); gap: 12px 20px; position: relative; padding: 10px 25px; font-size: 1.2em; font-family: monospace; background: #fff; align-items: center;">
+<div style="position: absolute; top: 0px; bottom: 0px; left: 0; width: 8px; border: 2px solid #333; border-right: none; border-radius: 4px 0 0 4px;"><br></div>
+<div style="position: absolute; top: 0px; bottom: 0px; right: 0; width: 8px; border: 2px solid #333; border-left: none; border-radius: 0 4px 4px 0;"><br></div>
+<!-- Celdas -->
+<div id="sys-m00">0</div>
+<div id="sys-m01">0</div>
+<div id="sys-m02">0</div>
+<div id="sys-m03" style="border-left: 2px dashed #999; padding-left: 20px;">0</div>
+<div id="sys-m10">0</div>
+<div id="sys-m11">0</div>
+<div id="sys-m12">0</div>
+<div id="sys-m13" style="border-left: 2px dashed #999; padding-left: 20px;">0</div>
+<div id="sys-m20">0</div>
+<div id="sys-m21">0</div>
+<div id="sys-m22">0</div>
+<div id="sys-m23" style="border-left: 2px dashed #999; padding-left: 20px;">0</div>
+</div>
+</div>
+</div>
+<!-- PASO 1: Ceros en la primera columna -->
+<div id="sys-paso1" class="sys-paso-box" style="display: none; width: 100%; max-width: 850px; background: #fff; border: 1px solid #ffe0b2; border-left: 5px solid #f57c00; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+<div style="font-weight: bold; color: #f57c00; margin-bottom: 15px; font-size: 1.1em;">1. Hacemos ceros en la primera columna</div>
+<!-- Fila 2 -->
+<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #eee;">
+<div style="margin-bottom: 10px;">Pivote = a<sub>11</sub> <span style="color: #666;">| Objetivo: Obtener un 0 en a<sub>21</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="sys-operacion"><input type="text" id="s1-k2" class="sys-input-coef"> · F<sub>2</sub> + <input type="text" id="s1-k1" class="sys-input-coef"> · F<sub>1</sub> → F<sub>2</sub> <button onclick="sysCheckOp(1, 0, 's1-k2', 's1-k1', 'res-op-1a', 'row-p1a')" class="sys-btn-check">¿Bien?</button> <span id="res-op-1a" class="sys-feedback"></span></div>
+<div id="row-p1a" style="display: none; align-items: center; gap: 10px;">Nueva F<sub>2</sub> = ( <input type="text" id="s1-r20" class="sys-input-val"> <input type="text" id="s1-r21" class="sys-input-val"> <input type="text" id="s1-r22" class="sys-input-val"> | <input type="text" id="s1-r23" class="sys-input-val"> ) <button onclick="sysCheckRow(1, 0, 's1-k2', 's1-k1', ['s1-r20','s1-r21','s1-r22','s1-r23'], 'res-row-1a', 1)" class="sys-btn-check">¿Bien?</button> <span id="res-row-1a" class="sys-feedback"></span></div>
+</div>
+</div>
+<!-- Fila 3 -->
+<div>
+<div style="margin-bottom: 10px;">Pivote = a<sub>11</sub> <span style="color: #666;">| Objetivo: Obtener un 0 en a<sub>31</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="sys-operacion"><input type="text" id="s1-k3" class="sys-input-coef"> · F<sub>3</sub> + <input type="text" id="s1-k1b" class="sys-input-coef"> · F<sub>1</sub> → F<sub>3</sub> <button onclick="sysCheckOp(2, 0, 's1-k3', 's1-k1b', 'res-op-1b', 'row-p1b')" class="sys-btn-check">¿Bien?</button> <span id="res-op-1b" class="sys-feedback"></span></div>
+<div id="row-p1b" style="display: none; align-items: center; gap: 10px;">Nueva F<sub>3</sub> = ( <input type="text" id="s1-r30" class="sys-input-val"> <input type="text" id="s1-r31" class="sys-input-val"> <input type="text" id="s1-r32" class="sys-input-val"> | <input type="text" id="s1-r33" class="sys-input-val"> ) <button onclick="sysCheckRow(2, 0, 's1-k3', 's1-k1b', ['s1-r30','s1-r31','s1-r32','s1-r33'], 'res-row-1b', 1)" class="sys-btn-check">¿Bien?</button> <span id="res-row-1b" class="sys-feedback"></span></div>
+</div>
+</div>
+</div>
+<!-- PASO 2: Cero en la segunda columna -->
+<div id="sys-paso2" class="sys-paso-box" style="display: none; width: 100%; max-width: 850px; background: #fff; border: 1px solid #ffe0b2; border-left: 5px solid #f57c00; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+<div style="font-weight: bold; color: #f57c00; margin-bottom: 15px; font-size: 1.1em;">2. Hacemos ceros en la segunda columna</div>
+<div style="margin-bottom: 10px;">Nuevo Pivote = a<sub>22</sub> <span style="color: #666;">| Objetivo: Obtener un 0 en a<sub>32</sub></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+<div class="sys-operacion"><input type="text" id="s2-k3" class="sys-input-coef"> · F<sub>3</sub> + <input type="text" id="s2-k2" class="sys-input-coef"> · F<sub>2</sub> → F<sub>3</sub> <button onclick="sysCheckOp(2, 1, 's2-k3', 's2-k2', 'res-op-2', 'row-p2')" class="sys-btn-check">¿Bien?</button> <span id="res-op-2" class="sys-feedback"></span></div>
+<div id="row-p2" style="display: none; align-items: center; gap: 10px;">Nueva F<sub>3</sub> = ( <input type="text" id="s2-r30" class="sys-input-val"> <input type="text" id="s2-r31" class="sys-input-val"> <input type="text" id="s2-r32" class="sys-input-val"> | <input type="text" id="s2-r33" class="sys-input-val"> ) <button onclick="sysCheckRow(2, 1, 's2-k3', 's2-k2', ['s2-r30','s2-r31','s2-r32','s2-r33'], 'res-row-2', 2)" class="sys-btn-check">¿Bien?</button> <span id="res-row-2" class="sys-feedback"></span></div>
+</div>
+</div>
+<!-- PASO FINAL: Resolución del sistema -->
+<div id="sys-paso3" class="sys-paso-box" style="display: none; width: 100%; max-width: 850px; background: #fffcf8; border: 2px solid #f57c00; border-radius: 6px; padding: 20px;">
+<h3 style="color: #f57c00; margin-top: 0; text-align: center;">3. Resolución del Sistema (Sustitución hacia atrás)</h3>
+<p style="text-align: center; margin-bottom: 20px; color: #444;">La matriz ya está escalonada. Este es el sistema equivalente resultante:</p>
+<!-- SISTEMA TRIANGULADO MOSTRADO CON LLAVE -->
+<div style="display: flex; align-items: center; justify-content: center; background: #fff; border: 1px dashed #f57c00; padding: 15px 30px; margin: 0 auto 25px auto; width: fit-content; border-radius: 6px; box-shadow: inset 0 0 10px rgba(245,124,0,0.05);"><!-- Llave mejorada -->
+<div style="font-size: 4.5em; color: #000; font-family: 'Times New Roman', serif; font-weight: 300; line-height: 1; transform: scale(0.6, 1.4) translateY(-4%); margin-right: 5px;">{</div>
+<div id="sys-triangulated-display" style="text-align: left; font-family: monospace; font-size: 1.2em; line-height: 1.6; color: #333;"><!-- Ecuaciones escalonadas inyectadas por JS --></div>
+</div>
+<p style="text-align: center; margin-bottom: 20px; color: #555;">Resuelve las incógnitas empezando desde la última ecuación hacia arriba.</p>
+<div style="display: flex; flex-direction: column; gap: 15px; font-size: 1.1em;"><!-- Z -->
+<div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+<div><span id="eq-z" style="font-family: monospace; font-weight: bold; color: #f57c00;"></span></div>
+<div><b>z =</b> <input type="text" id="sol-z" class="sys-input-val" style="border-color: #f57c00;"> <button onclick="sysCheckZ()" id="btn-sol-z" class="sys-btn-check">Comprobar</button> <span id="res-sol-z" class="sys-feedback"></span></div>
+</div>
+<!-- Y -->
+<div id="box-sol-y" style="display: none; background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 4px; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+<div><span id="eq-y" style="font-family: monospace; font-weight: bold; color: #f57c00;"></span></div>
+<div><b>y =</b> <input type="text" id="sol-y" class="sys-input-val" style="border-color: #f57c00;"> <button onclick="sysCheckY()" id="btn-sol-y" class="sys-btn-check">Comprobar</button> <span id="res-sol-y" class="sys-feedback"></span></div>
+</div>
+<!-- X -->
+<div id="box-sol-x" style="display: none; background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 4px; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+<div><span id="eq-x" style="font-family: monospace; font-weight: bold; color: #f57c00;"></span></div>
+<div><b>x =</b> <input type="text" id="sol-x" class="sys-input-val" style="border-color: #f57c00;"> <button onclick="sysCheckX()" id="btn-sol-x" class="sys-btn-check">Comprobar</button> <span id="res-sol-x" class="sys-feedback"></span></div>
+</div>
+</div>
+<div id="sys-final-msg" style="margin-top: 25px; text-align: center; font-weight: bold; font-size: 1.3em; color: #28a745; display: none;">¡Sistema resuelto con éxito! 🎉</div>
+</div>
+</div>
+</div>
+<style>
+    div#sys-tutor .sys-input-coef { width: 55px; padding: 6px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-weight: bold; font-size: 1em; }
+    div#sys-tutor .sys-input-val { width: 55px; padding: 6px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-family: monospace; font-size: 1.1em;}
+    div#sys-tutor .sys-input-val:focus, div#sys-tutor .sys-input-coef:focus { outline: none !important; border-color: #f57c00 !important; background-color: #fff3e0 !important; box-shadow: 0 0 5px rgba(245, 124, 0, 0.5) !important; }
+    
+    /* BOTONES SECUNDARIOS INVERTIDOS ("¿Bien?" y "Comprobar") */
+    div#sys-tutor .sys-btn-check { background-color: #ffffff !important; background-image: none !important; color: #f57c00 !important; border: 2px solid #f57c00 !important; box-shadow: none !important; text-shadow: none !important; outline: none !important; padding: 7px 14px; border-radius: 4px; font-weight: bold; cursor: pointer; transition: all 0.2s ease-in-out; font-size: 0.95em; }
+    div#sys-tutor .sys-btn-check:hover { transform: scale(1.05) !important; background-color: #f57c00 !important; color: #ffffff !important; border-color: #f57c00 !important; }
+    div#sys-tutor .sys-btn-check:disabled { background-color: #f9f9f9 !important; border-color: #ccc !important; color: #aaa !important; cursor: not-allowed !important; transform: none !important; }
+    
+    div#sys-tutor .sys-feedback { font-weight: bold; margin-left: 10px; font-size: 0.95em; }
+    div#sys-tutor .sys-success { color: #28a745 !important; }
+    div#sys-tutor .sys-error { color: #d32f2f !important; }
+    
+    div#sys-tutor .frac-css { display: inline-block; text-align: center; vertical-align: middle; font-size: 0.95em; margin: 0 2px; }
+    div#sys-tutor .frac-css span { display: block; padding: 0.1em 0.2em; line-height: 1.1; }
+    div#sys-tutor .frac-css span.fdn { border-top: 1px solid #333; }
+</style>
+<p>
+<script>
+    // --- MOTOR DE FRACCIONES EXACTAS ---
+    function gcd(a, b) {
+        a = Math.abs(a); b = Math.abs(b);
+        while (b) { let t = b; b = a % b; a = t; }
+        return a || 1;
+    }
+    function simplify(n, d) {
+        if (n === 0) return {n: 0, d: 1};
+        if (d < 0) { n = -n; d = -d; }
+        let g = gcd(n, d);
+        return {n: n / g, d: d / g};
+    }
+    function fAdd(a, b) { return simplify(a.n * b.d + b.n * a.d, a.d * b.d); }
+    function fSub(a, b) { return simplify(a.n * b.d - b.n * a.d, a.d * b.d); }
+    function fMul(a, b) { return simplify(a.n * b.n, a.d * b.d); }
+    function fDiv(a, b) { return simplify(a.n * b.d, a.d * b.n); }
+    function fEqual(a, b) { return a.n * b.d === b.n * a.d; }
+    function fIsZero(a) { return a.n === 0; }
+    
+    function fFormatTerm(f, variable) {
+        if (fIsZero(f)) return "";
+        let sign = f.n > 0 ? "+" : "-";
+        let absF = {n: Math.abs(f.n), d: f.d};
+        let coef = formatFracVisual(absF);
+        if (absF.n === 1 && absF.d === 1) coef = ""; // Omit 1x
+        return ` ${sign} ${coef}${variable}`;
+    }
+
+    function parseFracObj(valStr) {
+        if(!valStr || valStr.trim() === '') return null;
+        valStr = valStr.replace(/\s+/g, '').replace(',', '.');
+        if(valStr.includes('/')) {
+            let parts = valStr.split('/');
+            if(parts.length !== 2) return null;
+            let num = parseInt(parts[0]), den = parseInt(parts[1]);
+            if(isNaN(num) || isNaN(den) || den === 0) return null;
+            return simplify(num, den);
+        }
+        let val = parseFloat(valStr);
+        if(isNaN(val)) return null;
+        let str = val.toString();
+        if (!str.includes('.')) return {n: parseInt(val), d: 1};
+        let decs = str.split('.')[1].length;
+        let d = Math.pow(10, decs);
+        return simplify(Math.round(val * d), d);
+    }
+
+    function formatFracVisual(f) {
+        if (f.n === 0) return "0";
+        if (f.d === 1) return f.n.toString();
+        let sign = f.n < 0 ? "-" : "";
+        return `${sign}<div class="frac-css"><span class="fnum">${Math.abs(f.n)}</span><span class="fdn">${f.d}</span></div>`;
+    }
+
+    // --- VARIABLES GLOBALES ---
+    let sysMatrix = []; 
+    let initialMatrix = [];
+    let rowsCompletedStep1 = 0;
+
+    // --- GENERACIÓN SEGURA ---
+    function sysGenerar() {
+        let isPro = document.querySelector('input[name="sys-dif"]:checked').value === 'pro';
+        
+        let valid = false;
+        let mat = [];
+        
+        while(!valid) {
+            mat = Array(3).fill().map(()=>Array(4).fill({n:0, d:1}));
+            
+            if (!isPro) {
+                let solX = Math.floor(Math.random() * 7) - 3;
+                let solY = Math.floor(Math.random() * 7) - 3;
+                let solZ = Math.floor(Math.random() * 7) - 3;
+                
+                let u11 = Math.floor(Math.random() * 3) + 1; // 1, 2 or 3
+                let u22 = (Math.random() > 0.5 ? 1 : -1) * (Math.floor(Math.random() * 2) + 1);
+                let u33 = (Math.random() > 0.5 ? 1 : -1) * (Math.floor(Math.random() * 2) + 1);
+                
+                let u12 = Math.floor(Math.random() * 5) - 2;
+                let u13 = Math.floor(Math.random() * 5) - 2;
+                let u23 = Math.floor(Math.random() * 5) - 2;
+                
+                let b3 = u33 * solZ;
+                let b2 = u22 * solY + u23 * solZ;
+                let b1 = u11 * solX + u12 * solY + u13 * solZ;
+                
+                mat[0] = [{n:u11,d:1}, {n:u12,d:1}, {n:u13,d:1}, {n:b1,d:1}];
+                mat[1] = [{n:0,d:1}, {n:u22,d:1}, {n:u23,d:1}, {n:b2,d:1}];
+                mat[2] = [{n:0,d:1}, {n:0,d:1}, {n:u33,d:1}, {n:b3,d:1}];
+                
+                for(let j=0; j<2; j++) {
+                    for(let i=j+1; i<3; i++) {
+                        let k = Math.floor(Math.random() * 3) - 1; 
+                        if(k !== 0) {
+                            for(let c=0; c<4; c++) {
+                                mat[i][c] = fAdd(mat[i][c], fMul({n:k, d:1}, mat[j][c]));
+                            }
+                        }
+                    }
+                }
+                valid = true;
+            } else {
+                for(let i=0; i<3; i++){
+                    for(let j=0; j<4; j++){
+                        mat[i][j] = {n: Math.floor(Math.random() * 9) - 4, d: 1};
+                    }
+                }
+                
+                let temp = JSON.parse(JSON.stringify(mat));
+                valid = true;
+                for(let p=0; p<3; p++) {
+                    if(fIsZero(temp[p][p])) { valid = false; break; }
+                    for(let r=p+1; r<3; r++) {
+                        let factor = fDiv(temp[r][p], temp[p][p]);
+                        for(let c=p; c<4; c++) {
+                            temp[r][c] = fSub(temp[r][c], fMul(factor, temp[p][c]));
+                        }
+                    }
+                }
+            }
+        }
+
+        sysMatrix = JSON.parse(JSON.stringify(mat));
+        initialMatrix = JSON.parse(JSON.stringify(mat));
+        sysUpdateDisplay();
+        sysPrintEquations();
+        sysResetUI();
+    }
+
+    function sysPrintEquations() {
+        let eqHtml = "";
+        for(let i=0; i<3; i++) {
+            let terms = [];
+            if(!fIsZero(initialMatrix[i][0])) terms.push(fFormatTerm(initialMatrix[i][0], "x"));
+            if(!fIsZero(initialMatrix[i][1])) terms.push(fFormatTerm(initialMatrix[i][1], "y"));
+            if(!fIsZero(initialMatrix[i][2])) terms.push(fFormatTerm(initialMatrix[i][2], "z"));
+            
+            let eq = terms.join("").trim();
+            if(eq.startsWith("+")) eq = eq.substring(1).trim();
+            if(eq === "") eq = "0";
+            
+            eqHtml += `<div>${eq} = ${formatFracVisual(initialMatrix[i][3])}</div>`;
+        }
+        document.getElementById('sys-equations-display').innerHTML = eqHtml;
+    }
+
+    function sysUpdateDisplay() {
+        for(let i=0; i<3; i++) {
+            for(let j=0; j<4; j++) {
+                let cell = document.getElementById(`sys-m${i}${j}`);
+                cell.innerHTML = formatFracVisual(sysMatrix[i][j]);
+                cell.style.color = "#333";
+                cell.style.fontWeight = "normal";
+            }
+        }
+    }
+
+    function sysHighlight(pivotCol, targetRow) {
+        sysUpdateDisplay();
+        let piv = document.getElementById(`sys-m${pivotCol}${pivotCol}`);
+        piv.style.color = "#f57c00";
+        piv.style.fontWeight = "bold";
+        
+        if(targetRow !== null) {
+            let targ = document.getElementById(`sys-m${targetRow}${pivotCol}`);
+            targ.style.color = "#d32f2f";
+            targ.style.fontWeight = "bold";
+        }
+    }
+
+    function sysResetUI() {
+        document.getElementById('sys-paso1').style.display = 'block';
+        document.getElementById('sys-paso2').style.display = 'none';
+        document.getElementById('sys-paso3').style.display = 'none';
+        
+        let inputs = document.querySelectorAll('#sys-tutor input[type="text"]');
+        inputs.forEach(inp => { inp.value = ''; inp.disabled = false; });
+        
+        let btns = document.querySelectorAll('#sys-tutor .sys-btn-check');
+        btns.forEach(btn => { btn.disabled = false; btn.style.display = 'inline-block'; });
+
+        let feedbacks = document.querySelectorAll('#sys-tutor .sys-feedback');
+        feedbacks.forEach(fb => fb.innerHTML = '');
+        document.getElementById('sys-final-msg').style.display = 'none';
+        document.getElementById('box-sol-y').style.display = 'none';
+        document.getElementById('box-sol-x').style.display = 'none';
+
+        document.getElementById('row-p1a').style.display = 'none';
+        document.getElementById('row-p1b').style.display = 'none';
+        document.getElementById('row-p2').style.display = 'none';
+
+        rowsCompletedStep1 = 0;
+        sysHighlight(0, 1);
+        document.getElementById('sys-m20').style.color = "#d32f2f"; document.getElementById('sys-m20').style.fontWeight = "bold";
+    }
+
+    // --- COMPROBADORES ---
+    function sysCheckOp(targetRow, pivotCol, idKTarget, idKPivot, idFeedback, idRowContainer) {
+        let kTarg = parseFracObj(document.getElementById(idKTarget).value);
+        let kPiv = parseFracObj(document.getElementById(idKPivot).value);
+        let fb = document.getElementById(idFeedback);
+        
+        if(!kTarg || !kPiv) { fb.innerHTML = '<span class="sys-error">Faltan datos</span>'; return; }
+        if(fIsZero(kTarg)) { fb.innerHTML = '<span class="sys-error">Coeficiente fila objetivo no puede ser 0</span>'; return; }
+
+        let valTarget = sysMatrix[targetRow][pivotCol];
+        let valPivot = sysMatrix[pivotCol][pivotCol];
+        
+        let res = fAdd(fMul(kTarg, valTarget), fMul(kPiv, valPivot));
+
+        if (fIsZero(res)) {
+            fb.innerHTML = '<span class="sys-success">¡Operación válida!</span>';
+            document.getElementById(idRowContainer).style.display = 'flex';
+            document.getElementById(idKTarget).disabled = true;
+            document.getElementById(idKPivot).disabled = true;
+        } else {
+            fb.innerHTML = '<span class="sys-error">No elimina la incógnita.</span>';
+        }
+    }
+
+    function sysCheckRow(targetRow, pivotCol, idKTarget, idKPivot, idsResult, idFeedback, stepLvl) {
+        let kTarg = parseFracObj(document.getElementById(idKTarget).value);
+        let kPiv = parseFracObj(document.getElementById(idKPivot).value);
+        let fb = document.getElementById(idFeedback);
+        
+        let userRow = [];
+        for(let j=0; j<4; j++) {
+            let uV = parseFracObj(document.getElementById(idsResult[j]).value);
+            if(!uV) { fb.innerHTML = '<span class="sys-error">Completa la fila</span>'; return; }
+            userRow.push(uV);
+        }
+
+        let isCorrect = true;
+        let realRow = [];
+        for(let j=0; j<4; j++) {
+            realRow[j] = fAdd(fMul(kTarg, sysMatrix[targetRow][j]), fMul(kPiv, sysMatrix[pivotCol][j]));
+            if(!fEqual(userRow[j], realRow[j])) isCorrect = false;
+        }
+
+        if(isCorrect) {
+            fb.innerHTML = '<span class="sys-success">¡Fila perfecta!</span>';
+            sysMatrix[targetRow] = realRow;
+            sysUpdateDisplay();
+            idsResult.forEach(id => document.getElementById(id).disabled = true);
+            
+            if(stepLvl === 1) {
+                rowsCompletedStep1++;
+                if(rowsCompletedStep1 === 2) {
+                    document.getElementById('sys-paso2').style.display = 'block';
+                    sysHighlight(1, 2);
+                } else {
+                    sysHighlight(0, targetRow === 1 ? 2 : 1); 
+                }
+            } else if (stepLvl === 2) {
+                setupResolution();
+            }
+        } else {
+            fb.innerHTML = '<span class="sys-error">Hay un error matemático</span>';
+        }
+    }
+
+    // --- RESOLUCIÓN FINAL ---
+    function setupResolution() {
+        document.getElementById('sys-paso3').style.display = 'block';
+        sysUpdateDisplay(); 
+        
+        // Escribir el SISTEMA TRIANGULADO 
+        let eqHtml = "";
+        for(let i=0; i<3; i++) {
+            let terms = [];
+            if(!fIsZero(sysMatrix[i][0])) terms.push(fFormatTerm(sysMatrix[i][0], "x"));
+            if(!fIsZero(sysMatrix[i][1])) terms.push(fFormatTerm(sysMatrix[i][1], "y"));
+            if(!fIsZero(sysMatrix[i][2])) terms.push(fFormatTerm(sysMatrix[i][2], "z"));
+            
+            let eq = terms.join("").trim();
+            if(eq.startsWith("+")) eq = eq.substring(1).trim();
+            if(eq === "") eq = "0";
+            
+            eqHtml += `<div>${eq} = ${formatFracVisual(sysMatrix[i][3])}</div>`;
+        }
+        document.getElementById('sys-triangulated-display').innerHTML = eqHtml;
+
+        let eqZ = `${formatFracVisual(sysMatrix[2][2])}z = ${formatFracVisual(sysMatrix[2][3])}`;
+        document.getElementById('eq-z').innerHTML = eqZ;
+        
+        let termY = formatFracVisual(sysMatrix[1][1]) + "y";
+        let termZY = fFormatTerm(sysMatrix[1][2], "z");
+        document.getElementById('eq-y').innerHTML = `${termY}${termZY} = ${formatFracVisual(sysMatrix[1][3])}`;
+        
+        let termX = formatFracVisual(sysMatrix[0][0]) + "x";
+        let termYX = fFormatTerm(sysMatrix[0][1], "y");
+        let termZX = fFormatTerm(sysMatrix[0][2], "z");
+        document.getElementById('eq-x').innerHTML = `${termX}${termYX}${termZX} = ${formatFracVisual(sysMatrix[0][3])}`;
+    }
+
+    function sysCheckZ() {
+        let uZ = parseFracObj(document.getElementById('sol-z').value);
+        let fb = document.getElementById('res-sol-z');
+        if(!uZ) { fb.innerHTML = '<span class="sys-error">Introduce valor</span>'; return; }
+        
+        let realZ = fDiv(sysMatrix[2][3], sysMatrix[2][2]);
+        if(fEqual(uZ, realZ)) {
+            fb.innerHTML = '<span class="sys-success">¡z correcto!</span>';
+            document.getElementById('sol-z').disabled = true;
+            document.getElementById('btn-sol-z').style.display = 'none';
+            document.getElementById('box-sol-y').style.display = 'flex';
+        } else {
+            fb.innerHTML = '<span class="sys-error">Incorrecto</span>';
+        }
+    }
+
+    function sysCheckY() {
+        let uY = parseFracObj(document.getElementById('sol-y').value);
+        let fb = document.getElementById('res-sol-y');
+        if(!uY) { fb.innerHTML = '<span class="sys-error">Introduce valor</span>'; return; }
+        
+        let realZ = fDiv(sysMatrix[2][3], sysMatrix[2][2]);
+        let rightSide = fSub(sysMatrix[1][3], fMul(sysMatrix[1][2], realZ));
+        let realY = fDiv(rightSide, sysMatrix[1][1]);
+        
+        if(fEqual(uY, realY)) {
+            fb.innerHTML = '<span class="sys-success">¡y correcto!</span>';
+            document.getElementById('sol-y').disabled = true;
+            document.getElementById('btn-sol-y').style.display = 'none';
+            document.getElementById('box-sol-x').style.display = 'flex';
+        } else {
+            fb.innerHTML = '<span class="sys-error">Incorrecto</span>';
+        }
+    }
+
+    function sysCheckX() {
+        let uX = parseFracObj(document.getElementById('sol-x').value);
+        let fb = document.getElementById('res-sol-x');
+        if(!uX) { fb.innerHTML = '<span class="sys-error">Introduce valor</span>'; return; }
+        
+        let realZ = fDiv(sysMatrix[2][3], sysMatrix[2][2]);
+        let rightSideY = fSub(sysMatrix[1][3], fMul(sysMatrix[1][2], realZ));
+        let realY = fDiv(rightSideY, sysMatrix[1][1]);
+        
+        let rightSideX = fSub(fSub(sysMatrix[0][3], fMul(sysMatrix[0][2], realZ)), fMul(sysMatrix[0][1], realY));
+        let realX = fDiv(rightSideX, sysMatrix[0][0]);
+        
+        if(fEqual(uX, realX)) {
+            fb.innerHTML = '<span class="sys-success">¡x correcto!</span>';
+            document.getElementById('sol-x').disabled = true;
+            document.getElementById('btn-sol-x').style.display = 'none';
+            document.getElementById('sys-final-msg').style.display = 'block';
+        } else {
+            fb.innerHTML = '<span class="sys-error">Incorrecto</span>';
+        }
+    }
+
+    // Iniciar
+    sysGenerar();
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219ABYJNX" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_casopractico.png" alt="">
+</div>
+<h1 class="box-title">Solucionador</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="2026050118220185828Z" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;2026050118220185828Z&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p>Si lo que quieres es ver cómo se resuelve un sistema en concreto, usa esta herramienta.</p>
+<div id="gauss-solver" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 950px; margin: auto; border: 2px solid #0056b3; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"><!-- Cabecera -->
+<div style="background: #0056b3; color: white; padding: 15px; text-align: center;">
+<h2 style="margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Solucionador Paso a Paso: Método de Gauss</h2>
+</div>
+<!-- Panel de Control -->
+<div style="padding: 15px 20px; background: #f0f7ff; border-bottom: 1px solid #cce0ff; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+<div style="display: flex; gap: 15px; align-items: center;"><label style="font-weight: bold; color: #0056b3;">Dimensión del Sistema:</label><select id="gs-dim" onchange="gsBuildInputGrid()" style="padding: 6px 10px; border-radius: 4px; border: 1px solid #0056b3; font-weight: bold; color: #0056b3; outline: none;">
+<option value="3" selected="selected">3 Ecuaciones (3x3)</option>
+<option value="4">4 Ecuaciones (4x4)</option>
+</select></div>
+<div><button onclick="gsClear()" class="gs-btn-sec">Limpiar Todo</button> <button onclick="gsSolve()" class="gs-btn-main">Resolver Paso a Paso</button></div>
+</div>
+<div style="padding: 25px; display: flex; flex-direction: column; align-items: center;"><!-- Área de Entrada de Datos -->
+<div style="text-align: center; margin-bottom: 10px; width: 100%;">
+<h4 style="color: #0056b3; margin-top: 0; margin-bottom: 5px;">Introduce los coeficientes:</h4>
+<p style="color: #666; font-size: 0.9em; margin-top: 0; margin-bottom: 15px;"><i>Puedes usar números enteros, decimales o fracciones (ej. 1/2, -3/4). Pon un 0 si falta la incógnita.</i></p>
+<div id="gs-input-container" style="display: inline-block; background: #fdfdff; padding: 25px 30px; border-radius: 8px; border: 1px solid #e6e6ff;"><!-- Rejilla generada por JS --></div>
+</div>
+<!-- Contenedor de la Solución -->
+<div id="gs-solution-area" style="width: 100%; display: none; flex-direction: column; align-items: center; margin-top: 20px;"><hr style="width: 100%; border: 0; border-top: 2px dashed #cce0ff; margin-bottom: 30px;">
+<h3 style="color: #0056b3; margin-top: 0; text-align: center; width: 100%;">Resolución Detallada</h3>
+<div id="gs-steps-container" style="width: 100%;"><!-- Pasos inyectados por JS --></div>
+</div>
+</div>
+</div>
+<style>
+    div#gauss-solver .gs-input-val { width: 45px; padding: 6px; text-align: center; border: 1px solid #aaa; border-radius: 4px; font-family: monospace; font-size: 1.1em; transition: border-color 0.2s; }
+    div#gauss-solver .gs-input-val:focus { outline: none !important; border-color: #0056b3 !important; background-color: #e6f2ff !important; box-shadow: 0 0 5px rgba(0,86,179,0.2) !important; }
+    div#gauss-solver .gs-var-label { font-weight: bold; font-family: 'Times New Roman', serif; font-size: 1.2em; font-style: italic; color: #444; margin: 0 5px; }
+    
+    div#gauss-solver .gs-step-box { background: #fff; border: 1px solid #cce0ff; border-left: 5px solid #0056b3; border-radius: 6px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    div#gauss-solver .gs-step-title { font-weight: bold; color: #0056b3; margin-bottom: 15px; font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    
+    div#gauss-solver .gs-matrix-view { display: inline-grid; position: relative; padding: 10px 20px; font-size: 1.1em; font-family: monospace; background: #fdfdff; align-items: center; justify-items: center; border-radius: 4px; margin: 10px 0; }
+    div#gauss-solver .gs-matrix-view::before { content: ""; position: absolute; top: 0px; bottom: 0px; left: 0; width: 8px; border: 2px solid #333; border-right: none; border-radius: 4px 0 0 4px; }
+    div#gauss-solver .gs-matrix-view::after { content: ""; position: absolute; top: 0px; bottom: 0px; right: 0; width: 8px; border: 2px solid #333; border-left: none; border-radius: 0 4px 4px 0; }
+    
+    div#gauss-solver .frac-css { display: inline-block; text-align: center; vertical-align: middle; font-size: 0.95em; margin: 0 2px; }
+    div#gauss-solver .frac-css span { display: block; padding: 0.1em 0.3em; line-height: 1.1; }
+    div#gauss-solver .frac-css span.fdn { border-top: 1px solid #333; }
+
+    /* BOTONES PRINCIPALES (Blindaje contra eXeLearning) */
+    
+    /* Botón Limpiar (Fantasma Gris) */
+    div#gauss-solver button.gs-btn-sec {
+        background-color: #ffffff !important;
+        background-image: none !important;
+        color: #6c757d !important;
+        border: 2px solid #6c757d !important;
+        box-shadow: none !important;
+        outline: none !important;
+        text-shadow: none !important;
+        padding: 8px 15px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#gauss-solver button.gs-btn-sec:hover,
+    div#gauss-solver button.gs-btn-sec:focus {
+        background-color: #6c757d !important;
+        color: #ffffff !important;
+        border-color: #6c757d !important;
+    }
+
+    /* Botón Resolver (Sólido Azul) */
+    div#gauss-solver button.gs-btn-main {
+        background-color: #0056b3 !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: 2px solid #0056b3 !important;
+        box-shadow: 0 2px 4px rgba(0,86,179,0.3) !important;
+        outline: none !important;
+        text-shadow: none !important;
+        padding: 8px 20px !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;
+        font-weight: bold !important;
+        font-size: 1.05em !important;
+        margin-left: 10px !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    div#gauss-solver button.gs-btn-main:hover,
+    div#gauss-solver button.gs-btn-main:focus {
+        background-color: #004494 !important;
+        border-color: #004494 !important;
+        color: #ffffff !important;
+        transform: scale(1.02) !important;
+    }
+</style>
+<p>
+<script>
+    // --- MOTOR DE FRACCIONES EXACTAS ---
+    function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { let t = b; b = a % b; a = t; } return a || 1; }
+    function simplify(n, d) { if (n === 0) return {n: 0, d: 1}; if (d < 0) { n = -n; d = -d; } let g = gcd(n, d); return {n: n / g, d: d / g}; }
+    function fAdd(a, b) { return simplify(a.n * b.d + b.n * a.d, a.d * b.d); }
+    function fSub(a, b) { return simplify(a.n * b.d - b.n * a.d, a.d * b.d); }
+    function fMul(a, b) { return simplify(a.n * b.n, a.d * b.d); }
+    function fDiv(a, b) { return simplify(a.n * b.d, a.d * b.n); }
+    function fEqual(a, b) { return a.n * b.d === b.n * a.d; }
+    function fIsZero(a) { return a.n === 0; }
+    function fAbs(a) { return {n: Math.abs(a.n), d: a.d}; }
+    
+    function parseFracObj(valStr) {
+        if(!valStr || valStr.trim() === '') return {n:0, d:1};
+        valStr = valStr.replace(/\s+/g, '').replace(',', '.');
+        if(valStr.includes('/')) {
+            let parts = valStr.split('/');
+            if(parts.length !== 2) return null;
+            let num = parseInt(parts[0]), den = parseInt(parts[1]);
+            if(isNaN(num) || isNaN(den) || den === 0) return null;
+            return simplify(num, den);
+        }
+        let val = parseFloat(valStr);
+        if(isNaN(val)) return null;
+        let str = val.toString();
+        if (!str.includes('.')) return {n: parseInt(val), d: 1};
+        let decs = str.split('.')[1].length;
+        let d = Math.pow(10, decs);
+        return simplify(Math.round(val * d), d);
+    }
+
+    function formatFracVisual(f) {
+        if (f.n === 0) return "0";
+        if (f.d === 1) return f.n.toString();
+        let sign = f.n < 0 ? "-" : "";
+        return `${sign}<div class="frac-css"><span class="fnum">${Math.abs(f.n)}</span><span class="fdn">${f.d}</span></div>`;
+    }
+
+    function formatFracInline(f) {
+        if (f.n === 0) return "0";
+        if (f.d === 1) return f.n.toString();
+        return `${f.n}/${f.d}`;
+    }
+
+    // --- INTERFAZ ---
+    const vars3 = ['x', 'y', 'z'];
+    const vars4 = ['x', 'y', 'z', 't'];
+
+    function gsBuildInputGrid() {
+        let n = parseInt(document.getElementById('gs-dim').value);
+        let vars = n === 3 ? vars3 : vars4;
+        let container = document.getElementById('gs-input-container');
+        
+        // Llave SVG Dinámica: Se estira automáticamente usando Flexbox
+        let svgBrace = `
+            <svg viewBox="0 0 10 100" preserveAspectRatio="none" style="width: 18px; flex-shrink: 0; margin-right: 15px; overflow: visible; padding: 5px 0;">
+                <path d="M 10,0 C 2,0 2,10 2,20 L 2,40 C 2,48 -2,50 -2,50 C -2,50 2,52 2,60 L 2,80 C 2,90 2,100 10,100" fill="none" stroke="#222" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linecap="round"/>
+            </svg>
+        `;
+
+        let html = `
+        <div style="display: flex; align-items: stretch; justify-content: center; width: 100%;">
+            ${svgBrace}
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px 0;">
+        `;
+        
+        for(let i=0; i<n; i++) {
+            html += `<div style="display: flex; align-items: center; justify-content: center; gap: 5px;">`;
+            for(let j=0; j<n; j++) {
+                html += `<input type="text" id="in-m${i}${j}" class="gs-input-val" value="0"> <span class="gs-var-label">${vars[j]}</span>`;
+                if(j < n-1) html += `<span style="font-weight:bold; margin: 0 5px;">+</span>`;
+            }
+            html += `<span style="font-weight:bold; margin: 0 10px;">=</span> <input type="text" id="in-m${i}${n}" class="gs-input-val" value="0" style="border-color: #0056b3; background: #e6f2ff;">`;
+            html += `</div>`;
+        }
+        
+        html += `</div></div>`;
+        container.innerHTML = html;
+        document.getElementById('gs-solution-area').style.display = 'none';
+    }
+
+    function gsClear() {
+        let inputs = document.querySelectorAll('.gs-input-val');
+        inputs.forEach(inp => inp.value = '0');
+        document.getElementById('gs-solution-area').style.display = 'none';
+    }
+
+    function printMatrixHTML(mat, pivotR = -1, pivotC = -1, highlightR = -1, highlightC = -1) {
+        let n = mat.length;
+        let html = `<div class="gs-matrix-view" style="grid-template-columns: repeat(${n+1}, minmax(40px, auto)); gap: 10px 20px;">`;
+        for(let i=0; i<n; i++) {
+            for(let j=0; j<=n; j++) {
+                let style = "";
+                if (j === n) style += "border-left: 2px dashed #ccc; padding-left: 15px; ";
+                if (i === pivotR && j === pivotC) style += "color: #0056b3; font-weight: bold; ";
+                else if (i === highlightR && j === highlightC) style += "color: #dc3545; font-weight: bold; ";
+                
+                html += `<div style="${style}">${formatFracVisual(mat[i][j])}</div>`;
+            }
+        }
+        html += `</div>`;
+        return html;
+    }
+
+    // --- ALGORITMO RESOLUTOR ---
+    function gsSolve() {
+        let n = parseInt(document.getElementById('gs-dim').value);
+        let vars = n === 3 ? vars3 : vars4;
+        let stepsHtml = '';
+        let mat = [];
+        
+        for(let i=0; i<n; i++) {
+            mat[i] = [];
+            for(let j=0; j<=n; j++) {
+                let val = parseFracObj(document.getElementById(`in-m${i}${j}`).value);
+                if(!val) {
+                    alert(`Error: Revisa el valor introducido en la fila ${i+1}, columna ${j+1}.`);
+                    return;
+                }
+                mat[i].push(val);
+            }
+        }
+
+        document.getElementById('gs-solution-area').style.display = 'flex';
+        let stepsContainer = document.getElementById('gs-steps-container');
+        
+        stepsHtml += `
+            <div class="gs-step-box">
+                <div class="gs-step-title">Matriz Ampliada Inicial</div>
+                <p style="margin-top:0;">Escribimos el sistema en forma de matriz ampliada (A|b):</p>
+                <div style="text-align:center;">${printMatrixHTML(mat)}</div>
+            </div>
+        `;
+
+        let stepCount = 1;
+
+        for(let p=0; p<n-1; p++) {
+            if(fIsZero(mat[p][p])) {
+                let swapRow = -1;
+                for(let r=p+1; r<n; r++) {
+                    if(!fIsZero(mat[r][p])) { swapRow = r; break; }
+                }
+                if(swapRow !== -1) {
+                    let temp = mat[p];
+                    mat[p] = mat[swapRow];
+                    mat[swapRow] = temp;
+                    stepsHtml += `
+                        <div class="gs-step-box">
+                            <div class="gs-step-title">Intercambio de filas</div>
+                            <p>Como el pivote en a<sub>${p+1}${p+1}</sub> es 0, intercambiamos la Fila ${p+1} con la Fila ${swapRow+1}:</p>
+                            <div style="text-align:center;">${printMatrixHTML(mat, p, p)}</div>
+                        </div>
+                    `;
+                } else {
+                    continue; 
+                }
+            }
+
+            let madeZeros = false;
+            let opsHtml = `<ul style="line-height: 1.8;">`;
+            
+            for(let r=p+1; r<n; r++) {
+                if(!fIsZero(mat[r][p])) {
+                    madeZeros = true;
+                    let factor = fDiv(mat[r][p], mat[p][p]);
+                    
+                    let factStr = formatFracInline(factor);
+                    let opStr = `F<sub>${r+1}</sub> &rarr; F<sub>${r+1}</sub> - (${factStr}) · F<sub>${p+1}</sub>`;
+                    if(factor.n < 0) {
+                        opStr = `F<sub>${r+1}</sub> &rarr; F<sub>${r+1}</sub> + (${formatFracInline(fAbs(factor))}) · F<sub>${p+1}</sub>`;
+                    }
+                    
+                    opsHtml += `<li><b>${opStr}</b> para hacer cero en a<sub>${r+1}${p+1}</sub></li>`;
+                    
+                    for(let c=p; c<=n; c++) {
+                        mat[r][c] = fSub(mat[r][c], fMul(factor, mat[p][c]));
+                    }
+                    mat[r][p] = {n:0, d:1}; 
+                }
+            }
+            opsHtml += `</ul>`;
+
+            if(madeZeros) {
+                stepsHtml += `
+                    <div class="gs-step-box">
+                        <div class="gs-step-title">Paso ${stepCount}: Ceros en la columna ${p+1}</div>
+                        <p>Tomamos como pivote a<sub>${p+1}${p+1}</sub> y operamos:</p>
+                        ${opsHtml}
+                        <div style="text-align:center; margin-top: 15px;">${printMatrixHTML(mat, p, p)}</div>
+                    </div>
+                `;
+                stepCount++;
+            }
+        }
+
+        // Comprobación de Rangos 
+        let systemType = 1; 
+        for(let i=0; i<n; i++) {
+            let allZerosLeft = true;
+            for(let j=0; j<n; j++) {
+                if(!fIsZero(mat[i][j])) allZerosLeft = false;
+            }
+            if(allZerosLeft) {
+                if(!fIsZero(mat[i][n])) {
+                    systemType = -1; 
+                    break;
+                } else {
+                    systemType = 0; 
+                }
+            }
+        }
+
+        if(systemType === -1) {
+            stepsHtml += `
+                <div class="gs-step-box" style="border-color: #dc3545; border-left-color: #dc3545;">
+                    <div class="gs-step-title" style="color: #dc3545;">¡Atención! Sistema Incompatible</div>
+                    <p>Al triangular hemos llegado a una fila donde todos los coeficientes de las incógnitas son 0, pero el término independiente no lo es (ej. <b>0 = k</b>). Esto es una contradicción matemática.</p>
+                    <h3 style="text-align:center; color: #dc3545;">El sistema NO tiene solución.</h3>
+                </div>
+            `;
+            stepsContainer.innerHTML = stepsHtml;
+            return;
+        }
+
+        if(systemType === 0) {
+            stepsHtml += `
+                <div class="gs-step-box" style="border-color: #ffc107; border-left-color: #ffc107;">
+                    <div class="gs-step-title" style="color: #d39e00;">Sistema Compatible Indeterminado</div>
+                    <p>Al triangular hemos obtenido una fila completa de ceros (<b>0 = 0</b>). Esto significa que sobra una ecuación porque era combinación lineal de las demás.</p>
+                    <h3 style="text-align:center; color: #d39e00;">El sistema tiene INFINITAS soluciones (depende de parámetros).</h3>
+                </div>
+            `;
+            stepsContainer.innerHTML = stepsHtml;
+            return;
+        }
+
+        // Sustitución hacia atrás (SCD)
+        let solutions = Array(n).fill({n:0, d:1});
+        let backSubHtml = '';
+
+        for(let i=n-1; i>=0; i--) {
+            let rightSide = mat[i][n];
+            let subEq = `${formatFracInline(mat[i][i])}${vars[i]}`;
+            let rightStrParts = [formatFracVisual(rightSide)];
+
+            for(let j=i+1; j<n; j++) {
+                if(!fIsZero(mat[i][j])) {
+                    let termToSub = fMul(mat[i][j], solutions[j]);
+                    rightSide = fSub(rightSide, termToSub);
+                    
+                    let termSign = mat[i][j].n > 0 ? "-" : "+";
+                    let valToPrint = formatFracVisual(fAbs(mat[i][j]));
+                    rightStrParts.push(`${termSign} (${valToPrint} · ${formatFracInline(solutions[j])})`);
+                }
+            }
+            
+            solutions[i] = fDiv(rightSide, mat[i][i]);
+
+            let rightSideStr = rightStrParts.length > 1 ? rightStrParts.join(" ") + ` = ${formatFracVisual(rightSide)}` : formatFracVisual(rightSide);
+
+            backSubHtml += `
+                <div style="background: #fdfdff; padding: 15px; border-radius: 4px; margin-bottom: 10px; border: 1px solid #e6e6ff;">
+                    <div style="font-family: monospace; font-size: 1.1em; color: #666; margin-bottom: 8px;">De la Fila ${i+1}:</div>
+                    <div style="font-size: 1.2em; display:flex; align-items:center; flex-wrap:wrap; gap:15px;">
+                        <div>${subEq} = ${rightSideStr}</div>
+                        <div style="color:#0056b3; font-weight:bold; display: flex; align-items: center;"> &rArr; <span style="margin-left: 8px;">${vars[i]} = ${formatFracVisual(solutions[i])}</span></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        stepsHtml += `
+            <div class="gs-step-box" style="border-color: #28a745; border-left-color: #28a745;">
+                <div class="gs-step-title" style="color: #28a745;">Resolución Final (Sustitución hacia atrás)</div>
+                <p>El sistema es <b>Compatible Determinado</b>. Despejamos las incógnitas de abajo hacia arriba:</p>
+                ${backSubHtml}
+                
+                <div style="margin-top: 25px; padding: 15px; background: #d4edda; border-radius: 6px; text-align: center; border: 1px solid #c3e6cb;">
+                    <h3 style="color: #155724; margin-top: 0; margin-bottom: 15px;">Solución del Sistema:</h3>
+                    <div style="display: flex; justify-content: center; gap: 30px; font-size: 1.4em; font-family: monospace;">
+                        ${vars.map((v, i) => `<span><b>${v}</b> = ${formatFracVisual(solutions[i])}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        stepsContainer.innerHTML = stepsHtml;
+    }
+
+    // Init interface
+    gsBuildInputGrid();
+</script>
+</p><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article><article id="20260502085219AUGHKX" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260501184032938KXO" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260501184032938KXO&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p style="text-align: justify;"><span>Raimundo ha recibido los datos de las compras de pescado destinado a la sección correspondiente de sus supermercados. Su cadena suele trabajar con tres mercados distintos según el tipo de pescado que reciben. Sabe que la caja de pescado que sirve el primer mercado la pagan a 30 €, la del segundo a 20 € y a 40 € cada caja de pescado servida por el tercer mercado. En el mes pasado han tenido que pagar 40500 euros por las 1500 cajas de pescado que han recibido en total de los tres mercados el último mes. Además, le han comentado que del segundo mercado han recibido tantas cajas de pescado como del primero y tercero juntos. ¿Cuántas cajas se habrán comprado a cada uno de los mercados?</span></p>
+            <div class="iDevice_buttons feedback-button js-required">
+                <input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación">
+            </div>
+            <div class="feedback js-feedback js-hidden"><p><span>Si llamamos \(x\)</span><span> al número de cajas recibidas del primer mercado, \(y\)</span><span> a las del segundo y \(z\)</span><span> a las del tercero, tendremos el siguiente sistema de ecuaciones, que puede simplificarse en su forma general que aparece en el segundo sistema.</span></p>
+<p><span>\[\begin{cases} <br />x + y + z = 1500 \\ <br />30x + 20y + 40z = 40500 \\ <br />y = x + z <br />\end{cases} <br />\rightarrow <br />\begin{cases} <br />x + y + z = 1500 \\ <br />3x + 2y + 4z = 4050 \\ <br />-x + y - z = 0 <br />\end{cases}\]<br /></span></p>
+<p>Las soluciones de ese sistema son:</p>
+<p>\(x= 450\) cajas de pescado del primer mercado.</p>
+<p>\(y= 750\) cajas del segundo mercado.</p>
+<p>\(z= 300\) cajas servidas por el mercado tercero.</p></div><p class="clearfix"></p></div>
+            </div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/21-metodos-de-resolucion-de-sistemas-de-ecuaciones.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/23-regla-de-cramer.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

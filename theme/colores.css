@@ -1,0 +1,420 @@
+/* =========================================================
+   PALETA DE COLORES Y UTILIDADES FRANKI 3.0 (Versión Maestra)
+   ========================================================= */
+
+/* =========================================
+   1. CAJAS (TÍTULOS Y LÍNEAS)
+   ========================================= */
+.caja-azul .iDevice_header, .caja-azul .box-head { border-bottom-color: #0066CC !important; }
+.caja-azul .iDeviceTitle, .caja-azul .iDeviceTitle *, .caja-azul .box-title { color: #0066CC !important; }
+
+.caja-morada .iDevice_header, .caja-morada .box-head { border-bottom-color: #7A297B !important; }
+.caja-morada .iDeviceTitle, .caja-morada .iDeviceTitle *, .caja-morada .box-title { color: #7A297B !important; }
+
+.caja-naranja .iDevice_header, .caja-naranja .box-head { border-bottom-color: #f57c00 !important; }
+.caja-naranja .iDeviceTitle, .caja-naranja .iDeviceTitle *, .caja-naranja .box-title { color: #f57c00 !important; }
+
+.caja-roja .iDevice_header, .caja-roja .box-head { border-bottom-color: #d32f2f !important; }
+.caja-roja .iDeviceTitle, .caja-roja .iDeviceTitle *, .caja-roja .box-title { color: #d32f2f !important; }
+
+
+/* =========================================
+   2. BOTONES PRINCIPALES Y DE JUEGO
+   ========================================= */
+
+/* AZUL */
+body.exe-web-site .exe-content .boton-azul input[type="button"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-azul input[type="submit"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-azul button:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-azul .btn { background: #0066CC !important; border-color: #0066CC !important; color: #ffffff !important; }
+body.exe-web-site .exe-content .boton-azul input:hover, body.exe-web-site .exe-content .boton-azul button:hover, body.exe-web-site .exe-content .boton-azul .btn:hover { background: #0052a3 !important; border-color: #0052a3 !important; transform: translateY(-2px) !important; }
+body.exe-web-site .exe-content .boton-azul div[class*="SLCNP-StartGame" i] { background: #0066CC !important; border-color: #0066CC !important; color: #ffffff !important; padding: 8px 18px !important; border-radius: 6px !important; font-weight: 700 !important; cursor: pointer !important; text-decoration: none !important; width: fit-content !important; margin: 10px auto !important; }
+body.exe-web-site .exe-content .boton-azul div[class*="SLCNP-StartGame" i]:not([style*="display: none"]) { display: block !important; }
+body.exe-web-site .exe-content .boton-azul div[class*="SLCNP-StartGame" i] *, body.exe-web-site .exe-content .boton-azul div[class*="SLCNP-StartGame" i] a { color: #ffffff !important; text-decoration: none !important; }
+body.exe-web-site .exe-content .boton-azul div[class*="SLCNP-StartGame" i]:hover { background: #0052a3 !important; border-color: #0052a3 !important; transform: translateY(-2px) !important; }
+/* Secundario Azul (Blindado para cualquier caja que contenga la palabra "Button") */
+body.exe-web-site .exe-content .boton-azul input.btn-secundario,
+body.exe-web-site .exe-content .boton-azul div[class*="Button" i] input[type="button"] ~ input[type="button"],
+body.exe-web-site .exe-content .boton-azul div[class*="Button" i] button ~ button { color: #0066CC !important; border-color: #0066CC !important; background: #ffffff !important; }
+body.exe-web-site .exe-content .boton-azul input.btn-secundario:hover,
+body.exe-web-site .exe-content .boton-azul div[class*="Button" i] input[type="button"] ~ input[type="button"]:hover,
+body.exe-web-site .exe-content .boton-azul div[class*="Button" i] button ~ button:hover { background: #f0f7ff !important; }
+
+/* MORADO */
+body.exe-web-site .exe-content .boton-morado input[type="button"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-morado input[type="submit"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-morado button:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-morado .btn { background: #7A297B !important; border-color: #7A297B !important; color: #ffffff !important; }
+body.exe-web-site .exe-content .boton-morado input:hover, body.exe-web-site .exe-content .boton-morado button:hover, body.exe-web-site .exe-content .boton-morado .btn:hover { background: #5c1f5d !important; border-color: #5c1f5d !important; transform: translateY(-2px) !important; }
+body.exe-web-site .exe-content .boton-morado div[class*="SLCNP-StartGame" i] { background: #7A297B !important; border-color: #7A297B !important; color: #ffffff !important; padding: 8px 18px !important; border-radius: 6px !important; font-weight: 700 !important; cursor: pointer !important; text-decoration: none !important; width: fit-content !important; margin: 10px auto !important; }
+body.exe-web-site .exe-content .boton-morado div[class*="SLCNP-StartGame" i]:not([style*="display: none"]) { display: block !important; }
+body.exe-web-site .exe-content .boton-morado div[class*="SLCNP-StartGame" i] *, body.exe-web-site .exe-content .boton-morado div[class*="SLCNP-StartGame" i] a { color: #ffffff !important; text-decoration: none !important; }
+body.exe-web-site .exe-content .boton-morado div[class*="SLCNP-StartGame" i]:hover { background: #5c1f5d !important; border-color: #5c1f5d !important; transform: translateY(-2px) !important; }
+/* Secundario Morado (Blindado para cualquier caja que contenga la palabra "Button") */
+body.exe-web-site .exe-content .boton-morado input.btn-secundario,
+body.exe-web-site .exe-content .boton-morado div[class*="Button" i] input[type="button"] ~ input[type="button"],
+body.exe-web-site .exe-content .boton-morado div[class*="Button" i] button ~ button { color: #7A297B !important; border-color: #7A297B !important; background: #ffffff !important; }
+body.exe-web-site .exe-content .boton-morado input.btn-secundario:hover,
+body.exe-web-site .exe-content .boton-morado div[class*="Button" i] input[type="button"] ~ input[type="button"]:hover,
+body.exe-web-site .exe-content .boton-morado div[class*="Button" i] button ~ button:hover { background: #fdf5fd !important; }
+
+/* NARANJA */
+body.exe-web-site .exe-content .boton-naranja input[type="button"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-naranja input[type="submit"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-naranja button:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-naranja .btn { background: #f57c00 !important; border-color: #f57c00 !important; color: #ffffff !important; }
+body.exe-web-site .exe-content .boton-naranja input:hover, body.exe-web-site .exe-content .boton-naranja button:hover, body.exe-web-site .exe-content .boton-naranja .btn:hover { background: #e65100 !important; border-color: #e65100 !important; transform: translateY(-2px) !important; }
+body.exe-web-site .exe-content .boton-naranja div[class*="SLCNP-StartGame" i] { background: #f57c00 !important; border-color: #f57c00 !important; color: #ffffff !important; padding: 8px 18px !important; border-radius: 6px !important; font-weight: 700 !important; cursor: pointer !important; text-decoration: none !important; width: fit-content !important; margin: 10px auto !important; }
+body.exe-web-site .exe-content .boton-naranja div[class*="SLCNP-StartGame" i]:not([style*="display: none"]) { display: block !important; }
+body.exe-web-site .exe-content .boton-naranja div[class*="SLCNP-StartGame" i] *, body.exe-web-site .exe-content .boton-naranja div[class*="SLCNP-StartGame" i] a { color: #ffffff !important; text-decoration: none !important; }
+body.exe-web-site .exe-content .boton-naranja div[class*="SLCNP-StartGame" i]:hover { background: #e65100 !important; border-color: #e65100 !important; transform: translateY(-2px) !important; }
+/* Secundario Naranja (Blindado para cualquier caja que contenga la palabra "Button") */
+body.exe-web-site .exe-content .boton-naranja input.btn-secundario,
+body.exe-web-site .exe-content .boton-naranja div[class*="Button" i] input[type="button"] ~ input[type="button"],
+body.exe-web-site .exe-content .boton-naranja div[class*="Button" i] button ~ button { color: #f57c00 !important; border-color: #f57c00 !important; background: #ffffff !important; }
+body.exe-web-site .exe-content .boton-naranja input.btn-secundario:hover,
+body.exe-web-site .exe-content .boton-naranja div[class*="Button" i] input[type="button"] ~ input[type="button"]:hover,
+body.exe-web-site .exe-content .boton-naranja div[class*="Button" i] button ~ button:hover { background: #fff8f0 !important; }
+
+/* ROJO */
+body.exe-web-site .exe-content .boton-rojo input[type="button"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-rojo input[type="submit"]:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-rojo button:not(.box-toggle):not(.toggler), body.exe-web-site .exe-content .boton-rojo .btn { background: #d32f2f !important; border-color: #d32f2f !important; color: #ffffff !important; }
+body.exe-web-site .exe-content .boton-rojo input:hover, body.exe-web-site .exe-content .boton-rojo button:hover, body.exe-web-site .exe-content .boton-rojo .btn:hover { background: #b71c1c !important; border-color: #b71c1c !important; transform: translateY(-2px) !important; }
+body.exe-web-site .exe-content .boton-rojo div[class*="SLCNP-StartGame" i] { background: #d32f2f !important; border-color: #d32f2f !important; color: #ffffff !important; padding: 8px 18px !important; border-radius: 6px !important; font-weight: 700 !important; cursor: pointer !important; text-decoration: none !important; width: fit-content !important; margin: 10px auto !important; }
+body.exe-web-site .exe-content .boton-rojo div[class*="SLCNP-StartGame" i]:not([style*="display: none"]) { display: block !important; }
+body.exe-web-site .exe-content .boton-rojo div[class*="SLCNP-StartGame" i] *, body.exe-web-site .exe-content .boton-rojo div[class*="SLCNP-StartGame" i] a { color: #ffffff !important; text-decoration: none !important; }
+body.exe-web-site .exe-content .boton-rojo div[class*="SLCNP-StartGame" i]:hover { background: #b71c1c !important; border-color: #b71c1c !important; transform: translateY(-2px) !important; }
+/* Secundario Rojo (Blindado para cualquier caja que contenga la palabra "Button") */
+body.exe-web-site .exe-content .boton-rojo input.btn-secundario,
+body.exe-web-site .exe-content .boton-rojo div[class*="Button" i] input[type="button"] ~ input[type="button"],
+body.exe-web-site .exe-content .boton-rojo div[class*="Button" i] button ~ button { color: #d32f2f !important; border-color: #d32f2f !important; background: #ffffff !important; }
+body.exe-web-site .exe-content .boton-rojo input.btn-secundario:hover,
+body.exe-web-site .exe-content .boton-rojo div[class*="Button" i] input[type="button"] ~ input[type="button"]:hover,
+body.exe-web-site .exe-content .boton-rojo div[class*="Button" i] button ~ button:hover { background: #fff5f5 !important; }
+
+
+/* =========================================
+   4. CLASE DE UTILIDAD: SIN-BARRAS (Restaurada)
+   (Oculta gráficos de portada en juegos como 'Selecciona')
+   ========================================= */
+body [class*="sin-barras"] [class*="Cover" i],
+body [class*="sin-barras"] img[src*="seleccionaHome"],
+body [class*="sin-barras"] div[class*="Multimedia" i] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+}
+
+/* =========================================
+   5. FEEDBACK DE JUEGO Y ACTIVIDADES (Píldoras Contextuales)
+   ========================================= */
+
+/* A. Diseño Base Píldora (Juegos estables) */
+body.exe-web-site .exe-content div[class*="AuthorLicence" i] p,
+body.exe-web-site .exe-content div[id^="clozeScore" i],
+body.exe-web-site .exe-content div[class*="CMPT-Message" i],
+body.exe-web-site .exe-content .form-results-container,
+body.exe-web-site .exe-content .RLCP-Message {
+    display: block !important;
+    width: fit-content !important; 
+    max-width: 90% !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    margin: 15px auto !important; 
+    text-align: center !important;
+    line-height: 1.5 !important;
+}
+
+/* B. Diseño Base Píldora EXCLUSIVO para Acierto/Error del Ordena */
+/* Solo se activa si eXe le inyecta un color rgb (rojo o verde). 
+   Así evitamos burbujas vacías y dejamos las instrucciones intactas */
+body.exe-web-site .exe-content .ODNP-MessageDonw[style*="rgb(" i],
+body.exe-web-site .exe-content .ODNP-Message[style*="rgb(" i] {
+    display: block !important;
+    width: fit-content !important; 
+    max-width: 90% !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    margin: 15px auto !important; 
+    text-align: center !important;
+    line-height: 1.5 !important;
+}
+
+/* 1. MUNICIÓN VERDE */
+body.exe-web-site .exe-content .ODNP-MessageDonw[style*="rgb(0, 102, 65)" i],
+body.exe-web-site .exe-content .ODNP-Message[style*="rgb(0, 102, 65)" i],
+body.exe-web-site .exe-content .RLCP-Message[style*="rgb(0, 128, 0)" i],
+body.exe-web-site .exe-content .form-results-container[style*="rgb(0, 128, 0)" i] {
+    background-color: #d4edda !important; 
+    border: 2px solid #c3e6cb !important;
+    color: #155724 !important; 
+}
+
+/* 2. MUNICIÓN ROJA */
+body.exe-web-site .exe-content .ODNP-MessageDonw[style*="rgb(162, 36, 26)" i],
+body.exe-web-site .exe-content .ODNP-Message[style*="rgb(162, 36, 26)" i],
+body.exe-web-site .exe-content .RLCP-Message[style*="rgb(255, 0, 0)" i],
+body.exe-web-site .exe-content .form-results-container[style*="rgb(255, 0, 0)" i] {
+    background-color: #f8d7da !important; 
+    border: 2px solid #f5c6cb !important;
+    color: #721c24 !important; 
+}
+
+/* 3. MUNICIÓN GRIS (Restantes) */
+body.exe-web-site .exe-content div[class*="AuthorLicence" i] p,
+body.exe-web-site .exe-content div[id^="clozeScore" i],
+body.exe-web-site .exe-content .RLCP-Message:not([style*="rgb(0, 128, 0)" i]):not([style*="rgb(255, 0, 0)" i]) {
+    background-color: #f8f9fa !important;
+    border: 2px solid #e9ecef !important;
+    color: #333333 !important;
+}
+
+/* Limpieza absoluta para instrucciones genéricas del Ordena */
+body.exe-web-site .exe-content .ODNP-MessageDonw:not([style*="rgb(0, 102, 65)" i]):not([style*="rgb(162, 36, 26)" i]),
+body.exe-web-site .exe-content .ODNP-Message:not([style*="rgb(0, 102, 65)" i]):not([style*="rgb(162, 36, 26)" i]) {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    color: #333333 !important; /* Fuerza color oscuro para que se lea bien */
+}
+/* C. Ocultación Táctica Segura */
+body.exe-web-site .exe-content div[class*="AuthorLicence" i] p:empty,
+body.exe-web-site .exe-content div[id^="clozeScore" i]:empty,
+body.exe-web-site .exe-content div[class*="CMPT-Message" i]:empty,
+body.exe-web-site .exe-content div[class*="CMPT-Message" i][style*="none" i],
+body.exe-web-site .exe-content .form-results-container:empty,
+body.exe-web-site .exe-content .form-results-container[style*="none" i],
+body.exe-web-site .exe-content .RLCP-Message:empty,
+body.exe-web-site .exe-content .RLCP-Message[style*="none" i],
+body.exe-web-site .exe-content .ODNP-MessageDonw:empty,
+body.exe-web-site .exe-content .ODNP-MessageDonw[style*="none" i] {
+    display: none !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Limpieza de sombra para el texto de instrucciones gris genérico */
+body.exe-web-site .exe-content .ODNP-Message[style*="rgb(85, 85, 85)" i] {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* =========================================
+   6. PARCHE ANTIAÉREO DEFINITIVO (iDevice Completa)
+   Usamos el peso exacto del código de eXe para aplastar al botón secundario
+   ========================================= */
+
+/* AZUL */
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv button:nth-of-type(1) { background: #0066CC !important; border-color: #0066CC !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv button:nth-of-type(1):hover { background: #0052a3 !important; border-color: #0052a3 !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv .btn + .btn { color: #0066CC !important; border-color: #0066CC !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-azul .CMPT-ButtonsDiv .btn + .btn:hover { color: #0052a3 !important; border-color: #0052a3 !important; background: #f0f7ff !important; }
+
+/* MORADO */
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv button:nth-of-type(1) { background: #7A297B !important; border-color: #7A297B !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv button:nth-of-type(1):hover { background: #5c1f5d !important; border-color: #5c1f5d !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv .btn + .btn { color: #7A297B !important; border-color: #7A297B !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-morado .CMPT-ButtonsDiv .btn + .btn:hover { color: #5c1f5d !important; border-color: #5c1f5d !important; background: #fdf5fd !important; }
+
+/* NARANJA */
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv button:nth-of-type(1) { background: #f57c00 !important; border-color: #f57c00 !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv button:nth-of-type(1):hover { background: #e65100 !important; border-color: #e65100 !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv .btn + .btn { color: #f57c00 !important; border-color: #f57c00 !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-naranja .CMPT-ButtonsDiv .btn + .btn:hover { color: #e65100 !important; border-color: #e65100 !important; background: #fff8f0 !important; }
+
+/* ROJO */
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv button:nth-of-type(1) { background: #d32f2f !important; border-color: #d32f2f !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv button:nth-of-type(1):hover { background: #b71c1c !important; border-color: #b71c1c !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv .btn + .btn { color: #d32f2f !important; border-color: #d32f2f !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-rojo .CMPT-ButtonsDiv .btn + .btn:hover { color: #b71c1c !important; border-color: #b71c1c !important; background: #fff5f5 !important; }
+
+/* =========================================
+   7. PARCHE FORMULARIO Y LIMPIEZA
+   Oculta controles internos y domina los botones secundarios
+   ========================================= */
+
+/* 1. Limpieza de la patrulla rebelde (controles internos de eXe) */
+body.exe-web-site .exe-content .QuestionLabel_ButtonsContainer {
+    display: none !important;
+}
+
+/* 2. Control total de los botones del Formulario */
+/* AZUL */
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container input[type="button"]:nth-of-type(1) { background: #0066CC !important; border-color: #0066CC !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container input[type="button"]:nth-of-type(1):hover { background: #0052a3 !important; border-color: #0052a3 !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container .btn + .btn { color: #0066CC !important; border-color: #0066CC !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-azul .form-buttons-container .btn + .btn:hover { color: #0052a3 !important; border-color: #0052a3 !important; background: #f0f7ff !important; }
+
+/* MORADO */
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container input[type="button"]:nth-of-type(1) { background: #7A297B !important; border-color: #7A297B !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container input[type="button"]:nth-of-type(1):hover { background: #5c1f5d !important; border-color: #5c1f5d !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container .btn + .btn { color: #7A297B !important; border-color: #7A297B !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-morado .form-buttons-container .btn + .btn:hover { color: #5c1f5d !important; border-color: #5c1f5d !important; background: #fdf5fd !important; }
+
+/* NARANJA */
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container input[type="button"]:nth-of-type(1) { background: #f57c00 !important; border-color: #f57c00 !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container input[type="button"]:nth-of-type(1):hover { background: #e65100 !important; border-color: #e65100 !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container .btn + .btn { color: #f57c00 !important; border-color: #f57c00 !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-naranja .form-buttons-container .btn + .btn:hover { color: #e65100 !important; border-color: #e65100 !important; background: #fff8f0 !important; }
+
+/* ROJO */
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container input[type="button"]:nth-of-type(1) { background: #d32f2f !important; border-color: #d32f2f !important; color: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container input[type="button"]:nth-of-type(1):hover { background: #b71c1c !important; border-color: #b71c1c !important; color: #ffffff !important; }
+
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container .btn + .btn { color: #d32f2f !important; border-color: #d32f2f !important; background: #ffffff !important; }
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container input[type="button"]:not(.box-toggle):not(.toggler) + input[type="button"]:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content article.boton-rojo .form-buttons-container .btn + .btn:hover { color: #b71c1c !important; border-color: #b71c1c !important; background: #fff5f5 !important; }
+/* =========================================
+   8. VIÑETAS DE LISTAS (Puntitos y Números)
+   Los marcadores heredan el color de su caja
+   ========================================= */
+
+.caja-azul li::marker { color: #0066CC !important; font-weight: 900 !important; }
+.caja-morada li::marker { color: #7A297B !important; font-weight: 900 !important; }
+.caja-naranja li::marker { color: #f57c00 !important; font-weight: 900 !important; }
+.caja-roja li::marker { color: #d32f2f !important; font-weight: 900 !important; }
+
+/* Por si acaso quieres una lista azul suelta fuera de las cajas, 
+   solo tienes que ponerle la clase "lista-azul" en Avanzado */
+.lista-azul li::marker { color: #0066CC !important; font-weight: 900 !important; }
+/* Excepción para obligar a una lista a ser normal dentro de una caja de color */
+body.exe-web-site .exe-content [class*="caja-"] .lista-normal li::marker {
+    color: #333333 !important; /* El gris oscuro/negro por defecto de eXe */
+    font-weight: normal !important;
+}
+/* =========================================
+   9. IDEVICE RELACIONA (Botones)
+   Vestimos los enlaces rebeldes con el uniforme oficial
+   ========================================= */
+   
+body.exe-web-site .exe-content .RLCP-Buttons a,
+body.exe-web-site .exe-content .RLCP-Information a {
+    display: inline-block !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    background-color: #ffffff !important;
+    color: #7A297B !important; /* Nuestro morado táctico */
+    border: 2px solid #7A297B !important;
+    margin: 10px 5px !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+body.exe-web-site .exe-content .RLCP-Buttons a:hover,
+body.exe-web-site .exe-content .RLCP-Information a:hover {
+    background-color: #fdf5fd !important;
+    color: #5c1f5d !important;
+    border-color: #5c1f5d !important;
+}
+/* =========================================
+   10. IDEVICE ORDENA (Botones)
+   Vestimos los enlaces rebeldes con el uniforme oficial
+   ========================================= */
+   
+body.exe-web-site .exe-content .ODNP-Information a,
+body.exe-web-site .exe-content .ODNP-GameButton a,
+body.exe-web-site .exe-content .ODNP-DivFeedback a {
+    display: inline-block !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    background-color: #ffffff !important;
+    color: #7A297B !important; /* Nuestro morado táctico */
+    border: 2px solid #7A297B !important;
+    margin: 10px 5px !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+body.exe-web-site .exe-content .ODNP-Information a:hover,
+body.exe-web-site .exe-content .ODNP-GameButton a:hover,
+body.exe-web-site .exe-content .ODNP-DivFeedback a:hover {
+    background-color: #fdf5fd !important;
+    color: #5c1f5d !important;
+    border-color: #5c1f5d !important;
+}
+/* Obligamos a los botones a respetar el camuflaje (display: none) nativo de eXe */
+body.exe-web-site .exe-content .ODNP-Information a[style*="none" i],
+body.exe-web-site .exe-content .ODNP-GameButton a[style*="none" i],
+body.exe-web-site .exe-content .ODNP-DivFeedback a[style*="none" i] {
+    display: none !important;
+}
+/* =========================================
+   11. IDEVICE ORDENA (Tarjeta de Victoria Real)
+   Ahora sí apuntamos al contenedor verdadero: GameOverExt
+   ========================================= */
+
+/* La tarjeta blanca principal */
+body.exe-web-site .exe-content .ODNP-GameOverExt {
+    background-color: #ffffff !important;
+    border: 2px solid #e9ecef !important;
+    border-radius: 16px !important;
+    padding: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+    margin: 20px auto !important;
+    max-width: 450px !important;
+}
+
+/* Vestimos de gala a la copa de victoria */
+body.exe-web-site .exe-content .ODNP-GameOverExt img {
+    max-width: 85px !important;
+    height: auto !important;
+    border-radius: 50% !important;
+    border: 4px solid #d4edda !important;
+    padding: 8px !important;
+    background-color: #f8f9fa !important;
+}
+
+/* El botón de 'Otra vez' que estaba desnudo */
+body.exe-web-site .exe-content .ODNP-GameOverExt a {
+    display: inline-block !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    background-color: #ffffff !important;
+    color: #7A297B !important; /* Nuestro morado */
+    border: 2px solid #7A297B !important;
+    margin-top: 15px !important;
+    transition: all 0.2s ease !important;
+}
+
+body.exe-web-site .exe-content .ODNP-GameOverExt a:hover {
+    background-color: #fdf5fd !important;
+    color: #5c1f5d !important;
+    border-color: #5c1f5d !important;
+}

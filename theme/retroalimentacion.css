@@ -1,0 +1,52 @@
+/* ==================================================
+   1. LIMPIEZA GENERAL (MATAR EL AMARILLO EN TODO EL PROYECTO)
+   ================================================== */
+/* Esto aplica a TODOS los iDevices, sean custom o no */
+.iDevice_buttons, 
+.iDevice_answer,
+.iDevice_feedback,
+#main .iDevice_buttons,
+.exe-export .iDevice_buttons {
+    background-color: #ffffff !important; /* blanco */
+    background-image: none !important;    /* Adiós texturas amarillas */
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    margin-top: 20px !important;
+    box-shadow: none !important;
+}
+
+/* ==================================================
+   2. ESTILO DE BOTÓN (SOLO PARA LOS NORMALES)
+   ================================================== */
+/* Aquí usamos el :not para que NO afecte a tus botones rojos/azules especiales */
+:not([class*="ejercicio-custom"]) .feedbackbutton, 
+:not([class*="ejercicio-custom"]) .iDevice_buttons input[type="button"] {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+    color: #ffffff !important;
+    font-family: 'AtkinsonBold', sans-serif !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 15px rgba(0, 91, 187, 0.3) !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+}
+
+/* Efecto Hover para los normales */
+:not([class*="ejercicio-custom"]) .feedbackbutton:hover, 
+:not([class*="ejercicio-custom"]) .iDevice_buttons input[type="button"]:hover {
+    background: linear-gradient(135deg, #0088ff 0%, #0066cc 100%) !important;
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(0, 91, 187, 0.4) !important;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'AtkinsonUnified';
+    src: url('Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+}

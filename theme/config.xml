@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <name>franki</name>
+    <title>Estilo Franki 3.0</title>
+    <version>2026.02.17</version>
+    <compatibility>3.0</compatibility>
+    <author>Equipo Franki</author>
+    <description>Estilo personalizado Franki. Tipografía Atkinson e iconos en carpeta img.</description>
+    <license>GPL</license>
+    <downloadable>1</downloadable>
+    <style>style.css</style>
+    <icons>icons</icons>
+</theme>

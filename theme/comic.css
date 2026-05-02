@@ -1,0 +1,92 @@
+/* =========================================
+   ESTILO CÓMIC / BOCADILLO POP-ART (TOONTIME + ICONO)
+   ========================================= */
+
+/* 1. CARGA DE LA FUENTE "TOONTIME" */
+@font-face {
+    font-family: 'ToontimeFont';
+    /* Ruta a la carpeta Toontime en la raíz del proyecto */
+    src: url('Toontime/Toontime.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. EL CONTENEDOR (Bocadillo) blindado */
+body article.box.caja-comic {
+    position: relative !important;
+    background-color: #ffffcc !important; 
+    background-image: none !important; /* Por si eXe intenta meter un gradiente */
+    border: 5px solid #000 !important;   
+    border-radius: 25px !important;
+    padding: 45px 45px 35px 45px !important;
+    margin: 60px auto !important;
+    width: 85% !important;
+    max-width: 700px !important;
+    box-shadow: 12px 12px 0px #000 !important;
+    display: block !important;
+    transform: rotate(-1deg) !important;
+    overflow: visible !important; /* VITAL para que la bombilla y el rabillo salgan fuera */
+}
+/* 3. EL "RABILLO" (La flechita que habla) */
+.caja-comic::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: -30px !important; 
+    left: 60px !important;
+    border-width: 25px 25px 0 0 !important;
+    border-style: solid !important;
+    border-color: #000 transparent transparent transparent !important;
+    display: block !important;
+    width: 0 !important;
+}
+
+/* 4. LIMPIEZA DE INTERFAZ */
+.caja-comic .iDevice_header,
+.caja-comic .box-head,
+.caja-comic .iDeviceTitle {
+    display: none !important;
+}
+
+.caja-comic .iDevice_inner {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* 5. TIPOGRAFÍA TOONTIME */
+.caja-comic p, .caja-comic li, .caja-comic div {
+    font-family: 'ToontimeFont', 'Comic Sans MS', cursive !important;
+    font-size: 1.5rem !important; 
+    line-height: 1.1 !important;  
+    color: #000 !important;
+    margin: 0 !important;
+    letter-spacing: 1px !important;
+}
+
+/* 6. EL ICONO FLOTANTE (Nuevo) */
+.caja-comic::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -40px !important;  /* Lo sacamos por arriba */
+    left: -20px !important; /* Lo sacamos por la izquierda */
+    width: 80px !important;
+    height: 80px !important;
+    
+    /* Buscamos el icono en tu carpeta icons */
+    background-image: url('icons/idea.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    
+    z-index: 20 !important; /* Por encima de todo */
+    filter: drop-shadow(4px 4px 0px #000) !important; /* Sombra estilo cómic */
+}
+
+/* Títulos */
+.caja-comic h2, .caja-comic strong {
+    font-family: 'ToontimeFont', cursive !important;
+    color: #ff5722 !important; 
+    font-size: 2.8rem !important;
+    text-shadow: 2px 2px 0px #000 !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+}

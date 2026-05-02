@@ -1,0 +1,94 @@
+/* =========================================
+   ESTILO NOTA AZUL (VERSIÓN TODOTERRENO)
+   ========================================= */
+
+/* 1. EL ENVOLTORIO PRINCIPAL */
+/* Quitamos #main para que funcione en cualquier parte */
+.nota-azul, 
+div.iDevice_wrapper.nota-azul {
+    display: block !important; /* Aseguramos que sea bloque */
+    background-color: #d1e4f9 !important;
+    width: 90% !important;
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    padding: 30px !important;
+    position: relative !important; /* Vital para el celo */
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2) !important;
+    transform: rotate(-0.5deg) !important;
+    border: none !important;
+    overflow: visible !important; /* Vital para que no se corte el celo */
+    z-index: 1 !important;
+}
+
+/* 2. LIMPIEZA DE ESTRUCTURA INTERNA */
+/* Hacemos transparentes todas las capas internas de eXe */
+.nota-azul .iDevice,
+.nota-azul .iDevice_wrapper,
+.nota-azul .iDevice_inner,
+.nota-azul .iDevice_content_wrapper,
+.nota-azul .iDevice_content {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 3. OCULTAR CABECERAS DEFECTO */
+.nota-azul .iDevice_header,
+.nota-azul .box-head,
+.nota-azul .iDeviceTitle,
+.nota-azul .box-title {
+    display: none !important;
+}
+
+/* 4. EL CELO (Las esquinas) */
+.nota-azul::before, 
+.nota-azul::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 100px !important;
+    height: 30px !important;
+    background-color: rgba(255, 255, 230, 0.5) !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1) !important;
+    z-index: 20 !important;
+    pointer-events: none !important;
+}
+
+/* Celo arriba-izquierda */
+.nota-azul::before {
+    top: -12px !important; 
+    left: -30px !important;
+    transform: rotate(-35deg) !important;
+}
+
+/* Celo abajo-derecha */
+.nota-azul::after {
+    bottom: -12px !important; 
+    right: -30px !important;
+    transform: rotate(-35deg) !important;
+}
+
+/* 5. TIPOGRAFÍA Y TEXTOS */
+/* Aplicamos la fuente a TODO lo que haya dentro de la caja */
+.nota-azul, 
+.nota-azul p, 
+.nota-azul li, 
+.nota-azul div {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif !important;
+    color: #333 !important;
+    line-height: 1.6 !important;
+    font-size: 1.05rem !important;
+}
+
+/* Títulos en azul */
+.nota-azul h2, 
+.nota-azul h3, 
+.nota-azul strong { 
+    color: #336699 !important; 
+    border-bottom: 2px solid #336699 !important; 
+    margin-bottom: 20px !important;
+    display: block !important;
+    width: 100% !important;
+}
